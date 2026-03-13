@@ -1,12 +1,14 @@
-using Toybox.System;
+import Toybox.Lang;
+import Toybox.Application;
 
-class ChessTrainerService extends System.ServiceDelegate {
+class ChessTrainerService extends Application.ServiceDelegate {
+
     function initialize() {
         ServiceDelegate.initialize();
     }
 
-    function onStop() {
-        // Save any pending data
-        Storage.save();
+    function onStop() as Void {
+        // Service stopped - no pending data to save
+        // Storage saves are done on each operation
     }
 }

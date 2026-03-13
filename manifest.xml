@@ -1,37 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest xmlns="http://www.garmin.com/xml/connectiq" version="1">
-    <application id="ChessTrainer" entry="ChessTrainerApp" name="@Strings.ChessTrainer" type="watch-app" minSdkVersion="4.0.0" launcherIcon="@Drawables.LauncherIcon">
-        <products>
+<?xml version="1.0"?>
+<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="1">
+    <iq:application entry="ChessTrainerApp" id="abcdef0123456789abcdef0123456789" name="@Strings.ChessTrainer" type="watch-app" minSdkVersion="3.2.0" launcherIcon="@Drawables.LauncherIcon">
+        <iq:products>
             <!-- Forerunner -->
-            <product id="forerunner_255"/>
-            <product id="forerunner_255s"/>
-            <product id="forerunner_265"/>
-            <product id="forerunner_965"/>
-            <!-- Fenix -->
-            <product id="fenix_7"/>
-            <product id="fenix_7_pro"/>
-            <product id="fenix_7x"/>
-            <product id="fenix_7x_pro"/>
-            <product id="fenix_8"/>
-            <product id="fenix_8x"/>
-            <product id="fenix_8_pro"/>
+            <!-- Fenix/Epix -->
             <!-- Venu -->
-            <product id="venu_2"/>
-            <product id="venu_2_plus"/>
-            <product id="venu_3"/>
-            <!-- Instinct -->
-            <product id="instinct_2"/>
-            <product id="instinct_3"/>
-            <!-- Epix -->
-            <product id="epix_pro"/>
-            <!-- Vivoactive -->
-            <product id="vivoactive_5"/>
-        </products>
-        <permissions>
-            <uses-permission id="Storage"/>
-        </permissions>
-        <languages>
-            <language>en</language>
-        </languages>
-    </application>
-</manifest>
+            <iq:product id="epix2"/>
+            <iq:product id="epix2pro42mm"/>
+            <iq:product id="epix2pro47mm"/>
+            <iq:product id="epix2pro51mm"/>
+            <iq:product id="epixpro"/>
+            <iq:product id="fenix7"/>
+            <iq:product id="fenix7pro"/>
+            <iq:product id="fenix7pronowifi"/>
+            <iq:product id="fenix7x"/>
+            <iq:product id="fenix843mm"/>
+            <iq:product id="fenix847mm"/>
+            <iq:product id="fenix8pro47mm"/>
+            <iq:product id="fenix8solar47mm"/>
+            <iq:product id="fenix8solar51mm"/>
+            <iq:product id="forerunner255"/>
+            <iq:product id="forerunner965"/>
+            <iq:product id="marq2"/>
+            <iq:product id="marq2aviator"/>
+            <iq:product id="marqadventurer"/>
+            <iq:product id="marqathlete"/>
+            <iq:product id="marqaviator"/>
+            <iq:product id="marqcaptain"/>
+            <iq:product id="marqcommander"/>
+            <iq:product id="marqdriver"/>
+            <iq:product id="marqexpedition"/>
+            <iq:product id="marqgolfer"/>
+            <iq:product id="venu3"/>
+        </iq:products>
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
+        <iq:permissions>
+            <iq:uses-permission id="Notifications"/>
+            <iq:uses-permission id="Fit"/>
+        </iq:permissions>
+        <iq:barrels/>
+    </iq:application>
+</iq:manifest>

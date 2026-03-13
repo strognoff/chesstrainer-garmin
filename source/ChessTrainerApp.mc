@@ -1,24 +1,24 @@
-using Toybox.Application;
-using Toybox.WatchUi;
-using Toybox.System;
+import Toybox.Lang;
+import Toybox.Application;
+import Toybox.WatchUi;
 
 class ChessTrainerApp extends Application.AppBase {
+
     function initialize() {
         AppBase.initialize();
     }
 
-    function onStart(state) {
-        // Initialize storage
-        Storage.initialize();
+    function onStart(state as Dictionary) as Void {
+        // App started - storage is accessed directly via Storage module
     }
 
-    function onStop(state) {
-        // Save progress
-        Storage.save();
+    function onStop(state as Dictionary) as Void {
+        // App stopped - no explicit save needed as we save on each operation
     }
 
     function getInitialView() {
-        return [ new MenuView() ];
+        var menuView = new MenuView();
+        return [ menuView, new MenuDelegate(menuView) ] as [WatchUi.View, WatchUi.InputDelegate];
     }
 
     function getServiceDelegate() {

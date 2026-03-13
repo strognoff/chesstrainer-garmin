@@ -1,15 +1,47 @@
-using Toybox.WatchUi;
-using Toybox.System;
+import Toybox.Lang;
+import Toybox.WatchUi;
+import Toybox.Graphics;
+
+// Forward declaration
+class PuzzleListView;
+
+class PuzzleListDelegate extends WatchUi.InputDelegate {
+    var view as PuzzleListView;
+
+    function initialize(pListView as PuzzleListView) {
+        WatchUi.InputDelegate.initialize();
+        view = pListView;
+    }
+
+    function onKeyPressed(key as WatchUi.KeyEvent) as Boolean {
+        var keyCode = key.getKey();
+        
+        if (keyCode == WatchUi.KEY_UP) {
+            view.handleUp();
+            return true;
+        } else if (keyCode == WatchUi.KEY_DOWN) {
+            view.handleDown();
+            return true;
+        } else if (keyCode == WatchUi.KEY_ENTER) {
+            view.handleEnter();
+            return true;
+        } else if (keyCode == WatchUi.KEY_ESC) {
+            WatchUi.popView(WatchUi.SLIDE_RIGHT);
+            return true;
+        }
+        return false;
+    }
+}
 
 class PuzzleListView extends WatchUi.View {
     var currentPage = 0;
     var itemsPerPage = 5;
 
     function initialize() {
-        View.initialize();
+        WatchUi.View.initialize();
     }
 
-    function onUpdate(dc) {
+    function onUpdate(dc as Dc) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
         
@@ -28,10 +60,10 @@ class PuzzleListView extends WatchUi.View {
             
             if (Storage.isSolved(idx)) {
                 dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_BLACK);
-                status = "✓";
+                status = "OK";
             } else if (Storage.isIncorrect(idx)) {
                 dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
-                status = "✗";
+                status = "X";
             } else {
                 dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
                 status = " ";
@@ -40,44 +72,34 @@ class PuzzleListView extends WatchUi.View {
             dc.drawText(10, y, Graphics.FONT_SMALL, (idx + 1) + ". " + status, Graphics.TEXT_JUSTIFY_LEFT);
         }
         
-        // Navigation hint
-        dc.setColor(Graphics.COLOR_GRAY, Graphics.COLOR_BLACK);
-        dc.drawText(dc.getWidth() / 2, dc.getHeight() - 20, Graphics.FONT_TINY, "< UP/DOWN > SEL", Graphics.TEXT_JUSTIFY_CENTER);
+        // Page indicator
+        var pages = (total + itemsPerPage - 1) / itemsPerPage;
+        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
+        dc.drawText(dc.getWidth() / 2, dc.getHeight() - 20, Graphics.FONT_TINY, "Page " + (currentPage + 1) + "/" + pages, Graphics.TEXT_JUSTIFY_CENTER);
     }
-
-    function onKey(key) {
+    
+    function handleUp() as Void {
+        var total = PuzzleData.getPuzzleCount();
+        if (currentPage > 0) {
+            currentPage--;
+            WatchUi.requestUpdate();
+        }
+    }
+    
+    function handleDown() as Void {
         var total = PuzzleData.getPuzzleCount();
         var pages = (total + itemsPerPage - 1) / itemsPerPage;
-        
-        if (key.key == WatchUi.KEY_UP) {
-            if (currentPage > 0) {
-                currentPage--;
-                WatchUi.requestUpdate();
-            }
-            return true;
-        } else if (key.key == WatchUi.KEY_DOWN) {
-            if (currentPage < pages - 1) {
-                currentPage++;
-                WatchUi.requestUpdate();
-            }
-            return true;
-        } else if (key.key == WatchUi.KEY_ENTER) {
-            var idx = currentPage * itemsPerPage;
-            WatchUi.pushView(new BoardView(idx), new BoardDelegate(idx), WatchUi.SLIDE_LEFT);
-            return true;
+        if (currentPage < pages - 1) {
+            currentPage++;
+            WatchUi.requestUpdate();
         }
-        return false;
     }
-}
-
-class PuzzleListDelegate extends WatchUi.InputDelegate {
-    var view;
-
-    function initialize() {
-        InputDelegate.initialize();
-    }
-
-    function onKey(key) {
-        return view.onKey(key);
+    
+    function handleEnter() as Void {
+        var idx = currentPage * itemsPerPage;
+        // Make sure we don't go past the end
+        if (idx < PuzzleData.getPuzzleCount()) {
+            WatchUi.pushView(new BoardView(idx), new BoardDelegate(idx), WatchUi.SLIDE_LEFT);
+        }
     }
 }

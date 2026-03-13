@@ -1,87 +1,162 @@
-using Toybox.Storage;
-using Toybox.System;
+import Toybox.Lang;
+import Toybox.Application.Storage;
 
-class Storage {
-    static const KEY_PROGRESS = "chess_progress";
-    static const KEY_SOLVED = "solved";
-    static const KEY_INCORRECT = "incorrect";
-    static const KEY_TIMES = "times";
+//! Storage module for puzzle progress
+module Storage {
+    const KEY_PROGRESS = "chess_progress";
+    const KEY_SOLVED = "solved";
+    const KEY_INCORRECT = "incorrect";
+    const KEY_TIMES = "times";
 
-    static var solvedPuzzles = [];
-    static var incorrectPuzzles = [];
-    static var puzzleTimes = {};
-
-    static function initialize() {
+    //! Get solved puzzles array
+    function getSolvedPuzzles() as Array<Number> {
         var data = Storage.getValue(KEY_PROGRESS);
         if (data != null) {
-            solvedPuzzles = data.get(KEY_SOLVED, []);
-            incorrectPuzzles = data.get(KEY_INCORRECT, []);
-            puzzleTimes = data.get(KEY_TIMES, {});
+            var progress = data as Dictionary;
+            var solved = progress.get(KEY_SOLVED);
+            if (solved != null) {
+                return solved as Array<Number>;
+            }
         }
+        return new [0] as Array<Number>;
     }
 
-    static function save() {
+    //! Get incorrect puzzles array
+    function getIncorrectPuzzles() as Array<Number> {
+        var data = Storage.getValue(KEY_PROGRESS);
+        if (data != null) {
+            var progress = data as Dictionary;
+            var incorrect = progress.get(KEY_INCORRECT);
+            if (incorrect != null) {
+                return incorrect as Array<Number>;
+            }
+        }
+        return new [0] as Array<Number>;
+    }
+
+    //! Get puzzle times dictionary
+    function getPuzzleTimes() as Dictionary<Number> {
+        var data = Storage.getValue(KEY_PROGRESS);
+        if (data != null) {
+            var progress = data as Dictionary;
+            var times = progress.get(KEY_TIMES);
+            if (times != null) {
+                return times as Dictionary<Number>;
+            }
+        }
+        return {} as Dictionary<Number>;
+    }
+
+    //! Save progress to storage
+    function saveProgress() as Void {
         var data = {
-            KEY_SOLVED => solvedPuzzles,
-            KEY_INCORRECT => incorrectPuzzles,
-            KEY_TIMES => puzzleTimes
-        };
+            KEY_SOLVED => getSolvedPuzzles(),
+            KEY_INCORRECT => getIncorrectPuzzles(),
+            KEY_TIMES => getPuzzleTimes()
+        } as Dictionary;
         Storage.setValue(KEY_PROGRESS, data);
     }
 
-    static function markSolved(puzzleIndex, timeSeconds) {
-        if (!isSolved(puzzleIndex)) {
-            solvedPuzzles.add(puzzleIndex);
+    //! Mark puzzle as solved
+    function markSolved(puzzleIndex as Number, timeSeconds as Number) as Void {
+        var solved = getSolvedPuzzles();
+        
+        // Check if already solved
+        var alreadySolved = false;
+        for (var i = 0; i < solved.size(); i++) {
+            if (solved[i] == puzzleIndex) {
+                alreadySolved = true;
+                break;
+            }
         }
-        puzzleTimes[puzzleIndex] = timeSeconds;
-        save();
-    }
-
-    static function markIncorrect(puzzleIndex) {
-        if (!incorrectPuzzles.contains(puzzleIndex)) {
-            incorrectPuzzles.add(puzzleIndex);
+        
+        if (!alreadySolved) {
+            solved.add(puzzleIndex);
         }
-        save();
+        
+        var times = getPuzzleTimes();
+        times[puzzleIndex] = timeSeconds;
+        
+        saveProgress();
     }
 
-    static function isSolved(puzzleIndex) {
-        return solvedPuzzles.contains(puzzleIndex);
+    //! Mark puzzle as incorrect
+    function markIncorrect(puzzleIndex as Number) as Void {
+        var incorrect = getIncorrectPuzzles();
+        
+        // Check if already marked incorrect
+        var alreadyMarked = false;
+        for (var i = 0; i < incorrect.size(); i++) {
+            if (incorrect[i] == puzzleIndex) {
+                alreadyMarked = true;
+                break;
+            }
+        }
+        
+        if (!alreadyMarked) {
+            incorrect.add(puzzleIndex);
+        }
+        
+        saveProgress();
     }
 
-    static function isIncorrect(puzzleIndex) {
-        return incorrectPuzzles.contains(puzzleIndex);
+    //! Check if puzzle is solved
+    function isSolved(puzzleIndex as Number) as Boolean {
+        var solved = getSolvedPuzzles();
+        for (var i = 0; i < solved.size(); i++) {
+            if (solved[i] == puzzleIndex) {
+                return true;
+            }
+        }
+        return false;
     }
 
-    static function getStats() {
+    //! Check if puzzle is marked incorrect
+    function isIncorrect(puzzleIndex as Number) as Boolean {
+        var incorrect = getIncorrectPuzzles();
+        for (var i = 0; i < incorrect.size(); i++) {
+            if (incorrect[i] == puzzleIndex) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //! Get statistics
+    function getStats() as Dictionary {
         var total = PuzzleData.getPuzzleCount();
-        var solved = solvedPuzzles.size();
-        var incorrect = incorrectPuzzles.size();
+        var solved = getSolvedPuzzles();
+        var incorrect = getIncorrectPuzzles();
         
         // Calculate average time
         var totalTime = 0;
         var count = 0;
-        for (var i = 0; i < puzzleTimes.size(); i++) {
-            var key = puzzleTimes.keys()[i];
+        var times = getPuzzleTimes();
+        var keys = times.keys();
+        
+        for (var i = 0; i < keys.size(); i++) {
+            var key = keys[i];
             if (key != null) {
-                totalTime += puzzleTimes[key];
-                count++;
+                var val = times.get(key);
+                if (val != null) {
+                    totalTime += val;
+                    count++;
+                }
             }
         }
         var avgTime = count > 0 ? totalTime / count : 0;
         
         return {
             "total" => total,
-            "solved" => solved,
-            "incorrect" => incorrect,
-            "accuracy" => (solved + incorrect) > 0 ? (solved * 100 / (solved + incorrect)) : 0,
+            "solved" => solved.size(),
+            "incorrect" => incorrect.size(),
+            "accuracy" => (solved.size() + incorrect.size()) > 0 ? (solved.size() * 100 / (solved.size() + incorrect.size())) : 0,
             "avgTime" => avgTime
         };
     }
 
-    static function resetProgress() {
-        solvedPuzzles = [];
-        incorrectPuzzles = [];
-        puzzleTimes = {};
-        save();
+    //! Reset all progress
+    function resetProgress() as Void {
+        Storage.setValue(KEY_PROGRESS, null);
     }
 }

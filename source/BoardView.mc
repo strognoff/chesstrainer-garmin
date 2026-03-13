@@ -1,38 +1,40 @@
-using Toybox.WatchUi;
-using Toybox.System;
-using Toybar.Timer;
+import Toybox.Lang;
+import Toybox.WatchUi;
+import Toybox.Graphics;
+import Toybox.Timer;
 
 class BoardView extends WatchUi.View {
-    var puzzleIndex;
-    var boardData;
-    var timer;
-    var startTime;
+    var puzzleIndex as Number;
+    var boardData as Dictionary;
+    var timer as Timer.Timer?;
+    var startTime as Number;
     var hintShown = false;
 
-    function initialize(idx) {
-        View.initialize();
+    function initialize(idx as Number) {
+        WatchUi.View.initialize();
         puzzleIndex = idx;
         var fen = PuzzleData.getPuzzle(puzzleIndex);
         boardData = BoardLogic.parseFen(fen);
         startTime = System.getTimer();
     }
 
-    function onShow() {
+    function onShow() as Void {
         timer = new Timer.Timer();
         timer.start(method(:onTimer), 1000, true);
     }
 
-    function onHide() {
+    function onHide() as Void {
         if (timer != null) {
             timer.stop();
+            timer = null;
         }
     }
 
-    function onTimer() {
+    function onTimer() as Void {
         WatchUi.requestUpdate();
     }
 
-    function onUpdate(dc) {
+    function onUpdate(dc as Dc) as Void {
         var width = dc.getWidth();
         var height = dc.getHeight();
         
@@ -48,7 +50,7 @@ class BoardView extends WatchUi.View {
         var elapsed = (System.getTimer() - startTime) / 1000;
         var mins = elapsed / 60;
         var secs = elapsed % 60;
-        dc.drawText(width / 2, 20, Graphics.FONT_TINY, format("$1$:$2$", [mins, secs.format("%02d")]), Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(width / 2, 20, Graphics.FONT_TINY, mins.format("%d") + ":" + secs.format("%02d"), Graphics.TEXT_JUSTIFY_CENTER);
         
         // Draw puzzle number
         dc.drawText(width / 2, 35, Graphics.FONT_TINY, "Puzzle " + (puzzleIndex + 1), Graphics.TEXT_JUSTIFY_CENTER);
@@ -67,58 +69,54 @@ class BoardView extends WatchUi.View {
                 
                 // Draw square
                 if (BoardLogic.isLightSquare(row, col)) {
-                    dc.setColor(Graphics.COLOR_LTGRAY, Graphics.COLOR_LTGRAY);
+                    dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_LT_GRAY);
                 } else {
-                    dc.setColor(Graphics.COLOR_DKGRAY, Graphics.COLOR_DKGRAY);
+                    dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_DK_GRAY);
                 }
                 dc.fillRectangle(x, y, squareSize, squareSize);
                 
                 // Draw piece
-                var piece = boardData.board[row][col];
+                var piece = boardData["board"][row][col];
                 if (piece != null) {
                     var pieceChar = BoardLogic.getPieceChar(piece);
-                    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_LTGRAY);
+                    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_LT_GRAY);
                     dc.drawText(x + squareSize / 2, y + squareSize / 2 - 5, Graphics.FONT_MEDIUM, pieceChar, Graphics.TEXT_JUSTIFY_CENTER);
                 }
             }
         }
         
         // Draw controls hint
-        dc.setColor(Graphics.COLOR_GRAY, Graphics.COLOR_BLACK);
-        dc.drawText(width / 2, height - 20, Graphics.FONT_TINY, "[MENU] Hint [OK] Give Up", Graphics.TEXT_JUSTIFY_CENTER);
-    }
-
-    function onKey(key) {
-        if (key.key == WatchUi.KEY_MENU) {
-            // Show hint - in MVP just mark as correct
-            hintShown = true;
-            var elapsed = (System.getTimer() - startTime) / 1000;
-            Storage.markSolved(puzzleIndex, elapsed);
-            WatchUi.popView(WatchUi.SLIDE_RIGHT);
-            return true;
-        } else if (key.key == WatchUi.KEY_ENTER) {
-            // Give up
-            Storage.markIncorrect(puzzleIndex);
-            WatchUi.popView(WatchUi.SLIDE_RIGHT);
-            return true;
-        } else if (key.key == WatchUi.KEY_DOWN || key.key == WatchUi.KEY_UP) {
-            // Navigation for potential move input
-            return true;
-        }
-        return false;
+        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
+        dc.drawText(width / 2, height - 20, Graphics.FONT_TINY, "MENU: Hint  OK: Give Up", Graphics.TEXT_JUSTIFY_CENTER);
     }
 }
 
 class BoardDelegate extends WatchUi.InputDelegate {
-    var puzzleIndex;
+    var puzzleIndex as Number;
 
-    function initialize(idx) {
-        InputDelegate.initialize();
+    function initialize(idx as Number) {
+        WatchUi.InputDelegate.initialize();
         puzzleIndex = idx;
     }
 
-    function onKey(key) {
-        // This will call the view's onKey
+    function onKeyPressed(key as WatchUi.KeyEvent) as Boolean {
+        var keyCode = key.getKey();
+        
+        if (keyCode == WatchUi.KEY_MENU) {
+            // Show hint - in MVP just mark as correct
+            var elapsed = (System.getTimer() - System.getTimer()) / 1000;
+            Storage.markSolved(puzzleIndex, 0);
+            WatchUi.popView(WatchUi.SLIDE_RIGHT);
+            return true;
+        } else if (keyCode == WatchUi.KEY_ENTER) {
+            // Give up
+            Storage.markIncorrect(puzzleIndex);
+            WatchUi.popView(WatchUi.SLIDE_RIGHT);
+            return true;
+        } else if (keyCode == WatchUi.KEY_ESC) {
+            WatchUi.popView(WatchUi.SLIDE_RIGHT);
+            return true;
+        }
         return false;
     }
 }

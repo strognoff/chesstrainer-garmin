@@ -1,29 +1,30 @@
-using Toybox.WatchUi;
-using Toybox.System;
+import Toybox.Lang;
+import Toybox.WatchUi;
+import Toybox.Graphics;
 
 class HistoryView extends WatchUi.View {
     var currentPage = 0;
     var itemsPerPage = 6;
 
     function initialize() {
-        View.initialize();
+        WatchUi.View.initialize();
     }
 
-    function onUpdate(dc) {
+    function onUpdate(dc as Dc) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
         
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.drawText(dc.getWidth() / 2, 5, Graphics.FONT_SMALL, "History", Graphics.TEXT_JUSTIFY_CENTER);
         
-        var solved = Storage.solvedPuzzles;
-        var incorrect = Storage.incorrectPuzzles;
+        var solved = Storage.getSolvedPuzzles();
+        var incorrect = Storage.getIncorrectPuzzles();
         
         var total = solved.size() + incorrect.size();
         var startIdx = currentPage * itemsPerPage;
         
         if (total == 0) {
-            dc.setColor(Graphics.COLOR_GRAY, Graphics.COLOR_BLACK);
+            dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
             dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_SMALL, "No history yet", Graphics.TEXT_JUSTIFY_CENTER);
         } else {
             for (var i = 0; i < itemsPerPage; i++) {
@@ -50,35 +51,33 @@ class HistoryView extends WatchUi.View {
         }
         
         // Navigation hint
-        dc.setColor(Graphics.COLOR_GRAY, Graphics.COLOR_BLACK);
-        dc.drawText(dc.getWidth() / 2, dc.getHeight() - 20, Graphics.FONT_TINY, "[BACK] return", Graphics.TEXT_JUSTIFY_CENTER);
-    }
-
-    function onKey(key) {
-        if (key.key == WatchUi.KEY_BACK) {
-            WatchUi.popView(WatchUi.SLIDE_RIGHT);
-            return true;
-        } else if (key.key == WatchUi.KEY_UP) {
-            if (currentPage > 0) {
-                currentPage--;
-                WatchUi.requestUpdate();
-            }
-            return true;
-        } else if (key.key == WatchUi.KEY_DOWN) {
-            currentPage++;
-            WatchUi.requestUpdate();
-            return true;
-        }
-        return false;
+        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
+        dc.drawText(dc.getWidth() / 2, dc.getHeight() - 20, Graphics.FONT_TINY, "ESC: return", Graphics.TEXT_JUSTIFY_CENTER);
     }
 }
 
 class HistoryDelegate extends WatchUi.InputDelegate {
     function initialize() {
-        InputDelegate.initialize();
+        WatchUi.InputDelegate.initialize();
     }
 
-    function onKey(key) {
+    function onKeyPressed(key as WatchUi.KeyEvent) as Boolean {
+        var keyCode = key.getKey();
+        
+        if (keyCode == WatchUi.KEY_ESC) {
+            WatchUi.popView(WatchUi.SLIDE_RIGHT);
+            return true;
+        } else if (keyCode == WatchUi.KEY_UP) {
+            if (currentPage > 0) {
+                currentPage--;
+                WatchUi.requestUpdate();
+            }
+            return true;
+        } else if (keyCode == WatchUi.KEY_DOWN) {
+            currentPage++;
+            WatchUi.requestUpdate();
+            return true;
+        }
         return false;
     }
 }

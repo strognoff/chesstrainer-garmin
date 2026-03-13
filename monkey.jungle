@@ -1,14 +1,4 @@
-# Garmin Connect IQ Monkey.jungle build file
-# For ChessTrainer app
-
 project.manifest = manifest.xml
-
-# Source files
-path = source
-
-# Resources
-resources.path = resources
-resources.external = true
-
-# Output
-output = bin
+base.sourcePath = source/*.mc
+base.resourcePath = resources
+base.personality = resources
