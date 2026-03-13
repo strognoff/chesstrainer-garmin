@@ -127,7 +127,7 @@ class BoardLogic {
     
     // Validate if a move is legal for a piece
     static function isValidMove(piece as String, fromRow as Number, fromCol as Number, toRow as Number, toCol as Number, board as Array<Array<String?>>, sideToMove as String) as Boolean {
-        if (piece == null || piece.equals(" ")) {
+        if (piece == null || piece.equals(" ") || toRow < 0 || toRow > 7 || toCol < 0 || toCol > 7) {
             return false;
         }
         
@@ -211,6 +211,7 @@ class BoardLogic {
         var r = fromRow + stepRow;
         var c = fromCol + stepCol;
         
+        if (r < 0 || r > 7 || c < 0 || c > 7) { return false; }
         while (r != toRow || c != toCol) {
             if (board[r][c] != null) {
                 return false;
