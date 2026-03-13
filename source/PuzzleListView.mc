@@ -66,7 +66,8 @@ class PuzzleListView extends WatchUi.View {
     function handleEnter() as Void {
         var idx = currentPage * itemsPerPage;
         if (idx < PuzzleData.getPuzzleCount()) {
-            WatchUi.pushView(new BoardView(idx), new BoardDelegate(idx), WatchUi.SLIDE_LEFT);
+            var boardView = new BoardView(idx);
+            WatchUi.pushView(boardView, new BoardDelegate(idx, boardView), WatchUi.SLIDE_LEFT);
         }
     }
 }

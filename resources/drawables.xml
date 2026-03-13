@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <bitmap id="LauncherIcon" filename="icon.png" />
+    
+    <!-- White pieces -->
+    <bitmap id="WhiteKing" filename="white_king.png" />
+    <bitmap id="WhiteQueen" filename="white_queen.png" />
+    <bitmap id="WhiteRook" filename="white_rook.png" />
+    <bitmap id="WhiteBishop" filename="white_bishop.png" />
+    <bitmap id="WhiteKnight" filename="white_knight.png" />
+    <bitmap id="WhitePawn" filename="white_pawn.png" />
+    
+    <!-- Black pieces -->
+    <bitmap id="BlackKing" filename="black_king.png" />
+    <bitmap id="BlackQueen" filename="black_queen.png" />
+    <bitmap id="BlackRook" filename="black_rook.png" />
+    <bitmap id="BlackBishop" filename="black_bishop.png" />
+    <bitmap id="BlackKnight" filename="black_knight.png" />
+    <bitmap id="BlackPawn" filename="black_pawn.png" />
 </resources>

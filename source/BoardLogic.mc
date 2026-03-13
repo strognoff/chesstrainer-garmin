@@ -2,18 +2,18 @@ import Toybox.Lang;
 
 class BoardLogic {
     // Unicode chess pieces
-    const WHITE_KING = "K";
-    const WHITE_QUEEN = "Q";
-    const WHITE_ROOK = "R";
-    const WHITE_BISHOP = "B";
-    const WHITE_KNIGHT = "N";
-    const WHITE_PAWN = "P";
-    const BLACK_KING = "k";
-    const BLACK_QUEEN = "q";
-    const BLACK_ROOK = "r";
-    const BLACK_BISHOP = "b";
-    const BLACK_KNIGHT = "n";
-    const BLACK_PAWN = "p";
+    const WHITE_KING = "♔";
+    const WHITE_QUEEN = "♕";
+    const WHITE_ROOK = "♖";
+    const WHITE_BISHOP = "♗";
+    const WHITE_KNIGHT = "♘";
+    const WHITE_PAWN = "♙";
+    const BLACK_KING = "♚";
+    const BLACK_QUEEN = "♛";
+    const BLACK_ROOK = "♜";
+    const BLACK_BISHOP = "♝";
+    const BLACK_KNIGHT = "♞";
+    const BLACK_PAWN = "♟";
 
     // Simple split by delimiter
     static function splitString(str as String, delimiter as String) as Array<String> {
@@ -75,7 +75,45 @@ class BoardLogic {
         if (fenChar == null) {
             return " ";
         }
+        
+        // Map FEN notation to chess Unicode symbols
+        if (fenChar.equals("K")) { return "♔"; }
+        if (fenChar.equals("Q")) { return "♕"; }
+        if (fenChar.equals("R")) { return "♖"; }
+        if (fenChar.equals("B")) { return "♗"; }
+        if (fenChar.equals("N")) { return "♘"; }
+        if (fenChar.equals("P")) { return "♙"; }
+        if (fenChar.equals("k")) { return "♚"; }
+        if (fenChar.equals("q")) { return "♛"; }
+        if (fenChar.equals("r")) { return "♜"; }
+        if (fenChar.equals("b")) { return "♝"; }
+        if (fenChar.equals("n")) { return "♞"; }
+        if (fenChar.equals("p")) { return "♟"; }
+        
         return fenChar;
+    }
+
+    // Get drawable ID for piece
+    static function getPieceDrawableId(fenChar as String?) as Symbol? {
+        if (fenChar == null) {
+            return null;
+        }
+        
+        // Map FEN notation to drawable resource IDs
+        if (fenChar.equals("K")) { return :WhiteKing; }
+        if (fenChar.equals("Q")) { return :WhiteQueen; }
+        if (fenChar.equals("R")) { return :WhiteRook; }
+        if (fenChar.equals("B")) { return :WhiteBishop; }
+        if (fenChar.equals("N")) { return :WhiteKnight; }
+        if (fenChar.equals("P")) { return :WhitePawn; }
+        if (fenChar.equals("k")) { return :BlackKing; }
+        if (fenChar.equals("q")) { return :BlackQueen; }
+        if (fenChar.equals("r")) { return :BlackRook; }
+        if (fenChar.equals("b")) { return :BlackBishop; }
+        if (fenChar.equals("n")) { return :BlackKnight; }
+        if (fenChar.equals("p")) { return :BlackPawn; }
+        
+        return null;
     }
 
     // Check if square is light or dark

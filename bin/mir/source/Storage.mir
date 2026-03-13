@@ -1,0 +1,951 @@
+[ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Application,2,14,25]; @symbol_importdef<2> = [Storage,2,26,33]; ]
+import Toybox.Application.Storage;
+//! Storage module for puzzle progress
+[ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 5; @symbol_moduledef = [Storage,5,7,14]; ]
+module Storage {
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 6; @position = 10; @symbol_constdef = [KEY_PROGRESS,6,10,22]; ]
+    const KEY_PROGRESS = "chess_progress";
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 7; @position = 10; @symbol_constdef = [KEY_SOLVED,7,10,20]; ]
+    const KEY_SOLVED = "solved";
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 8; @position = 10; @symbol_constdef = [KEY_INCORRECT,8,10,23]; ]
+    const KEY_INCORRECT = "incorrect";
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 9; @position = 10; @symbol_constdef = [KEY_TIMES,9,10,19]; ]
+    const KEY_TIMES = "times";
+    //! Get solved puzzles array
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 12; @symbol_functiondef = [getSolvedPuzzles,12,13,29]; @symbol_return<0> = [Array,12,35,40]; @symbol_return<1> = [Number,12,41,47]; ]
+    function getSolvedPuzzles() as Array<Number> {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_12_49_22_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 13 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_12_49_22_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_12_49_22_4_stop" ]
+        %data.1 = local;
+        symbol [ data %data.1 13 12 16 ];
+        symbol [ Storage %tmp.1 13 19 26 ];
+        %tmp.1 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.2 13 27 35 ];
+        %tmp.2 = getv function %tmp.1 :getValue;
+        symbol [ KEY_PROGRESS %tmp.4 13 36 48 ];
+        %tmp.4 = getv ? :KEY_PROGRESS;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
+        lputv %data.1 %tmp.5;
+        symbol [ data %data.1 13 12 16 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 14 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_14_8_20_8_if_stmt:
+        %tmp.6 = lgetv %data.1;
+        symbol [ data %tmp.6 14 12 16 ];
+        %tmp.7 = null;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        bf %tmp.8 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_14_8_20_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_14_8_20_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_14_26_20_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 15 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_14_26_20_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_14_26_20_8_stop" ]
+        %progress.2 = local;
+        symbol [ progress %progress.2 15 16 24 ];
+        %tmp.9 = lgetv %data.1;
+        symbol [ data %tmp.9 15 27 31 ];
+        %tmp.10 = as %tmp.9 { (!Null) };
+        %tmp.11 = as %tmp.10 Dictionary;
+        symbol [ Dictionary %tmp.11 15 35 45 ];
+        lputv %progress.2 %tmp.11;
+        symbol [ progress %progress.2 15 16 24 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 16 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_14_26_20_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_14_26_20_8_stop" ]
+        %solved.3 = local;
+        symbol [ solved %solved.3 16 16 22 ];
+        %tmp.12 = lgetv %progress.2;
+        symbol [ progress %tmp.12 16 25 33 ];
+        symbol [ get %tmp.13 16 34 37 ];
+        %tmp.13 = getv function %tmp.12 :get;
+        symbol [ KEY_SOLVED %tmp.15 16 38 48 ];
+        %tmp.15 = getv ? :KEY_SOLVED;
+        %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
+        lputv %solved.3 %tmp.16;
+        symbol [ solved %solved.3 16 16 22 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 17 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_17_12_19_12_if_stmt:
+        %tmp.17 = lgetv %solved.3;
+        symbol [ solved %tmp.17 17 16 22 ];
+        %tmp.18 = null;
+        %tmp.19 = ne %tmp.17 %tmp.18;
+        bf %tmp.19 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_17_12_19_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_17_12_19_12_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_17_32_19_12_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 18 16 ]
+        %tmp.20 = lgetv %solved.3;
+        symbol [ solved %tmp.20 18 23 29 ];
+        %tmp.21 = as %tmp.20 { (!Null) };
+        %tmp.22 = as %tmp.21 Array<Number>;
+        symbol [ Array %tmp.22 18 33 38 ];
+        symbol [ Number %tmp.22 18 39 45 ];
+        ret %tmp.22;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_17_32_19_12_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_17_12_19_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_17_12_19_12_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_14_26_20_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_14_8_20_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_14_8_20_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 21 8 ]
+        %tmp.24 = 0;
+        %tmp.23 = newa %tmp.24;
+        %tmp.25 = as %tmp.23 Array<Number>;
+        symbol [ Array %tmp.25 21 26 31 ];
+        symbol [ Number %tmp.25 21 32 38 ];
+        ret %tmp.25;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_12_49_22_4_stop:
+    }
+    //! Get incorrect puzzles array
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 25; @symbol_functiondef = [getIncorrectPuzzles,25,13,32]; @symbol_return<0> = [Array,25,38,43]; @symbol_return<1> = [Number,25,44,50]; ]
+    function getIncorrectPuzzles() as Array<Number> {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_25_52_35_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 26 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_25_52_35_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_25_52_35_4_stop" ]
+        %data.1 = local;
+        symbol [ data %data.1 26 12 16 ];
+        symbol [ Storage %tmp.1 26 19 26 ];
+        %tmp.1 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.2 26 27 35 ];
+        %tmp.2 = getv function %tmp.1 :getValue;
+        symbol [ KEY_PROGRESS %tmp.4 26 36 48 ];
+        %tmp.4 = getv ? :KEY_PROGRESS;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
+        lputv %data.1 %tmp.5;
+        symbol [ data %data.1 26 12 16 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 27 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_27_8_33_8_if_stmt:
+        %tmp.6 = lgetv %data.1;
+        symbol [ data %tmp.6 27 12 16 ];
+        %tmp.7 = null;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        bf %tmp.8 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_27_8_33_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_27_8_33_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_27_26_33_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 28 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_27_26_33_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_27_26_33_8_stop" ]
+        %progress.2 = local;
+        symbol [ progress %progress.2 28 16 24 ];
+        %tmp.9 = lgetv %data.1;
+        symbol [ data %tmp.9 28 27 31 ];
+        %tmp.10 = as %tmp.9 { (!Null) };
+        %tmp.11 = as %tmp.10 Dictionary;
+        symbol [ Dictionary %tmp.11 28 35 45 ];
+        lputv %progress.2 %tmp.11;
+        symbol [ progress %progress.2 28 16 24 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 29 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_27_26_33_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_27_26_33_8_stop" ]
+        %incorrect.3 = local;
+        symbol [ incorrect %incorrect.3 29 16 25 ];
+        %tmp.12 = lgetv %progress.2;
+        symbol [ progress %tmp.12 29 28 36 ];
+        symbol [ get %tmp.13 29 37 40 ];
+        %tmp.13 = getv function %tmp.12 :get;
+        symbol [ KEY_INCORRECT %tmp.15 29 41 54 ];
+        %tmp.15 = getv ? :KEY_INCORRECT;
+        %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
+        lputv %incorrect.3 %tmp.16;
+        symbol [ incorrect %incorrect.3 29 16 25 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 30 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_30_12_32_12_if_stmt:
+        %tmp.17 = lgetv %incorrect.3;
+        symbol [ incorrect %tmp.17 30 16 25 ];
+        %tmp.18 = null;
+        %tmp.19 = ne %tmp.17 %tmp.18;
+        bf %tmp.19 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_30_12_32_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_30_12_32_12_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_30_35_32_12_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 31 16 ]
+        %tmp.20 = lgetv %incorrect.3;
+        symbol [ incorrect %tmp.20 31 23 32 ];
+        %tmp.21 = as %tmp.20 { (!Null) };
+        %tmp.22 = as %tmp.21 Array<Number>;
+        symbol [ Array %tmp.22 31 36 41 ];
+        symbol [ Number %tmp.22 31 42 48 ];
+        ret %tmp.22;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_30_35_32_12_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_30_12_32_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_30_12_32_12_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_27_26_33_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_27_8_33_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_27_8_33_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 34 8 ]
+        %tmp.24 = 0;
+        %tmp.23 = newa %tmp.24;
+        %tmp.25 = as %tmp.23 Array<Number>;
+        symbol [ Array %tmp.25 34 26 31 ];
+        symbol [ Number %tmp.25 34 32 38 ];
+        ret %tmp.25;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_25_52_35_4_stop:
+    }
+    //! Get puzzle times dictionary
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 38; @symbol_functiondef = [getPuzzleTimes,38,13,27]; @symbol_return<0> = [Dictionary,38,33,43]; @symbol_return<1> = [Number,38,44,50]; ]
+    function getPuzzleTimes() as Dictionary<Number> {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_38_52_48_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 39 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_38_52_48_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_38_52_48_4_stop" ]
+        %data.1 = local;
+        symbol [ data %data.1 39 12 16 ];
+        symbol [ Storage %tmp.1 39 19 26 ];
+        %tmp.1 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.2 39 27 35 ];
+        %tmp.2 = getv function %tmp.1 :getValue;
+        symbol [ KEY_PROGRESS %tmp.4 39 36 48 ];
+        %tmp.4 = getv ? :KEY_PROGRESS;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.4);
+        lputv %data.1 %tmp.5;
+        symbol [ data %data.1 39 12 16 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 40 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_40_8_46_8_if_stmt:
+        %tmp.6 = lgetv %data.1;
+        symbol [ data %tmp.6 40 12 16 ];
+        %tmp.7 = null;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        bf %tmp.8 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_40_8_46_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_40_8_46_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_40_26_46_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 41 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_40_26_46_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_40_26_46_8_stop" ]
+        %progress.2 = local;
+        symbol [ progress %progress.2 41 16 24 ];
+        %tmp.9 = lgetv %data.1;
+        symbol [ data %tmp.9 41 27 31 ];
+        %tmp.10 = as %tmp.9 { (!Null) };
+        %tmp.11 = as %tmp.10 Dictionary;
+        symbol [ Dictionary %tmp.11 41 35 45 ];
+        lputv %progress.2 %tmp.11;
+        symbol [ progress %progress.2 41 16 24 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 42 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_40_26_46_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_40_26_46_8_stop" ]
+        %times.3 = local;
+        symbol [ times %times.3 42 16 21 ];
+        %tmp.12 = lgetv %progress.2;
+        symbol [ progress %tmp.12 42 24 32 ];
+        symbol [ get %tmp.13 42 33 36 ];
+        %tmp.13 = getv function %tmp.12 :get;
+        symbol [ KEY_TIMES %tmp.15 42 37 46 ];
+        %tmp.15 = getv ? :KEY_TIMES;
+        %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
+        lputv %times.3 %tmp.16;
+        symbol [ times %times.3 42 16 21 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 43 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_43_12_45_12_if_stmt:
+        %tmp.17 = lgetv %times.3;
+        symbol [ times %tmp.17 43 16 21 ];
+        %tmp.18 = null;
+        %tmp.19 = ne %tmp.17 %tmp.18;
+        bf %tmp.19 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_43_12_45_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_43_12_45_12_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_43_31_45_12_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 44 16 ]
+        %tmp.20 = lgetv %times.3;
+        symbol [ times %tmp.20 44 23 28 ];
+        %tmp.21 = as %tmp.20 { (!Null) };
+        %tmp.22 = as %tmp.21 Dictionary<Number>;
+        symbol [ Dictionary %tmp.22 44 32 42 ];
+        symbol [ Number %tmp.22 44 43 49 ];
+        ret %tmp.22;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_43_31_45_12_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_43_12_45_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_43_12_45_12_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_40_26_46_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_40_8_46_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_40_8_46_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 47 8 ]
+        %tmp.23 = newd Dictionary<Number> 0;
+        symbol [ Dictionary %tmp.23 47 21 31 ];
+        symbol [ Number %tmp.23 47 32 38 ];
+        ret %tmp.23;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_38_52_48_4_stop:
+    }
+    //! Save progress to storage
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 51; @symbol_functiondef = [saveProgress,51,13,25]; ]
+    function saveProgress() as Void {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_51_36_58_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 52 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_51_36_58_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_51_36_58_4_stop" ]
+        %data.1 = local;
+        symbol [ data %data.1 52 12 16 ];
+        %tmp.1 = newd Dictionary 3;
+        symbol [ Dictionary %tmp.1 56 13 23 ];
+        symbol [ KEY_SOLVED %tmp.3 53 12 22 ];
+        %tmp.3 = getv ? :KEY_SOLVED;
+        %tmp.4 = self;
+        symbol [ getSolvedPuzzles %tmp.5 53 26 42 ];
+        %tmp.5 = getv function %tmp.4 :getSolvedPuzzles;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = dup %tmp.1;
+        %tmp.8 = aputv %tmp.7 %tmp.3 %tmp.6;
+        symbol [ KEY_INCORRECT %tmp.10 54 12 25 ];
+        %tmp.10 = getv ? :KEY_INCORRECT;
+        %tmp.11 = self;
+        symbol [ getIncorrectPuzzles %tmp.12 54 29 48 ];
+        %tmp.12 = getv function %tmp.11 :getIncorrectPuzzles;
+        %tmp.13 = invoke %tmp.11 %tmp.12();
+        %tmp.14 = dup %tmp.8;
+        %tmp.15 = aputv %tmp.14 %tmp.10 %tmp.13;
+        symbol [ KEY_TIMES %tmp.17 55 12 21 ];
+        %tmp.17 = getv ? :KEY_TIMES;
+        %tmp.18 = self;
+        symbol [ getPuzzleTimes %tmp.19 55 25 39 ];
+        %tmp.19 = getv function %tmp.18 :getPuzzleTimes;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        %tmp.21 = dup %tmp.15;
+        %tmp.22 = aputv %tmp.21 %tmp.17 %tmp.20;
+        lputv %data.1 %tmp.22;
+        symbol [ data %data.1 52 12 16 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 57 8 ]
+        symbol [ Storage %tmp.23 57 8 15 ];
+        %tmp.23 = getm $.Toybox.Application.Storage;
+        symbol [ setValue %tmp.24 57 16 24 ];
+        %tmp.24 = getv function %tmp.23 :setValue;
+        symbol [ KEY_PROGRESS %tmp.26 57 25 37 ];
+        %tmp.26 = getv ? :KEY_PROGRESS;
+        %tmp.27 = lgetv %data.1;
+        symbol [ data %tmp.27 57 39 43 ];
+        invoke %tmp.23 %tmp.24(%tmp.26, %tmp.27);
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_51_36_58_4_stop:
+    }
+    //! Mark puzzle as solved
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 61; @symbol_functiondef = [markSolved,61,13,23]; @symbol_param<0> = [puzzleIndex,61,24,35]; @symbol_param<0>_type<0> = [Number,61,39,45]; @symbol_param<1> = [timeSeconds,61,47,58]; @symbol_param<1>_type<0> = [Number,61,62,68]; ]
+    function markSolved(puzzleIndex as Number, timeSeconds as Number) as Void {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_61_78_81_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 62 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_61_78_81_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_61_78_81_4_stop" ]
+        %solved.1 = local;
+        symbol [ solved %solved.1 62 12 18 ];
+        %tmp.1 = self;
+        symbol [ getSolvedPuzzles %tmp.2 62 21 37 ];
+        %tmp.2 = getv function %tmp.1 :getSolvedPuzzles;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %solved.1 %tmp.3;
+        symbol [ solved %solved.1 62 12 18 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 65 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_61_78_81_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_61_78_81_4_stop" ]
+        %alreadySolved.2 = local;
+        symbol [ alreadySolved %alreadySolved.2 65 12 25 ];
+        %tmp.4 = false;
+        lputv %alreadySolved.2 %tmp.4;
+        symbol [ alreadySolved %alreadySolved.2 65 12 25 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 66 8 ]
+        for @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_8_71_8_for_test @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_8_71_8_for_incr @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_8_71_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_8_71_8_for_init:
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_8_71_8_for_begin" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_8_71_8_for_end" ]
+        %i.3 = local;
+        symbol [ i %i.3 66 17 18 ];
+        %tmp.5 = 0;
+        lputv %i.3 %tmp.5;
+        symbol [ i %i.3 66 17 18 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_8_71_8_for_test:
+        %tmp.6 = lgetv %i.3;
+        symbol [ i %tmp.6 66 24 25 ];
+        %tmp.7 = lgetv %solved.1;
+        symbol [ solved %tmp.7 66 28 34 ];
+        symbol [ size %tmp.8 66 35 39 ];
+        %tmp.8 = getv function %tmp.7 :size;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        %tmp.10 = lt %tmp.6 %tmp.9;
+        bf %tmp.10 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_8_71_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_8_71_8_for_begin:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_48_71_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 67 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_67_12_70_12_if_stmt:
+        %tmp.11 = lgetv %solved.1;
+        symbol [ solved %tmp.11 67 16 22 ];
+        %tmp.12 = lgetv %i.3;
+        symbol [ i %tmp.12 67 23 24 ];
+        %tmp.13 = agetv %tmp.11 %tmp.12;
+        %tmp.14 = lgetv %puzzleIndex;
+        symbol [ puzzleIndex %tmp.14 67 29 40 ];
+        %tmp.15 = eq %tmp.13 %tmp.14;
+        bf %tmp.15 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_67_12_70_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_67_12_70_12_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_67_42_70_12_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 68 16 ]
+        %tmp.16 = true;
+        lputv %alreadySolved.2 %tmp.16;
+        symbol [ alreadySolved %alreadySolved.2 68 16 29 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 69 16 ]
+        goto break @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_8_71_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_67_42_70_12_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_67_12_70_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_67_12_70_12_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_48_71_8_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_8_71_8_for_incr:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 66 ]
+        %tmp.19 = lgetv %i.3;
+        symbol [ i %tmp.19 66 43 44 ];
+        %tmp.20 = add %tmp.19 1;
+        lputv %i.3 %tmp.20;
+        symbol [ i %i.3 66 43 44 ];
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_8_71_8_for_test;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_66_8_71_8_for_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 73 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_73_8_75_8_if_stmt:
+        %tmp.21 = lgetv %alreadySolved.2;
+        symbol [ alreadySolved %tmp.21 73 13 26 ];
+        %tmp.22 = not %tmp.21;
+        bf %tmp.22 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_73_8_75_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_73_8_75_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_73_28_75_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 74 12 ]
+        %tmp.23 = lgetv %solved.1;
+        symbol [ solved %tmp.23 74 12 18 ];
+        symbol [ add %tmp.24 74 19 22 ];
+        %tmp.24 = getv function %tmp.23 :add;
+        %tmp.25 = lgetv %puzzleIndex;
+        symbol [ puzzleIndex %tmp.25 74 23 34 ];
+        invoke %tmp.23 %tmp.24(%tmp.25);
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_73_28_75_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_73_8_75_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_73_8_75_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 77 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_61_78_81_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_61_78_81_4_stop" ]
+        %times.4 = local;
+        symbol [ times %times.4 77 12 17 ];
+        %tmp.26 = self;
+        symbol [ getPuzzleTimes %tmp.27 77 20 34 ];
+        %tmp.27 = getv function %tmp.26 :getPuzzleTimes;
+        %tmp.28 = invoke %tmp.26 %tmp.27();
+        lputv %times.4 %tmp.28;
+        symbol [ times %times.4 77 12 17 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 78 8 ]
+        %tmp.29 = lgetv %times.4;
+        symbol [ times %tmp.29 78 8 13 ];
+        %tmp.30 = lgetv %timeSeconds;
+        symbol [ timeSeconds %tmp.30 78 29 40 ];
+        %tmp.31 = lgetv %puzzleIndex;
+        symbol [ puzzleIndex %tmp.31 78 14 25 ];
+        aputv %tmp.29 %tmp.31 %tmp.30;
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 80 8 ]
+        %tmp.32 = self;
+        symbol [ saveProgress %tmp.33 80 8 20 ];
+        %tmp.33 = getv function %tmp.32 :saveProgress;
+        invoke %tmp.32 %tmp.33();
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_61_78_81_4_stop:
+    }
+    //! Mark puzzle as incorrect
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 84; @symbol_functiondef = [markIncorrect,84,13,26]; @symbol_param<0> = [puzzleIndex,84,27,38]; @symbol_param<0>_type<0> = [Number,84,42,48]; ]
+    function markIncorrect(puzzleIndex as Number) as Void {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_84_58_101_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 85 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_84_58_101_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_84_58_101_4_stop" ]
+        %incorrect.1 = local;
+        symbol [ incorrect %incorrect.1 85 12 21 ];
+        %tmp.1 = self;
+        symbol [ getIncorrectPuzzles %tmp.2 85 24 43 ];
+        %tmp.2 = getv function %tmp.1 :getIncorrectPuzzles;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %incorrect.1 %tmp.3;
+        symbol [ incorrect %incorrect.1 85 12 21 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 88 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_84_58_101_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_84_58_101_4_stop" ]
+        %alreadyMarked.2 = local;
+        symbol [ alreadyMarked %alreadyMarked.2 88 12 25 ];
+        %tmp.4 = false;
+        lputv %alreadyMarked.2 %tmp.4;
+        symbol [ alreadyMarked %alreadyMarked.2 88 12 25 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 89 8 ]
+        for @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_8_94_8_for_test @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_8_94_8_for_incr @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_8_94_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_8_94_8_for_init:
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_8_94_8_for_begin" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_8_94_8_for_end" ]
+        %i.3 = local;
+        symbol [ i %i.3 89 17 18 ];
+        %tmp.5 = 0;
+        lputv %i.3 %tmp.5;
+        symbol [ i %i.3 89 17 18 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_8_94_8_for_test:
+        %tmp.6 = lgetv %i.3;
+        symbol [ i %tmp.6 89 24 25 ];
+        %tmp.7 = lgetv %incorrect.1;
+        symbol [ incorrect %tmp.7 89 28 37 ];
+        symbol [ size %tmp.8 89 38 42 ];
+        %tmp.8 = getv function %tmp.7 :size;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        %tmp.10 = lt %tmp.6 %tmp.9;
+        bf %tmp.10 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_8_94_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_8_94_8_for_begin:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_51_94_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 90 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_90_12_93_12_if_stmt:
+        %tmp.11 = lgetv %incorrect.1;
+        symbol [ incorrect %tmp.11 90 16 25 ];
+        %tmp.12 = lgetv %i.3;
+        symbol [ i %tmp.12 90 26 27 ];
+        %tmp.13 = agetv %tmp.11 %tmp.12;
+        %tmp.14 = lgetv %puzzleIndex;
+        symbol [ puzzleIndex %tmp.14 90 32 43 ];
+        %tmp.15 = eq %tmp.13 %tmp.14;
+        bf %tmp.15 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_90_12_93_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_90_12_93_12_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_90_45_93_12_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 91 16 ]
+        %tmp.16 = true;
+        lputv %alreadyMarked.2 %tmp.16;
+        symbol [ alreadyMarked %alreadyMarked.2 91 16 29 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 92 16 ]
+        goto break @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_8_94_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_90_45_93_12_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_90_12_93_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_90_12_93_12_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_51_94_8_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_8_94_8_for_incr:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 89 ]
+        %tmp.19 = lgetv %i.3;
+        symbol [ i %tmp.19 89 46 47 ];
+        %tmp.20 = add %tmp.19 1;
+        lputv %i.3 %tmp.20;
+        symbol [ i %i.3 89 46 47 ];
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_8_94_8_for_test;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_89_8_94_8_for_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 96 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_96_8_98_8_if_stmt:
+        %tmp.21 = lgetv %alreadyMarked.2;
+        symbol [ alreadyMarked %tmp.21 96 13 26 ];
+        %tmp.22 = not %tmp.21;
+        bf %tmp.22 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_96_8_98_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_96_8_98_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_96_28_98_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 97 12 ]
+        %tmp.23 = lgetv %incorrect.1;
+        symbol [ incorrect %tmp.23 97 12 21 ];
+        symbol [ add %tmp.24 97 22 25 ];
+        %tmp.24 = getv function %tmp.23 :add;
+        %tmp.25 = lgetv %puzzleIndex;
+        symbol [ puzzleIndex %tmp.25 97 26 37 ];
+        invoke %tmp.23 %tmp.24(%tmp.25);
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_96_28_98_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_96_8_98_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_96_8_98_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 100 8 ]
+        %tmp.26 = self;
+        symbol [ saveProgress %tmp.27 100 8 20 ];
+        %tmp.27 = getv function %tmp.26 :saveProgress;
+        invoke %tmp.26 %tmp.27();
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_84_58_101_4_stop:
+    }
+    //! Check if puzzle is solved
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 104; @symbol_functiondef = [isSolved,104,13,21]; @symbol_param<0> = [puzzleIndex,104,22,33]; @symbol_param<0>_type<0> = [Number,104,37,43]; @symbol_return<0> = [Boolean,104,48,55]; ]
+    function isSolved(puzzleIndex as Number) as Boolean {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_104_56_112_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 105 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_104_56_112_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_104_56_112_4_stop" ]
+        %solved.1 = local;
+        symbol [ solved %solved.1 105 12 18 ];
+        %tmp.1 = self;
+        symbol [ getSolvedPuzzles %tmp.2 105 21 37 ];
+        %tmp.2 = getv function %tmp.1 :getSolvedPuzzles;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %solved.1 %tmp.3;
+        symbol [ solved %solved.1 105 12 18 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 106 8 ]
+        for @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_106_8_110_8_for_test @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_106_8_110_8_for_incr @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_106_8_110_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_106_8_110_8_for_init:
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_106_8_110_8_for_begin" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_106_8_110_8_for_end" ]
+        %i.2 = local;
+        symbol [ i %i.2 106 17 18 ];
+        %tmp.4 = 0;
+        lputv %i.2 %tmp.4;
+        symbol [ i %i.2 106 17 18 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_106_8_110_8_for_test:
+        %tmp.5 = lgetv %i.2;
+        symbol [ i %tmp.5 106 24 25 ];
+        %tmp.6 = lgetv %solved.1;
+        symbol [ solved %tmp.6 106 28 34 ];
+        symbol [ size %tmp.7 106 35 39 ];
+        %tmp.7 = getv function %tmp.6 :size;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = lt %tmp.5 %tmp.8;
+        bf %tmp.9 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_106_8_110_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_106_8_110_8_for_begin:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_106_48_110_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 107 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_107_12_109_12_if_stmt:
+        %tmp.10 = lgetv %solved.1;
+        symbol [ solved %tmp.10 107 16 22 ];
+        %tmp.11 = lgetv %i.2;
+        symbol [ i %tmp.11 107 23 24 ];
+        %tmp.12 = agetv %tmp.10 %tmp.11;
+        %tmp.13 = lgetv %puzzleIndex;
+        symbol [ puzzleIndex %tmp.13 107 29 40 ];
+        %tmp.14 = eq %tmp.12 %tmp.13;
+        bf %tmp.14 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_107_12_109_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_107_12_109_12_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_107_42_109_12_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 108 16 ]
+        %tmp.15 = true;
+        ret %tmp.15;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_107_42_109_12_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_107_12_109_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_107_12_109_12_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_106_48_110_8_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_106_8_110_8_for_incr:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 106 ]
+        %tmp.18 = lgetv %i.2;
+        symbol [ i %tmp.18 106 43 44 ];
+        %tmp.19 = add %tmp.18 1;
+        lputv %i.2 %tmp.19;
+        symbol [ i %i.2 106 43 44 ];
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_106_8_110_8_for_test;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_106_8_110_8_for_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 111 8 ]
+        %tmp.20 = false;
+        ret %tmp.20;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_104_56_112_4_stop:
+    }
+    //! Check if puzzle is marked incorrect
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 115; @symbol_functiondef = [isIncorrect,115,13,24]; @symbol_param<0> = [puzzleIndex,115,25,36]; @symbol_param<0>_type<0> = [Number,115,40,46]; @symbol_return<0> = [Boolean,115,51,58]; ]
+    function isIncorrect(puzzleIndex as Number) as Boolean {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_115_59_123_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 116 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_115_59_123_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_115_59_123_4_stop" ]
+        %incorrect.1 = local;
+        symbol [ incorrect %incorrect.1 116 12 21 ];
+        %tmp.1 = self;
+        symbol [ getIncorrectPuzzles %tmp.2 116 24 43 ];
+        %tmp.2 = getv function %tmp.1 :getIncorrectPuzzles;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %incorrect.1 %tmp.3;
+        symbol [ incorrect %incorrect.1 116 12 21 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 117 8 ]
+        for @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_117_8_121_8_for_test @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_117_8_121_8_for_incr @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_117_8_121_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_117_8_121_8_for_init:
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_117_8_121_8_for_begin" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_117_8_121_8_for_end" ]
+        %i.2 = local;
+        symbol [ i %i.2 117 17 18 ];
+        %tmp.4 = 0;
+        lputv %i.2 %tmp.4;
+        symbol [ i %i.2 117 17 18 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_117_8_121_8_for_test:
+        %tmp.5 = lgetv %i.2;
+        symbol [ i %tmp.5 117 24 25 ];
+        %tmp.6 = lgetv %incorrect.1;
+        symbol [ incorrect %tmp.6 117 28 37 ];
+        symbol [ size %tmp.7 117 38 42 ];
+        %tmp.7 = getv function %tmp.6 :size;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = lt %tmp.5 %tmp.8;
+        bf %tmp.9 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_117_8_121_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_117_8_121_8_for_begin:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_117_51_121_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 118 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_118_12_120_12_if_stmt:
+        %tmp.10 = lgetv %incorrect.1;
+        symbol [ incorrect %tmp.10 118 16 25 ];
+        %tmp.11 = lgetv %i.2;
+        symbol [ i %tmp.11 118 26 27 ];
+        %tmp.12 = agetv %tmp.10 %tmp.11;
+        %tmp.13 = lgetv %puzzleIndex;
+        symbol [ puzzleIndex %tmp.13 118 32 43 ];
+        %tmp.14 = eq %tmp.12 %tmp.13;
+        bf %tmp.14 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_118_12_120_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_118_12_120_12_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_118_45_120_12_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 119 16 ]
+        %tmp.15 = true;
+        ret %tmp.15;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_118_45_120_12_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_118_12_120_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_118_12_120_12_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_117_51_121_8_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_117_8_121_8_for_incr:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 117 ]
+        %tmp.18 = lgetv %i.2;
+        symbol [ i %tmp.18 117 46 47 ];
+        %tmp.19 = add %tmp.18 1;
+        lputv %i.2 %tmp.19;
+        symbol [ i %i.2 117 46 47 ];
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_117_8_121_8_for_test;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_117_8_121_8_for_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 122 8 ]
+        %tmp.20 = false;
+        ret %tmp.20;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_115_59_123_4_stop:
+    }
+    //! Get statistics
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 126; @symbol_functiondef = [getStats,126,13,21]; @symbol_return<0> = [Dictionary,126,27,37]; ]
+    function getStats() as Dictionary {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 127 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_stop" ]
+        %total.1 = local;
+        symbol [ total %total.1 127 12 17 ];
+        symbol [ PuzzleData %tmp.2 127 20 30 ];
+        %tmp.2 = getv ? :PuzzleData;
+        symbol [ getPuzzleCount %tmp.3 127 31 45 ];
+        %tmp.3 = getv function %tmp.2 :getPuzzleCount;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %total.1 %tmp.4;
+        symbol [ total %total.1 127 12 17 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 128 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_stop" ]
+        %solved.2 = local;
+        symbol [ solved %solved.2 128 12 18 ];
+        %tmp.5 = self;
+        symbol [ getSolvedPuzzles %tmp.6 128 21 37 ];
+        %tmp.6 = getv function %tmp.5 :getSolvedPuzzles;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        lputv %solved.2 %tmp.7;
+        symbol [ solved %solved.2 128 12 18 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 129 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_stop" ]
+        %incorrect.3 = local;
+        symbol [ incorrect %incorrect.3 129 12 21 ];
+        %tmp.8 = self;
+        symbol [ getIncorrectPuzzles %tmp.9 129 24 43 ];
+        %tmp.9 = getv function %tmp.8 :getIncorrectPuzzles;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        lputv %incorrect.3 %tmp.10;
+        symbol [ incorrect %incorrect.3 129 12 21 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 132 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_stop" ]
+        %totalTime.4 = local;
+        symbol [ totalTime %totalTime.4 132 12 21 ];
+        %tmp.11 = 0;
+        lputv %totalTime.4 %tmp.11;
+        symbol [ totalTime %totalTime.4 132 12 21 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 133 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_stop" ]
+        %count.5 = local;
+        symbol [ count %count.5 133 12 17 ];
+        %tmp.12 = 0;
+        lputv %count.5 %tmp.12;
+        symbol [ count %count.5 133 12 17 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 134 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_stop" ]
+        %times.6 = local;
+        symbol [ times %times.6 134 12 17 ];
+        %tmp.13 = self;
+        symbol [ getPuzzleTimes %tmp.14 134 20 34 ];
+        %tmp.14 = getv function %tmp.13 :getPuzzleTimes;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        lputv %times.6 %tmp.15;
+        symbol [ times %times.6 134 12 17 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 135 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_stop" ]
+        %keys.7 = local;
+        symbol [ keys %keys.7 135 12 16 ];
+        %tmp.16 = lgetv %times.6;
+        symbol [ times %tmp.16 135 19 24 ];
+        symbol [ keys %tmp.17 135 25 29 ];
+        %tmp.17 = getv function %tmp.16 :keys;
+        %tmp.18 = invoke %tmp.16 %tmp.17();
+        lputv %keys.7 %tmp.18;
+        symbol [ keys %keys.7 135 12 16 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 137 8 ]
+        for @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_8_146_8_for_test @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_8_146_8_for_incr @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_8_146_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_8_146_8_for_init:
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_8_146_8_for_begin" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_8_146_8_for_end" ]
+        %i.8 = local;
+        symbol [ i %i.8 137 17 18 ];
+        %tmp.19 = 0;
+        lputv %i.8 %tmp.19;
+        symbol [ i %i.8 137 17 18 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_8_146_8_for_test:
+        %tmp.20 = lgetv %i.8;
+        symbol [ i %tmp.20 137 24 25 ];
+        %tmp.21 = lgetv %keys.7;
+        symbol [ keys %tmp.21 137 28 32 ];
+        symbol [ size %tmp.22 137 33 37 ];
+        %tmp.22 = getv function %tmp.21 :size;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        %tmp.24 = lt %tmp.20 %tmp.23;
+        bf %tmp.24 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_8_146_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_8_146_8_for_begin:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_46_146_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 138 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_46_146_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_46_146_8_stop" ]
+        %key.9 = local;
+        symbol [ key %key.9 138 16 19 ];
+        %tmp.25 = lgetv %keys.7;
+        symbol [ keys %tmp.25 138 22 26 ];
+        %tmp.26 = lgetv %i.8;
+        symbol [ i %tmp.26 138 27 28 ];
+        %tmp.27 = agetv %tmp.25 %tmp.26;
+        lputv %key.9 %tmp.27;
+        symbol [ key %key.9 138 16 19 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 139 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_139_12_145_12_if_stmt:
+        %tmp.28 = lgetv %key.9;
+        symbol [ key %tmp.28 139 16 19 ];
+        %tmp.29 = null;
+        %tmp.30 = ne %tmp.28 %tmp.29;
+        bf %tmp.30 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_139_12_145_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_139_12_145_12_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_139_29_145_12_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 140 16 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_139_29_145_12_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_139_29_145_12_stop" ]
+        %val.10 = local;
+        symbol [ val %val.10 140 20 23 ];
+        %tmp.31 = lgetv %times.6;
+        symbol [ times %tmp.31 140 26 31 ];
+        symbol [ get %tmp.32 140 32 35 ];
+        %tmp.32 = getv function %tmp.31 :get;
+        %tmp.33 = lgetv %key.9;
+        symbol [ key %tmp.33 140 36 39 ];
+        %tmp.34 = as %tmp.33 { (!Null) };
+        %tmp.35 = invoke %tmp.31 %tmp.32(%tmp.34);
+        lputv %val.10 %tmp.35;
+        symbol [ val %val.10 140 20 23 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 141 16 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_141_16_144_16_if_stmt:
+        %tmp.36 = lgetv %val.10;
+        symbol [ val %tmp.36 141 20 23 ];
+        %tmp.37 = null;
+        %tmp.38 = ne %tmp.36 %tmp.37;
+        bf %tmp.38 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_141_16_144_16_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_141_16_144_16_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_141_33_144_16_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 142 20 ]
+        %tmp.39 = lgetv %totalTime.4;
+        symbol [ totalTime %tmp.39 142 20 29 ];
+        %tmp.40 = lgetv %val.10;
+        symbol [ val %tmp.40 142 33 36 ];
+        %tmp.41 = as %tmp.40 { (!Null) };
+        %tmp.42 = add %tmp.39 %tmp.41;
+        lputv %totalTime.4 %tmp.42;
+        symbol [ totalTime %totalTime.4 142 20 29 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 143 20 ]
+        %tmp.45 = lgetv %count.5;
+        symbol [ count %tmp.45 143 20 25 ];
+        %tmp.46 = add %tmp.45 1;
+        lputv %count.5 %tmp.46;
+        symbol [ count %count.5 143 20 25 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_141_33_144_16_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_141_16_144_16_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_141_16_144_16_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_139_29_145_12_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_139_12_145_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_139_12_145_12_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_46_146_8_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_8_146_8_for_incr:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 137 ]
+        %tmp.49 = lgetv %i.8;
+        symbol [ i %tmp.49 137 41 42 ];
+        %tmp.50 = add %tmp.49 1;
+        lputv %i.8 %tmp.50;
+        symbol [ i %i.8 137 41 42 ];
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_8_146_8_for_test;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_137_8_146_8_for_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 147 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_stop" ]
+        %avgTime.11 = local;
+        symbol [ avgTime %avgTime.11 147 12 19 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_147_22_147_54_begin:
+        %tmp.51 = lgetv %count.5;
+        symbol [ count %tmp.51 147 22 27 ];
+        %tmp.52 = 0;
+        %tmp.53 = gt %tmp.51 %tmp.52;
+        bf %tmp.53 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_147_22_147_54_else_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_147_22_147_54_true:
+        %tmp.54 = lgetv %totalTime.4;
+        symbol [ totalTime %tmp.54 147 34 43 ];
+        %tmp.55 = lgetv %count.5;
+        symbol [ count %tmp.55 147 46 51 ];
+        %tmp.56 = div %tmp.54 %tmp.55;
+        push %tmp.56;
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_147_22_147_54_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_147_22_147_54_else_false:
+        %tmp.57 = 0;
+        push %tmp.57;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_147_22_147_54_end:
+        %tmp.58 = phi [%tmp.53 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_147_22_147_54_begin] [%tmp.56 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_147_22_147_54_true] [%tmp.57 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_147_22_147_54_else_false] [%tmp.58 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_147_22_147_54_end];
+        lputv %avgTime.11 %tmp.58;
+        symbol [ avgTime %avgTime.11 147 12 19 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 149 8 ]
+        %tmp.59 = newd 5;
+        %tmp.60 = "total";
+        %tmp.61 = lgetv %total.1;
+        symbol [ total %tmp.61 150 23 28 ];
+        %tmp.62 = dup %tmp.59;
+        %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+        %tmp.64 = "solved";
+        %tmp.65 = lgetv %solved.2;
+        symbol [ solved %tmp.65 151 24 30 ];
+        symbol [ size %tmp.66 151 31 35 ];
+        %tmp.66 = getv function %tmp.65 :size;
+        %tmp.67 = invoke %tmp.65 %tmp.66();
+        %tmp.68 = dup %tmp.63;
+        %tmp.69 = aputv %tmp.68 %tmp.64 %tmp.67;
+        %tmp.70 = "incorrect";
+        %tmp.71 = lgetv %incorrect.3;
+        symbol [ incorrect %tmp.71 152 27 36 ];
+        symbol [ size %tmp.72 152 37 41 ];
+        %tmp.72 = getv function %tmp.71 :size;
+        %tmp.73 = invoke %tmp.71 %tmp.72();
+        %tmp.74 = dup %tmp.69;
+        %tmp.75 = aputv %tmp.74 %tmp.70 %tmp.73;
+        %tmp.76 = "accuracy";
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_153_26_153_128_begin:
+        %tmp.77 = lgetv %solved.2;
+        symbol [ solved %tmp.77 153 27 33 ];
+        symbol [ size %tmp.78 153 34 38 ];
+        %tmp.78 = getv function %tmp.77 :size;
+        %tmp.79 = invoke %tmp.77 %tmp.78();
+        %tmp.80 = lgetv %incorrect.3;
+        symbol [ incorrect %tmp.80 153 43 52 ];
+        symbol [ size %tmp.81 153 53 57 ];
+        %tmp.81 = getv function %tmp.80 :size;
+        %tmp.82 = invoke %tmp.80 %tmp.81();
+        %tmp.83 = add %tmp.79 %tmp.82;
+        %tmp.84 = 0;
+        %tmp.85 = gt %tmp.83 %tmp.84;
+        bf %tmp.85 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_153_26_153_128_else_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_153_26_153_128_true:
+        %tmp.86 = lgetv %solved.2;
+        symbol [ solved %tmp.86 153 68 74 ];
+        symbol [ size %tmp.87 153 75 79 ];
+        %tmp.87 = getv function %tmp.86 :size;
+        %tmp.88 = invoke %tmp.86 %tmp.87();
+        %tmp.89 = 100;
+        %tmp.90 = mul %tmp.88 %tmp.89;
+        %tmp.91 = lgetv %solved.2;
+        symbol [ solved %tmp.91 153 91 97 ];
+        symbol [ size %tmp.92 153 98 102 ];
+        %tmp.92 = getv function %tmp.91 :size;
+        %tmp.93 = invoke %tmp.91 %tmp.92();
+        %tmp.94 = lgetv %incorrect.3;
+        symbol [ incorrect %tmp.94 153 107 116 ];
+        symbol [ size %tmp.95 153 117 121 ];
+        %tmp.95 = getv function %tmp.94 :size;
+        %tmp.96 = invoke %tmp.94 %tmp.95();
+        %tmp.97 = add %tmp.93 %tmp.96;
+        %tmp.98 = div %tmp.90 %tmp.97;
+        push %tmp.98;
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_153_26_153_128_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_153_26_153_128_else_false:
+        %tmp.99 = 0;
+        push %tmp.99;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_153_26_153_128_end:
+        %tmp.100 = phi [%tmp.85 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_153_26_153_128_begin] [%tmp.98 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_153_26_153_128_true] [%tmp.99 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_153_26_153_128_else_false] [%tmp.100 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_153_26_153_128_end];
+        %tmp.101 = dup %tmp.75;
+        %tmp.102 = aputv %tmp.101 %tmp.76 %tmp.100;
+        %tmp.103 = "avgTime";
+        %tmp.104 = lgetv %avgTime.11;
+        symbol [ avgTime %tmp.104 154 25 32 ];
+        %tmp.105 = dup %tmp.102;
+        %tmp.106 = aputv %tmp.105 %tmp.103 %tmp.104;
+        ret %tmp.106;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_126_38_156_4_stop:
+    }
+    //! Reset all progress
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 159; @symbol_functiondef = [resetProgress,159,13,26]; ]
+    function resetProgress() as Void {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_159_37_161_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" 160 8 ]
+        symbol [ Storage %tmp.1 160 8 15 ];
+        %tmp.1 = getm $.Toybox.Application.Storage;
+        symbol [ setValue %tmp.2 160 16 24 ];
+        %tmp.2 = getv function %tmp.1 :setValue;
+        symbol [ KEY_PROGRESS %tmp.4 160 25 37 ];
+        %tmp.4 = getv ? :KEY_PROGRESS;
+        %tmp.5 = null;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.5);
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_Storage_mc_159_37_161_4_stop:
+    }
+}
+[ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc"; @line = 1; ]
+<init> {
+}
