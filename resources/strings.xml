@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
+    <string id="ChessTrainer">ChessTrainer</string>
     <string id="AppName">ChessTrainer</string>
+    <string id="FindTheBestMove">Find the best move</string>
+    <string id="Correct">Correct!</string>
+    <string id="Incorrect">Incorrect</string>
+    <string id="Hint">Hint</string>
+    <string id="Puzzle">Puzzle</string>
+    <string id="History">History</string>
+    <string id="Stats">Stats</string>
+    <string id="Solved">Solved</string>
+    <string id="Time">Time</string>
+    <string id="Accuracy">Accuracy</string>
 </resources>
