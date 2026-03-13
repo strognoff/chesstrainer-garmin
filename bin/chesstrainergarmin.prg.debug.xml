@@ -409,21 +409,21 @@
         <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" id="52" lineNum="48" parent="globals/Storage" pc="268440705" symbol="getPuzzleTimes"/>
         <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" id="52" lineNum="49" parent="globals/Storage" pc="268440711" symbol="getPuzzleTimes"/>
         <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" id="52" lineNum="51" parent="globals/Storage" pc="268440717" symbol="getPuzzleTimes"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="123" parent="globals/PuzzleData" pc="268440720" symbol="getSolution"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="124" parent="globals/PuzzleData" pc="268440722" symbol="getSolution"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="125" parent="globals/PuzzleData" pc="268440746" symbol="getSolution"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="127" parent="globals/PuzzleData" pc="268440758" symbol="getSolution"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="112" parent="globals/PuzzleData" pc="268440760" symbol="getPuzzle"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="113" parent="globals/PuzzleData" pc="268440762" symbol="getPuzzle"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="114" parent="globals/PuzzleData" pc="268440786" symbol="getPuzzle"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="116" parent="globals/PuzzleData" pc="268440798" symbol="getPuzzle"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="56" lineNum="119" parent="globals/PuzzleData" pc="268440800" symbol="getPuzzleCount"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="56" lineNum="120" parent="globals/PuzzleData" pc="268440802" symbol="getPuzzleCount"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="130" parent="globals/PuzzleData" pc="268440814" symbol="getPuzzleName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="131" parent="globals/PuzzleData" pc="268440817" symbol="getPuzzleName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="184" parent="globals/PuzzleData" pc="268440824" symbol="getPuzzleName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="185" parent="globals/PuzzleData" pc="268440844" symbol="getPuzzleName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="187" parent="globals/PuzzleData" pc="268440853" symbol="getPuzzleName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="124" parent="globals/PuzzleData" pc="268440720" symbol="getSolution"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="125" parent="globals/PuzzleData" pc="268440722" symbol="getSolution"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="126" parent="globals/PuzzleData" pc="268440746" symbol="getSolution"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="128" parent="globals/PuzzleData" pc="268440758" symbol="getSolution"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="113" parent="globals/PuzzleData" pc="268440760" symbol="getPuzzle"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="114" parent="globals/PuzzleData" pc="268440762" symbol="getPuzzle"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="115" parent="globals/PuzzleData" pc="268440786" symbol="getPuzzle"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="117" parent="globals/PuzzleData" pc="268440798" symbol="getPuzzle"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="56" lineNum="120" parent="globals/PuzzleData" pc="268440800" symbol="getPuzzleCount"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="56" lineNum="121" parent="globals/PuzzleData" pc="268440802" symbol="getPuzzleCount"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="131" parent="globals/PuzzleData" pc="268440814" symbol="getPuzzleName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="132" parent="globals/PuzzleData" pc="268440817" symbol="getPuzzleName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="185" parent="globals/PuzzleData" pc="268440824" symbol="getPuzzleName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="186" parent="globals/PuzzleData" pc="268440844" symbol="getPuzzleName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="188" parent="globals/PuzzleData" pc="268440853" symbol="getPuzzleName"/>
         <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="58" lineNum="128" parent="globals/HistoryDelegate" pc="268440865" symbol="initialize"/>
         <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="58" lineNum="129" parent="globals/HistoryDelegate" pc="268440867" symbol="initialize"/>
         <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="58" lineNum="130" parent="globals/HistoryDelegate" pc="268440883" symbol="initialize"/>
