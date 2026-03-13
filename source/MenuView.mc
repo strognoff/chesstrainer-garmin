@@ -6,47 +6,71 @@ class MenuView extends WatchUi.View {
     
     const COLOR_GREEN = 0x00CC00;
     const COLOR_BLUE = 0x0088FF;
+    const COLOR_ACCENT = 0x00FFAA;
     
-    var currentSelection = 0; // 0=Start, 1=Stats, 2=History
+    var currentSelection = 0;
     
     function initialize() {
         WatchUi.View.initialize();
     }
 
     function onUpdate(dc as Dc) as Void {
+        var width = dc.getWidth();
+        var height = dc.getHeight();
+        var centerX = width / 2;
+        
+        // Dark background
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
         
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        dc.drawText(dc.getWidth() / 2, 20, Graphics.FONT_MEDIUM, "ChessTrainer", Graphics.TEXT_JUSTIFY_CENTER);
+        // Title with accent
+        dc.setColor(COLOR_ACCENT, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(centerX, 20, Graphics.FONT_MEDIUM, "ChessTrainer", Graphics.TEXT_JUSTIFY_CENTER);
         
-        // Draw menu items
-        for (var i = 0; i < 3; i++) {
-            var y = 60 + (i * 30);
-            if (i == currentSelection) {
-                dc.setColor(COLOR_GREEN, Graphics.COLOR_BLACK);
-                dc.drawText(dc.getWidth() / 2, y, Graphics.FONT_SMALL, ">", Graphics.TEXT_JUSTIFY_LEFT);
-            } else {
-                dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
-                dc.drawText(dc.getWidth() / 2, y, Graphics.FONT_SMALL, " ", Graphics.TEXT_JUSTIFY_LEFT);
-            }
+        // Subtitle at Y=57
+        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(centerX, 57, Graphics.FONT_XTINY, "Tactical Training", Graphics.TEXT_JUSTIFY_CENTER);
+        
+        // Draw menu items starting at Y=85
+        var itemHeight = 40;
+        var startY = 85;
+        
+        // START
+        drawMenuItem(dc, centerX, startY, 0, "START", "> Play Puzzles");
+        
+        // STATS
+        drawMenuItem(dc, centerX, startY + itemHeight, 1, "STATS", "> View Progress");
+        
+        // HISTORY
+        drawMenuItem(dc, centerX, startY + (itemHeight * 2), 2, "HISTORY", "> Past Games");
+        
+        // Footer starting at Y=240
+        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(centerX, 240, Graphics.FONT_XTINY, "UP/DOWN: Navigate", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(centerX, 250, Graphics.FONT_XTINY, "ENTER: Select", Graphics.TEXT_JUSTIFY_CENTER);
+    }
+    
+    function drawMenuItem(dc as Dc, centerX as Number, y as Number, index as Number, title as String, subtitle as String) as Void {
+        var isSelected = (index == currentSelection);
+        
+        if (isSelected) {
+            // Selected item - bright and bold
+            dc.setColor(COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(centerX - 70, y, Graphics.FONT_SMALL, ">", Graphics.TEXT_JUSTIFY_LEFT);
             
-            if (i == 0) {
-                dc.setColor(i == currentSelection ? COLOR_GREEN : Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-                dc.drawText(dc.getWidth() / 2 + 15, y, Graphics.FONT_SMALL, "START", Graphics.TEXT_JUSTIFY_LEFT);
-            } else if (i == 1) {
-                dc.setColor(i == currentSelection ? COLOR_GREEN : Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-                dc.drawText(dc.getWidth() / 2 + 15, y, Graphics.FONT_SMALL, "STATS", Graphics.TEXT_JUSTIFY_LEFT);
-            } else if (i == 2) {
-                dc.setColor(i == currentSelection ? COLOR_GREEN : Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-                dc.drawText(dc.getWidth() / 2 + 15, y, Graphics.FONT_SMALL, "HISTORY", Graphics.TEXT_JUSTIFY_LEFT);
-            }
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(centerX - 50, y, Graphics.FONT_MEDIUM, title, Graphics.TEXT_JUSTIFY_LEFT);
+            
+            dc.setColor(COLOR_ACCENT, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(centerX - 50, y + 20, Graphics.FONT_XTINY, subtitle, Graphics.TEXT_JUSTIFY_LEFT);
+        } else {
+            // Unselected item - dimmed
+            dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(centerX - 50, y, Graphics.FONT_SMALL, title, Graphics.TEXT_JUSTIFY_LEFT);
+            
+            dc.setColor(0x333333, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(centerX - 50, y + 17, Graphics.FONT_XTINY, subtitle, Graphics.TEXT_JUSTIFY_LEFT);
         }
-        
-        // Footer hint
-        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
-        dc.drawText(dc.getWidth() / 2, dc.getHeight() - 20, Graphics.FONT_TINY, "UP/DOWN: Navigate", Graphics.TEXT_JUSTIFY_CENTER);
-        dc.drawText(dc.getWidth() / 2, dc.getHeight() - 8, Graphics.FONT_TINY, "ENTER: Select", Graphics.TEXT_JUSTIFY_CENTER);
     }
     
     function handleUp() as Void {

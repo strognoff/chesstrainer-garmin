@@ -126,4 +126,64 @@ class PuzzleData {
         }
         return null;
     }
+
+    static function getPuzzleName(index) {
+        var names = [
+            "Fork Attack",
+            "Back Rank Mate",
+            "Pin Tactic",
+            "Skewer",
+            "Discovered Attack",
+            "Double Check",
+            "Deflection",
+            "Decoy",
+            "Clearance",
+            "X-Ray Attack",
+            "Zugzwang",
+            "Promotion",
+            "Smothered Mate",
+            "Knight Fork",
+            "Bishop Pair",
+            "Rook Endgame",
+            "Queen Sacrifice",
+            "Windmill",
+            "Desperado",
+            "Interference",
+            "Overloading",
+            "Underpromotion",
+            "Stalemate Trick",
+            "Perpetual Check",
+            "Fortress Break",
+            "Pawn Break",
+            "Quiet Move",
+            "Intermediate Move",
+            "Zwischenzug",
+            "Battery Setup",
+            "Trapped Piece",
+            "Weak Back Rank",
+            "Exposed King",
+            "Material Win",
+            "Positional Win",
+            "Endgame Study",
+            "Tactical Blow",
+            "Combination",
+            "Sacrifice",
+            "Breakthrough",
+            "Mating Attack",
+            "Defensive Move",
+            "Counter Attack",
+            "Piece Hunt",
+            "King Hunt",
+            "Opening Trap",
+            "Middlegame",
+            "Complex Tactic",
+            "Pattern Recognition",
+            "Calculation Test"
+        ];
+        
+        if (index >= 0 && index < names.size()) {
+            return names[index];
+        }
+        return "Puzzle " + (index + 1);
+    }
 }
