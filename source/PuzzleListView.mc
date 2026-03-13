@@ -3,6 +3,10 @@ import Toybox.WatchUi;
 import Toybox.Graphics;
 
 class PuzzleListView extends WatchUi.View {
+    const COLOR_GREEN = 0x00CC00;
+    const COLOR_BLUE = 0x0088FF;
+    const COLOR_ACCENT = 0x00FFAA;
+    
     var selectedIndex = 0;
     var scrollOffset = 0;
     var itemsPerPage = 5;
@@ -11,12 +15,17 @@ class PuzzleListView extends WatchUi.View {
         WatchUi.View.initialize();
     }
 
+    function onShow() as Void {
+        // Refresh the view when it's shown to update the "D" markers
+        WatchUi.requestUpdate();
+    }
+
     function onUpdate(dc as Dc) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
         
-        // Draw header background
-        dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_DK_BLUE);
+        // Draw header background with accent color
+        dc.setColor(COLOR_BLUE, COLOR_BLUE);
         dc.fillRectangle(0, 0, dc.getWidth(), 50);
         
         // Draw header text (starting at y=15)
@@ -39,38 +48,34 @@ class PuzzleListView extends WatchUi.View {
             
             var y = 60 + (i * 32);
             
-            // Highlight selected item
+            // Highlight selected item with green
             if (idx == selectedIndex) {
-                dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_BLUE);
+                dc.setColor(COLOR_GREEN, COLOR_GREEN);
                 dc.fillRoundedRectangle(3, y - 2, dc.getWidth() - 6, 30, 3);
             }
             
-            // Determine status color
-            var statusColor = Graphics.COLOR_LT_GRAY;
-            var statusIcon = "";
+            // Determine status
+            var isDone = Storage.isSolved(idx);
+            var isIncorrect = Storage.isIncorrect(idx);
             
-            if (Storage.isSolved(idx)) {
-                statusColor = Graphics.COLOR_GREEN;
-                statusIcon = "✓";
-            } else if (Storage.isIncorrect(idx)) {
-                statusColor = Graphics.COLOR_RED;
-                statusIcon = "✗";
+            // Draw puzzle number at X=30
+            var numberColor = Graphics.COLOR_LT_GRAY;
+            if (isDone) {
+                numberColor = COLOR_ACCENT;
+            } else if (isIncorrect) {
+                numberColor = Graphics.COLOR_RED;
             }
             
-            // Draw puzzle number with status icon
-            var puzzleNumText = (idx + 1).toString();
-            if (statusIcon.length() > 0) {
-                puzzleNumText += " " + statusIcon;
-            }
+            dc.setColor(numberColor, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(30, y + 3, Graphics.FONT_SMALL, (idx + 1).toString(), Graphics.TEXT_JUSTIFY_LEFT);
             
-            // Draw number on the left
-            dc.setColor(statusColor, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(10, y + 3, Graphics.FONT_SMALL, puzzleNumText, Graphics.TEXT_JUSTIFY_LEFT);
-            
-            // Draw puzzle name on the right, aligned
+            // Draw puzzle name with "D - " prefix if done, ending at max X=250
             var puzzleName = PuzzleData.getPuzzleName(idx);
-            dc.setColor(idx == selectedIndex ? Graphics.COLOR_WHITE : Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(dc.getWidth() - 10, y + 3, Graphics.FONT_XTINY, puzzleName, Graphics.TEXT_JUSTIFY_RIGHT);
+            if (isDone) {
+                puzzleName = "D - " + puzzleName;
+            }
+            dc.setColor(idx == selectedIndex ? Graphics.COLOR_WHITE : Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(250, y + 3, Graphics.FONT_XTINY, puzzleName, Graphics.TEXT_JUSTIFY_RIGHT);
             
             // Draw separator line (except for last item)
             if (i < itemsPerPage - 1 && idx < total - 1) {

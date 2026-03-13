@@ -13,262 +13,271 @@ class PuzzleListView extends WatchUi.View {
     static
     <init> {
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 6; @position = 8; @symbol_vardef = [selectedIndex,6,8,21]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 6; @position = 10; @symbol_constdef = [COLOR_GREEN,6,10,21]; ]
+    const COLOR_GREEN = 0x00CC00;
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 7; @position = 10; @symbol_constdef = [COLOR_BLUE,7,10,20]; ]
+    const COLOR_BLUE = 0x0088FF;
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 8; @position = 10; @symbol_constdef = [COLOR_ACCENT,8,10,22]; ]
+    const COLOR_ACCENT = 0x00FFAA;
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 10; @position = 8; @symbol_vardef = [selectedIndex,10,8,21]; ]
     var selectedIndex = 0;
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 7; @position = 8; @symbol_vardef = [scrollOffset,7,8,20]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 11; @position = 8; @symbol_vardef = [scrollOffset,11,8,20]; ]
     var scrollOffset = 0;
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 8; @position = 8; @symbol_vardef = [itemsPerPage,8,8,20]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 12; @position = 8; @symbol_vardef = [itemsPerPage,12,8,20]; ]
     var itemsPerPage = 5;
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 10; @symbol_functiondef = [initialize,10,13,23]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 14; @symbol_functiondef = [initialize,14,13,23]; ]
     function initialize() as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_10_26_12_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 11 8 ]
-        symbol [ WatchUi %tmp.1 11 8 15 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_14_26_16_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 15 8 ]
+        symbol [ WatchUi %tmp.1 15 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ View %tmp.2 11 16 20 ];
+        symbol [ View %tmp.2 15 16 20 ];
         %tmp.2 = getv %tmp.1 :View;
-        symbol [ initialize %tmp.3 11 21 31 ];
+        symbol [ initialize %tmp.3 15 21 31 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_10_26_12_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_14_26_16_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 14; @symbol_functiondef = [onUpdate,14,13,21]; @symbol_param<0> = [dc,14,22,24]; @symbol_param<0>_type<0> = [Dc,14,28,30]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 18; @symbol_functiondef = [onShow,18,13,19]; ]
+    function onShow() as Void {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_18_30_21_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 20 8 ]
+        symbol [ WatchUi %tmp.1 20 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.2 20 16 29 ];
+        %tmp.2 = getv function %tmp.1 :requestUpdate;
+        invoke %tmp.1 %tmp.2();
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_18_30_21_4_stop:
+    }
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 23; @symbol_functiondef = [onUpdate,23,13,21]; @symbol_param<0> = [dc,23,22,24]; @symbol_param<0>_type<0> = [Dc,23,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_14_40_89_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 15 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_23_40_94_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 24 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 15 8 10 ];
-        symbol [ setColor %tmp.2 15 11 19 ];
+        symbol [ dc %tmp.1 24 8 10 ];
+        symbol [ setColor %tmp.2 24 11 19 ];
         %tmp.2 = getv function %tmp.1 :setColor;
-        symbol [ Graphics %tmp.3 15 20 28 ];
+        symbol [ Graphics %tmp.3 24 20 28 ];
         %tmp.3 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.4 15 29 40 ];
+        symbol [ COLOR_BLACK %tmp.4 24 29 40 ];
         %tmp.4 = getv %tmp.3 :COLOR_BLACK;
-        symbol [ Graphics %tmp.5 15 42 50 ];
+        symbol [ Graphics %tmp.5 24 42 50 ];
         %tmp.5 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.6 15 51 62 ];
+        symbol [ COLOR_BLACK %tmp.6 24 51 62 ];
         %tmp.6 = getv %tmp.5 :COLOR_BLACK;
         invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 16 8 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 25 8 ]
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 16 8 10 ];
-        symbol [ clear %tmp.8 16 11 16 ];
+        symbol [ dc %tmp.7 25 8 10 ];
+        symbol [ clear %tmp.8 25 11 16 ];
         %tmp.8 = getv function %tmp.7 :clear;
         invoke %tmp.7 %tmp.8();
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 19 8 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 28 8 ]
         %tmp.9 = lgetv %dc;
-        symbol [ dc %tmp.9 19 8 10 ];
-        symbol [ setColor %tmp.10 19 11 19 ];
+        symbol [ dc %tmp.9 28 8 10 ];
+        symbol [ setColor %tmp.10 28 11 19 ];
         %tmp.10 = getv function %tmp.9 :setColor;
-        symbol [ Graphics %tmp.11 19 20 28 ];
-        %tmp.11 = getm $.Toybox.Graphics;
-        symbol [ COLOR_DK_BLUE %tmp.12 19 29 42 ];
-        %tmp.12 = getv %tmp.11 :COLOR_DK_BLUE;
-        symbol [ Graphics %tmp.13 19 44 52 ];
-        %tmp.13 = getm $.Toybox.Graphics;
-        symbol [ COLOR_DK_BLUE %tmp.14 19 53 66 ];
-        %tmp.14 = getv %tmp.13 :COLOR_DK_BLUE;
+        symbol [ COLOR_BLUE %tmp.12 28 20 30 ];
+        %tmp.12 = getv ? :COLOR_BLUE;
+        symbol [ COLOR_BLUE %tmp.14 28 32 42 ];
+        %tmp.14 = getv ? :COLOR_BLUE;
         invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 20 8 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 29 8 ]
         %tmp.15 = lgetv %dc;
-        symbol [ dc %tmp.15 20 8 10 ];
-        symbol [ fillRectangle %tmp.16 20 11 24 ];
+        symbol [ dc %tmp.15 29 8 10 ];
+        symbol [ fillRectangle %tmp.16 29 11 24 ];
         %tmp.16 = getv function %tmp.15 :fillRectangle;
         %tmp.17 = 0;
         %tmp.18 = 0;
         %tmp.19 = lgetv %dc;
-        symbol [ dc %tmp.19 20 31 33 ];
-        symbol [ getWidth %tmp.20 20 34 42 ];
+        symbol [ dc %tmp.19 29 31 33 ];
+        symbol [ getWidth %tmp.20 29 34 42 ];
         %tmp.20 = getv function %tmp.19 :getWidth;
         %tmp.21 = invoke %tmp.19 %tmp.20();
         %tmp.22 = 50;
         invoke %tmp.15 %tmp.16(%tmp.17, %tmp.18, %tmp.21, %tmp.22);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 23 8 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 32 8 ]
         %tmp.23 = lgetv %dc;
-        symbol [ dc %tmp.23 23 8 10 ];
-        symbol [ setColor %tmp.24 23 11 19 ];
+        symbol [ dc %tmp.23 32 8 10 ];
+        symbol [ setColor %tmp.24 32 11 19 ];
         %tmp.24 = getv function %tmp.23 :setColor;
-        symbol [ Graphics %tmp.25 23 20 28 ];
+        symbol [ Graphics %tmp.25 32 20 28 ];
         %tmp.25 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.26 23 29 40 ];
+        symbol [ COLOR_WHITE %tmp.26 32 29 40 ];
         %tmp.26 = getv %tmp.25 :COLOR_WHITE;
-        symbol [ Graphics %tmp.27 23 42 50 ];
+        symbol [ Graphics %tmp.27 32 42 50 ];
         %tmp.27 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.28 23 51 68 ];
+        symbol [ COLOR_TRANSPARENT %tmp.28 32 51 68 ];
         %tmp.28 = getv %tmp.27 :COLOR_TRANSPARENT;
         invoke %tmp.23 %tmp.24(%tmp.26, %tmp.28);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 24 8 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 33 8 ]
         %tmp.29 = lgetv %dc;
-        symbol [ dc %tmp.29 24 8 10 ];
-        symbol [ drawText %tmp.30 24 11 19 ];
+        symbol [ dc %tmp.29 33 8 10 ];
+        symbol [ drawText %tmp.30 33 11 19 ];
         %tmp.30 = getv function %tmp.29 :drawText;
         %tmp.31 = lgetv %dc;
-        symbol [ dc %tmp.31 24 20 22 ];
-        symbol [ getWidth %tmp.32 24 23 31 ];
+        symbol [ dc %tmp.31 33 20 22 ];
+        symbol [ getWidth %tmp.32 33 23 31 ];
         %tmp.32 = getv function %tmp.31 :getWidth;
         %tmp.33 = invoke %tmp.31 %tmp.32();
         %tmp.34 = 2;
         %tmp.35 = div %tmp.33 %tmp.34;
         %tmp.36 = 15;
-        symbol [ Graphics %tmp.37 24 43 51 ];
+        symbol [ Graphics %tmp.37 33 43 51 ];
         %tmp.37 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.38 24 52 62 ];
+        symbol [ FONT_SMALL %tmp.38 33 52 62 ];
         %tmp.38 = getv %tmp.37 :FONT_SMALL;
         %tmp.39 = "Select Puzzle";
-        symbol [ Graphics %tmp.40 24 81 89 ];
+        symbol [ Graphics %tmp.40 33 81 89 ];
         %tmp.40 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.41 24 90 109 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.41 33 90 109 ];
         %tmp.41 = getv %tmp.40 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.29 %tmp.30(%tmp.35, %tmp.36, %tmp.38, %tmp.39, %tmp.41);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 26 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_14_40_89_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_14_40_89_4_stop" ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 35 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_23_40_94_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_23_40_94_4_stop" ]
         %total.1 = local;
-        symbol [ total %total.1 26 12 17 ];
-        symbol [ PuzzleData %tmp.43 26 20 30 ];
+        symbol [ total %total.1 35 12 17 ];
+        symbol [ PuzzleData %tmp.43 35 20 30 ];
         %tmp.43 = getv ? :PuzzleData;
-        symbol [ getPuzzleCount %tmp.44 26 31 45 ];
+        symbol [ getPuzzleCount %tmp.44 35 31 45 ];
         %tmp.44 = getv function %tmp.43 :getPuzzleCount;
         %tmp.45 = invoke %tmp.43 %tmp.44();
         lputv %total.1 %tmp.45;
-        symbol [ total %total.1 26 12 17 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 29 8 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_29_8_33_8_if_stmt:
-        symbol [ selectedIndex %tmp.47 29 12 25 ];
+        symbol [ total %total.1 35 12 17 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 38 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_8_42_8_if_stmt:
+        symbol [ selectedIndex %tmp.47 38 12 25 ];
         %tmp.47 = getv ? :selectedIndex;
-        symbol [ scrollOffset %tmp.49 29 28 40 ];
+        symbol [ scrollOffset %tmp.49 38 28 40 ];
         %tmp.49 = getv ? :scrollOffset;
         %tmp.50 = lt %tmp.47 %tmp.49;
-        bf %tmp.50 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_29_8_33_8_if_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_29_8_33_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_29_42_31_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 30 12 ]
-        symbol [ selectedIndex %tmp.52 30 27 40 ];
+        bf %tmp.50 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_8_42_8_if_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_8_42_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_42_40_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 39 12 ]
+        symbol [ selectedIndex %tmp.52 39 27 40 ];
         %tmp.52 = getv ? :selectedIndex;
-        symbol [ scrollOffset ? 30 12 24 ];
+        symbol [ scrollOffset ? 39 12 24 ];
         putv self :scrollOffset %tmp.52;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_29_42_31_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_29_8_33_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_29_8_33_8_if_false:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 31 15 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_31_15_33_8_if_stmt:
-        symbol [ selectedIndex %tmp.54 31 19 32 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_42_40_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_8_42_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_8_42_8_if_false:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 40 15 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_40_15_42_8_if_stmt:
+        symbol [ selectedIndex %tmp.54 40 19 32 ];
         %tmp.54 = getv ? :selectedIndex;
-        symbol [ scrollOffset %tmp.56 31 36 48 ];
+        symbol [ scrollOffset %tmp.56 40 36 48 ];
         %tmp.56 = getv ? :scrollOffset;
-        symbol [ itemsPerPage %tmp.58 31 51 63 ];
+        symbol [ itemsPerPage %tmp.58 40 51 63 ];
         %tmp.58 = getv ? :itemsPerPage;
         %tmp.59 = add %tmp.56 %tmp.58;
         %tmp.60 = gte %tmp.54 %tmp.59;
-        bf %tmp.60 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_31_15_33_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_31_15_33_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_31_65_33_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 32 12 ]
-        symbol [ selectedIndex %tmp.62 32 27 40 ];
+        bf %tmp.60 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_40_15_42_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_40_15_42_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_40_65_42_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 41 12 ]
+        symbol [ selectedIndex %tmp.62 41 27 40 ];
         %tmp.62 = getv ? :selectedIndex;
-        symbol [ itemsPerPage %tmp.64 32 43 55 ];
+        symbol [ itemsPerPage %tmp.64 41 43 55 ];
         %tmp.64 = getv ? :itemsPerPage;
         %tmp.65 = sub %tmp.62 %tmp.64;
         %tmp.66 = 1;
         %tmp.67 = add %tmp.65 %tmp.66;
-        symbol [ scrollOffset ? 32 12 24 ];
+        symbol [ scrollOffset ? 41 12 24 ];
         putv self :scrollOffset %tmp.67;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_31_65_33_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_31_15_33_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_31_15_33_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_29_8_33_8_if_end:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 36 8 ]
-        for @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_8_80_8_for_test @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_8_80_8_for_incr @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_8_80_8_for_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_8_80_8_for_init:
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_8_80_8_for_begin" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_8_80_8_for_end" ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_40_65_42_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_40_15_42_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_40_15_42_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_8_42_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 45 8 ]
+        for @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_8_85_8_for_test @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_8_85_8_for_incr @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_8_85_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_8_85_8_for_init:
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_8_85_8_for_begin" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_8_85_8_for_end" ]
         %i.2 = local;
-        symbol [ i %i.2 36 17 18 ];
+        symbol [ i %i.2 45 17 18 ];
         %tmp.68 = 0;
         lputv %i.2 %tmp.68;
-        symbol [ i %i.2 36 17 18 ];
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_8_80_8_for_test:
+        symbol [ i %i.2 45 17 18 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_8_85_8_for_test:
         %tmp.69 = lgetv %i.2;
-        symbol [ i %tmp.69 36 24 25 ];
-        symbol [ itemsPerPage %tmp.71 36 28 40 ];
+        symbol [ i %tmp.69 45 24 25 ];
+        symbol [ itemsPerPage %tmp.71 45 28 40 ];
         %tmp.71 = getv ? :itemsPerPage;
         %tmp.72 = lt %tmp.69 %tmp.71;
-        bf %tmp.72 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_8_80_8_for_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_8_80_8_for_begin:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_47_80_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 37 12 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_47_80_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_47_80_8_stop" ]
+        bf %tmp.72 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_8_85_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_8_85_8_for_begin:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_47_85_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 46 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_47_85_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_47_85_8_stop" ]
         %idx.3 = local;
-        symbol [ idx %idx.3 37 16 19 ];
-        symbol [ scrollOffset %tmp.74 37 22 34 ];
+        symbol [ idx %idx.3 46 16 19 ];
+        symbol [ scrollOffset %tmp.74 46 22 34 ];
         %tmp.74 = getv ? :scrollOffset;
         %tmp.75 = lgetv %i.2;
-        symbol [ i %tmp.75 37 37 38 ];
+        symbol [ i %tmp.75 46 37 38 ];
         %tmp.76 = add %tmp.74 %tmp.75;
         lputv %idx.3 %tmp.76;
-        symbol [ idx %idx.3 37 16 19 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 38 12 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_12_38_39_if_stmt:
+        symbol [ idx %idx.3 46 16 19 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 47 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_47_12_47_39_if_stmt:
         %tmp.77 = lgetv %idx.3;
-        symbol [ idx %tmp.77 38 16 19 ];
+        symbol [ idx %tmp.77 47 16 19 ];
         %tmp.78 = lgetv %total.1;
-        symbol [ total %tmp.78 38 23 28 ];
+        symbol [ total %tmp.78 47 23 28 ];
         %tmp.79 = gte %tmp.77 %tmp.78;
-        bf %tmp.79 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_12_38_39_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_12_38_39_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_30_38_39_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 38 32 ]
-        goto break @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_8_80_8_for_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_30_38_39_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_12_38_39_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_38_12_38_39_if_end:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 40 12 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_47_80_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_47_80_8_stop" ]
+        bf %tmp.79 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_47_12_47_39_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_47_12_47_39_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_47_30_47_39_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 47 32 ]
+        goto break @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_8_85_8_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_47_30_47_39_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_47_12_47_39_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_47_12_47_39_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 49 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_47_85_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_47_85_8_stop" ]
         %y.4 = local;
-        symbol [ y %y.4 40 16 17 ];
+        symbol [ y %y.4 49 16 17 ];
         %tmp.80 = 60;
         %tmp.81 = lgetv %i.2;
-        symbol [ i %tmp.81 40 26 27 ];
+        symbol [ i %tmp.81 49 26 27 ];
         %tmp.82 = 32;
         %tmp.83 = mul %tmp.81 %tmp.82;
         %tmp.84 = add %tmp.80 %tmp.83;
         lputv %y.4 %tmp.84;
-        symbol [ y %y.4 40 16 17 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 43 12 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_43_12_46_12_if_stmt:
+        symbol [ y %y.4 49 16 17 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 52 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_12_55_12_if_stmt:
         %tmp.85 = lgetv %idx.3;
-        symbol [ idx %tmp.85 43 16 19 ];
-        symbol [ selectedIndex %tmp.87 43 23 36 ];
+        symbol [ idx %tmp.85 52 16 19 ];
+        symbol [ selectedIndex %tmp.87 52 23 36 ];
         %tmp.87 = getv ? :selectedIndex;
         %tmp.88 = eq %tmp.85 %tmp.87;
-        bf %tmp.88 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_43_12_46_12_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_43_12_46_12_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_43_38_46_12_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 44 16 ]
+        bf %tmp.88 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_12_55_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_12_55_12_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_38_55_12_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 53 16 ]
         %tmp.89 = lgetv %dc;
-        symbol [ dc %tmp.89 44 16 18 ];
-        symbol [ setColor %tmp.90 44 19 27 ];
+        symbol [ dc %tmp.89 53 16 18 ];
+        symbol [ setColor %tmp.90 53 19 27 ];
         %tmp.90 = getv function %tmp.89 :setColor;
-        symbol [ Graphics %tmp.91 44 28 36 ];
-        %tmp.91 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLUE %tmp.92 44 37 47 ];
-        %tmp.92 = getv %tmp.91 :COLOR_BLUE;
-        symbol [ Graphics %tmp.93 44 49 57 ];
-        %tmp.93 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLUE %tmp.94 44 58 68 ];
-        %tmp.94 = getv %tmp.93 :COLOR_BLUE;
+        symbol [ COLOR_GREEN %tmp.92 53 28 39 ];
+        %tmp.92 = getv ? :COLOR_GREEN;
+        symbol [ COLOR_GREEN %tmp.94 53 41 52 ];
+        %tmp.94 = getv ? :COLOR_GREEN;
         invoke %tmp.89 %tmp.90(%tmp.92, %tmp.94);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 45 16 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 54 16 ]
         %tmp.95 = lgetv %dc;
-        symbol [ dc %tmp.95 45 16 18 ];
-        symbol [ fillRoundedRectangle %tmp.96 45 19 39 ];
+        symbol [ dc %tmp.95 54 16 18 ];
+        symbol [ fillRoundedRectangle %tmp.96 54 19 39 ];
         %tmp.96 = getv function %tmp.95 :fillRoundedRectangle;
         %tmp.97 = 3;
         %tmp.98 = lgetv %y.4;
-        symbol [ y %tmp.98 45 43 44 ];
+        symbol [ y %tmp.98 54 43 44 ];
         %tmp.99 = 2;
         %tmp.100 = sub %tmp.98 %tmp.99;
         %tmp.101 = lgetv %dc;
-        symbol [ dc %tmp.101 45 50 52 ];
-        symbol [ getWidth %tmp.102 45 53 61 ];
+        symbol [ dc %tmp.101 54 50 52 ];
+        symbol [ getWidth %tmp.102 54 53 61 ];
         %tmp.102 = getv function %tmp.101 :getWidth;
         %tmp.103 = invoke %tmp.101 %tmp.102();
         %tmp.104 = 6;
@@ -276,651 +285,628 @@ _Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_43_38_46
         %tmp.106 = 30;
         %tmp.107 = 3;
         invoke %tmp.95 %tmp.96(%tmp.97, %tmp.100, %tmp.105, %tmp.106, %tmp.107);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_43_38_46_12_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_43_12_46_12_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_43_12_46_12_if_end:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 49 12 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_47_80_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_47_80_8_stop" ]
-        %statusColor.5 = local;
-        symbol [ statusColor %statusColor.5 49 16 27 ];
-        symbol [ Graphics %tmp.108 49 30 38 ];
-        %tmp.108 = getm $.Toybox.Graphics;
-        symbol [ COLOR_LT_GRAY %tmp.109 49 39 52 ];
-        %tmp.109 = getv %tmp.108 :COLOR_LT_GRAY;
-        lputv %statusColor.5 %tmp.109;
-        symbol [ statusColor %statusColor.5 49 16 27 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 50 12 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_47_80_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_47_80_8_stop" ]
-        %statusIcon.6 = local;
-        symbol [ statusIcon %statusIcon.6 50 16 26 ];
-        %tmp.110 = "";
-        lputv %statusIcon.6 %tmp.110;
-        symbol [ statusIcon %statusIcon.6 50 16 26 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 52 12 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_12_58_12_if_stmt:
-        symbol [ Storage %tmp.112 52 16 23 ];
-        %tmp.112 = getv ? :Storage;
-        symbol [ isSolved %tmp.113 52 24 32 ];
-        %tmp.113 = getv function %tmp.112 :isSolved;
-        %tmp.114 = lgetv %idx.3;
-        symbol [ idx %tmp.114 52 33 36 ];
-        %tmp.115 = invoke %tmp.112 %tmp.113(%tmp.114);
-        bf %tmp.115 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_12_58_12_if_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_12_58_12_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_39_55_12_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 53 16 ]
-        symbol [ Graphics %tmp.116 53 30 38 ];
-        %tmp.116 = getm $.Toybox.Graphics;
-        symbol [ COLOR_GREEN %tmp.117 53 39 50 ];
-        %tmp.117 = getv %tmp.116 :COLOR_GREEN;
-        lputv %statusColor.5 %tmp.117;
-        symbol [ statusColor %statusColor.5 53 16 27 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 54 16 ]
-        %tmp.118 = "✓";
-        lputv %statusIcon.6 %tmp.118;
-        symbol [ statusIcon %statusIcon.6 54 16 26 ];
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_39_55_12_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_12_58_12_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_12_58_12_if_false:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 55 19 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_55_19_58_12_if_stmt:
-        symbol [ Storage %tmp.120 55 23 30 ];
-        %tmp.120 = getv ? :Storage;
-        symbol [ isIncorrect %tmp.121 55 31 42 ];
-        %tmp.121 = getv function %tmp.120 :isIncorrect;
-        %tmp.122 = lgetv %idx.3;
-        symbol [ idx %tmp.122 55 43 46 ];
-        %tmp.123 = invoke %tmp.120 %tmp.121(%tmp.122);
-        bf %tmp.123 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_55_19_58_12_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_55_19_58_12_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_55_49_58_12_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 56 16 ]
-        symbol [ Graphics %tmp.124 56 30 38 ];
-        %tmp.124 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.125 56 39 48 ];
-        %tmp.125 = getv %tmp.124 :COLOR_RED;
-        lputv %statusColor.5 %tmp.125;
-        symbol [ statusColor %statusColor.5 56 16 27 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 57 16 ]
-        %tmp.126 = "✗";
-        lputv %statusIcon.6 %tmp.126;
-        symbol [ statusIcon %statusIcon.6 57 16 26 ];
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_55_49_58_12_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_55_19_58_12_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_55_19_58_12_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_12_58_12_if_end:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 61 12 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_47_80_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_47_80_8_stop" ]
-        %puzzleNumText.7 = local;
-        symbol [ puzzleNumText %puzzleNumText.7 61 16 29 ];
-        %tmp.127 = lgetv %idx.3;
-        symbol [ idx %tmp.127 61 33 36 ];
-        %tmp.128 = 1;
-        %tmp.129 = add %tmp.127 %tmp.128;
-        symbol [ toString %tmp.130 61 42 50 ];
-        %tmp.130 = getv function %tmp.129 :toString;
-        %tmp.131 = invoke %tmp.129 %tmp.130();
-        lputv %puzzleNumText.7 %tmp.131;
-        symbol [ puzzleNumText %puzzleNumText.7 61 16 29 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_38_55_12_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_12_55_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_52_12_55_12_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 58 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_47_85_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_47_85_8_stop" ]
+        %isDone.5 = local;
+        symbol [ isDone %isDone.5 58 16 22 ];
+        symbol [ Storage %tmp.109 58 25 32 ];
+        %tmp.109 = getv ? :Storage;
+        symbol [ isSolved %tmp.110 58 33 41 ];
+        %tmp.110 = getv function %tmp.109 :isSolved;
+        %tmp.111 = lgetv %idx.3;
+        symbol [ idx %tmp.111 58 42 45 ];
+        %tmp.112 = invoke %tmp.109 %tmp.110(%tmp.111);
+        lputv %isDone.5 %tmp.112;
+        symbol [ isDone %isDone.5 58 16 22 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 59 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_47_85_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_47_85_8_stop" ]
+        %isIncorrect.6 = local;
+        symbol [ isIncorrect %isIncorrect.6 59 16 27 ];
+        symbol [ Storage %tmp.114 59 30 37 ];
+        %tmp.114 = getv ? :Storage;
+        symbol [ isIncorrect %tmp.115 59 38 49 ];
+        %tmp.115 = getv function %tmp.114 :isIncorrect;
+        %tmp.116 = lgetv %idx.3;
+        symbol [ idx %tmp.116 59 50 53 ];
+        %tmp.117 = invoke %tmp.114 %tmp.115(%tmp.116);
+        lputv %isIncorrect.6 %tmp.117;
+        symbol [ isIncorrect %isIncorrect.6 59 16 27 ];
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 62 12 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_62_12_64_12_if_stmt:
-        %tmp.132 = lgetv %statusIcon.6;
-        symbol [ statusIcon %tmp.132 62 16 26 ];
-        symbol [ length %tmp.133 62 27 33 ];
-        %tmp.133 = getv function %tmp.132 :length;
-        %tmp.134 = invoke %tmp.132 %tmp.133();
-        %tmp.135 = 0;
-        %tmp.136 = gt %tmp.134 %tmp.135;
-        bf %tmp.136 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_62_12_64_12_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_62_12_64_12_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_62_41_64_12_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 63 16 ]
-        %tmp.137 = lgetv %puzzleNumText.7;
-        symbol [ puzzleNumText %tmp.137 63 16 29 ];
-        %tmp.138 = " ";
-        %tmp.139 = lgetv %statusIcon.6;
-        symbol [ statusIcon %tmp.139 63 39 49 ];
-        %tmp.140 = add %tmp.138 %tmp.139;
-        %tmp.141 = add %tmp.137 %tmp.140;
-        lputv %puzzleNumText.7 %tmp.141;
-        symbol [ puzzleNumText %puzzleNumText.7 63 16 29 ];
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_62_41_64_12_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_62_12_64_12_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_62_12_64_12_if_end:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 67 12 ]
-        %tmp.142 = lgetv %dc;
-        symbol [ dc %tmp.142 67 12 14 ];
-        symbol [ setColor %tmp.143 67 15 23 ];
-        %tmp.143 = getv function %tmp.142 :setColor;
-        %tmp.144 = lgetv %statusColor.5;
-        symbol [ statusColor %tmp.144 67 24 35 ];
-        symbol [ Graphics %tmp.145 67 37 45 ];
-        %tmp.145 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.146 67 46 63 ];
-        %tmp.146 = getv %tmp.145 :COLOR_TRANSPARENT;
-        invoke %tmp.142 %tmp.143(%tmp.144, %tmp.146);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 68 12 ]
-        %tmp.147 = lgetv %dc;
-        symbol [ dc %tmp.147 68 12 14 ];
-        symbol [ drawText %tmp.148 68 15 23 ];
-        %tmp.148 = getv function %tmp.147 :drawText;
-        %tmp.149 = 10;
-        %tmp.150 = lgetv %y.4;
-        symbol [ y %tmp.150 68 28 29 ];
-        %tmp.151 = 3;
-        %tmp.152 = add %tmp.150 %tmp.151;
-        symbol [ Graphics %tmp.153 68 35 43 ];
-        %tmp.153 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.154 68 44 54 ];
-        %tmp.154 = getv %tmp.153 :FONT_SMALL;
-        %tmp.155 = lgetv %puzzleNumText.7;
-        symbol [ puzzleNumText %tmp.155 68 56 69 ];
-        symbol [ Graphics %tmp.156 68 71 79 ];
-        %tmp.156 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.157 68 80 97 ];
-        %tmp.157 = getv %tmp.156 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.147 %tmp.148(%tmp.149, %tmp.152, %tmp.154, %tmp.155, %tmp.157);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 71 12 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_47_80_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_47_80_8_stop" ]
-        %puzzleName.8 = local;
-        symbol [ puzzleName %puzzleName.8 71 16 26 ];
-        symbol [ PuzzleData %tmp.159 71 29 39 ];
-        %tmp.159 = getv ? :PuzzleData;
-        symbol [ getPuzzleName %tmp.160 71 40 53 ];
-        %tmp.160 = getv function %tmp.159 :getPuzzleName;
-        %tmp.161 = lgetv %idx.3;
-        symbol [ idx %tmp.161 71 54 57 ];
-        %tmp.162 = invoke %tmp.159 %tmp.160(%tmp.161);
-        lputv %puzzleName.8 %tmp.162;
-        symbol [ puzzleName %puzzleName.8 71 16 26 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 72 12 ]
-        %tmp.163 = lgetv %dc;
-        symbol [ dc %tmp.163 72 12 14 ];
-        symbol [ setColor %tmp.164 72 15 23 ];
-        %tmp.164 = getv function %tmp.163 :setColor;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_72_24_72_79_begin:
-        %tmp.165 = lgetv %idx.3;
-        symbol [ idx %tmp.165 72 24 27 ];
-        symbol [ selectedIndex %tmp.167 72 31 44 ];
-        %tmp.167 = getv ? :selectedIndex;
-        %tmp.168 = eq %tmp.165 %tmp.167;
-        bf %tmp.168 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_72_24_72_79_else_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_72_24_72_79_true:
-        symbol [ Graphics %tmp.169 72 47 55 ];
-        %tmp.169 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.170 72 56 67 ];
-        %tmp.170 = getv %tmp.169 :COLOR_WHITE;
-        push %tmp.170;
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_72_24_72_79_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_72_24_72_79_else_false:
-        symbol [ Graphics %tmp.171 72 70 78 ];
-        %tmp.171 = getm $.Toybox.Graphics;
-        symbol [ COLOR_LT_GRAY %tmp.172 72 79 92 ];
-        %tmp.172 = getv %tmp.171 :COLOR_LT_GRAY;
-        push %tmp.172;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_72_24_72_79_end:
-        %tmp.173 = phi [%tmp.168 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_72_24_72_79_begin] [%tmp.170 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_72_24_72_79_true] [%tmp.172 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_72_24_72_79_else_false] [%tmp.173 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_72_24_72_79_end];
-        symbol [ Graphics %tmp.174 72 94 102 ];
-        %tmp.174 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.175 72 103 120 ];
-        %tmp.175 = getv %tmp.174 :COLOR_TRANSPARENT;
-        invoke %tmp.163 %tmp.164(%tmp.173, %tmp.175);
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_47_85_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_47_85_8_stop" ]
+        %numberColor.7 = local;
+        symbol [ numberColor %numberColor.7 62 16 27 ];
+        symbol [ Graphics %tmp.118 62 30 38 ];
+        %tmp.118 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.119 62 39 52 ];
+        %tmp.119 = getv %tmp.118 :COLOR_LT_GRAY;
+        lputv %numberColor.7 %tmp.119;
+        symbol [ numberColor %numberColor.7 62 16 27 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 63 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_63_12_67_12_if_stmt:
+        %tmp.120 = lgetv %isDone.5;
+        symbol [ isDone %tmp.120 63 16 22 ];
+        bf %tmp.120 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_63_12_67_12_if_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_63_12_67_12_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_63_24_65_12_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 64 16 ]
+        symbol [ COLOR_ACCENT %tmp.122 64 30 42 ];
+        %tmp.122 = getv ? :COLOR_ACCENT;
+        lputv %numberColor.7 %tmp.122;
+        symbol [ numberColor %numberColor.7 64 16 27 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_63_24_65_12_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_63_12_67_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_63_12_67_12_if_false:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 65 19 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_65_19_67_12_if_stmt:
+        %tmp.123 = lgetv %isIncorrect.6;
+        symbol [ isIncorrect %tmp.123 65 23 34 ];
+        bf %tmp.123 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_65_19_67_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_65_19_67_12_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_65_36_67_12_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 66 16 ]
+        symbol [ Graphics %tmp.124 66 30 38 ];
+        %tmp.124 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.125 66 39 48 ];
+        %tmp.125 = getv %tmp.124 :COLOR_RED;
+        lputv %numberColor.7 %tmp.125;
+        symbol [ numberColor %numberColor.7 66 16 27 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_65_36_67_12_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_65_19_67_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_65_19_67_12_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_63_12_67_12_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 69 12 ]
+        %tmp.126 = lgetv %dc;
+        symbol [ dc %tmp.126 69 12 14 ];
+        symbol [ setColor %tmp.127 69 15 23 ];
+        %tmp.127 = getv function %tmp.126 :setColor;
+        %tmp.128 = lgetv %numberColor.7;
+        symbol [ numberColor %tmp.128 69 24 35 ];
+        symbol [ Graphics %tmp.129 69 37 45 ];
+        %tmp.129 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.130 69 46 63 ];
+        %tmp.130 = getv %tmp.129 :COLOR_TRANSPARENT;
+        invoke %tmp.126 %tmp.127(%tmp.128, %tmp.130);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 70 12 ]
+        %tmp.131 = lgetv %dc;
+        symbol [ dc %tmp.131 70 12 14 ];
+        symbol [ drawText %tmp.132 70 15 23 ];
+        %tmp.132 = getv function %tmp.131 :drawText;
+        %tmp.133 = 30;
+        %tmp.134 = lgetv %y.4;
+        symbol [ y %tmp.134 70 28 29 ];
+        %tmp.135 = 3;
+        %tmp.136 = add %tmp.134 %tmp.135;
+        symbol [ Graphics %tmp.137 70 35 43 ];
+        %tmp.137 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.138 70 44 54 ];
+        %tmp.138 = getv %tmp.137 :FONT_SMALL;
+        %tmp.139 = lgetv %idx.3;
+        symbol [ idx %tmp.139 70 57 60 ];
+        %tmp.140 = 1;
+        %tmp.141 = add %tmp.139 %tmp.140;
+        symbol [ toString %tmp.142 70 66 74 ];
+        %tmp.142 = getv function %tmp.141 :toString;
+        %tmp.143 = invoke %tmp.141 %tmp.142();
+        symbol [ Graphics %tmp.144 70 78 86 ];
+        %tmp.144 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.145 70 87 104 ];
+        %tmp.145 = getv %tmp.144 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.131 %tmp.132(%tmp.133, %tmp.136, %tmp.138, %tmp.143, %tmp.145);
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 73 12 ]
-        %tmp.176 = lgetv %dc;
-        symbol [ dc %tmp.176 73 12 14 ];
-        symbol [ drawText %tmp.177 73 15 23 ];
-        %tmp.177 = getv function %tmp.176 :drawText;
-        %tmp.178 = lgetv %dc;
-        symbol [ dc %tmp.178 73 24 26 ];
-        symbol [ getWidth %tmp.179 73 27 35 ];
-        %tmp.179 = getv function %tmp.178 :getWidth;
-        %tmp.180 = invoke %tmp.178 %tmp.179();
-        %tmp.181 = 10;
-        %tmp.182 = sub %tmp.180 %tmp.181;
-        %tmp.183 = lgetv %y.4;
-        symbol [ y %tmp.183 73 44 45 ];
-        %tmp.184 = 3;
-        %tmp.185 = add %tmp.183 %tmp.184;
-        symbol [ Graphics %tmp.186 73 51 59 ];
-        %tmp.186 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.187 73 60 70 ];
-        %tmp.187 = getv %tmp.186 :FONT_XTINY;
-        %tmp.188 = lgetv %puzzleName.8;
-        symbol [ puzzleName %tmp.188 73 72 82 ];
-        symbol [ Graphics %tmp.189 73 84 92 ];
-        %tmp.189 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_RIGHT %tmp.190 73 93 111 ];
-        %tmp.190 = getv %tmp.189 :TEXT_JUSTIFY_RIGHT;
-        invoke %tmp.176 %tmp.177(%tmp.182, %tmp.185, %tmp.187, %tmp.188, %tmp.190);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 76 12 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_76_12_79_12_if_stmt:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_76_16_76_54_begin:
-        %tmp.191 = lgetv %i.2;
-        symbol [ i %tmp.191 76 16 17 ];
-        symbol [ itemsPerPage %tmp.193 76 20 32 ];
-        %tmp.193 = getv ? :itemsPerPage;
-        %tmp.194 = 1;
-        %tmp.195 = sub %tmp.193 %tmp.194;
-        %tmp.196 = lt %tmp.191 %tmp.195;
-        bf %tmp.196 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_76_12_79_12_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_76_40_76_54_true:
-        %tmp.197 = lgetv %idx.3;
-        symbol [ idx %tmp.197 76 40 43 ];
-        %tmp.198 = lgetv %total.1;
-        symbol [ total %tmp.198 76 46 51 ];
-        %tmp.199 = 1;
-        %tmp.200 = sub %tmp.198 %tmp.199;
-        %tmp.201 = lt %tmp.197 %tmp.200;
-        push %tmp.201;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_76_40_76_54_end:
-        %tmp.202 = phi [%tmp.196 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_76_16_76_54_begin] [%tmp.201 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_76_40_76_54_true] [%tmp.202 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_76_40_76_54_end];
-        bf %tmp.202 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_76_12_79_12_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_76_12_79_12_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_76_57_79_12_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 77 16 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_47_85_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_47_85_8_stop" ]
+        %puzzleName.8 = local;
+        symbol [ puzzleName %puzzleName.8 73 16 26 ];
+        symbol [ PuzzleData %tmp.147 73 29 39 ];
+        %tmp.147 = getv ? :PuzzleData;
+        symbol [ getPuzzleName %tmp.148 73 40 53 ];
+        %tmp.148 = getv function %tmp.147 :getPuzzleName;
+        %tmp.149 = lgetv %idx.3;
+        symbol [ idx %tmp.149 73 54 57 ];
+        %tmp.150 = invoke %tmp.147 %tmp.148(%tmp.149);
+        lputv %puzzleName.8 %tmp.150;
+        symbol [ puzzleName %puzzleName.8 73 16 26 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 74 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_74_12_76_12_if_stmt:
+        %tmp.151 = lgetv %isDone.5;
+        symbol [ isDone %tmp.151 74 16 22 ];
+        bf %tmp.151 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_74_12_76_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_74_12_76_12_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_74_24_76_12_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 75 16 ]
+        %tmp.152 = "D - ";
+        %tmp.153 = lgetv %puzzleName.8;
+        symbol [ puzzleName %tmp.153 75 38 48 ];
+        %tmp.154 = add %tmp.152 %tmp.153;
+        lputv %puzzleName.8 %tmp.154;
+        symbol [ puzzleName %puzzleName.8 75 16 26 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_74_24_76_12_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_74_12_76_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_74_12_76_12_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 77 12 ]
+        %tmp.155 = lgetv %dc;
+        symbol [ dc %tmp.155 77 12 14 ];
+        symbol [ setColor %tmp.156 77 15 23 ];
+        %tmp.156 = getv function %tmp.155 :setColor;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_77_24_77_79_begin:
+        %tmp.157 = lgetv %idx.3;
+        symbol [ idx %tmp.157 77 24 27 ];
+        symbol [ selectedIndex %tmp.159 77 31 44 ];
+        %tmp.159 = getv ? :selectedIndex;
+        %tmp.160 = eq %tmp.157 %tmp.159;
+        bf %tmp.160 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_77_24_77_79_else_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_77_24_77_79_true:
+        symbol [ Graphics %tmp.161 77 47 55 ];
+        %tmp.161 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.162 77 56 67 ];
+        %tmp.162 = getv %tmp.161 :COLOR_WHITE;
+        push %tmp.162;
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_77_24_77_79_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_77_24_77_79_else_false:
+        symbol [ Graphics %tmp.163 77 70 78 ];
+        %tmp.163 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.164 77 79 92 ];
+        %tmp.164 = getv %tmp.163 :COLOR_DK_GRAY;
+        push %tmp.164;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_77_24_77_79_end:
+        %tmp.165 = phi [%tmp.160 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_77_24_77_79_begin] [%tmp.162 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_77_24_77_79_true] [%tmp.164 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_77_24_77_79_else_false] [%tmp.165 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_77_24_77_79_end];
+        symbol [ Graphics %tmp.166 77 94 102 ];
+        %tmp.166 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.167 77 103 120 ];
+        %tmp.167 = getv %tmp.166 :COLOR_TRANSPARENT;
+        invoke %tmp.155 %tmp.156(%tmp.165, %tmp.167);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 78 12 ]
+        %tmp.168 = lgetv %dc;
+        symbol [ dc %tmp.168 78 12 14 ];
+        symbol [ drawText %tmp.169 78 15 23 ];
+        %tmp.169 = getv function %tmp.168 :drawText;
+        %tmp.170 = 250;
+        %tmp.171 = lgetv %y.4;
+        symbol [ y %tmp.171 78 29 30 ];
+        %tmp.172 = 3;
+        %tmp.173 = add %tmp.171 %tmp.172;
+        symbol [ Graphics %tmp.174 78 36 44 ];
+        %tmp.174 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.175 78 45 55 ];
+        %tmp.175 = getv %tmp.174 :FONT_XTINY;
+        %tmp.176 = lgetv %puzzleName.8;
+        symbol [ puzzleName %tmp.176 78 57 67 ];
+        symbol [ Graphics %tmp.177 78 69 77 ];
+        %tmp.177 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.178 78 78 96 ];
+        %tmp.178 = getv %tmp.177 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.168 %tmp.169(%tmp.170, %tmp.173, %tmp.175, %tmp.176, %tmp.178);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 81 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_81_12_84_12_if_stmt:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_81_16_81_54_begin:
+        %tmp.179 = lgetv %i.2;
+        symbol [ i %tmp.179 81 16 17 ];
+        symbol [ itemsPerPage %tmp.181 81 20 32 ];
+        %tmp.181 = getv ? :itemsPerPage;
+        %tmp.182 = 1;
+        %tmp.183 = sub %tmp.181 %tmp.182;
+        %tmp.184 = lt %tmp.179 %tmp.183;
+        bf %tmp.184 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_81_12_84_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_81_40_81_54_true:
+        %tmp.185 = lgetv %idx.3;
+        symbol [ idx %tmp.185 81 40 43 ];
+        %tmp.186 = lgetv %total.1;
+        symbol [ total %tmp.186 81 46 51 ];
+        %tmp.187 = 1;
+        %tmp.188 = sub %tmp.186 %tmp.187;
+        %tmp.189 = lt %tmp.185 %tmp.188;
+        push %tmp.189;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_81_40_81_54_end:
+        %tmp.190 = phi [%tmp.184 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_81_16_81_54_begin] [%tmp.189 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_81_40_81_54_true] [%tmp.190 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_81_40_81_54_end];
+        bf %tmp.190 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_81_12_84_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_81_12_84_12_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_81_57_84_12_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 82 16 ]
+        %tmp.191 = lgetv %dc;
+        symbol [ dc %tmp.191 82 16 18 ];
+        symbol [ setColor %tmp.192 82 19 27 ];
+        %tmp.192 = getv function %tmp.191 :setColor;
+        symbol [ Graphics %tmp.193 82 28 36 ];
+        %tmp.193 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.194 82 37 50 ];
+        %tmp.194 = getv %tmp.193 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.195 82 52 60 ];
+        %tmp.195 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.196 82 61 78 ];
+        %tmp.196 = getv %tmp.195 :COLOR_TRANSPARENT;
+        invoke %tmp.191 %tmp.192(%tmp.194, %tmp.196);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 83 16 ]
+        %tmp.197 = lgetv %dc;
+        symbol [ dc %tmp.197 83 16 18 ];
+        symbol [ drawLine %tmp.198 83 19 27 ];
+        %tmp.198 = getv function %tmp.197 :drawLine;
+        %tmp.199 = 8;
+        %tmp.200 = lgetv %y.4;
+        symbol [ y %tmp.200 83 31 32 ];
+        %tmp.201 = 29;
+        %tmp.202 = add %tmp.200 %tmp.201;
         %tmp.203 = lgetv %dc;
-        symbol [ dc %tmp.203 77 16 18 ];
-        symbol [ setColor %tmp.204 77 19 27 ];
-        %tmp.204 = getv function %tmp.203 :setColor;
-        symbol [ Graphics %tmp.205 77 28 36 ];
-        %tmp.205 = getm $.Toybox.Graphics;
-        symbol [ COLOR_DK_GRAY %tmp.206 77 37 50 ];
-        %tmp.206 = getv %tmp.205 :COLOR_DK_GRAY;
-        symbol [ Graphics %tmp.207 77 52 60 ];
-        %tmp.207 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.208 77 61 78 ];
-        %tmp.208 = getv %tmp.207 :COLOR_TRANSPARENT;
-        invoke %tmp.203 %tmp.204(%tmp.206, %tmp.208);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 78 16 ]
-        %tmp.209 = lgetv %dc;
-        symbol [ dc %tmp.209 78 16 18 ];
-        symbol [ drawLine %tmp.210 78 19 27 ];
-        %tmp.210 = getv function %tmp.209 :drawLine;
-        %tmp.211 = 8;
-        %tmp.212 = lgetv %y.4;
-        symbol [ y %tmp.212 78 31 32 ];
-        %tmp.213 = 29;
-        %tmp.214 = add %tmp.212 %tmp.213;
+        symbol [ dc %tmp.203 83 39 41 ];
+        symbol [ getWidth %tmp.204 83 42 50 ];
+        %tmp.204 = getv function %tmp.203 :getWidth;
+        %tmp.205 = invoke %tmp.203 %tmp.204();
+        %tmp.206 = 8;
+        %tmp.207 = sub %tmp.205 %tmp.206;
+        %tmp.208 = lgetv %y.4;
+        symbol [ y %tmp.208 83 58 59 ];
+        %tmp.209 = 29;
+        %tmp.210 = add %tmp.208 %tmp.209;
+        invoke %tmp.197 %tmp.198(%tmp.199, %tmp.202, %tmp.207, %tmp.210);
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_81_57_84_12_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_81_12_84_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_81_12_84_12_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_47_85_8_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_8_85_8_for_incr:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 45 ]
+        %tmp.213 = lgetv %i.2;
+        symbol [ i %tmp.213 45 42 43 ];
+        %tmp.214 = add %tmp.213 1;
+        lputv %i.2 %tmp.214;
+        symbol [ i %i.2 45 42 43 ];
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_8_85_8_for_test;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_45_8_85_8_for_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 88 8 ]
         %tmp.215 = lgetv %dc;
-        symbol [ dc %tmp.215 78 39 41 ];
-        symbol [ getWidth %tmp.216 78 42 50 ];
-        %tmp.216 = getv function %tmp.215 :getWidth;
-        %tmp.217 = invoke %tmp.215 %tmp.216();
-        %tmp.218 = 8;
-        %tmp.219 = sub %tmp.217 %tmp.218;
-        %tmp.220 = lgetv %y.4;
-        symbol [ y %tmp.220 78 58 59 ];
-        %tmp.221 = 29;
-        %tmp.222 = add %tmp.220 %tmp.221;
-        invoke %tmp.209 %tmp.210(%tmp.211, %tmp.214, %tmp.219, %tmp.222);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_76_57_79_12_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_76_12_79_12_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_76_12_79_12_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_47_80_8_stop:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_8_80_8_for_incr:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 36 ]
-        %tmp.225 = lgetv %i.2;
-        symbol [ i %tmp.225 36 42 43 ];
-        %tmp.226 = add %tmp.225 1;
-        lputv %i.2 %tmp.226;
-        symbol [ i %i.2 36 42 43 ];
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_8_80_8_for_test;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_36_8_80_8_for_end:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 83 8 ]
-        %tmp.227 = lgetv %dc;
-        symbol [ dc %tmp.227 83 8 10 ];
-        symbol [ setColor %tmp.228 83 11 19 ];
-        %tmp.228 = getv function %tmp.227 :setColor;
-        symbol [ Graphics %tmp.229 83 20 28 ];
-        %tmp.229 = getm $.Toybox.Graphics;
-        symbol [ COLOR_DK_GRAY %tmp.230 83 29 42 ];
-        %tmp.230 = getv %tmp.229 :COLOR_DK_GRAY;
-        symbol [ Graphics %tmp.231 83 44 52 ];
-        %tmp.231 = getm $.Toybox.Graphics;
-        symbol [ COLOR_DK_GRAY %tmp.232 83 53 66 ];
-        %tmp.232 = getv %tmp.231 :COLOR_DK_GRAY;
-        invoke %tmp.227 %tmp.228(%tmp.230, %tmp.232);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 84 8 ]
+        symbol [ dc %tmp.215 88 8 10 ];
+        symbol [ setColor %tmp.216 88 11 19 ];
+        %tmp.216 = getv function %tmp.215 :setColor;
+        symbol [ Graphics %tmp.217 88 20 28 ];
+        %tmp.217 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.218 88 29 42 ];
+        %tmp.218 = getv %tmp.217 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.219 88 44 52 ];
+        %tmp.219 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.220 88 53 66 ];
+        %tmp.220 = getv %tmp.219 :COLOR_DK_GRAY;
+        invoke %tmp.215 %tmp.216(%tmp.218, %tmp.220);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 89 8 ]
+        %tmp.221 = lgetv %dc;
+        symbol [ dc %tmp.221 89 8 10 ];
+        symbol [ fillRectangle %tmp.222 89 11 24 ];
+        %tmp.222 = getv function %tmp.221 :fillRectangle;
+        %tmp.223 = 0;
+        %tmp.224 = 240;
+        %tmp.225 = lgetv %dc;
+        symbol [ dc %tmp.225 89 33 35 ];
+        symbol [ getWidth %tmp.226 89 36 44 ];
+        %tmp.226 = getv function %tmp.225 :getWidth;
+        %tmp.227 = invoke %tmp.225 %tmp.226();
+        %tmp.228 = lgetv %dc;
+        symbol [ dc %tmp.228 89 48 50 ];
+        symbol [ getHeight %tmp.229 89 51 60 ];
+        %tmp.229 = getv function %tmp.228 :getHeight;
+        %tmp.230 = invoke %tmp.228 %tmp.229();
+        %tmp.231 = 240;
+        %tmp.232 = sub %tmp.230 %tmp.231;
+        invoke %tmp.221 %tmp.222(%tmp.223, %tmp.224, %tmp.227, %tmp.232);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 91 8 ]
         %tmp.233 = lgetv %dc;
-        symbol [ dc %tmp.233 84 8 10 ];
-        symbol [ fillRectangle %tmp.234 84 11 24 ];
-        %tmp.234 = getv function %tmp.233 :fillRectangle;
-        %tmp.235 = 0;
-        %tmp.236 = 240;
-        %tmp.237 = lgetv %dc;
-        symbol [ dc %tmp.237 84 33 35 ];
-        symbol [ getWidth %tmp.238 84 36 44 ];
-        %tmp.238 = getv function %tmp.237 :getWidth;
-        %tmp.239 = invoke %tmp.237 %tmp.238();
-        %tmp.240 = lgetv %dc;
-        symbol [ dc %tmp.240 84 48 50 ];
-        symbol [ getHeight %tmp.241 84 51 60 ];
-        %tmp.241 = getv function %tmp.240 :getHeight;
-        %tmp.242 = invoke %tmp.240 %tmp.241();
-        %tmp.243 = 240;
-        %tmp.244 = sub %tmp.242 %tmp.243;
-        invoke %tmp.233 %tmp.234(%tmp.235, %tmp.236, %tmp.239, %tmp.244);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 86 8 ]
-        %tmp.245 = lgetv %dc;
-        symbol [ dc %tmp.245 86 8 10 ];
-        symbol [ setColor %tmp.246 86 11 19 ];
-        %tmp.246 = getv function %tmp.245 :setColor;
-        symbol [ Graphics %tmp.247 86 20 28 ];
-        %tmp.247 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.248 86 29 40 ];
-        %tmp.248 = getv %tmp.247 :COLOR_WHITE;
-        symbol [ Graphics %tmp.249 86 42 50 ];
-        %tmp.249 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.250 86 51 68 ];
-        %tmp.250 = getv %tmp.249 :COLOR_TRANSPARENT;
-        invoke %tmp.245 %tmp.246(%tmp.248, %tmp.250);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 87 8 ]
-        %tmp.251 = lgetv %dc;
-        symbol [ dc %tmp.251 87 8 10 ];
-        symbol [ drawText %tmp.252 87 11 19 ];
-        %tmp.252 = getv function %tmp.251 :drawText;
-        %tmp.253 = lgetv %dc;
-        symbol [ dc %tmp.253 87 20 22 ];
-        symbol [ getWidth %tmp.254 87 23 31 ];
-        %tmp.254 = getv function %tmp.253 :getWidth;
-        %tmp.255 = invoke %tmp.253 %tmp.254();
-        %tmp.256 = 2;
-        %tmp.257 = div %tmp.255 %tmp.256;
-        %tmp.258 = 243;
-        symbol [ Graphics %tmp.259 87 44 52 ];
-        %tmp.259 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.260 87 53 63 ];
-        %tmp.260 = getv %tmp.259 :FONT_XTINY;
-        symbol [ selectedIndex %tmp.262 88 21 34 ];
-        %tmp.262 = getv ? :selectedIndex;
-        %tmp.263 = 1;
-        %tmp.264 = add %tmp.262 %tmp.263;
-        %tmp.265 = " / ";
-        %tmp.266 = add %tmp.264 %tmp.265;
-        %tmp.267 = lgetv %total.1;
-        symbol [ total %tmp.267 88 50 55 ];
-        %tmp.268 = add %tmp.266 %tmp.267;
-        symbol [ Graphics %tmp.269 88 57 65 ];
-        %tmp.269 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.270 88 66 85 ];
-        %tmp.270 = getv %tmp.269 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.251 %tmp.252(%tmp.257, %tmp.258, %tmp.260, %tmp.268, %tmp.270);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_14_40_89_4_stop:
-    }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 91; @symbol_functiondef = [handleUp,91,13,21]; ]
-    function handleUp() as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_91_32_96_4_start:
+        symbol [ dc %tmp.233 91 8 10 ];
+        symbol [ setColor %tmp.234 91 11 19 ];
+        %tmp.234 = getv function %tmp.233 :setColor;
+        symbol [ Graphics %tmp.235 91 20 28 ];
+        %tmp.235 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.236 91 29 40 ];
+        %tmp.236 = getv %tmp.235 :COLOR_WHITE;
+        symbol [ Graphics %tmp.237 91 42 50 ];
+        %tmp.237 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.238 91 51 68 ];
+        %tmp.238 = getv %tmp.237 :COLOR_TRANSPARENT;
+        invoke %tmp.233 %tmp.234(%tmp.236, %tmp.238);
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 92 8 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_92_8_95_8_if_stmt:
-        symbol [ selectedIndex %tmp.2 92 12 25 ];
+        %tmp.239 = lgetv %dc;
+        symbol [ dc %tmp.239 92 8 10 ];
+        symbol [ drawText %tmp.240 92 11 19 ];
+        %tmp.240 = getv function %tmp.239 :drawText;
+        %tmp.241 = lgetv %dc;
+        symbol [ dc %tmp.241 92 20 22 ];
+        symbol [ getWidth %tmp.242 92 23 31 ];
+        %tmp.242 = getv function %tmp.241 :getWidth;
+        %tmp.243 = invoke %tmp.241 %tmp.242();
+        %tmp.244 = 2;
+        %tmp.245 = div %tmp.243 %tmp.244;
+        %tmp.246 = 243;
+        symbol [ Graphics %tmp.247 92 44 52 ];
+        %tmp.247 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.248 92 53 63 ];
+        %tmp.248 = getv %tmp.247 :FONT_XTINY;
+        symbol [ selectedIndex %tmp.250 93 21 34 ];
+        %tmp.250 = getv ? :selectedIndex;
+        %tmp.251 = 1;
+        %tmp.252 = add %tmp.250 %tmp.251;
+        %tmp.253 = " / ";
+        %tmp.254 = add %tmp.252 %tmp.253;
+        %tmp.255 = lgetv %total.1;
+        symbol [ total %tmp.255 93 50 55 ];
+        %tmp.256 = add %tmp.254 %tmp.255;
+        symbol [ Graphics %tmp.257 93 57 65 ];
+        %tmp.257 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.258 93 66 85 ];
+        %tmp.258 = getv %tmp.257 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.239 %tmp.240(%tmp.245, %tmp.246, %tmp.248, %tmp.256, %tmp.258);
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_23_40_94_4_stop:
+    }
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 96; @symbol_functiondef = [handleUp,96,13,21]; ]
+    function handleUp() as Void {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_96_32_101_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 97 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_97_8_100_8_if_stmt:
+        symbol [ selectedIndex %tmp.2 97 12 25 ];
         %tmp.2 = getv ? :selectedIndex;
         %tmp.3 = 0;
         %tmp.4 = gt %tmp.2 %tmp.3;
-        bf %tmp.4 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_92_8_95_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_92_8_95_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_92_31_95_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 93 12 ]
-        symbol [ selectedIndex %tmp.7 93 12 25 ];
+        bf %tmp.4 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_97_8_100_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_97_8_100_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_97_31_100_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 98 12 ]
+        symbol [ selectedIndex %tmp.7 98 12 25 ];
         %tmp.7 = getv ? :selectedIndex;
         %tmp.8 = sub %tmp.7 1;
-        symbol [ selectedIndex ? 93 12 25 ];
+        symbol [ selectedIndex ? 98 12 25 ];
         putv self :selectedIndex dup %tmp.8;
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 94 12 ]
-        symbol [ WatchUi %tmp.9 94 12 19 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 99 12 ]
+        symbol [ WatchUi %tmp.9 99 12 19 ];
         %tmp.9 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.10 94 20 33 ];
+        symbol [ requestUpdate %tmp.10 99 20 33 ];
         %tmp.10 = getv function %tmp.9 :requestUpdate;
         invoke %tmp.9 %tmp.10();
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_92_31_95_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_92_8_95_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_92_8_95_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_91_32_96_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_97_31_100_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_97_8_100_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_97_8_100_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_96_32_101_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 98; @symbol_functiondef = [handleDown,98,13,23]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 103; @symbol_functiondef = [handleDown,103,13,23]; ]
     function handleDown() as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_98_34_104_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 99 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_98_34_104_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_98_34_104_4_stop" ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_103_34_109_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 104 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_103_34_109_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_103_34_109_4_stop" ]
         %total.1 = local;
-        symbol [ total %total.1 99 12 17 ];
-        symbol [ PuzzleData %tmp.2 99 20 30 ];
+        symbol [ total %total.1 104 12 17 ];
+        symbol [ PuzzleData %tmp.2 104 20 30 ];
         %tmp.2 = getv ? :PuzzleData;
-        symbol [ getPuzzleCount %tmp.3 99 31 45 ];
+        symbol [ getPuzzleCount %tmp.3 104 31 45 ];
         %tmp.3 = getv function %tmp.2 :getPuzzleCount;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         lputv %total.1 %tmp.4;
-        symbol [ total %total.1 99 12 17 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 100 8 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_100_8_103_8_if_stmt:
-        symbol [ selectedIndex %tmp.6 100 12 25 ];
+        symbol [ total %total.1 104 12 17 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 105 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_105_8_108_8_if_stmt:
+        symbol [ selectedIndex %tmp.6 105 12 25 ];
         %tmp.6 = getv ? :selectedIndex;
         %tmp.7 = lgetv %total.1;
-        symbol [ total %tmp.7 100 28 33 ];
+        symbol [ total %tmp.7 105 28 33 ];
         %tmp.8 = 1;
         %tmp.9 = sub %tmp.7 %tmp.8;
         %tmp.10 = lt %tmp.6 %tmp.9;
-        bf %tmp.10 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_100_8_103_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_100_8_103_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_100_39_103_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 101 12 ]
-        symbol [ selectedIndex %tmp.13 101 12 25 ];
+        bf %tmp.10 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_105_8_108_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_105_8_108_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_105_39_108_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 106 12 ]
+        symbol [ selectedIndex %tmp.13 106 12 25 ];
         %tmp.13 = getv ? :selectedIndex;
         %tmp.14 = add %tmp.13 1;
-        symbol [ selectedIndex ? 101 12 25 ];
+        symbol [ selectedIndex ? 106 12 25 ];
         putv self :selectedIndex dup %tmp.14;
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 102 12 ]
-        symbol [ WatchUi %tmp.15 102 12 19 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 107 12 ]
+        symbol [ WatchUi %tmp.15 107 12 19 ];
         %tmp.15 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.16 102 20 33 ];
+        symbol [ requestUpdate %tmp.16 107 20 33 ];
         %tmp.16 = getv function %tmp.15 :requestUpdate;
         invoke %tmp.15 %tmp.16();
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_100_39_103_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_100_8_103_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_100_8_103_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_98_34_104_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_105_39_108_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_105_8_108_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_105_8_108_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_103_34_109_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 106; @symbol_functiondef = [handleEnter,106,13,24]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 111; @symbol_functiondef = [handleEnter,111,13,24]; ]
     function handleEnter() as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_106_35_111_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 107 8 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_107_8_110_8_if_stmt:
-        symbol [ selectedIndex %tmp.2 107 12 25 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_111_35_116_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 112 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_112_8_115_8_if_stmt:
+        symbol [ selectedIndex %tmp.2 112 12 25 ];
         %tmp.2 = getv ? :selectedIndex;
-        symbol [ PuzzleData %tmp.4 107 28 38 ];
+        symbol [ PuzzleData %tmp.4 112 28 38 ];
         %tmp.4 = getv ? :PuzzleData;
-        symbol [ getPuzzleCount %tmp.5 107 39 53 ];
+        symbol [ getPuzzleCount %tmp.5 112 39 53 ];
         %tmp.5 = getv function %tmp.4 :getPuzzleCount;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         %tmp.7 = lt %tmp.2 %tmp.6;
-        bf %tmp.7 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_107_8_110_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_107_8_110_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_107_57_110_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 108 12 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_107_57_110_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_107_57_110_8_stop" ]
+        bf %tmp.7 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_112_8_115_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_112_8_115_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_112_57_115_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 113 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_112_57_115_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_112_57_115_8_stop" ]
         %boardView.1 = local;
-        symbol [ boardView %boardView.1 108 16 25 ];
-        symbol [ BoardView %tmp.11 108 32 41 ];
+        symbol [ boardView %boardView.1 113 16 25 ];
+        symbol [ BoardView %tmp.11 113 32 41 ];
         %tmp.11 = getv ? :BoardView;
-        symbol [ selectedIndex %tmp.13 108 42 55 ];
+        symbol [ selectedIndex %tmp.13 113 42 55 ];
         %tmp.13 = getv ? :selectedIndex;
         %tmp.8 = newc %tmp.11 (%tmp.13);
         lputv %boardView.1 %tmp.8;
-        symbol [ boardView %boardView.1 108 16 25 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 109 12 ]
-        symbol [ WatchUi %tmp.14 109 12 19 ];
+        symbol [ boardView %boardView.1 113 16 25 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 114 12 ]
+        symbol [ WatchUi %tmp.14 114 12 19 ];
         %tmp.14 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.15 109 20 28 ];
+        symbol [ pushView %tmp.15 114 20 28 ];
         %tmp.15 = getv function %tmp.14 :pushView;
         %tmp.16 = lgetv %boardView.1;
-        symbol [ boardView %tmp.16 109 29 38 ];
-        symbol [ BoardDelegate %tmp.20 109 44 57 ];
+        symbol [ boardView %tmp.16 114 29 38 ];
+        symbol [ BoardDelegate %tmp.20 114 44 57 ];
         %tmp.20 = getv ? :BoardDelegate;
-        symbol [ selectedIndex %tmp.22 109 58 71 ];
+        symbol [ selectedIndex %tmp.22 114 58 71 ];
         %tmp.22 = getv ? :selectedIndex;
         %tmp.23 = lgetv %boardView.1;
-        symbol [ boardView %tmp.23 109 73 82 ];
+        symbol [ boardView %tmp.23 114 73 82 ];
         %tmp.17 = newc %tmp.20 (%tmp.22, %tmp.23);
-        symbol [ WatchUi %tmp.24 109 85 92 ];
+        symbol [ WatchUi %tmp.24 114 85 92 ];
         %tmp.24 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_LEFT %tmp.25 109 93 103 ];
+        symbol [ SLIDE_LEFT %tmp.25 114 93 103 ];
         %tmp.25 = getv %tmp.24 :SLIDE_LEFT;
         invoke %tmp.14 %tmp.15(%tmp.16, %tmp.17, %tmp.25);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_107_57_110_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_107_8_110_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_107_8_110_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_106_35_111_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_112_57_115_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_112_8_115_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_112_8_115_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_111_35_116_4_stop:
     }
 }
-[ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 114; @symbol_classdef = [PuzzleListDelegate,114,6,24]; @symbol_extends<0> = [WatchUi,114,33,40]; @symbol_extends<1> = [InputDelegate,114,41,54]; ]
+[ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 119; @symbol_classdef = [PuzzleListDelegate,119,6,24]; @symbol_extends<0> = [WatchUi,119,33,40]; @symbol_extends<1> = [InputDelegate,119,41,54]; ]
 class PuzzleListDelegate extends WatchUi.InputDelegate {
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 114; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 119; ]
     <init> {
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 114; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 119; ]
     static
     <init> {
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 115; @position = 8; @symbol_vardef = [view,115,8,12]; @symbol_type<0> = [PuzzleListView,115,16,30]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 120; @position = 8; @symbol_vardef = [view,120,8,12]; @symbol_type<0> = [PuzzleListView,120,16,30]; ]
     var view as PuzzleListView;
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 117; @symbol_functiondef = [initialize,117,13,23]; @symbol_param<0> = [pListView,117,24,33]; @symbol_param<0>_type<0> = [PuzzleListView,117,37,51]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 122; @symbol_functiondef = [initialize,122,13,23]; @symbol_param<0> = [pListView,122,24,33]; @symbol_param<0>_type<0> = [PuzzleListView,122,37,51]; ]
     function initialize(pListView as PuzzleListView) as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_117_53_120_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 118 8 ]
-        symbol [ WatchUi %tmp.1 118 8 15 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_122_53_125_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 123 8 ]
+        symbol [ WatchUi %tmp.1 123 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ InputDelegate %tmp.2 118 16 29 ];
+        symbol [ InputDelegate %tmp.2 123 16 29 ];
         %tmp.2 = getv %tmp.1 :InputDelegate;
-        symbol [ initialize %tmp.3 118 30 40 ];
+        symbol [ initialize %tmp.3 123 30 40 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 119 8 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 124 8 ]
         %tmp.4 = lgetv %pListView;
-        symbol [ pListView %tmp.4 119 15 24 ];
-        symbol [ view ? 119 8 12 ];
+        symbol [ pListView %tmp.4 124 15 24 ];
+        symbol [ view ? 124 8 12 ];
         putv self :view %tmp.4;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_117_53_120_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_122_53_125_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 122; @symbol_functiondef = [onKeyPressed,122,13,25]; @symbol_param<0> = [key,122,26,29]; @symbol_param<0>_type<0> = [WatchUi,122,33,40]; @symbol_param<0>_type<1> = [KeyEvent,122,41,49]; @symbol_return<0> = [Boolean,122,54,61]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 127; @symbol_functiondef = [onKeyPressed,127,13,25]; @symbol_param<0> = [key,127,26,29]; @symbol_param<0>_type<0> = [WatchUi,127,33,40]; @symbol_param<0>_type<1> = [KeyEvent,127,41,49]; @symbol_return<0> = [Boolean,127,54,61]; ]
     function onKeyPressed(key as WatchUi.KeyEvent) as Boolean {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_122_62_139_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 123 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_122_62_139_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_122_62_139_4_stop" ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_127_62_144_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 128 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_127_62_144_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_127_62_144_4_stop" ]
         %keyCode.1 = local;
-        symbol [ keyCode %keyCode.1 123 12 19 ];
+        symbol [ keyCode %keyCode.1 128 12 19 ];
         %tmp.1 = lgetv %key;
-        symbol [ key %tmp.1 123 22 25 ];
-        symbol [ getKey %tmp.2 123 26 32 ];
+        symbol [ key %tmp.1 128 22 25 ];
+        symbol [ getKey %tmp.2 128 26 32 ];
         %tmp.2 = getv function %tmp.1 :getKey;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %keyCode.1 %tmp.3;
-        symbol [ keyCode %keyCode.1 123 12 19 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 125 8 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_125_8_137_8_if_stmt:
+        symbol [ keyCode %keyCode.1 128 12 19 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 130 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_130_8_142_8_if_stmt:
         %tmp.4 = lgetv %keyCode.1;
-        symbol [ keyCode %tmp.4 125 12 19 ];
-        symbol [ WatchUi %tmp.5 125 23 30 ];
+        symbol [ keyCode %tmp.4 130 12 19 ];
+        symbol [ WatchUi %tmp.5 130 23 30 ];
         %tmp.5 = getm $.Toybox.WatchUi;
-        symbol [ KEY_UP %tmp.6 125 31 37 ];
+        symbol [ KEY_UP %tmp.6 130 31 37 ];
         %tmp.6 = getv %tmp.5 :KEY_UP;
         %tmp.7 = eq %tmp.4 %tmp.6;
-        bf %tmp.7 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_125_8_137_8_if_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_125_8_137_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_125_39_128_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 126 12 ]
-        symbol [ view %tmp.9 126 12 16 ];
+        bf %tmp.7 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_130_8_142_8_if_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_130_8_142_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_130_39_133_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 131 12 ]
+        symbol [ view %tmp.9 131 12 16 ];
         %tmp.9 = getv ? :view;
-        symbol [ handleUp %tmp.10 126 17 25 ];
+        symbol [ handleUp %tmp.10 131 17 25 ];
         %tmp.10 = getv function %tmp.9 :handleUp;
         invoke %tmp.9 %tmp.10();
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 127 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 132 12 ]
         %tmp.11 = true;
         ret %tmp.11;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_125_39_128_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_125_8_137_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_125_8_137_8_if_false:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 128 15 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_128_15_137_8_if_stmt:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_130_39_133_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_130_8_142_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_130_8_142_8_if_false:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 133 15 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_133_15_142_8_if_stmt:
         %tmp.12 = lgetv %keyCode.1;
-        symbol [ keyCode %tmp.12 128 19 26 ];
-        symbol [ WatchUi %tmp.13 128 30 37 ];
+        symbol [ keyCode %tmp.12 133 19 26 ];
+        symbol [ WatchUi %tmp.13 133 30 37 ];
         %tmp.13 = getm $.Toybox.WatchUi;
-        symbol [ KEY_DOWN %tmp.14 128 38 46 ];
+        symbol [ KEY_DOWN %tmp.14 133 38 46 ];
         %tmp.14 = getv %tmp.13 :KEY_DOWN;
         %tmp.15 = eq %tmp.12 %tmp.14;
-        bf %tmp.15 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_128_15_137_8_if_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_128_15_137_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_128_48_131_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 129 12 ]
-        symbol [ view %tmp.17 129 12 16 ];
+        bf %tmp.15 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_133_15_142_8_if_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_133_15_142_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_133_48_136_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 134 12 ]
+        symbol [ view %tmp.17 134 12 16 ];
         %tmp.17 = getv ? :view;
-        symbol [ handleDown %tmp.18 129 17 27 ];
+        symbol [ handleDown %tmp.18 134 17 27 ];
         %tmp.18 = getv function %tmp.17 :handleDown;
         invoke %tmp.17 %tmp.18();
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 130 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 135 12 ]
         %tmp.19 = true;
         ret %tmp.19;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_128_48_131_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_128_15_137_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_128_15_137_8_if_false:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 131 15 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_131_15_137_8_if_stmt:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_133_48_136_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_133_15_142_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_133_15_142_8_if_false:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 136 15 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_136_15_142_8_if_stmt:
         %tmp.20 = lgetv %keyCode.1;
-        symbol [ keyCode %tmp.20 131 19 26 ];
-        symbol [ WatchUi %tmp.21 131 30 37 ];
+        symbol [ keyCode %tmp.20 136 19 26 ];
+        symbol [ WatchUi %tmp.21 136 30 37 ];
         %tmp.21 = getm $.Toybox.WatchUi;
-        symbol [ KEY_ENTER %tmp.22 131 38 47 ];
+        symbol [ KEY_ENTER %tmp.22 136 38 47 ];
         %tmp.22 = getv %tmp.21 :KEY_ENTER;
         %tmp.23 = eq %tmp.20 %tmp.22;
-        bf %tmp.23 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_131_15_137_8_if_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_131_15_137_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_131_49_134_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 132 12 ]
-        symbol [ view %tmp.25 132 12 16 ];
+        bf %tmp.23 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_136_15_142_8_if_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_136_15_142_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_136_49_139_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 137 12 ]
+        symbol [ view %tmp.25 137 12 16 ];
         %tmp.25 = getv ? :view;
-        symbol [ handleEnter %tmp.26 132 17 28 ];
+        symbol [ handleEnter %tmp.26 137 17 28 ];
         %tmp.26 = getv function %tmp.25 :handleEnter;
         invoke %tmp.25 %tmp.26();
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 133 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 138 12 ]
         %tmp.27 = true;
         ret %tmp.27;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_131_49_134_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_131_15_137_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_131_15_137_8_if_false:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 134 15 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_134_15_137_8_if_stmt:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_136_49_139_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_136_15_142_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_136_15_142_8_if_false:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 139 15 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_139_15_142_8_if_stmt:
         %tmp.28 = lgetv %keyCode.1;
-        symbol [ keyCode %tmp.28 134 19 26 ];
-        symbol [ WatchUi %tmp.29 134 30 37 ];
+        symbol [ keyCode %tmp.28 139 19 26 ];
+        symbol [ WatchUi %tmp.29 139 30 37 ];
         %tmp.29 = getm $.Toybox.WatchUi;
-        symbol [ KEY_ESC %tmp.30 134 38 45 ];
+        symbol [ KEY_ESC %tmp.30 139 38 45 ];
         %tmp.30 = getv %tmp.29 :KEY_ESC;
         %tmp.31 = eq %tmp.28 %tmp.30;
-        bf %tmp.31 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_134_15_137_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_134_15_137_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_134_47_137_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 135 12 ]
-        symbol [ WatchUi %tmp.32 135 12 19 ];
+        bf %tmp.31 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_139_15_142_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_139_15_142_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_139_47_142_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 140 12 ]
+        symbol [ WatchUi %tmp.32 140 12 19 ];
         %tmp.32 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.33 135 20 27 ];
+        symbol [ popView %tmp.33 140 20 27 ];
         %tmp.33 = getv function %tmp.32 :popView;
-        symbol [ WatchUi %tmp.34 135 28 35 ];
+        symbol [ WatchUi %tmp.34 140 28 35 ];
         %tmp.34 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_RIGHT %tmp.35 135 36 47 ];
+        symbol [ SLIDE_RIGHT %tmp.35 140 36 47 ];
         %tmp.35 = getv %tmp.34 :SLIDE_RIGHT;
         invoke %tmp.32 %tmp.33(%tmp.35);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 136 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 141 12 ]
         %tmp.36 = true;
         ret %tmp.36;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_134_47_137_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_134_15_137_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_134_15_137_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_131_15_137_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_128_15_137_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_125_8_137_8_if_end:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 138 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_139_47_142_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_139_15_142_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_139_15_142_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_136_15_142_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_133_15_142_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_130_8_142_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc" 143 8 ]
         %tmp.37 = false;
         ret %tmp.37;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_122_62_139_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleListView_mc_127_62_144_4_stop:
     }
 }
 [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleListView.mc"; @line = 1; ]

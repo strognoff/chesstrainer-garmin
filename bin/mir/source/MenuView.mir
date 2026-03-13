@@ -36,9 +36,9 @@ _Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_13_26_15_4_sto
     }
     [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 17; @symbol_functiondef = [onUpdate,17,13,21]; @symbol_param<0> = [dc,17,22,24]; @symbol_param<0>_type<0> = [Dc,17,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_start:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_50_4_start:
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 18 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_stop" ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_50_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_50_4_stop" ]
         %width.1 = local;
         symbol [ width %width.1 18 12 17 ];
         %tmp.1 = lgetv %dc;
@@ -49,7 +49,7 @@ _Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_sta
         lputv %width.1 %tmp.3;
         symbol [ width %width.1 18 12 17 ];
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 19 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_stop" ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_50_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_50_4_stop" ]
         %height.2 = local;
         symbol [ height %height.2 19 12 18 ];
         %tmp.4 = lgetv %dc;
@@ -60,7 +60,7 @@ _Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_sta
         lputv %height.2 %tmp.6;
         symbol [ height %height.2 19 12 18 ];
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 20 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_stop" ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_50_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_50_4_stop" ]
         %centerX.3 = local;
         symbol [ centerX %centerX.3 20 12 19 ];
         %tmp.7 = lgetv %width.1;
@@ -152,14 +152,14 @@ _Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_sta
         %tmp.47 = getv %tmp.46 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.39 %tmp.40(%tmp.41, %tmp.42, %tmp.44, %tmp.45, %tmp.47);
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 35 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_stop" ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_50_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_50_4_stop" ]
         %itemHeight.4 = local;
         symbol [ itemHeight %itemHeight.4 35 12 22 ];
         %tmp.48 = 40;
         lputv %itemHeight.4 %tmp.48;
         symbol [ itemHeight %itemHeight.4 35 12 22 ];
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 36 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_stop" ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_50_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_50_4_stop" ]
         %startY.5 = local;
         symbol [ startY %startY.5 36 12 18 ];
         %tmp.49 = 85;
@@ -247,522 +247,504 @@ _Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_sta
         symbol [ TEXT_JUSTIFY_CENTER %tmp.94 49 85 104 ];
         %tmp.94 = getv %tmp.93 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.86 %tmp.87(%tmp.88, %tmp.89, %tmp.91, %tmp.92, %tmp.94);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 50 8 ]
-        %tmp.95 = lgetv %dc;
-        symbol [ dc %tmp.95 50 8 10 ];
-        symbol [ drawText %tmp.96 50 11 19 ];
-        %tmp.96 = getv function %tmp.95 :drawText;
-        %tmp.97 = lgetv %centerX.3;
-        symbol [ centerX %tmp.97 50 20 27 ];
-        %tmp.98 = 250;
-        symbol [ Graphics %tmp.99 50 34 42 ];
-        %tmp.99 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.100 50 43 53 ];
-        %tmp.100 = getv %tmp.99 :FONT_XTINY;
-        %tmp.101 = "ENTER: Select";
-        symbol [ Graphics %tmp.102 50 72 80 ];
-        %tmp.102 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.103 50 81 100 ];
-        %tmp.103 = getv %tmp.102 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.95 %tmp.96(%tmp.97, %tmp.98, %tmp.100, %tmp.101, %tmp.103);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_51_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_17_40_50_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 53; @symbol_functiondef = [drawMenuItem,53,13,25]; @symbol_param<0> = [dc,53,26,28]; @symbol_param<0>_type<0> = [Dc,53,32,34]; @symbol_param<1> = [centerX,53,36,43]; @symbol_param<1>_type<0> = [Number,53,47,53]; @symbol_param<2> = [y,53,55,56]; @symbol_param<2>_type<0> = [Number,53,60,66]; @symbol_param<3> = [index,53,68,73]; @symbol_param<3>_type<0> = [Number,53,77,83]; @symbol_param<4> = [title,53,85,90]; @symbol_param<4>_type<0> = [String,53,94,100]; @symbol_param<5> = [subtitle,53,102,110]; @symbol_param<5>_type<0> = [String,53,114,120]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 52; @symbol_functiondef = [drawMenuItem,52,13,25]; @symbol_param<0> = [dc,52,26,28]; @symbol_param<0>_type<0> = [Dc,52,32,34]; @symbol_param<1> = [centerX,52,36,43]; @symbol_param<1>_type<0> = [Number,52,47,53]; @symbol_param<2> = [y,52,55,56]; @symbol_param<2>_type<0> = [Number,52,60,66]; @symbol_param<3> = [index,52,68,73]; @symbol_param<3>_type<0> = [Number,52,77,83]; @symbol_param<4> = [title,52,85,90]; @symbol_param<4>_type<0> = [String,52,94,100]; @symbol_param<5> = [subtitle,52,102,110]; @symbol_param<5>_type<0> = [String,52,114,120]; ]
     function drawMenuItem(dc as Dc, centerX as Number, y as Number, index as Number, title as String, subtitle as String) as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_53_130_74_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 54 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_53_130_74_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_53_130_74_4_stop" ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_52_130_73_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 53 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_52_130_73_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_52_130_73_4_stop" ]
         %isSelected.1 = local;
-        symbol [ isSelected %isSelected.1 54 12 22 ];
+        symbol [ isSelected %isSelected.1 53 12 22 ];
         %tmp.1 = lgetv %index;
-        symbol [ index %tmp.1 54 26 31 ];
-        symbol [ currentSelection %tmp.3 54 35 51 ];
+        symbol [ index %tmp.1 53 26 31 ];
+        symbol [ currentSelection %tmp.3 53 35 51 ];
         %tmp.3 = getv ? :currentSelection;
         %tmp.4 = eq %tmp.1 %tmp.3;
         lputv %isSelected.1 %tmp.4;
-        symbol [ isSelected %isSelected.1 54 12 22 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 56 8 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_56_8_73_8_if_stmt:
+        symbol [ isSelected %isSelected.1 53 12 22 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 55 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_55_8_72_8_if_stmt:
         %tmp.5 = lgetv %isSelected.1;
-        symbol [ isSelected %tmp.5 56 12 22 ];
-        bf %tmp.5 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_56_8_73_8_if_else_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_56_8_73_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_56_24_66_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 58 12 ]
+        symbol [ isSelected %tmp.5 55 12 22 ];
+        bf %tmp.5 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_55_8_72_8_if_else_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_55_8_72_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_55_24_65_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 57 12 ]
         %tmp.6 = lgetv %dc;
-        symbol [ dc %tmp.6 58 12 14 ];
-        symbol [ setColor %tmp.7 58 15 23 ];
+        symbol [ dc %tmp.6 57 12 14 ];
+        symbol [ setColor %tmp.7 57 15 23 ];
         %tmp.7 = getv function %tmp.6 :setColor;
-        symbol [ COLOR_GREEN %tmp.9 58 24 35 ];
+        symbol [ COLOR_GREEN %tmp.9 57 24 35 ];
         %tmp.9 = getv ? :COLOR_GREEN;
-        symbol [ Graphics %tmp.10 58 37 45 ];
+        symbol [ Graphics %tmp.10 57 37 45 ];
         %tmp.10 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.11 58 46 63 ];
+        symbol [ COLOR_TRANSPARENT %tmp.11 57 46 63 ];
         %tmp.11 = getv %tmp.10 :COLOR_TRANSPARENT;
         invoke %tmp.6 %tmp.7(%tmp.9, %tmp.11);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 59 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 58 12 ]
         %tmp.12 = lgetv %dc;
-        symbol [ dc %tmp.12 59 12 14 ];
-        symbol [ drawText %tmp.13 59 15 23 ];
+        symbol [ dc %tmp.12 58 12 14 ];
+        symbol [ drawText %tmp.13 58 15 23 ];
         %tmp.13 = getv function %tmp.12 :drawText;
         %tmp.14 = lgetv %centerX;
-        symbol [ centerX %tmp.14 59 24 31 ];
+        symbol [ centerX %tmp.14 58 24 31 ];
         %tmp.15 = 70;
         %tmp.16 = sub %tmp.14 %tmp.15;
         %tmp.17 = lgetv %y;
-        symbol [ y %tmp.17 59 38 39 ];
-        symbol [ Graphics %tmp.18 59 41 49 ];
+        symbol [ y %tmp.17 58 38 39 ];
+        symbol [ Graphics %tmp.18 58 41 49 ];
         %tmp.18 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.19 59 50 60 ];
+        symbol [ FONT_SMALL %tmp.19 58 50 60 ];
         %tmp.19 = getv %tmp.18 :FONT_SMALL;
         %tmp.20 = ">";
-        symbol [ Graphics %tmp.21 59 67 75 ];
+        symbol [ Graphics %tmp.21 58 67 75 ];
         %tmp.21 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.22 59 76 93 ];
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.22 58 76 93 ];
         %tmp.22 = getv %tmp.21 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.12 %tmp.13(%tmp.16, %tmp.17, %tmp.19, %tmp.20, %tmp.22);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 61 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 60 12 ]
         %tmp.23 = lgetv %dc;
-        symbol [ dc %tmp.23 61 12 14 ];
-        symbol [ setColor %tmp.24 61 15 23 ];
+        symbol [ dc %tmp.23 60 12 14 ];
+        symbol [ setColor %tmp.24 60 15 23 ];
         %tmp.24 = getv function %tmp.23 :setColor;
-        symbol [ Graphics %tmp.25 61 24 32 ];
+        symbol [ Graphics %tmp.25 60 24 32 ];
         %tmp.25 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.26 61 33 44 ];
+        symbol [ COLOR_WHITE %tmp.26 60 33 44 ];
         %tmp.26 = getv %tmp.25 :COLOR_WHITE;
-        symbol [ Graphics %tmp.27 61 46 54 ];
+        symbol [ Graphics %tmp.27 60 46 54 ];
         %tmp.27 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.28 61 55 72 ];
+        symbol [ COLOR_TRANSPARENT %tmp.28 60 55 72 ];
         %tmp.28 = getv %tmp.27 :COLOR_TRANSPARENT;
         invoke %tmp.23 %tmp.24(%tmp.26, %tmp.28);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 62 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 61 12 ]
         %tmp.29 = lgetv %dc;
-        symbol [ dc %tmp.29 62 12 14 ];
-        symbol [ drawText %tmp.30 62 15 23 ];
+        symbol [ dc %tmp.29 61 12 14 ];
+        symbol [ drawText %tmp.30 61 15 23 ];
         %tmp.30 = getv function %tmp.29 :drawText;
         %tmp.31 = lgetv %centerX;
-        symbol [ centerX %tmp.31 62 24 31 ];
+        symbol [ centerX %tmp.31 61 24 31 ];
         %tmp.32 = 50;
         %tmp.33 = sub %tmp.31 %tmp.32;
         %tmp.34 = lgetv %y;
-        symbol [ y %tmp.34 62 38 39 ];
-        symbol [ Graphics %tmp.35 62 41 49 ];
+        symbol [ y %tmp.34 61 38 39 ];
+        symbol [ Graphics %tmp.35 61 41 49 ];
         %tmp.35 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.36 62 50 61 ];
+        symbol [ FONT_MEDIUM %tmp.36 61 50 61 ];
         %tmp.36 = getv %tmp.35 :FONT_MEDIUM;
         %tmp.37 = lgetv %title;
-        symbol [ title %tmp.37 62 63 68 ];
-        symbol [ Graphics %tmp.38 62 70 78 ];
+        symbol [ title %tmp.37 61 63 68 ];
+        symbol [ Graphics %tmp.38 61 70 78 ];
         %tmp.38 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.39 62 79 96 ];
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.39 61 79 96 ];
         %tmp.39 = getv %tmp.38 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.29 %tmp.30(%tmp.33, %tmp.34, %tmp.36, %tmp.37, %tmp.39);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 64 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 63 12 ]
         %tmp.40 = lgetv %dc;
-        symbol [ dc %tmp.40 64 12 14 ];
-        symbol [ setColor %tmp.41 64 15 23 ];
+        symbol [ dc %tmp.40 63 12 14 ];
+        symbol [ setColor %tmp.41 63 15 23 ];
         %tmp.41 = getv function %tmp.40 :setColor;
-        symbol [ COLOR_ACCENT %tmp.43 64 24 36 ];
+        symbol [ COLOR_ACCENT %tmp.43 63 24 36 ];
         %tmp.43 = getv ? :COLOR_ACCENT;
-        symbol [ Graphics %tmp.44 64 38 46 ];
+        symbol [ Graphics %tmp.44 63 38 46 ];
         %tmp.44 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.45 64 47 64 ];
+        symbol [ COLOR_TRANSPARENT %tmp.45 63 47 64 ];
         %tmp.45 = getv %tmp.44 :COLOR_TRANSPARENT;
         invoke %tmp.40 %tmp.41(%tmp.43, %tmp.45);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 65 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 64 12 ]
         %tmp.46 = lgetv %dc;
-        symbol [ dc %tmp.46 65 12 14 ];
-        symbol [ drawText %tmp.47 65 15 23 ];
+        symbol [ dc %tmp.46 64 12 14 ];
+        symbol [ drawText %tmp.47 64 15 23 ];
         %tmp.47 = getv function %tmp.46 :drawText;
         %tmp.48 = lgetv %centerX;
-        symbol [ centerX %tmp.48 65 24 31 ];
+        symbol [ centerX %tmp.48 64 24 31 ];
         %tmp.49 = 50;
         %tmp.50 = sub %tmp.48 %tmp.49;
         %tmp.51 = lgetv %y;
-        symbol [ y %tmp.51 65 38 39 ];
+        symbol [ y %tmp.51 64 38 39 ];
         %tmp.52 = 20;
         %tmp.53 = add %tmp.51 %tmp.52;
-        symbol [ Graphics %tmp.54 65 46 54 ];
+        symbol [ Graphics %tmp.54 64 46 54 ];
         %tmp.54 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.55 65 55 65 ];
+        symbol [ FONT_XTINY %tmp.55 64 55 65 ];
         %tmp.55 = getv %tmp.54 :FONT_XTINY;
         %tmp.56 = lgetv %subtitle;
-        symbol [ subtitle %tmp.56 65 67 75 ];
-        symbol [ Graphics %tmp.57 65 77 85 ];
+        symbol [ subtitle %tmp.56 64 67 75 ];
+        symbol [ Graphics %tmp.57 64 77 85 ];
         %tmp.57 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.58 65 86 103 ];
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.58 64 86 103 ];
         %tmp.58 = getv %tmp.57 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.46 %tmp.47(%tmp.50, %tmp.53, %tmp.55, %tmp.56, %tmp.58);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_56_24_66_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_56_8_73_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_56_8_73_8_if_else_false:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_66_15_73_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 68 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_55_24_65_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_55_8_72_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_55_8_72_8_if_else_false:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_65_15_72_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 67 12 ]
         %tmp.59 = lgetv %dc;
-        symbol [ dc %tmp.59 68 12 14 ];
-        symbol [ setColor %tmp.60 68 15 23 ];
+        symbol [ dc %tmp.59 67 12 14 ];
+        symbol [ setColor %tmp.60 67 15 23 ];
         %tmp.60 = getv function %tmp.59 :setColor;
-        symbol [ Graphics %tmp.61 68 24 32 ];
+        symbol [ Graphics %tmp.61 67 24 32 ];
         %tmp.61 = getm $.Toybox.Graphics;
-        symbol [ COLOR_DK_GRAY %tmp.62 68 33 46 ];
+        symbol [ COLOR_DK_GRAY %tmp.62 67 33 46 ];
         %tmp.62 = getv %tmp.61 :COLOR_DK_GRAY;
-        symbol [ Graphics %tmp.63 68 48 56 ];
+        symbol [ Graphics %tmp.63 67 48 56 ];
         %tmp.63 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.64 68 57 74 ];
+        symbol [ COLOR_TRANSPARENT %tmp.64 67 57 74 ];
         %tmp.64 = getv %tmp.63 :COLOR_TRANSPARENT;
         invoke %tmp.59 %tmp.60(%tmp.62, %tmp.64);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 69 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 68 12 ]
         %tmp.65 = lgetv %dc;
-        symbol [ dc %tmp.65 69 12 14 ];
-        symbol [ drawText %tmp.66 69 15 23 ];
+        symbol [ dc %tmp.65 68 12 14 ];
+        symbol [ drawText %tmp.66 68 15 23 ];
         %tmp.66 = getv function %tmp.65 :drawText;
         %tmp.67 = lgetv %centerX;
-        symbol [ centerX %tmp.67 69 24 31 ];
+        symbol [ centerX %tmp.67 68 24 31 ];
         %tmp.68 = 50;
         %tmp.69 = sub %tmp.67 %tmp.68;
         %tmp.70 = lgetv %y;
-        symbol [ y %tmp.70 69 38 39 ];
-        symbol [ Graphics %tmp.71 69 41 49 ];
+        symbol [ y %tmp.70 68 38 39 ];
+        symbol [ Graphics %tmp.71 68 41 49 ];
         %tmp.71 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.72 69 50 60 ];
+        symbol [ FONT_SMALL %tmp.72 68 50 60 ];
         %tmp.72 = getv %tmp.71 :FONT_SMALL;
         %tmp.73 = lgetv %title;
-        symbol [ title %tmp.73 69 62 67 ];
-        symbol [ Graphics %tmp.74 69 69 77 ];
+        symbol [ title %tmp.73 68 62 67 ];
+        symbol [ Graphics %tmp.74 68 69 77 ];
         %tmp.74 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.75 69 78 95 ];
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.75 68 78 95 ];
         %tmp.75 = getv %tmp.74 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.65 %tmp.66(%tmp.69, %tmp.70, %tmp.72, %tmp.73, %tmp.75);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 71 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 70 12 ]
         %tmp.76 = lgetv %dc;
-        symbol [ dc %tmp.76 71 12 14 ];
-        symbol [ setColor %tmp.77 71 15 23 ];
+        symbol [ dc %tmp.76 70 12 14 ];
+        symbol [ setColor %tmp.77 70 15 23 ];
         %tmp.77 = getv function %tmp.76 :setColor;
         %tmp.78 = 0x333333;
-        symbol [ Graphics %tmp.79 71 34 42 ];
+        symbol [ Graphics %tmp.79 70 34 42 ];
         %tmp.79 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.80 71 43 60 ];
+        symbol [ COLOR_TRANSPARENT %tmp.80 70 43 60 ];
         %tmp.80 = getv %tmp.79 :COLOR_TRANSPARENT;
         invoke %tmp.76 %tmp.77(%tmp.78, %tmp.80);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 72 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 71 12 ]
         %tmp.81 = lgetv %dc;
-        symbol [ dc %tmp.81 72 12 14 ];
-        symbol [ drawText %tmp.82 72 15 23 ];
+        symbol [ dc %tmp.81 71 12 14 ];
+        symbol [ drawText %tmp.82 71 15 23 ];
         %tmp.82 = getv function %tmp.81 :drawText;
         %tmp.83 = lgetv %centerX;
-        symbol [ centerX %tmp.83 72 24 31 ];
+        symbol [ centerX %tmp.83 71 24 31 ];
         %tmp.84 = 50;
         %tmp.85 = sub %tmp.83 %tmp.84;
         %tmp.86 = lgetv %y;
-        symbol [ y %tmp.86 72 38 39 ];
+        symbol [ y %tmp.86 71 38 39 ];
         %tmp.87 = 17;
         %tmp.88 = add %tmp.86 %tmp.87;
-        symbol [ Graphics %tmp.89 72 46 54 ];
+        symbol [ Graphics %tmp.89 71 46 54 ];
         %tmp.89 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.90 72 55 65 ];
+        symbol [ FONT_XTINY %tmp.90 71 55 65 ];
         %tmp.90 = getv %tmp.89 :FONT_XTINY;
         %tmp.91 = lgetv %subtitle;
-        symbol [ subtitle %tmp.91 72 67 75 ];
-        symbol [ Graphics %tmp.92 72 77 85 ];
+        symbol [ subtitle %tmp.91 71 67 75 ];
+        symbol [ Graphics %tmp.92 71 77 85 ];
         %tmp.92 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.93 72 86 103 ];
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.93 71 86 103 ];
         %tmp.93 = getv %tmp.92 :TEXT_JUSTIFY_LEFT;
         invoke %tmp.81 %tmp.82(%tmp.85, %tmp.88, %tmp.90, %tmp.91, %tmp.93);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_66_15_73_8_stop:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_56_8_73_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_53_130_74_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_65_15_72_8_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_55_8_72_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_52_130_73_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 76; @symbol_functiondef = [handleUp,76,13,21]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 75; @symbol_functiondef = [handleUp,75,13,21]; ]
     function handleUp() as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_76_32_81_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 77 8 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_77_8_80_8_if_stmt:
-        symbol [ currentSelection %tmp.2 77 12 28 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_75_32_80_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 76 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_76_8_79_8_if_stmt:
+        symbol [ currentSelection %tmp.2 76 12 28 ];
         %tmp.2 = getv ? :currentSelection;
         %tmp.3 = 0;
         %tmp.4 = gt %tmp.2 %tmp.3;
-        bf %tmp.4 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_77_8_80_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_77_8_80_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_77_34_80_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 78 12 ]
-        symbol [ currentSelection %tmp.7 78 12 28 ];
+        bf %tmp.4 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_76_8_79_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_76_8_79_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_76_34_79_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 77 12 ]
+        symbol [ currentSelection %tmp.7 77 12 28 ];
         %tmp.7 = getv ? :currentSelection;
         %tmp.8 = sub %tmp.7 1;
-        symbol [ currentSelection ? 78 12 28 ];
+        symbol [ currentSelection ? 77 12 28 ];
         putv self :currentSelection dup %tmp.8;
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 79 12 ]
-        symbol [ WatchUi %tmp.9 79 12 19 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 78 12 ]
+        symbol [ WatchUi %tmp.9 78 12 19 ];
         %tmp.9 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.10 79 20 33 ];
+        symbol [ requestUpdate %tmp.10 78 20 33 ];
         %tmp.10 = getv function %tmp.9 :requestUpdate;
         invoke %tmp.9 %tmp.10();
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_77_34_80_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_77_8_80_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_77_8_80_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_76_32_81_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_76_34_79_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_76_8_79_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_76_8_79_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_75_32_80_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 83; @symbol_functiondef = [handleDown,83,13,23]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 82; @symbol_functiondef = [handleDown,82,13,23]; ]
     function handleDown() as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_83_34_88_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 84 8 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_84_8_87_8_if_stmt:
-        symbol [ currentSelection %tmp.2 84 12 28 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_82_34_87_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 83 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_83_8_86_8_if_stmt:
+        symbol [ currentSelection %tmp.2 83 12 28 ];
         %tmp.2 = getv ? :currentSelection;
         %tmp.3 = 2;
         %tmp.4 = lt %tmp.2 %tmp.3;
-        bf %tmp.4 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_84_8_87_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_84_8_87_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_84_34_87_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 85 12 ]
-        symbol [ currentSelection %tmp.7 85 12 28 ];
+        bf %tmp.4 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_83_8_86_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_83_8_86_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_83_34_86_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 84 12 ]
+        symbol [ currentSelection %tmp.7 84 12 28 ];
         %tmp.7 = getv ? :currentSelection;
         %tmp.8 = add %tmp.7 1;
-        symbol [ currentSelection ? 85 12 28 ];
+        symbol [ currentSelection ? 84 12 28 ];
         putv self :currentSelection dup %tmp.8;
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 86 12 ]
-        symbol [ WatchUi %tmp.9 86 12 19 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 85 12 ]
+        symbol [ WatchUi %tmp.9 85 12 19 ];
         %tmp.9 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.10 86 20 33 ];
+        symbol [ requestUpdate %tmp.10 85 20 33 ];
         %tmp.10 = getv function %tmp.9 :requestUpdate;
         invoke %tmp.9 %tmp.10();
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_84_34_87_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_84_8_87_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_84_8_87_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_83_34_88_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_83_34_86_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_83_8_86_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_83_8_86_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_82_34_87_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 90; @symbol_functiondef = [handleEnter,90,13,24]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 89; @symbol_functiondef = [handleEnter,89,13,24]; ]
     function handleEnter() as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_90_35_100_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 91 8 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_91_8_99_8_if_stmt:
-        symbol [ currentSelection %tmp.2 91 12 28 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_89_35_99_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 90 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_90_8_98_8_if_stmt:
+        symbol [ currentSelection %tmp.2 90 12 28 ];
         %tmp.2 = getv ? :currentSelection;
         %tmp.3 = 0;
         %tmp.4 = eq %tmp.2 %tmp.3;
-        bf %tmp.4 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_91_8_99_8_if_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_91_8_99_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_91_35_94_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 92 12 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_91_35_94_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_91_35_94_8_stop" ]
+        bf %tmp.4 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_90_8_98_8_if_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_90_8_98_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_90_35_93_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 91 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_90_35_93_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_90_35_93_8_stop" ]
         %puzzleListView.1 = local;
-        symbol [ puzzleListView %puzzleListView.1 92 16 30 ];
-        symbol [ PuzzleListView %tmp.8 92 37 51 ];
+        symbol [ puzzleListView %puzzleListView.1 91 16 30 ];
+        symbol [ PuzzleListView %tmp.8 91 37 51 ];
         %tmp.8 = getv ? :PuzzleListView;
         %tmp.5 = newc %tmp.8 ();
         lputv %puzzleListView.1 %tmp.5;
-        symbol [ puzzleListView %puzzleListView.1 92 16 30 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 93 12 ]
-        symbol [ WatchUi %tmp.9 93 12 19 ];
+        symbol [ puzzleListView %puzzleListView.1 91 16 30 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 92 12 ]
+        symbol [ WatchUi %tmp.9 92 12 19 ];
         %tmp.9 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.10 93 20 28 ];
+        symbol [ pushView %tmp.10 92 20 28 ];
         %tmp.10 = getv function %tmp.9 :pushView;
         %tmp.11 = lgetv %puzzleListView.1;
-        symbol [ puzzleListView %tmp.11 93 29 43 ];
-        symbol [ PuzzleListDelegate %tmp.15 93 49 67 ];
+        symbol [ puzzleListView %tmp.11 92 29 43 ];
+        symbol [ PuzzleListDelegate %tmp.15 92 49 67 ];
         %tmp.15 = getv ? :PuzzleListDelegate;
         %tmp.16 = lgetv %puzzleListView.1;
-        symbol [ puzzleListView %tmp.16 93 68 82 ];
+        symbol [ puzzleListView %tmp.16 92 68 82 ];
         %tmp.12 = newc %tmp.15 (%tmp.16);
-        symbol [ WatchUi %tmp.17 93 85 92 ];
+        symbol [ WatchUi %tmp.17 92 85 92 ];
         %tmp.17 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_LEFT %tmp.18 93 93 103 ];
+        symbol [ SLIDE_LEFT %tmp.18 92 93 103 ];
         %tmp.18 = getv %tmp.17 :SLIDE_LEFT;
         invoke %tmp.9 %tmp.10(%tmp.11, %tmp.12, %tmp.18);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_91_35_94_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_91_8_99_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_91_8_99_8_if_false:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 94 15 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_94_15_99_8_if_stmt:
-        symbol [ currentSelection %tmp.20 94 19 35 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_90_35_93_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_90_8_98_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_90_8_98_8_if_false:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 93 15 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_93_15_98_8_if_stmt:
+        symbol [ currentSelection %tmp.20 93 19 35 ];
         %tmp.20 = getv ? :currentSelection;
         %tmp.21 = 1;
         %tmp.22 = eq %tmp.20 %tmp.21;
-        bf %tmp.22 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_94_15_99_8_if_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_94_15_99_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_94_42_96_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 95 12 ]
-        symbol [ WatchUi %tmp.23 95 12 19 ];
+        bf %tmp.22 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_93_15_98_8_if_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_93_15_98_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_93_42_95_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 94 12 ]
+        symbol [ WatchUi %tmp.23 94 12 19 ];
         %tmp.23 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.24 95 20 28 ];
+        symbol [ pushView %tmp.24 94 20 28 ];
         %tmp.24 = getv function %tmp.23 :pushView;
-        symbol [ StatsView %tmp.28 95 33 42 ];
+        symbol [ StatsView %tmp.28 94 33 42 ];
         %tmp.28 = getv ? :StatsView;
         %tmp.25 = newc %tmp.28 ();
-        symbol [ StatsDelegate %tmp.32 95 50 63 ];
+        symbol [ StatsDelegate %tmp.32 94 50 63 ];
         %tmp.32 = getv ? :StatsDelegate;
         %tmp.29 = newc %tmp.32 ();
-        symbol [ WatchUi %tmp.33 95 67 74 ];
+        symbol [ WatchUi %tmp.33 94 67 74 ];
         %tmp.33 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_LEFT %tmp.34 95 75 85 ];
+        symbol [ SLIDE_LEFT %tmp.34 94 75 85 ];
         %tmp.34 = getv %tmp.33 :SLIDE_LEFT;
         invoke %tmp.23 %tmp.24(%tmp.25, %tmp.29, %tmp.34);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_94_42_96_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_94_15_99_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_94_15_99_8_if_false:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 96 15 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_96_15_99_8_if_stmt:
-        symbol [ currentSelection %tmp.36 96 19 35 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_93_42_95_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_93_15_98_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_93_15_98_8_if_false:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 95 15 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_95_15_98_8_if_stmt:
+        symbol [ currentSelection %tmp.36 95 19 35 ];
         %tmp.36 = getv ? :currentSelection;
         %tmp.37 = 2;
         %tmp.38 = eq %tmp.36 %tmp.37;
-        bf %tmp.38 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_96_15_99_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_96_15_99_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_96_42_99_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 97 12 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_96_42_99_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_96_42_99_8_stop" ]
+        bf %tmp.38 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_95_15_98_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_95_15_98_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_95_42_98_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 96 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_95_42_98_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_95_42_98_8_stop" ]
         %historyView.2 = local;
-        symbol [ historyView %historyView.2 97 16 27 ];
-        symbol [ HistoryView %tmp.42 97 34 45 ];
+        symbol [ historyView %historyView.2 96 16 27 ];
+        symbol [ HistoryView %tmp.42 96 34 45 ];
         %tmp.42 = getv ? :HistoryView;
         %tmp.39 = newc %tmp.42 ();
         lputv %historyView.2 %tmp.39;
-        symbol [ historyView %historyView.2 97 16 27 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 98 12 ]
-        symbol [ WatchUi %tmp.43 98 12 19 ];
+        symbol [ historyView %historyView.2 96 16 27 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 97 12 ]
+        symbol [ WatchUi %tmp.43 97 12 19 ];
         %tmp.43 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.44 98 20 28 ];
+        symbol [ pushView %tmp.44 97 20 28 ];
         %tmp.44 = getv function %tmp.43 :pushView;
         %tmp.45 = lgetv %historyView.2;
-        symbol [ historyView %tmp.45 98 29 40 ];
-        symbol [ HistoryDelegate %tmp.49 98 46 61 ];
+        symbol [ historyView %tmp.45 97 29 40 ];
+        symbol [ HistoryDelegate %tmp.49 97 46 61 ];
         %tmp.49 = getv ? :HistoryDelegate;
         %tmp.50 = lgetv %historyView.2;
-        symbol [ historyView %tmp.50 98 62 73 ];
+        symbol [ historyView %tmp.50 97 62 73 ];
         %tmp.46 = newc %tmp.49 (%tmp.50);
-        symbol [ WatchUi %tmp.51 98 76 83 ];
+        symbol [ WatchUi %tmp.51 97 76 83 ];
         %tmp.51 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_LEFT %tmp.52 98 84 94 ];
+        symbol [ SLIDE_LEFT %tmp.52 97 84 94 ];
         %tmp.52 = getv %tmp.51 :SLIDE_LEFT;
         invoke %tmp.43 %tmp.44(%tmp.45, %tmp.46, %tmp.52);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_96_42_99_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_96_15_99_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_96_15_99_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_94_15_99_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_91_8_99_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_90_35_100_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_95_42_98_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_95_15_98_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_95_15_98_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_93_15_98_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_90_8_98_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_89_35_99_4_stop:
     }
 }
-[ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 103; @symbol_classdef = [MenuDelegate,103,6,18]; @symbol_extends<0> = [WatchUi,103,27,34]; @symbol_extends<1> = [InputDelegate,103,35,48]; ]
+[ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 102; @symbol_classdef = [MenuDelegate,102,6,18]; @symbol_extends<0> = [WatchUi,102,27,34]; @symbol_extends<1> = [InputDelegate,102,35,48]; ]
 class MenuDelegate extends WatchUi.InputDelegate {
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 103; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 102; ]
     <init> {
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 103; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 102; ]
     static
     <init> {
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 104; @position = 8; @symbol_vardef = [view,104,8,12]; @symbol_type<0> = [MenuView,104,16,24]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 103; @position = 8; @symbol_vardef = [view,103,8,12]; @symbol_type<0> = [MenuView,103,16,24]; ]
     var view as MenuView;
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 106; @symbol_functiondef = [initialize,106,13,23]; @symbol_param<0> = [mView,106,24,29]; @symbol_param<0>_type<0> = [MenuView,106,33,41]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 105; @symbol_functiondef = [initialize,105,13,23]; @symbol_param<0> = [mView,105,24,29]; @symbol_param<0>_type<0> = [MenuView,105,33,41]; ]
     function initialize(mView as MenuView) as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_106_43_109_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 107 8 ]
-        symbol [ WatchUi %tmp.1 107 8 15 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_105_43_108_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 106 8 ]
+        symbol [ WatchUi %tmp.1 106 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ InputDelegate %tmp.2 107 16 29 ];
+        symbol [ InputDelegate %tmp.2 106 16 29 ];
         %tmp.2 = getv %tmp.1 :InputDelegate;
-        symbol [ initialize %tmp.3 107 30 40 ];
+        symbol [ initialize %tmp.3 106 30 40 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 108 8 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 107 8 ]
         %tmp.4 = lgetv %mView;
-        symbol [ mView %tmp.4 108 15 20 ];
-        symbol [ view ? 108 8 12 ];
+        symbol [ mView %tmp.4 107 15 20 ];
+        symbol [ view ? 107 8 12 ];
         putv self :view %tmp.4;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_106_43_109_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_105_43_108_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 111; @symbol_functiondef = [onKeyPressed,111,13,25]; @symbol_param<0> = [key,111,26,29]; @symbol_param<0>_type<0> = [WatchUi,111,33,40]; @symbol_param<0>_type<1> = [KeyEvent,111,41,49]; @symbol_return<0> = [Boolean,111,54,61]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 110; @symbol_functiondef = [onKeyPressed,110,13,25]; @symbol_param<0> = [key,110,26,29]; @symbol_param<0>_type<0> = [WatchUi,110,33,40]; @symbol_param<0>_type<1> = [KeyEvent,110,41,49]; @symbol_return<0> = [Boolean,110,54,61]; ]
     function onKeyPressed(key as WatchUi.KeyEvent) as Boolean {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_111_62_125_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 112 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_111_62_125_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_111_62_125_4_stop" ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_110_62_124_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 111 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_110_62_124_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_110_62_124_4_stop" ]
         %keyCode.1 = local;
-        symbol [ keyCode %keyCode.1 112 12 19 ];
+        symbol [ keyCode %keyCode.1 111 12 19 ];
         %tmp.1 = lgetv %key;
-        symbol [ key %tmp.1 112 22 25 ];
-        symbol [ getKey %tmp.2 112 26 32 ];
+        symbol [ key %tmp.1 111 22 25 ];
+        symbol [ getKey %tmp.2 111 26 32 ];
         %tmp.2 = getv function %tmp.1 :getKey;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %keyCode.1 %tmp.3;
-        symbol [ keyCode %keyCode.1 112 12 19 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 114 8 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_114_8_123_8_if_stmt:
+        symbol [ keyCode %keyCode.1 111 12 19 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 113 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_113_8_122_8_if_stmt:
         %tmp.4 = lgetv %keyCode.1;
-        symbol [ keyCode %tmp.4 114 12 19 ];
-        symbol [ WatchUi %tmp.5 114 23 30 ];
+        symbol [ keyCode %tmp.4 113 12 19 ];
+        symbol [ WatchUi %tmp.5 113 23 30 ];
         %tmp.5 = getm $.Toybox.WatchUi;
-        symbol [ KEY_UP %tmp.6 114 31 37 ];
+        symbol [ KEY_UP %tmp.6 113 31 37 ];
         %tmp.6 = getv %tmp.5 :KEY_UP;
         %tmp.7 = eq %tmp.4 %tmp.6;
-        bf %tmp.7 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_114_8_123_8_if_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_114_8_123_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_114_39_117_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 115 12 ]
-        symbol [ view %tmp.9 115 12 16 ];
+        bf %tmp.7 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_113_8_122_8_if_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_113_8_122_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_113_39_116_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 114 12 ]
+        symbol [ view %tmp.9 114 12 16 ];
         %tmp.9 = getv ? :view;
-        symbol [ handleUp %tmp.10 115 17 25 ];
+        symbol [ handleUp %tmp.10 114 17 25 ];
         %tmp.10 = getv function %tmp.9 :handleUp;
         invoke %tmp.9 %tmp.10();
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 116 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 115 12 ]
         %tmp.11 = true;
         ret %tmp.11;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_114_39_117_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_114_8_123_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_114_8_123_8_if_false:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 117 15 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_117_15_123_8_if_stmt:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_113_39_116_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_113_8_122_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_113_8_122_8_if_false:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 116 15 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_116_15_122_8_if_stmt:
         %tmp.12 = lgetv %keyCode.1;
-        symbol [ keyCode %tmp.12 117 19 26 ];
-        symbol [ WatchUi %tmp.13 117 30 37 ];
+        symbol [ keyCode %tmp.12 116 19 26 ];
+        symbol [ WatchUi %tmp.13 116 30 37 ];
         %tmp.13 = getm $.Toybox.WatchUi;
-        symbol [ KEY_DOWN %tmp.14 117 38 46 ];
+        symbol [ KEY_DOWN %tmp.14 116 38 46 ];
         %tmp.14 = getv %tmp.13 :KEY_DOWN;
         %tmp.15 = eq %tmp.12 %tmp.14;
-        bf %tmp.15 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_117_15_123_8_if_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_117_15_123_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_117_48_120_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 118 12 ]
-        symbol [ view %tmp.17 118 12 16 ];
+        bf %tmp.15 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_116_15_122_8_if_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_116_15_122_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_116_48_119_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 117 12 ]
+        symbol [ view %tmp.17 117 12 16 ];
         %tmp.17 = getv ? :view;
-        symbol [ handleDown %tmp.18 118 17 27 ];
+        symbol [ handleDown %tmp.18 117 17 27 ];
         %tmp.18 = getv function %tmp.17 :handleDown;
         invoke %tmp.17 %tmp.18();
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 119 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 118 12 ]
         %tmp.19 = true;
         ret %tmp.19;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_117_48_120_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_117_15_123_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_117_15_123_8_if_false:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 120 15 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_120_15_123_8_if_stmt:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_116_48_119_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_116_15_122_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_116_15_122_8_if_false:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 119 15 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_119_15_122_8_if_stmt:
         %tmp.20 = lgetv %keyCode.1;
-        symbol [ keyCode %tmp.20 120 19 26 ];
-        symbol [ WatchUi %tmp.21 120 30 37 ];
+        symbol [ keyCode %tmp.20 119 19 26 ];
+        symbol [ WatchUi %tmp.21 119 30 37 ];
         %tmp.21 = getm $.Toybox.WatchUi;
-        symbol [ KEY_ENTER %tmp.22 120 38 47 ];
+        symbol [ KEY_ENTER %tmp.22 119 38 47 ];
         %tmp.22 = getv %tmp.21 :KEY_ENTER;
         %tmp.23 = eq %tmp.20 %tmp.22;
-        bf %tmp.23 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_120_15_123_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_120_15_123_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_120_49_123_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 121 12 ]
-        symbol [ view %tmp.25 121 12 16 ];
+        bf %tmp.23 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_119_15_122_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_119_15_122_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_119_49_122_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 120 12 ]
+        symbol [ view %tmp.25 120 12 16 ];
         %tmp.25 = getv ? :view;
-        symbol [ handleEnter %tmp.26 121 17 28 ];
+        symbol [ handleEnter %tmp.26 120 17 28 ];
         %tmp.26 = getv function %tmp.25 :handleEnter;
         invoke %tmp.25 %tmp.26();
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 122 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 121 12 ]
         %tmp.27 = true;
         ret %tmp.27;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_120_49_123_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_120_15_123_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_120_15_123_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_117_15_123_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_114_8_123_8_if_end:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 124 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_119_49_122_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_119_15_122_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_119_15_122_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_116_15_122_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_113_8_122_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" 123 8 ]
         %tmp.28 = false;
         ret %tmp.28;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_111_62_125_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_MenuView_mc_110_62_124_4_stop:
     }
 }
 [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc"; @line = 1; ]

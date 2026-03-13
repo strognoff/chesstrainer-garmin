@@ -1405,7 +1405,7 @@ _Users_jeffcechinel_Github_chesstrainer_garmin_source_BoardView_mc_180_39_184_12
         %tmp.103 = self;
         symbol [ showFeedback %tmp.104 183 16 28 ];
         %tmp.104 = getv function %tmp.103 :showFeedback;
-        %tmp.105 = "Correct! ✓";
+        %tmp.105 = "Well done!";
         symbol [ Graphics %tmp.106 183 43 51 ];
         %tmp.106 = getm $.Toybox.Graphics;
         symbol [ COLOR_GREEN %tmp.107 183 52 63 ];
@@ -1427,10 +1427,10 @@ _Users_jeffcechinel_Github_chesstrainer_garmin_source_BoardView_mc_184_19_188_12
         %tmp.113 = self;
         symbol [ showFeedback %tmp.114 187 16 28 ];
         %tmp.114 = getv function %tmp.113 :showFeedback;
-        %tmp.115 = "Wrong! ✗";
-        symbol [ Graphics %tmp.116 187 41 49 ];
+        %tmp.115 = "Try again!";
+        symbol [ Graphics %tmp.116 187 43 51 ];
         %tmp.116 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.117 187 50 59 ];
+        symbol [ COLOR_RED %tmp.117 187 52 61 ];
         %tmp.117 = getv %tmp.116 :COLOR_RED;
         invoke %tmp.113 %tmp.114(%tmp.115, %tmp.117);
 _Users_jeffcechinel_Github_chesstrainer_garmin_source_BoardView_mc_184_19_188_12_stop:

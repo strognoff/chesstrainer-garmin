@@ -8,58 +8,54 @@ module Storage {
     const KEY_INCORRECT = "incorrect";
     const KEY_TIMES = "times";
 
+    //! Get progress data
+    function getProgressData() as Dictionary {
+        var data = Toybox.Application.Storage.getValue(KEY_PROGRESS);
+        if (data != null) {
+            return data as Dictionary;
+        }
+        return {
+            KEY_SOLVED => new [0] as Array<Number>,
+            KEY_INCORRECT => new [0] as Array<Number>,
+            KEY_TIMES => {} as Dictionary<Number>
+        } as Dictionary;
+    }
+
     //! Get solved puzzles array
     function getSolvedPuzzles() as Array<Number> {
-        var data = Storage.getValue(KEY_PROGRESS);
-        if (data != null) {
-            var progress = data as Dictionary;
-            var solved = progress.get(KEY_SOLVED);
-            if (solved != null) {
-                return solved as Array<Number>;
-            }
+        var progress = getProgressData();
+        var solved = progress.get(KEY_SOLVED);
+        if (solved != null) {
+            return solved as Array<Number>;
         }
         return new [0] as Array<Number>;
     }
 
     //! Get incorrect puzzles array
     function getIncorrectPuzzles() as Array<Number> {
-        var data = Storage.getValue(KEY_PROGRESS);
-        if (data != null) {
-            var progress = data as Dictionary;
-            var incorrect = progress.get(KEY_INCORRECT);
-            if (incorrect != null) {
-                return incorrect as Array<Number>;
-            }
+        var progress = getProgressData();
+        var incorrect = progress.get(KEY_INCORRECT);
+        if (incorrect != null) {
+            return incorrect as Array<Number>;
         }
         return new [0] as Array<Number>;
     }
 
     //! Get puzzle times dictionary
     function getPuzzleTimes() as Dictionary<Number> {
-        var data = Storage.getValue(KEY_PROGRESS);
-        if (data != null) {
-            var progress = data as Dictionary;
-            var times = progress.get(KEY_TIMES);
-            if (times != null) {
-                return times as Dictionary<Number>;
-            }
+        var progress = getProgressData();
+        var times = progress.get(KEY_TIMES);
+        if (times != null) {
+            return times as Dictionary<Number>;
         }
         return {} as Dictionary<Number>;
     }
 
-    //! Save progress to storage
-    function saveProgress() as Void {
-        var data = {
-            KEY_SOLVED => getSolvedPuzzles(),
-            KEY_INCORRECT => getIncorrectPuzzles(),
-            KEY_TIMES => getPuzzleTimes()
-        } as Dictionary;
-        Storage.setValue(KEY_PROGRESS, data);
-    }
-
     //! Mark puzzle as solved
     function markSolved(puzzleIndex as Number, timeSeconds as Number) as Void {
-        var solved = getSolvedPuzzles();
+        var progress = getProgressData();
+        var solved = progress.get(KEY_SOLVED) as Array<Number>;
+        var times = progress.get(KEY_TIMES) as Dictionary<Number>;
         
         // Check if already solved
         var alreadySolved = false;
@@ -74,15 +70,20 @@ module Storage {
             solved.add(puzzleIndex);
         }
         
-        var times = getPuzzleTimes();
         times[puzzleIndex] = timeSeconds;
         
-        saveProgress();
+        // Update the progress dictionary
+        progress[KEY_SOLVED] = solved;
+        progress[KEY_TIMES] = times;
+        
+        // Save to storage
+        Toybox.Application.Storage.setValue(KEY_PROGRESS, progress);
     }
 
     //! Mark puzzle as incorrect
     function markIncorrect(puzzleIndex as Number) as Void {
-        var incorrect = getIncorrectPuzzles();
+        var progress = getProgressData();
+        var incorrect = progress.get(KEY_INCORRECT) as Array<Number>;
         
         // Check if already marked incorrect
         var alreadyMarked = false;
@@ -97,7 +98,11 @@ module Storage {
             incorrect.add(puzzleIndex);
         }
         
-        saveProgress();
+        // Update the progress dictionary
+        progress[KEY_INCORRECT] = incorrect;
+        
+        // Save to storage
+        Toybox.Application.Storage.setValue(KEY_PROGRESS, progress);
     }
 
     //! Check if puzzle is solved
@@ -128,6 +133,16 @@ module Storage {
         var solved = getSolvedPuzzles();
         var incorrect = getIncorrectPuzzles();
         
+        var solvedCount = solved.size();
+        var incorrectCount = incorrect.size();
+        var attempted = solvedCount + incorrectCount;
+        
+        // Calculate accuracy based on attempted puzzles
+        var accuracy = 0;
+        if (attempted > 0) {
+            accuracy = (solvedCount * 100) / attempted;
+        }
+        
         // Calculate average time
         var totalTime = 0;
         var count = 0;
@@ -148,15 +163,15 @@ module Storage {
         
         return {
             "total" => total,
-            "solved" => solved.size(),
-            "incorrect" => incorrect.size(),
-            "accuracy" => (solved.size() + incorrect.size()) > 0 ? (solved.size() * 100 / (solved.size() + incorrect.size())) : 0,
+            "solved" => solvedCount,
+            "incorrect" => incorrectCount,
+            "accuracy" => accuracy,
             "avgTime" => avgTime
         };
     }
 
     //! Reset all progress
     function resetProgress() as Void {
-        Storage.setValue(KEY_PROGRESS, null);
+        Toybox.Application.Storage.setValue(KEY_PROGRESS, null);
     }
 }

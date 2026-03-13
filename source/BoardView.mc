@@ -180,11 +180,11 @@ class BoardView extends WatchUi.View {
             if (move.equals(solution)) {
                 // Correct move!
                 Storage.markSolved(puzzleIndex, elapsed);
-                showFeedback("Correct! ✓", Graphics.COLOR_GREEN);
+                showFeedback("Well done!", Graphics.COLOR_GREEN);
             } else {
                 // Wrong move
                 Storage.markIncorrect(puzzleIndex);
-                showFeedback("Wrong! ✗", Graphics.COLOR_RED);
+                showFeedback("Try again!", Graphics.COLOR_RED);
             }
             
             // Wait 2 seconds before returning to menu

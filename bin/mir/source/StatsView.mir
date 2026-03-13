@@ -30,510 +30,572 @@ _Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_10_26_12_4_st
         invoke %tmp.2 %tmp.3();
 _Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_10_26_12_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc"; @line = 14; @symbol_functiondef = [onUpdate,14,13,21]; @symbol_param<0> = [dc,14,22,24]; @symbol_param<0>_type<0> = [Dc,14,28,30]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc"; @line = 14; @symbol_functiondef = [onShow,14,13,19]; ]
+    function onShow() as Void {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_14_30_17_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 16 8 ]
+        symbol [ WatchUi %tmp.1 16 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.2 16 16 29 ];
+        %tmp.2 = getv function %tmp.1 :requestUpdate;
+        invoke %tmp.1 %tmp.2();
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_14_30_17_4_stop:
+    }
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc"; @line = 19; @symbol_functiondef = [onUpdate,19,13,21]; @symbol_param<0> = [dc,19,22,24]; @symbol_param<0>_type<0> = [Dc,19,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_14_40_52_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 15 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_14_40_52_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_14_40_52_4_stop" ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 20 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_stop" ]
         %stats.1 = local;
-        symbol [ stats %stats.1 15 12 17 ];
-        symbol [ Storage %tmp.2 15 20 27 ];
+        symbol [ stats %stats.1 20 12 17 ];
+        symbol [ Storage %tmp.2 20 20 27 ];
         %tmp.2 = getv ? :Storage;
-        symbol [ getStats %tmp.3 15 28 36 ];
+        symbol [ getStats %tmp.3 20 28 36 ];
         %tmp.3 = getv function %tmp.2 :getStats;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         lputv %stats.1 %tmp.4;
-        symbol [ stats %stats.1 15 12 17 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 17 8 ]
+        symbol [ stats %stats.1 20 12 17 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 22 8 ]
         %tmp.5 = lgetv %dc;
-        symbol [ dc %tmp.5 17 8 10 ];
-        symbol [ setColor %tmp.6 17 11 19 ];
+        symbol [ dc %tmp.5 22 8 10 ];
+        symbol [ setColor %tmp.6 22 11 19 ];
         %tmp.6 = getv function %tmp.5 :setColor;
-        symbol [ Graphics %tmp.7 17 20 28 ];
+        symbol [ Graphics %tmp.7 22 20 28 ];
         %tmp.7 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.8 17 29 40 ];
+        symbol [ COLOR_BLACK %tmp.8 22 29 40 ];
         %tmp.8 = getv %tmp.7 :COLOR_BLACK;
-        symbol [ Graphics %tmp.9 17 42 50 ];
+        symbol [ Graphics %tmp.9 22 42 50 ];
         %tmp.9 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.10 17 51 62 ];
+        symbol [ COLOR_BLACK %tmp.10 22 51 62 ];
         %tmp.10 = getv %tmp.9 :COLOR_BLACK;
         invoke %tmp.5 %tmp.6(%tmp.8, %tmp.10);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 18 8 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 23 8 ]
         %tmp.11 = lgetv %dc;
-        symbol [ dc %tmp.11 18 8 10 ];
-        symbol [ clear %tmp.12 18 11 16 ];
+        symbol [ dc %tmp.11 23 8 10 ];
+        symbol [ clear %tmp.12 23 11 16 ];
         %tmp.12 = getv function %tmp.11 :clear;
         invoke %tmp.11 %tmp.12();
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 20 8 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 25 8 ]
         %tmp.13 = lgetv %dc;
-        symbol [ dc %tmp.13 20 8 10 ];
-        symbol [ setColor %tmp.14 20 11 19 ];
+        symbol [ dc %tmp.13 25 8 10 ];
+        symbol [ setColor %tmp.14 25 11 19 ];
         %tmp.14 = getv function %tmp.13 :setColor;
-        symbol [ Graphics %tmp.15 20 20 28 ];
+        symbol [ Graphics %tmp.15 25 20 28 ];
         %tmp.15 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.16 20 29 40 ];
+        symbol [ COLOR_WHITE %tmp.16 25 29 40 ];
         %tmp.16 = getv %tmp.15 :COLOR_WHITE;
-        symbol [ Graphics %tmp.17 20 42 50 ];
+        symbol [ Graphics %tmp.17 25 42 50 ];
         %tmp.17 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.18 20 51 62 ];
+        symbol [ COLOR_BLACK %tmp.18 25 51 62 ];
         %tmp.18 = getv %tmp.17 :COLOR_BLACK;
         invoke %tmp.13 %tmp.14(%tmp.16, %tmp.18);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 21 8 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 26 8 ]
         %tmp.19 = lgetv %dc;
-        symbol [ dc %tmp.19 21 8 10 ];
-        symbol [ drawText %tmp.20 21 11 19 ];
+        symbol [ dc %tmp.19 26 8 10 ];
+        symbol [ drawText %tmp.20 26 11 19 ];
         %tmp.20 = getv function %tmp.19 :drawText;
         %tmp.21 = lgetv %dc;
-        symbol [ dc %tmp.21 21 20 22 ];
-        symbol [ getWidth %tmp.22 21 23 31 ];
+        symbol [ dc %tmp.21 26 20 22 ];
+        symbol [ getWidth %tmp.22 26 23 31 ];
         %tmp.22 = getv function %tmp.21 :getWidth;
         %tmp.23 = invoke %tmp.21 %tmp.22();
         %tmp.24 = 2;
         %tmp.25 = div %tmp.23 %tmp.24;
         %tmp.26 = 10;
-        symbol [ Graphics %tmp.27 21 43 51 ];
+        symbol [ Graphics %tmp.27 26 43 51 ];
         %tmp.27 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.28 21 52 63 ];
+        symbol [ FONT_MEDIUM %tmp.28 26 52 63 ];
         %tmp.28 = getv %tmp.27 :FONT_MEDIUM;
         %tmp.29 = "Your Stats";
-        symbol [ Graphics %tmp.30 21 79 87 ];
+        symbol [ Graphics %tmp.30 26 79 87 ];
         %tmp.30 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.31 21 88 107 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.31 26 88 107 ];
         %tmp.31 = getv %tmp.30 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.19 %tmp.20(%tmp.25, %tmp.26, %tmp.28, %tmp.29, %tmp.31);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 24 8 ]
-        %tmp.32 = lgetv %dc;
-        symbol [ dc %tmp.32 24 8 10 ];
-        symbol [ drawText %tmp.33 24 11 19 ];
-        %tmp.33 = getv function %tmp.32 :drawText;
-        %tmp.34 = 20;
-        %tmp.35 = 50;
-        symbol [ Graphics %tmp.36 24 28 36 ];
-        %tmp.36 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.37 24 37 47 ];
-        %tmp.37 = getv %tmp.36 :FONT_SMALL;
-        %tmp.38 = "Solved:";
-        symbol [ Graphics %tmp.39 24 60 68 ];
-        %tmp.39 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.40 24 69 86 ];
-        %tmp.40 = getv %tmp.39 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.32 %tmp.33(%tmp.34, %tmp.35, %tmp.37, %tmp.38, %tmp.40);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 25 8 ]
-        %tmp.41 = lgetv %dc;
-        symbol [ dc %tmp.41 25 8 10 ];
-        symbol [ setColor %tmp.42 25 11 19 ];
-        %tmp.42 = getv function %tmp.41 :setColor;
-        symbol [ Graphics %tmp.43 25 20 28 ];
-        %tmp.43 = getm $.Toybox.Graphics;
-        symbol [ COLOR_GREEN %tmp.44 25 29 40 ];
-        %tmp.44 = getv %tmp.43 :COLOR_GREEN;
-        symbol [ Graphics %tmp.45 25 42 50 ];
-        %tmp.45 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.46 25 51 62 ];
-        %tmp.46 = getv %tmp.45 :COLOR_BLACK;
-        invoke %tmp.41 %tmp.42(%tmp.44, %tmp.46);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 26 8 ]
-        %tmp.47 = lgetv %dc;
-        symbol [ dc %tmp.47 26 8 10 ];
-        symbol [ drawText %tmp.48 26 11 19 ];
-        %tmp.48 = getv function %tmp.47 :drawText;
-        %tmp.49 = lgetv %dc;
-        symbol [ dc %tmp.49 26 20 22 ];
-        symbol [ getWidth %tmp.50 26 23 31 ];
-        %tmp.50 = getv function %tmp.49 :getWidth;
-        %tmp.51 = invoke %tmp.49 %tmp.50();
-        %tmp.52 = 20;
-        %tmp.53 = sub %tmp.51 %tmp.52;
-        %tmp.54 = 50;
-        symbol [ Graphics %tmp.55 26 44 52 ];
-        %tmp.55 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.56 26 53 63 ];
-        %tmp.56 = getv %tmp.55 :FONT_SMALL;
-        %tmp.57 = lgetv %stats.1;
-        symbol [ stats %tmp.57 26 65 70 ];
-        symbol [ get %tmp.58 26 71 74 ];
-        %tmp.58 = getv function %tmp.57 :get;
-        %tmp.59 = "solved";
-        %tmp.60 = invoke %tmp.57 %tmp.58(%tmp.59);
-        %tmp.61 = " / ";
-        %tmp.62 = add %tmp.60 %tmp.61;
-        %tmp.63 = lgetv %stats.1;
-        symbol [ stats %tmp.63 26 95 100 ];
-        symbol [ get %tmp.64 26 101 104 ];
-        %tmp.64 = getv function %tmp.63 :get;
-        %tmp.65 = "total";
-        %tmp.66 = invoke %tmp.63 %tmp.64(%tmp.65);
-        %tmp.67 = add %tmp.62 %tmp.66;
-        symbol [ Graphics %tmp.68 26 115 123 ];
-        %tmp.68 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_RIGHT %tmp.69 26 124 142 ];
-        %tmp.69 = getv %tmp.68 :TEXT_JUSTIFY_RIGHT;
-        invoke %tmp.47 %tmp.48(%tmp.53, %tmp.54, %tmp.56, %tmp.67, %tmp.69);
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 29 8 ]
-        %tmp.70 = lgetv %dc;
-        symbol [ dc %tmp.70 29 8 10 ];
-        symbol [ setColor %tmp.71 29 11 19 ];
-        %tmp.71 = getv function %tmp.70 :setColor;
-        symbol [ Graphics %tmp.72 29 20 28 ];
-        %tmp.72 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.73 29 29 40 ];
-        %tmp.73 = getv %tmp.72 :COLOR_WHITE;
-        symbol [ Graphics %tmp.74 29 42 50 ];
-        %tmp.74 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.75 29 51 62 ];
-        %tmp.75 = getv %tmp.74 :COLOR_BLACK;
-        invoke %tmp.70 %tmp.71(%tmp.73, %tmp.75);
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_stop" ]
+        %startY.2 = local;
+        symbol [ startY %startY.2 29 12 18 ];
+        %tmp.32 = 70;
+        lputv %startY.2 %tmp.32;
+        symbol [ startY %startY.2 29 12 18 ];
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 30 8 ]
-        %tmp.76 = lgetv %dc;
-        symbol [ dc %tmp.76 30 8 10 ];
-        symbol [ drawText %tmp.77 30 11 19 ];
-        %tmp.77 = getv function %tmp.76 :drawText;
-        %tmp.78 = 20;
-        %tmp.79 = 80;
-        symbol [ Graphics %tmp.80 30 28 36 ];
-        %tmp.80 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.81 30 37 47 ];
-        %tmp.81 = getv %tmp.80 :FONT_SMALL;
-        %tmp.82 = "Accuracy:";
-        symbol [ Graphics %tmp.83 30 62 70 ];
-        %tmp.83 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.84 30 71 88 ];
-        %tmp.84 = getv %tmp.83 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.76 %tmp.77(%tmp.78, %tmp.79, %tmp.81, %tmp.82, %tmp.84);
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_stop" ]
+        %startX.3 = local;
+        symbol [ startX %startX.3 30 12 18 ];
+        %tmp.33 = 25;
+        lputv %startX.3 %tmp.33;
+        symbol [ startX %startX.3 30 12 18 ];
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 31 8 ]
-        %tmp.85 = lgetv %dc;
-        symbol [ dc %tmp.85 31 8 10 ];
-        symbol [ setColor %tmp.86 31 11 19 ];
-        %tmp.86 = getv function %tmp.85 :setColor;
-        symbol [ COLOR_ORANGE %tmp.88 31 20 32 ];
-        %tmp.88 = getv ? :COLOR_ORANGE;
-        symbol [ Graphics %tmp.89 31 34 42 ];
-        %tmp.89 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.90 31 43 54 ];
-        %tmp.90 = getv %tmp.89 :COLOR_BLACK;
-        invoke %tmp.85 %tmp.86(%tmp.88, %tmp.90);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 32 8 ]
-        %tmp.91 = lgetv %dc;
-        symbol [ dc %tmp.91 32 8 10 ];
-        symbol [ drawText %tmp.92 32 11 19 ];
-        %tmp.92 = getv function %tmp.91 :drawText;
-        %tmp.93 = lgetv %dc;
-        symbol [ dc %tmp.93 32 20 22 ];
-        symbol [ getWidth %tmp.94 32 23 31 ];
-        %tmp.94 = getv function %tmp.93 :getWidth;
-        %tmp.95 = invoke %tmp.93 %tmp.94();
-        %tmp.96 = 20;
-        %tmp.97 = sub %tmp.95 %tmp.96;
-        %tmp.98 = 80;
-        symbol [ Graphics %tmp.99 32 44 52 ];
-        %tmp.99 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.100 32 53 63 ];
-        %tmp.100 = getv %tmp.99 :FONT_SMALL;
-        %tmp.101 = lgetv %stats.1;
-        symbol [ stats %tmp.101 32 65 70 ];
-        symbol [ get %tmp.102 32 71 74 ];
-        %tmp.102 = getv function %tmp.101 :get;
-        %tmp.103 = "accuracy";
-        %tmp.104 = invoke %tmp.101 %tmp.102(%tmp.103);
-        %tmp.105 = "%";
-        %tmp.106 = add %tmp.104 %tmp.105;
-        symbol [ Graphics %tmp.107 32 94 102 ];
-        %tmp.107 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_RIGHT %tmp.108 32 103 121 ];
-        %tmp.108 = getv %tmp.107 :TEXT_JUSTIFY_RIGHT;
-        invoke %tmp.91 %tmp.92(%tmp.97, %tmp.98, %tmp.100, %tmp.106, %tmp.108);
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_stop" ]
+        %lineHeight.4 = local;
+        symbol [ lineHeight %lineHeight.4 31 12 22 ];
+        %tmp.34 = 30;
+        lputv %lineHeight.4 %tmp.34;
+        symbol [ lineHeight %lineHeight.4 31 12 22 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 34 8 ]
+        %tmp.35 = lgetv %dc;
+        symbol [ dc %tmp.35 34 8 10 ];
+        symbol [ drawText %tmp.36 34 11 19 ];
+        %tmp.36 = getv function %tmp.35 :drawText;
+        %tmp.37 = lgetv %startX.3;
+        symbol [ startX %tmp.37 34 20 26 ];
+        %tmp.38 = lgetv %startY.2;
+        symbol [ startY %tmp.38 34 28 34 ];
+        symbol [ Graphics %tmp.39 34 36 44 ];
+        %tmp.39 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.40 34 45 55 ];
+        %tmp.40 = getv %tmp.39 :FONT_SMALL;
+        %tmp.41 = "Solved:";
+        symbol [ Graphics %tmp.42 34 68 76 ];
+        %tmp.42 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.43 34 77 94 ];
+        %tmp.43 = getv %tmp.42 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.35 %tmp.36(%tmp.37, %tmp.38, %tmp.40, %tmp.41, %tmp.43);
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 35 8 ]
-        %tmp.109 = lgetv %dc;
-        symbol [ dc %tmp.109 35 8 10 ];
-        symbol [ setColor %tmp.110 35 11 19 ];
-        %tmp.110 = getv function %tmp.109 :setColor;
-        symbol [ Graphics %tmp.111 35 20 28 ];
-        %tmp.111 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.112 35 29 40 ];
-        %tmp.112 = getv %tmp.111 :COLOR_WHITE;
-        symbol [ Graphics %tmp.113 35 42 50 ];
-        %tmp.113 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.114 35 51 62 ];
-        %tmp.114 = getv %tmp.113 :COLOR_BLACK;
-        invoke %tmp.109 %tmp.110(%tmp.112, %tmp.114);
+        %tmp.44 = lgetv %dc;
+        symbol [ dc %tmp.44 35 8 10 ];
+        symbol [ setColor %tmp.45 35 11 19 ];
+        %tmp.45 = getv function %tmp.44 :setColor;
+        symbol [ Graphics %tmp.46 35 20 28 ];
+        %tmp.46 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.47 35 29 40 ];
+        %tmp.47 = getv %tmp.46 :COLOR_GREEN;
+        symbol [ Graphics %tmp.48 35 42 50 ];
+        %tmp.48 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.49 35 51 62 ];
+        %tmp.49 = getv %tmp.48 :COLOR_BLACK;
+        invoke %tmp.44 %tmp.45(%tmp.47, %tmp.49);
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 36 8 ]
-        %tmp.115 = lgetv %dc;
-        symbol [ dc %tmp.115 36 8 10 ];
-        symbol [ drawText %tmp.116 36 11 19 ];
-        %tmp.116 = getv function %tmp.115 :drawText;
-        %tmp.117 = 20;
-        %tmp.118 = 110;
-        symbol [ Graphics %tmp.119 36 29 37 ];
-        %tmp.119 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.120 36 38 48 ];
-        %tmp.120 = getv %tmp.119 :FONT_SMALL;
-        %tmp.121 = "Incorrect:";
-        symbol [ Graphics %tmp.122 36 64 72 ];
-        %tmp.122 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.123 36 73 90 ];
-        %tmp.123 = getv %tmp.122 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.115 %tmp.116(%tmp.117, %tmp.118, %tmp.120, %tmp.121, %tmp.123);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 37 8 ]
-        %tmp.124 = lgetv %dc;
-        symbol [ dc %tmp.124 37 8 10 ];
-        symbol [ setColor %tmp.125 37 11 19 ];
-        %tmp.125 = getv function %tmp.124 :setColor;
-        symbol [ Graphics %tmp.126 37 20 28 ];
-        %tmp.126 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.127 37 29 38 ];
-        %tmp.127 = getv %tmp.126 :COLOR_RED;
-        symbol [ Graphics %tmp.128 37 40 48 ];
-        %tmp.128 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.129 37 49 60 ];
-        %tmp.129 = getv %tmp.128 :COLOR_BLACK;
-        invoke %tmp.124 %tmp.125(%tmp.127, %tmp.129);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 38 8 ]
-        %tmp.130 = lgetv %dc;
-        symbol [ dc %tmp.130 38 8 10 ];
-        symbol [ drawText %tmp.131 38 11 19 ];
-        %tmp.131 = getv function %tmp.130 :drawText;
-        %tmp.132 = lgetv %dc;
-        symbol [ dc %tmp.132 38 20 22 ];
-        symbol [ getWidth %tmp.133 38 23 31 ];
-        %tmp.133 = getv function %tmp.132 :getWidth;
-        %tmp.134 = invoke %tmp.132 %tmp.133();
-        %tmp.135 = 20;
-        %tmp.136 = sub %tmp.134 %tmp.135;
-        %tmp.137 = 110;
-        symbol [ Graphics %tmp.138 38 45 53 ];
-        %tmp.138 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.139 38 54 64 ];
-        %tmp.139 = getv %tmp.138 :FONT_SMALL;
-        %tmp.140 = lgetv %stats.1;
-        symbol [ stats %tmp.140 38 66 71 ];
-        symbol [ get %tmp.141 38 72 75 ];
-        %tmp.141 = getv function %tmp.140 :get;
-        %tmp.142 = "incorrect";
-        %tmp.143 = invoke %tmp.140 %tmp.141(%tmp.142);
-        symbol [ toString %tmp.144 38 89 97 ];
-        %tmp.144 = getv function %tmp.143 :toString;
-        %tmp.145 = invoke %tmp.143 %tmp.144();
-        symbol [ Graphics %tmp.146 38 101 109 ];
-        %tmp.146 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_RIGHT %tmp.147 38 110 128 ];
-        %tmp.147 = getv %tmp.146 :TEXT_JUSTIFY_RIGHT;
-        invoke %tmp.130 %tmp.131(%tmp.136, %tmp.137, %tmp.139, %tmp.145, %tmp.147);
+        %tmp.50 = lgetv %dc;
+        symbol [ dc %tmp.50 36 8 10 ];
+        symbol [ drawText %tmp.51 36 11 19 ];
+        %tmp.51 = getv function %tmp.50 :drawText;
+        %tmp.52 = lgetv %dc;
+        symbol [ dc %tmp.52 36 20 22 ];
+        symbol [ getWidth %tmp.53 36 23 31 ];
+        %tmp.53 = getv function %tmp.52 :getWidth;
+        %tmp.54 = invoke %tmp.52 %tmp.53();
+        %tmp.55 = lgetv %startX.3;
+        symbol [ startX %tmp.55 36 36 42 ];
+        %tmp.56 = sub %tmp.54 %tmp.55;
+        %tmp.57 = lgetv %startY.2;
+        symbol [ startY %tmp.57 36 44 50 ];
+        symbol [ Graphics %tmp.58 36 52 60 ];
+        %tmp.58 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.59 36 61 71 ];
+        %tmp.59 = getv %tmp.58 :FONT_SMALL;
+        %tmp.60 = lgetv %stats.1;
+        symbol [ stats %tmp.60 36 73 78 ];
+        symbol [ get %tmp.61 36 79 82 ];
+        %tmp.61 = getv function %tmp.60 :get;
+        %tmp.62 = "solved";
+        %tmp.63 = invoke %tmp.60 %tmp.61(%tmp.62);
+        %tmp.64 = " / ";
+        %tmp.65 = add %tmp.63 %tmp.64;
+        %tmp.66 = lgetv %stats.1;
+        symbol [ stats %tmp.66 36 103 108 ];
+        symbol [ get %tmp.67 36 109 112 ];
+        %tmp.67 = getv function %tmp.66 :get;
+        %tmp.68 = "total";
+        %tmp.69 = invoke %tmp.66 %tmp.67(%tmp.68);
+        %tmp.70 = add %tmp.65 %tmp.69;
+        symbol [ Graphics %tmp.71 36 123 131 ];
+        %tmp.71 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.72 36 132 150 ];
+        %tmp.72 = getv %tmp.71 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.50 %tmp.51(%tmp.56, %tmp.57, %tmp.59, %tmp.70, %tmp.72);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 39 8 ]
+        %tmp.73 = lgetv %dc;
+        symbol [ dc %tmp.73 39 8 10 ];
+        symbol [ setColor %tmp.74 39 11 19 ];
+        %tmp.74 = getv function %tmp.73 :setColor;
+        symbol [ Graphics %tmp.75 39 20 28 ];
+        %tmp.75 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.76 39 29 40 ];
+        %tmp.76 = getv %tmp.75 :COLOR_WHITE;
+        symbol [ Graphics %tmp.77 39 42 50 ];
+        %tmp.77 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.78 39 51 62 ];
+        %tmp.78 = getv %tmp.77 :COLOR_BLACK;
+        invoke %tmp.73 %tmp.74(%tmp.76, %tmp.78);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 40 8 ]
+        %tmp.79 = lgetv %dc;
+        symbol [ dc %tmp.79 40 8 10 ];
+        symbol [ drawText %tmp.80 40 11 19 ];
+        %tmp.80 = getv function %tmp.79 :drawText;
+        %tmp.81 = lgetv %startX.3;
+        symbol [ startX %tmp.81 40 20 26 ];
+        %tmp.82 = lgetv %startY.2;
+        symbol [ startY %tmp.82 40 28 34 ];
+        %tmp.83 = lgetv %lineHeight.4;
+        symbol [ lineHeight %tmp.83 40 37 47 ];
+        %tmp.84 = add %tmp.82 %tmp.83;
+        symbol [ Graphics %tmp.85 40 49 57 ];
+        %tmp.85 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.86 40 58 68 ];
+        %tmp.86 = getv %tmp.85 :FONT_SMALL;
+        %tmp.87 = "Accuracy:";
+        symbol [ Graphics %tmp.88 40 83 91 ];
+        %tmp.88 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.89 40 92 109 ];
+        %tmp.89 = getv %tmp.88 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.79 %tmp.80(%tmp.81, %tmp.84, %tmp.86, %tmp.87, %tmp.89);
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 41 8 ]
-        %tmp.148 = lgetv %dc;
-        symbol [ dc %tmp.148 41 8 10 ];
-        symbol [ setColor %tmp.149 41 11 19 ];
-        %tmp.149 = getv function %tmp.148 :setColor;
-        symbol [ Graphics %tmp.150 41 20 28 ];
-        %tmp.150 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.151 41 29 40 ];
-        %tmp.151 = getv %tmp.150 :COLOR_WHITE;
-        symbol [ Graphics %tmp.152 41 42 50 ];
-        %tmp.152 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.153 41 51 62 ];
-        %tmp.153 = getv %tmp.152 :COLOR_BLACK;
-        invoke %tmp.148 %tmp.149(%tmp.151, %tmp.153);
+        %tmp.90 = lgetv %dc;
+        symbol [ dc %tmp.90 41 8 10 ];
+        symbol [ setColor %tmp.91 41 11 19 ];
+        %tmp.91 = getv function %tmp.90 :setColor;
+        symbol [ COLOR_ORANGE %tmp.93 41 20 32 ];
+        %tmp.93 = getv ? :COLOR_ORANGE;
+        symbol [ Graphics %tmp.94 41 34 42 ];
+        %tmp.94 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.95 41 43 54 ];
+        %tmp.95 = getv %tmp.94 :COLOR_BLACK;
+        invoke %tmp.90 %tmp.91(%tmp.93, %tmp.95);
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 42 8 ]
-        %tmp.154 = lgetv %dc;
-        symbol [ dc %tmp.154 42 8 10 ];
-        symbol [ drawText %tmp.155 42 11 19 ];
-        %tmp.155 = getv function %tmp.154 :drawText;
-        %tmp.156 = 20;
-        %tmp.157 = 140;
-        symbol [ Graphics %tmp.158 42 29 37 ];
-        %tmp.158 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.159 42 38 48 ];
-        %tmp.159 = getv %tmp.158 :FONT_SMALL;
-        %tmp.160 = "Avg Time:";
-        symbol [ Graphics %tmp.161 42 63 71 ];
+        %tmp.96 = lgetv %dc;
+        symbol [ dc %tmp.96 42 8 10 ];
+        symbol [ drawText %tmp.97 42 11 19 ];
+        %tmp.97 = getv function %tmp.96 :drawText;
+        %tmp.98 = lgetv %dc;
+        symbol [ dc %tmp.98 42 20 22 ];
+        symbol [ getWidth %tmp.99 42 23 31 ];
+        %tmp.99 = getv function %tmp.98 :getWidth;
+        %tmp.100 = invoke %tmp.98 %tmp.99();
+        %tmp.101 = lgetv %startX.3;
+        symbol [ startX %tmp.101 42 36 42 ];
+        %tmp.102 = sub %tmp.100 %tmp.101;
+        %tmp.103 = lgetv %startY.2;
+        symbol [ startY %tmp.103 42 44 50 ];
+        %tmp.104 = lgetv %lineHeight.4;
+        symbol [ lineHeight %tmp.104 42 53 63 ];
+        %tmp.105 = add %tmp.103 %tmp.104;
+        symbol [ Graphics %tmp.106 42 65 73 ];
+        %tmp.106 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.107 42 74 84 ];
+        %tmp.107 = getv %tmp.106 :FONT_SMALL;
+        %tmp.108 = lgetv %stats.1;
+        symbol [ stats %tmp.108 42 86 91 ];
+        symbol [ get %tmp.109 42 92 95 ];
+        %tmp.109 = getv function %tmp.108 :get;
+        %tmp.110 = "accuracy";
+        %tmp.111 = invoke %tmp.108 %tmp.109(%tmp.110);
+        %tmp.112 = "%";
+        %tmp.113 = add %tmp.111 %tmp.112;
+        symbol [ Graphics %tmp.114 42 115 123 ];
+        %tmp.114 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.115 42 124 142 ];
+        %tmp.115 = getv %tmp.114 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.96 %tmp.97(%tmp.102, %tmp.105, %tmp.107, %tmp.113, %tmp.115);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 45 8 ]
+        %tmp.116 = lgetv %dc;
+        symbol [ dc %tmp.116 45 8 10 ];
+        symbol [ setColor %tmp.117 45 11 19 ];
+        %tmp.117 = getv function %tmp.116 :setColor;
+        symbol [ Graphics %tmp.118 45 20 28 ];
+        %tmp.118 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.119 45 29 40 ];
+        %tmp.119 = getv %tmp.118 :COLOR_WHITE;
+        symbol [ Graphics %tmp.120 45 42 50 ];
+        %tmp.120 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.121 45 51 62 ];
+        %tmp.121 = getv %tmp.120 :COLOR_BLACK;
+        invoke %tmp.116 %tmp.117(%tmp.119, %tmp.121);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 46 8 ]
+        %tmp.122 = lgetv %dc;
+        symbol [ dc %tmp.122 46 8 10 ];
+        symbol [ drawText %tmp.123 46 11 19 ];
+        %tmp.123 = getv function %tmp.122 :drawText;
+        %tmp.124 = lgetv %startX.3;
+        symbol [ startX %tmp.124 46 20 26 ];
+        %tmp.125 = lgetv %startY.2;
+        symbol [ startY %tmp.125 46 28 34 ];
+        %tmp.126 = lgetv %lineHeight.4;
+        symbol [ lineHeight %tmp.126 46 37 47 ];
+        %tmp.127 = 2;
+        %tmp.128 = mul %tmp.126 %tmp.127;
+        %tmp.129 = add %tmp.125 %tmp.128;
+        symbol [ Graphics %tmp.130 46 53 61 ];
+        %tmp.130 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.131 46 62 72 ];
+        %tmp.131 = getv %tmp.130 :FONT_SMALL;
+        %tmp.132 = "Incorrect:";
+        symbol [ Graphics %tmp.133 46 88 96 ];
+        %tmp.133 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.134 46 97 114 ];
+        %tmp.134 = getv %tmp.133 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.122 %tmp.123(%tmp.124, %tmp.129, %tmp.131, %tmp.132, %tmp.134);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 47 8 ]
+        %tmp.135 = lgetv %dc;
+        symbol [ dc %tmp.135 47 8 10 ];
+        symbol [ setColor %tmp.136 47 11 19 ];
+        %tmp.136 = getv function %tmp.135 :setColor;
+        symbol [ Graphics %tmp.137 47 20 28 ];
+        %tmp.137 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.138 47 29 38 ];
+        %tmp.138 = getv %tmp.137 :COLOR_RED;
+        symbol [ Graphics %tmp.139 47 40 48 ];
+        %tmp.139 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.140 47 49 60 ];
+        %tmp.140 = getv %tmp.139 :COLOR_BLACK;
+        invoke %tmp.135 %tmp.136(%tmp.138, %tmp.140);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 48 8 ]
+        %tmp.141 = lgetv %dc;
+        symbol [ dc %tmp.141 48 8 10 ];
+        symbol [ drawText %tmp.142 48 11 19 ];
+        %tmp.142 = getv function %tmp.141 :drawText;
+        %tmp.143 = lgetv %dc;
+        symbol [ dc %tmp.143 48 20 22 ];
+        symbol [ getWidth %tmp.144 48 23 31 ];
+        %tmp.144 = getv function %tmp.143 :getWidth;
+        %tmp.145 = invoke %tmp.143 %tmp.144();
+        %tmp.146 = lgetv %startX.3;
+        symbol [ startX %tmp.146 48 36 42 ];
+        %tmp.147 = sub %tmp.145 %tmp.146;
+        %tmp.148 = lgetv %startY.2;
+        symbol [ startY %tmp.148 48 44 50 ];
+        %tmp.149 = lgetv %lineHeight.4;
+        symbol [ lineHeight %tmp.149 48 53 63 ];
+        %tmp.150 = 2;
+        %tmp.151 = mul %tmp.149 %tmp.150;
+        %tmp.152 = add %tmp.148 %tmp.151;
+        symbol [ Graphics %tmp.153 48 69 77 ];
+        %tmp.153 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.154 48 78 88 ];
+        %tmp.154 = getv %tmp.153 :FONT_SMALL;
+        %tmp.155 = lgetv %stats.1;
+        symbol [ stats %tmp.155 48 90 95 ];
+        symbol [ get %tmp.156 48 96 99 ];
+        %tmp.156 = getv function %tmp.155 :get;
+        %tmp.157 = "incorrect";
+        %tmp.158 = invoke %tmp.155 %tmp.156(%tmp.157);
+        symbol [ toString %tmp.159 48 113 121 ];
+        %tmp.159 = getv function %tmp.158 :toString;
+        %tmp.160 = invoke %tmp.158 %tmp.159();
+        symbol [ Graphics %tmp.161 48 125 133 ];
         %tmp.161 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.162 42 72 89 ];
-        %tmp.162 = getv %tmp.161 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.154 %tmp.155(%tmp.156, %tmp.157, %tmp.159, %tmp.160, %tmp.162);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 43 8 ]
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.162 48 134 152 ];
+        %tmp.162 = getv %tmp.161 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.141 %tmp.142(%tmp.147, %tmp.152, %tmp.154, %tmp.160, %tmp.162);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 51 8 ]
         %tmp.163 = lgetv %dc;
-        symbol [ dc %tmp.163 43 8 10 ];
-        symbol [ setColor %tmp.164 43 11 19 ];
+        symbol [ dc %tmp.163 51 8 10 ];
+        symbol [ setColor %tmp.164 51 11 19 ];
         %tmp.164 = getv function %tmp.163 :setColor;
-        symbol [ Graphics %tmp.165 43 20 28 ];
+        symbol [ Graphics %tmp.165 51 20 28 ];
         %tmp.165 = getm $.Toybox.Graphics;
-        symbol [ COLOR_YELLOW %tmp.166 43 29 41 ];
-        %tmp.166 = getv %tmp.165 :COLOR_YELLOW;
-        symbol [ Graphics %tmp.167 43 43 51 ];
+        symbol [ COLOR_WHITE %tmp.166 51 29 40 ];
+        %tmp.166 = getv %tmp.165 :COLOR_WHITE;
+        symbol [ Graphics %tmp.167 51 42 50 ];
         %tmp.167 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.168 43 52 63 ];
+        symbol [ COLOR_BLACK %tmp.168 51 51 62 ];
         %tmp.168 = getv %tmp.167 :COLOR_BLACK;
         invoke %tmp.163 %tmp.164(%tmp.166, %tmp.168);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 44 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_14_40_52_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_14_40_52_4_stop" ]
-        %avgTime.2 = local;
-        symbol [ avgTime %avgTime.2 44 12 19 ];
-        %tmp.169 = lgetv %stats.1;
-        symbol [ stats %tmp.169 44 22 27 ];
-        symbol [ get %tmp.170 44 28 31 ];
-        %tmp.170 = getv function %tmp.169 :get;
-        %tmp.171 = "avgTime";
-        %tmp.172 = invoke %tmp.169 %tmp.170(%tmp.171);
-        %tmp.173 = as %tmp.172 Number;
-        symbol [ Number %tmp.173 44 46 52 ];
-        lputv %avgTime.2 %tmp.173;
-        symbol [ avgTime %avgTime.2 44 12 19 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 45 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_14_40_52_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_14_40_52_4_stop" ]
-        %avgMins.3 = local;
-        symbol [ avgMins %avgMins.3 45 12 19 ];
-        %tmp.174 = lgetv %avgTime.2;
-        symbol [ avgTime %tmp.174 45 22 29 ];
-        %tmp.175 = 60;
-        %tmp.176 = div %tmp.174 %tmp.175;
-        lputv %avgMins.3 %tmp.176;
-        symbol [ avgMins %avgMins.3 45 12 19 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 46 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_14_40_52_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_14_40_52_4_stop" ]
-        %avgSecs.4 = local;
-        symbol [ avgSecs %avgSecs.4 46 12 19 ];
-        %tmp.177 = lgetv %avgTime.2;
-        symbol [ avgTime %tmp.177 46 22 29 ];
-        %tmp.178 = 60;
-        %tmp.179 = mod %tmp.177 %tmp.178;
-        lputv %avgSecs.4 %tmp.179;
-        symbol [ avgSecs %avgSecs.4 46 12 19 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 47 8 ]
-        %tmp.180 = lgetv %dc;
-        symbol [ dc %tmp.180 47 8 10 ];
-        symbol [ drawText %tmp.181 47 11 19 ];
-        %tmp.181 = getv function %tmp.180 :drawText;
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 52 8 ]
+        %tmp.169 = lgetv %dc;
+        symbol [ dc %tmp.169 52 8 10 ];
+        symbol [ drawText %tmp.170 52 11 19 ];
+        %tmp.170 = getv function %tmp.169 :drawText;
+        %tmp.171 = lgetv %startX.3;
+        symbol [ startX %tmp.171 52 20 26 ];
+        %tmp.172 = lgetv %startY.2;
+        symbol [ startY %tmp.172 52 28 34 ];
+        %tmp.173 = lgetv %lineHeight.4;
+        symbol [ lineHeight %tmp.173 52 37 47 ];
+        %tmp.174 = 3;
+        %tmp.175 = mul %tmp.173 %tmp.174;
+        %tmp.176 = add %tmp.172 %tmp.175;
+        symbol [ Graphics %tmp.177 52 53 61 ];
+        %tmp.177 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.178 52 62 72 ];
+        %tmp.178 = getv %tmp.177 :FONT_SMALL;
+        %tmp.179 = "Avg Time:";
+        symbol [ Graphics %tmp.180 52 87 95 ];
+        %tmp.180 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.181 52 96 113 ];
+        %tmp.181 = getv %tmp.180 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.169 %tmp.170(%tmp.171, %tmp.176, %tmp.178, %tmp.179, %tmp.181);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 53 8 ]
         %tmp.182 = lgetv %dc;
-        symbol [ dc %tmp.182 47 20 22 ];
-        symbol [ getWidth %tmp.183 47 23 31 ];
-        %tmp.183 = getv function %tmp.182 :getWidth;
-        %tmp.184 = invoke %tmp.182 %tmp.183();
-        %tmp.185 = 20;
-        %tmp.186 = sub %tmp.184 %tmp.185;
-        %tmp.187 = 140;
-        symbol [ Graphics %tmp.188 47 45 53 ];
-        %tmp.188 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.189 47 54 64 ];
-        %tmp.189 = getv %tmp.188 :FONT_SMALL;
-        %tmp.190 = lgetv %avgMins.3;
-        symbol [ avgMins %tmp.190 47 66 73 ];
-        %tmp.191 = "m ";
-        %tmp.192 = add %tmp.190 %tmp.191;
-        %tmp.193 = lgetv %avgSecs.4;
-        symbol [ avgSecs %tmp.193 47 83 90 ];
-        %tmp.194 = add %tmp.192 %tmp.193;
-        %tmp.195 = "s";
-        %tmp.196 = add %tmp.194 %tmp.195;
-        symbol [ Graphics %tmp.197 47 98 106 ];
-        %tmp.197 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_RIGHT %tmp.198 47 107 125 ];
-        %tmp.198 = getv %tmp.197 :TEXT_JUSTIFY_RIGHT;
-        invoke %tmp.180 %tmp.181(%tmp.186, %tmp.187, %tmp.189, %tmp.196, %tmp.198);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 50 8 ]
+        symbol [ dc %tmp.182 53 8 10 ];
+        symbol [ setColor %tmp.183 53 11 19 ];
+        %tmp.183 = getv function %tmp.182 :setColor;
+        symbol [ Graphics %tmp.184 53 20 28 ];
+        %tmp.184 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.185 53 29 41 ];
+        %tmp.185 = getv %tmp.184 :COLOR_YELLOW;
+        symbol [ Graphics %tmp.186 53 43 51 ];
+        %tmp.186 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.187 53 52 63 ];
+        %tmp.187 = getv %tmp.186 :COLOR_BLACK;
+        invoke %tmp.182 %tmp.183(%tmp.185, %tmp.187);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 54 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_stop" ]
+        %avgTime.5 = local;
+        symbol [ avgTime %avgTime.5 54 12 19 ];
+        %tmp.188 = lgetv %stats.1;
+        symbol [ stats %tmp.188 54 22 27 ];
+        symbol [ get %tmp.189 54 28 31 ];
+        %tmp.189 = getv function %tmp.188 :get;
+        %tmp.190 = "avgTime";
+        %tmp.191 = invoke %tmp.188 %tmp.189(%tmp.190);
+        %tmp.192 = as %tmp.191 Number;
+        symbol [ Number %tmp.192 54 46 52 ];
+        lputv %avgTime.5 %tmp.192;
+        symbol [ avgTime %avgTime.5 54 12 19 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 55 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_stop" ]
+        %avgMins.6 = local;
+        symbol [ avgMins %avgMins.6 55 12 19 ];
+        %tmp.193 = lgetv %avgTime.5;
+        symbol [ avgTime %tmp.193 55 22 29 ];
+        %tmp.194 = 60;
+        %tmp.195 = div %tmp.193 %tmp.194;
+        lputv %avgMins.6 %tmp.195;
+        symbol [ avgMins %avgMins.6 55 12 19 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 56 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_stop" ]
+        %avgSecs.7 = local;
+        symbol [ avgSecs %avgSecs.7 56 12 19 ];
+        %tmp.196 = lgetv %avgTime.5;
+        symbol [ avgTime %tmp.196 56 22 29 ];
+        %tmp.197 = 60;
+        %tmp.198 = mod %tmp.196 %tmp.197;
+        lputv %avgSecs.7 %tmp.198;
+        symbol [ avgSecs %avgSecs.7 56 12 19 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 57 8 ]
         %tmp.199 = lgetv %dc;
-        symbol [ dc %tmp.199 50 8 10 ];
-        symbol [ setColor %tmp.200 50 11 19 ];
-        %tmp.200 = getv function %tmp.199 :setColor;
-        symbol [ Graphics %tmp.201 50 20 28 ];
-        %tmp.201 = getm $.Toybox.Graphics;
-        symbol [ COLOR_DK_GRAY %tmp.202 50 29 42 ];
-        %tmp.202 = getv %tmp.201 :COLOR_DK_GRAY;
-        symbol [ Graphics %tmp.203 50 44 52 ];
-        %tmp.203 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.204 50 53 64 ];
-        %tmp.204 = getv %tmp.203 :COLOR_BLACK;
-        invoke %tmp.199 %tmp.200(%tmp.202, %tmp.204);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 51 8 ]
-        %tmp.205 = lgetv %dc;
-        symbol [ dc %tmp.205 51 8 10 ];
-        symbol [ drawText %tmp.206 51 11 19 ];
-        %tmp.206 = getv function %tmp.205 :drawText;
-        %tmp.207 = lgetv %dc;
-        symbol [ dc %tmp.207 51 20 22 ];
-        symbol [ getWidth %tmp.208 51 23 31 ];
-        %tmp.208 = getv function %tmp.207 :getWidth;
-        %tmp.209 = invoke %tmp.207 %tmp.208();
-        %tmp.210 = 2;
-        %tmp.211 = div %tmp.209 %tmp.210;
-        %tmp.212 = lgetv %dc;
-        symbol [ dc %tmp.212 51 39 41 ];
-        symbol [ getHeight %tmp.213 51 42 51 ];
-        %tmp.213 = getv function %tmp.212 :getHeight;
-        %tmp.214 = invoke %tmp.212 %tmp.213();
-        %tmp.215 = 20;
-        %tmp.216 = sub %tmp.214 %tmp.215;
-        symbol [ Graphics %tmp.217 51 60 68 ];
-        %tmp.217 = getm $.Toybox.Graphics;
-        symbol [ FONT_TINY %tmp.218 51 69 78 ];
-        %tmp.218 = getv %tmp.217 :FONT_TINY;
-        %tmp.219 = "ESC to return";
-        symbol [ Graphics %tmp.220 51 97 105 ];
+        symbol [ dc %tmp.199 57 8 10 ];
+        symbol [ drawText %tmp.200 57 11 19 ];
+        %tmp.200 = getv function %tmp.199 :drawText;
+        %tmp.201 = lgetv %dc;
+        symbol [ dc %tmp.201 57 20 22 ];
+        symbol [ getWidth %tmp.202 57 23 31 ];
+        %tmp.202 = getv function %tmp.201 :getWidth;
+        %tmp.203 = invoke %tmp.201 %tmp.202();
+        %tmp.204 = lgetv %startX.3;
+        symbol [ startX %tmp.204 57 36 42 ];
+        %tmp.205 = sub %tmp.203 %tmp.204;
+        %tmp.206 = lgetv %startY.2;
+        symbol [ startY %tmp.206 57 44 50 ];
+        %tmp.207 = lgetv %lineHeight.4;
+        symbol [ lineHeight %tmp.207 57 53 63 ];
+        %tmp.208 = 3;
+        %tmp.209 = mul %tmp.207 %tmp.208;
+        %tmp.210 = add %tmp.206 %tmp.209;
+        symbol [ Graphics %tmp.211 57 69 77 ];
+        %tmp.211 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.212 57 78 88 ];
+        %tmp.212 = getv %tmp.211 :FONT_SMALL;
+        %tmp.213 = lgetv %avgMins.6;
+        symbol [ avgMins %tmp.213 57 90 97 ];
+        %tmp.214 = "m ";
+        %tmp.215 = add %tmp.213 %tmp.214;
+        %tmp.216 = lgetv %avgSecs.7;
+        symbol [ avgSecs %tmp.216 57 107 114 ];
+        %tmp.217 = add %tmp.215 %tmp.216;
+        %tmp.218 = "s";
+        %tmp.219 = add %tmp.217 %tmp.218;
+        symbol [ Graphics %tmp.220 57 122 130 ];
         %tmp.220 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.221 51 106 125 ];
-        %tmp.221 = getv %tmp.220 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.205 %tmp.206(%tmp.211, %tmp.216, %tmp.218, %tmp.219, %tmp.221);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_14_40_52_4_stop:
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.221 57 131 149 ];
+        %tmp.221 = getv %tmp.220 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.199 %tmp.200(%tmp.205, %tmp.210, %tmp.212, %tmp.219, %tmp.221);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 60 8 ]
+        %tmp.222 = lgetv %dc;
+        symbol [ dc %tmp.222 60 8 10 ];
+        symbol [ setColor %tmp.223 60 11 19 ];
+        %tmp.223 = getv function %tmp.222 :setColor;
+        symbol [ Graphics %tmp.224 60 20 28 ];
+        %tmp.224 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.225 60 29 42 ];
+        %tmp.225 = getv %tmp.224 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.226 60 44 52 ];
+        %tmp.226 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.227 60 53 64 ];
+        %tmp.227 = getv %tmp.226 :COLOR_BLACK;
+        invoke %tmp.222 %tmp.223(%tmp.225, %tmp.227);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 61 8 ]
+        %tmp.228 = lgetv %dc;
+        symbol [ dc %tmp.228 61 8 10 ];
+        symbol [ drawText %tmp.229 61 11 19 ];
+        %tmp.229 = getv function %tmp.228 :drawText;
+        %tmp.230 = 55;
+        %tmp.231 = 220;
+        symbol [ Graphics %tmp.232 61 29 37 ];
+        %tmp.232 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.233 61 38 47 ];
+        %tmp.233 = getv %tmp.232 :FONT_TINY;
+        %tmp.234 = "ESC to return";
+        symbol [ Graphics %tmp.235 61 66 74 ];
+        %tmp.235 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.236 61 75 92 ];
+        %tmp.236 = getv %tmp.235 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.228 %tmp.229(%tmp.230, %tmp.231, %tmp.233, %tmp.234, %tmp.236);
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_19_40_62_4_stop:
     }
 }
-[ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc"; @line = 55; @symbol_classdef = [StatsDelegate,55,6,19]; @symbol_extends<0> = [WatchUi,55,28,35]; @symbol_extends<1> = [InputDelegate,55,36,49]; ]
+[ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc"; @line = 65; @symbol_classdef = [StatsDelegate,65,6,19]; @symbol_extends<0> = [WatchUi,65,28,35]; @symbol_extends<1> = [InputDelegate,65,36,49]; ]
 class StatsDelegate extends WatchUi.InputDelegate {
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc"; @line = 55; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc"; @line = 65; ]
     <init> {
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc"; @line = 55; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc"; @line = 65; ]
     static
     <init> {
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc"; @line = 56; @symbol_functiondef = [initialize,56,13,23]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc"; @line = 66; @symbol_functiondef = [initialize,66,13,23]; ]
     function initialize() as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_56_26_58_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 57 8 ]
-        symbol [ WatchUi %tmp.1 57 8 15 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_66_26_68_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 67 8 ]
+        symbol [ WatchUi %tmp.1 67 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ InputDelegate %tmp.2 57 16 29 ];
+        symbol [ InputDelegate %tmp.2 67 16 29 ];
         %tmp.2 = getv %tmp.1 :InputDelegate;
-        symbol [ initialize %tmp.3 57 30 40 ];
+        symbol [ initialize %tmp.3 67 30 40 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_56_26_58_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_66_26_68_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc"; @line = 60; @symbol_functiondef = [onKeyPressed,60,13,25]; @symbol_param<0> = [key,60,26,29]; @symbol_param<0>_type<0> = [WatchUi,60,33,40]; @symbol_param<0>_type<1> = [KeyEvent,60,41,49]; @symbol_return<0> = [Boolean,60,54,61]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc"; @line = 70; @symbol_functiondef = [onKeyPressed,70,13,25]; @symbol_param<0> = [key,70,26,29]; @symbol_param<0>_type<0> = [WatchUi,70,33,40]; @symbol_param<0>_type<1> = [KeyEvent,70,41,49]; @symbol_return<0> = [Boolean,70,54,61]; ]
     function onKeyPressed(key as WatchUi.KeyEvent) as Boolean {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_60_62_66_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 61 8 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_61_8_64_8_if_stmt:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_70_62_76_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 71 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_71_8_74_8_if_stmt:
         %tmp.1 = lgetv %key;
-        symbol [ key %tmp.1 61 12 15 ];
-        symbol [ getKey %tmp.2 61 16 22 ];
+        symbol [ key %tmp.1 71 12 15 ];
+        symbol [ getKey %tmp.2 71 16 22 ];
         %tmp.2 = getv function %tmp.1 :getKey;
         %tmp.3 = invoke %tmp.1 %tmp.2();
-        symbol [ WatchUi %tmp.4 61 28 35 ];
+        symbol [ WatchUi %tmp.4 71 28 35 ];
         %tmp.4 = getm $.Toybox.WatchUi;
-        symbol [ KEY_ESC %tmp.5 61 36 43 ];
+        symbol [ KEY_ESC %tmp.5 71 36 43 ];
         %tmp.5 = getv %tmp.4 :KEY_ESC;
         %tmp.6 = eq %tmp.3 %tmp.5;
-        bf %tmp.6 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_61_8_64_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_61_8_64_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_61_45_64_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 62 12 ]
-        symbol [ WatchUi %tmp.7 62 12 19 ];
+        bf %tmp.6 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_71_8_74_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_71_8_74_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_71_45_74_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 72 12 ]
+        symbol [ WatchUi %tmp.7 72 12 19 ];
         %tmp.7 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.8 62 20 27 ];
+        symbol [ popView %tmp.8 72 20 27 ];
         %tmp.8 = getv function %tmp.7 :popView;
-        symbol [ WatchUi %tmp.9 62 28 35 ];
+        symbol [ WatchUi %tmp.9 72 28 35 ];
         %tmp.9 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_RIGHT %tmp.10 62 36 47 ];
+        symbol [ SLIDE_RIGHT %tmp.10 72 36 47 ];
         %tmp.10 = getv %tmp.9 :SLIDE_RIGHT;
         invoke %tmp.7 %tmp.8(%tmp.10);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 63 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 73 12 ]
         %tmp.11 = true;
         ret %tmp.11;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_61_45_64_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_61_8_64_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_61_8_64_8_if_end:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 65 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_71_45_74_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_71_8_74_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_71_8_74_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc" 75 8 ]
         %tmp.12 = false;
         ret %tmp.12;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_60_62_66_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_StatsView_mc_70_62_76_4_stop:
     }
 }
 [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/StatsView.mc"; @line = 1; ]

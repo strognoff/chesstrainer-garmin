@@ -13,607 +13,893 @@ class HistoryView extends WatchUi.View {
     static
     <init> {
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 6; @position = 8; @symbol_vardef = [currentPage,6,8,19]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 6; @position = 10; @symbol_constdef = [COLOR_GREEN,6,10,21]; ]
+    const COLOR_GREEN = 0x00CC00;
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 7; @position = 10; @symbol_constdef = [COLOR_ACCENT,7,10,22]; ]
+    const COLOR_ACCENT = 0x00FFAA;
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 9; @position = 8; @symbol_vardef = [currentPage,9,8,19]; ]
     var currentPage = 0;
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 7; @position = 8; @symbol_vardef = [itemsPerPage,7,8,20]; ]
-    var itemsPerPage = 6;
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 10; @position = 8; @symbol_vardef = [itemsPerPage,10,8,20]; ]
+    var itemsPerPage = 5;
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 11; @position = 8; @symbol_vardef = [scrollOffset,11,8,20]; ]
+    var scrollOffset = 0;
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 13; @symbol_functiondef = [initialize,13,13,23]; ]
     function initialize() as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_9_26_11_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 10 8 ]
-        symbol [ WatchUi %tmp.1 10 8 15 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_13_26_15_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 14 8 ]
+        symbol [ WatchUi %tmp.1 14 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ View %tmp.2 10 16 20 ];
+        symbol [ View %tmp.2 14 16 20 ];
         %tmp.2 = getv %tmp.1 :View;
-        symbol [ initialize %tmp.3 10 21 31 ];
+        symbol [ initialize %tmp.3 14 21 31 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_9_26_11_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_13_26_15_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 13; @symbol_functiondef = [onUpdate,13,13,21]; @symbol_param<0> = [dc,13,22,24]; @symbol_param<0>_type<0> = [Dc,13,28,30]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 17; @symbol_functiondef = [onUpdate,17,13,21]; @symbol_param<0> = [dc,17,22,24]; @symbol_param<0>_type<0> = [Dc,17,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_13_40_56_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 14 8 ]
-        %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 14 8 10 ];
-        symbol [ setColor %tmp.2 14 11 19 ];
-        %tmp.2 = getv function %tmp.1 :setColor;
-        symbol [ Graphics %tmp.3 14 20 28 ];
-        %tmp.3 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.4 14 29 40 ];
-        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
-        symbol [ Graphics %tmp.5 14 42 50 ];
-        %tmp.5 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.6 14 51 62 ];
-        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
-        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 15 8 ]
-        %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 15 8 10 ];
-        symbol [ clear %tmp.8 15 11 16 ];
-        %tmp.8 = getv function %tmp.7 :clear;
-        invoke %tmp.7 %tmp.8();
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 17 8 ]
-        %tmp.9 = lgetv %dc;
-        symbol [ dc %tmp.9 17 8 10 ];
-        symbol [ setColor %tmp.10 17 11 19 ];
-        %tmp.10 = getv function %tmp.9 :setColor;
-        symbol [ Graphics %tmp.11 17 20 28 ];
-        %tmp.11 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.12 17 29 40 ];
-        %tmp.12 = getv %tmp.11 :COLOR_WHITE;
-        symbol [ Graphics %tmp.13 17 42 50 ];
-        %tmp.13 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.14 17 51 62 ];
-        %tmp.14 = getv %tmp.13 :COLOR_BLACK;
-        invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_start:
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 18 8 ]
-        %tmp.15 = lgetv %dc;
-        symbol [ dc %tmp.15 18 8 10 ];
-        symbol [ drawText %tmp.16 18 11 19 ];
-        %tmp.16 = getv function %tmp.15 :drawText;
-        %tmp.17 = lgetv %dc;
-        symbol [ dc %tmp.17 18 20 22 ];
-        symbol [ getWidth %tmp.18 18 23 31 ];
-        %tmp.18 = getv function %tmp.17 :getWidth;
-        %tmp.19 = invoke %tmp.17 %tmp.18();
-        %tmp.20 = 2;
-        %tmp.21 = div %tmp.19 %tmp.20;
-        %tmp.22 = 5;
-        symbol [ Graphics %tmp.23 18 42 50 ];
-        %tmp.23 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.24 18 51 61 ];
-        %tmp.24 = getv %tmp.23 :FONT_SMALL;
-        %tmp.25 = "History";
-        symbol [ Graphics %tmp.26 18 74 82 ];
-        %tmp.26 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.27 18 83 102 ];
-        %tmp.27 = getv %tmp.26 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.15 %tmp.16(%tmp.21, %tmp.22, %tmp.24, %tmp.25, %tmp.27);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 20 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_13_40_56_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_13_40_56_4_stop" ]
-        %solved.1 = local;
-        symbol [ solved %solved.1 20 12 18 ];
-        symbol [ Storage %tmp.29 20 21 28 ];
-        %tmp.29 = getv ? :Storage;
-        symbol [ getSolvedPuzzles %tmp.30 20 29 45 ];
-        %tmp.30 = getv function %tmp.29 :getSolvedPuzzles;
-        %tmp.31 = invoke %tmp.29 %tmp.30();
-        lputv %solved.1 %tmp.31;
-        symbol [ solved %solved.1 20 12 18 ];
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 18 12 17 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 18 20 22 ];
+        symbol [ getWidth %tmp.2 18 23 31 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %width.1 %tmp.3;
+        symbol [ width %width.1 18 12 17 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 19 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_stop" ]
+        %height.2 = local;
+        symbol [ height %height.2 19 12 18 ];
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 19 21 23 ];
+        symbol [ getHeight %tmp.5 19 24 33 ];
+        %tmp.5 = getv function %tmp.4 :getHeight;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %height.2 %tmp.6;
+        symbol [ height %height.2 19 12 18 ];
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 21 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_13_40_56_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_13_40_56_4_stop" ]
-        %incorrect.2 = local;
-        symbol [ incorrect %incorrect.2 21 12 21 ];
-        symbol [ Storage %tmp.33 21 24 31 ];
-        %tmp.33 = getv ? :Storage;
-        symbol [ getIncorrectPuzzles %tmp.34 21 32 51 ];
-        %tmp.34 = getv function %tmp.33 :getIncorrectPuzzles;
-        %tmp.35 = invoke %tmp.33 %tmp.34();
-        lputv %incorrect.2 %tmp.35;
-        symbol [ incorrect %incorrect.2 21 12 21 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 23 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_13_40_56_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_13_40_56_4_stop" ]
-        %total.3 = local;
-        symbol [ total %total.3 23 12 17 ];
-        %tmp.36 = lgetv %solved.1;
-        symbol [ solved %tmp.36 23 20 26 ];
-        symbol [ size %tmp.37 23 27 31 ];
-        %tmp.37 = getv function %tmp.36 :size;
-        %tmp.38 = invoke %tmp.36 %tmp.37();
-        %tmp.39 = lgetv %incorrect.2;
-        symbol [ incorrect %tmp.39 23 36 45 ];
-        symbol [ size %tmp.40 23 46 50 ];
-        %tmp.40 = getv function %tmp.39 :size;
-        %tmp.41 = invoke %tmp.39 %tmp.40();
-        %tmp.42 = add %tmp.38 %tmp.41;
-        lputv %total.3 %tmp.42;
-        symbol [ total %total.3 23 12 17 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 24 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_13_40_56_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_13_40_56_4_stop" ]
-        %startIdx.4 = local;
-        symbol [ startIdx %startIdx.4 24 12 20 ];
-        symbol [ currentPage %tmp.44 24 23 34 ];
-        %tmp.44 = getv ? :currentPage;
-        symbol [ itemsPerPage %tmp.46 24 37 49 ];
-        %tmp.46 = getv ? :itemsPerPage;
-        %tmp.47 = mul %tmp.44 %tmp.46;
-        lputv %startIdx.4 %tmp.47;
-        symbol [ startIdx %startIdx.4 24 12 20 ];
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 21 8 10 ];
+        symbol [ setColor %tmp.8 21 11 19 ];
+        %tmp.8 = getv function %tmp.7 :setColor;
+        symbol [ Graphics %tmp.9 21 20 28 ];
+        %tmp.9 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.10 21 29 40 ];
+        %tmp.10 = getv %tmp.9 :COLOR_BLACK;
+        symbol [ Graphics %tmp.11 21 42 50 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.12 21 51 62 ];
+        %tmp.12 = getv %tmp.11 :COLOR_BLACK;
+        invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 22 8 ]
+        %tmp.13 = lgetv %dc;
+        symbol [ dc %tmp.13 22 8 10 ];
+        symbol [ clear %tmp.14 22 11 16 ];
+        %tmp.14 = getv function %tmp.13 :clear;
+        invoke %tmp.13 %tmp.14();
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 25 8 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 25 8 10 ];
+        symbol [ setColor %tmp.16 25 11 19 ];
+        %tmp.16 = getv function %tmp.15 :setColor;
+        symbol [ Graphics %tmp.17 25 20 28 ];
+        %tmp.17 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.18 25 29 40 ];
+        %tmp.18 = getv %tmp.17 :COLOR_WHITE;
+        symbol [ Graphics %tmp.19 25 42 50 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.20 25 51 62 ];
+        %tmp.20 = getv %tmp.19 :COLOR_BLACK;
+        invoke %tmp.15 %tmp.16(%tmp.18, %tmp.20);
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 26 8 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_26_8_51_8_if_stmt:
-        %tmp.48 = lgetv %total.3;
-        symbol [ total %tmp.48 26 12 17 ];
-        %tmp.49 = 0;
-        %tmp.50 = eq %tmp.48 %tmp.49;
-        bf %tmp.50 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_26_8_51_8_if_else_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_26_8_51_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_26_24_29_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 27 12 ]
-        %tmp.51 = lgetv %dc;
-        symbol [ dc %tmp.51 27 12 14 ];
-        symbol [ setColor %tmp.52 27 15 23 ];
-        %tmp.52 = getv function %tmp.51 :setColor;
-        symbol [ Graphics %tmp.53 27 24 32 ];
-        %tmp.53 = getm $.Toybox.Graphics;
-        symbol [ COLOR_DK_GRAY %tmp.54 27 33 46 ];
-        %tmp.54 = getv %tmp.53 :COLOR_DK_GRAY;
-        symbol [ Graphics %tmp.55 27 48 56 ];
-        %tmp.55 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.56 27 57 68 ];
-        %tmp.56 = getv %tmp.55 :COLOR_BLACK;
-        invoke %tmp.51 %tmp.52(%tmp.54, %tmp.56);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 28 12 ]
-        %tmp.57 = lgetv %dc;
-        symbol [ dc %tmp.57 28 12 14 ];
-        symbol [ drawText %tmp.58 28 15 23 ];
-        %tmp.58 = getv function %tmp.57 :drawText;
-        %tmp.59 = lgetv %dc;
-        symbol [ dc %tmp.59 28 24 26 ];
-        symbol [ getWidth %tmp.60 28 27 35 ];
-        %tmp.60 = getv function %tmp.59 :getWidth;
-        %tmp.61 = invoke %tmp.59 %tmp.60();
-        %tmp.62 = 2;
-        %tmp.63 = div %tmp.61 %tmp.62;
-        %tmp.64 = lgetv %dc;
-        symbol [ dc %tmp.64 28 43 45 ];
-        symbol [ getHeight %tmp.65 28 46 55 ];
-        %tmp.65 = getv function %tmp.64 :getHeight;
-        %tmp.66 = invoke %tmp.64 %tmp.65();
-        %tmp.67 = 2;
-        %tmp.68 = div %tmp.66 %tmp.67;
-        symbol [ Graphics %tmp.69 28 63 71 ];
-        %tmp.69 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.70 28 72 82 ];
-        %tmp.70 = getv %tmp.69 :FONT_SMALL;
-        %tmp.71 = "No history yet";
-        symbol [ Graphics %tmp.72 28 102 110 ];
-        %tmp.72 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.73 28 111 130 ];
-        %tmp.73 = getv %tmp.72 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.57 %tmp.58(%tmp.63, %tmp.68, %tmp.70, %tmp.71, %tmp.73);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_26_24_29_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_26_8_51_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_26_8_51_8_if_else_false:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_29_15_51_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 30 12 ]
-        for @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_12_50_12_for_test @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_12_50_12_for_incr @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_12_50_12_for_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_12_50_12_for_init:
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_12_50_12_for_begin" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_12_50_12_for_end" ]
-        %i.5 = local;
-        symbol [ i %i.5 30 21 22 ];
-        %tmp.74 = 0;
-        lputv %i.5 %tmp.74;
-        symbol [ i %i.5 30 21 22 ];
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_12_50_12_for_test:
-        %tmp.75 = lgetv %i.5;
-        symbol [ i %tmp.75 30 28 29 ];
-        symbol [ itemsPerPage %tmp.77 30 32 44 ];
-        %tmp.77 = getv ? :itemsPerPage;
-        %tmp.78 = lt %tmp.75 %tmp.77;
-        bf %tmp.78 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_12_50_12_for_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_12_50_12_for_begin:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_51_50_12_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 31 16 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_51_50_12_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_51_50_12_stop" ]
-        %idx.6 = local;
-        symbol [ idx %idx.6 31 20 23 ];
-        %tmp.79 = lgetv %startIdx.4;
-        symbol [ startIdx %tmp.79 31 26 34 ];
-        %tmp.80 = lgetv %i.5;
-        symbol [ i %tmp.80 31 37 38 ];
-        %tmp.81 = add %tmp.79 %tmp.80;
-        lputv %idx.6 %tmp.81;
-        symbol [ idx %idx.6 31 20 23 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 32 16 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_32_16_32_43_if_stmt:
-        %tmp.82 = lgetv %idx.6;
-        symbol [ idx %tmp.82 32 20 23 ];
-        %tmp.83 = lgetv %total.3;
-        symbol [ total %tmp.83 32 27 32 ];
-        %tmp.84 = gte %tmp.82 %tmp.83;
-        bf %tmp.84 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_32_16_32_43_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_32_16_32_43_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_32_34_32_43_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 32 36 ]
-        goto break @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_12_50_12_for_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_32_34_32_43_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_32_16_32_43_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_32_16_32_43_if_end:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 34 16 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_51_50_12_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_51_50_12_stop" ]
-        %y.7 = local;
-        symbol [ y %y.7 34 20 21 ];
-        %tmp.85 = 35;
-        %tmp.86 = lgetv %i.5;
-        symbol [ i %tmp.86 34 30 31 ];
-        %tmp.87 = 25;
-        %tmp.88 = mul %tmp.86 %tmp.87;
-        %tmp.89 = add %tmp.85 %tmp.88;
-        lputv %y.7 %tmp.89;
-        symbol [ y %y.7 34 20 21 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 35 16 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_51_50_12_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_51_50_12_stop" ]
-        %puzzleNum.8 = local;
-        symbol [ puzzleNum %puzzleNum.8 35 20 29 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 36 16 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_51_50_12_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_51_50_12_stop" ]
-        %status.9 = local;
-        symbol [ status %status.9 36 20 26 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 38 16 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_38_16_46_16_if_stmt:
-        %tmp.90 = lgetv %idx.6;
-        symbol [ idx %tmp.90 38 20 23 ];
-        %tmp.91 = lgetv %solved.1;
-        symbol [ solved %tmp.91 38 26 32 ];
-        symbol [ size %tmp.92 38 33 37 ];
-        %tmp.92 = getv function %tmp.91 :size;
-        %tmp.93 = invoke %tmp.91 %tmp.92();
-        %tmp.94 = lt %tmp.90 %tmp.93;
-        bf %tmp.94 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_38_16_46_16_if_else_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_38_16_46_16_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_38_41_42_16_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 39 20 ]
-        %tmp.95 = lgetv %solved.1;
-        symbol [ solved %tmp.95 39 32 38 ];
-        %tmp.96 = lgetv %idx.6;
-        symbol [ idx %tmp.96 39 39 42 ];
-        %tmp.97 = agetv %tmp.95 %tmp.96;
-        lputv %puzzleNum.8 %tmp.97;
-        symbol [ puzzleNum %puzzleNum.8 39 20 29 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 40 20 ]
-        %tmp.98 = "Solved";
-        lputv %status.9 %tmp.98;
-        symbol [ status %status.9 40 20 26 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 41 20 ]
-        %tmp.99 = lgetv %dc;
-        symbol [ dc %tmp.99 41 20 22 ];
-        symbol [ setColor %tmp.100 41 23 31 ];
-        %tmp.100 = getv function %tmp.99 :setColor;
-        symbol [ Graphics %tmp.101 41 32 40 ];
-        %tmp.101 = getm $.Toybox.Graphics;
-        symbol [ COLOR_GREEN %tmp.102 41 41 52 ];
-        %tmp.102 = getv %tmp.101 :COLOR_GREEN;
-        symbol [ Graphics %tmp.103 41 54 62 ];
-        %tmp.103 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.104 41 63 74 ];
-        %tmp.104 = getv %tmp.103 :COLOR_BLACK;
-        invoke %tmp.99 %tmp.100(%tmp.102, %tmp.104);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_38_41_42_16_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_38_16_46_16_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_38_16_46_16_if_else_false:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_42_23_46_16_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 43 20 ]
-        %tmp.105 = lgetv %incorrect.2;
-        symbol [ incorrect %tmp.105 43 32 41 ];
-        %tmp.106 = lgetv %idx.6;
-        symbol [ idx %tmp.106 43 42 45 ];
-        %tmp.107 = lgetv %solved.1;
-        symbol [ solved %tmp.107 43 48 54 ];
-        symbol [ size %tmp.108 43 55 59 ];
-        %tmp.108 = getv function %tmp.107 :size;
-        %tmp.109 = invoke %tmp.107 %tmp.108();
-        %tmp.110 = sub %tmp.106 %tmp.109;
-        %tmp.111 = agetv %tmp.105 %tmp.110;
-        lputv %puzzleNum.8 %tmp.111;
-        symbol [ puzzleNum %puzzleNum.8 43 20 29 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 44 20 ]
-        %tmp.112 = "Failed";
-        lputv %status.9 %tmp.112;
-        symbol [ status %status.9 44 20 26 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 45 20 ]
-        %tmp.113 = lgetv %dc;
-        symbol [ dc %tmp.113 45 20 22 ];
-        symbol [ setColor %tmp.114 45 23 31 ];
-        %tmp.114 = getv function %tmp.113 :setColor;
-        symbol [ Graphics %tmp.115 45 32 40 ];
-        %tmp.115 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.116 45 41 50 ];
-        %tmp.116 = getv %tmp.115 :COLOR_RED;
-        symbol [ Graphics %tmp.117 45 52 60 ];
-        %tmp.117 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.118 45 61 72 ];
-        %tmp.118 = getv %tmp.117 :COLOR_BLACK;
-        invoke %tmp.113 %tmp.114(%tmp.116, %tmp.118);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_42_23_46_16_stop:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_38_16_46_16_if_end:
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 26 8 10 ];
+        symbol [ drawText %tmp.22 26 11 19 ];
+        %tmp.22 = getv function %tmp.21 :drawText;
+        %tmp.23 = lgetv %width.1;
+        symbol [ width %tmp.23 26 20 25 ];
+        %tmp.24 = 2;
+        %tmp.25 = div %tmp.23 %tmp.24;
+        %tmp.26 = 10;
+        symbol [ Graphics %tmp.27 26 35 43 ];
+        %tmp.27 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.28 26 44 55 ];
+        %tmp.28 = getv %tmp.27 :FONT_MEDIUM;
+        %tmp.29 = "History";
+        symbol [ Graphics %tmp.30 26 68 76 ];
+        %tmp.30 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.31 26 77 96 ];
+        %tmp.31 = getv %tmp.30 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.21 %tmp.22(%tmp.25, %tmp.26, %tmp.28, %tmp.29, %tmp.31);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 28 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_stop" ]
+        %solved.3 = local;
+        symbol [ solved %solved.3 28 12 18 ];
+        symbol [ Storage %tmp.33 28 21 28 ];
+        %tmp.33 = getv ? :Storage;
+        symbol [ getSolvedPuzzles %tmp.34 28 29 45 ];
+        %tmp.34 = getv function %tmp.33 :getSolvedPuzzles;
+        %tmp.35 = invoke %tmp.33 %tmp.34();
+        lputv %solved.3 %tmp.35;
+        symbol [ solved %solved.3 28 12 18 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 29 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_stop" ]
+        %incorrect.4 = local;
+        symbol [ incorrect %incorrect.4 29 12 21 ];
+        symbol [ Storage %tmp.37 29 24 31 ];
+        %tmp.37 = getv ? :Storage;
+        symbol [ getIncorrectPuzzles %tmp.38 29 32 51 ];
+        %tmp.38 = getv function %tmp.37 :getIncorrectPuzzles;
+        %tmp.39 = invoke %tmp.37 %tmp.38();
+        lputv %incorrect.4 %tmp.39;
+        symbol [ incorrect %incorrect.4 29 12 21 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 31 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_stop" ]
+        %total.5 = local;
+        symbol [ total %total.5 31 12 17 ];
+        %tmp.40 = lgetv %solved.3;
+        symbol [ solved %tmp.40 31 20 26 ];
+        symbol [ size %tmp.41 31 27 31 ];
+        %tmp.41 = getv function %tmp.40 :size;
+        %tmp.42 = invoke %tmp.40 %tmp.41();
+        %tmp.43 = lgetv %incorrect.4;
+        symbol [ incorrect %tmp.43 31 36 45 ];
+        symbol [ size %tmp.44 31 46 50 ];
+        %tmp.44 = getv function %tmp.43 :size;
+        %tmp.45 = invoke %tmp.43 %tmp.44();
+        %tmp.46 = add %tmp.42 %tmp.45;
+        lputv %total.5 %tmp.46;
+        symbol [ total %total.5 31 12 17 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 34 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_stop" ]
+        %startIdx.6 = local;
+        symbol [ startIdx %startIdx.6 34 12 20 ];
+        symbol [ scrollOffset %tmp.48 34 23 35 ];
+        %tmp.48 = getv ? :scrollOffset;
+        lputv %startIdx.6 %tmp.48;
+        symbol [ startIdx %startIdx.6 34 12 20 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 35 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_stop" ]
+        %endIdx.7 = local;
+        symbol [ endIdx %endIdx.7 35 12 18 ];
+        %tmp.49 = lgetv %startIdx.6;
+        symbol [ startIdx %tmp.49 35 21 29 ];
+        symbol [ itemsPerPage %tmp.51 35 32 44 ];
+        %tmp.51 = getv ? :itemsPerPage;
+        %tmp.52 = add %tmp.49 %tmp.51;
+        lputv %endIdx.7 %tmp.52;
+        symbol [ endIdx %endIdx.7 35 12 18 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 36 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_36_8_38_8_if_stmt:
+        %tmp.53 = lgetv %endIdx.7;
+        symbol [ endIdx %tmp.53 36 12 18 ];
+        %tmp.54 = lgetv %total.5;
+        symbol [ total %tmp.54 36 21 26 ];
+        %tmp.55 = gt %tmp.53 %tmp.54;
+        bf %tmp.55 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_36_8_38_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_36_8_38_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_36_28_38_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 37 12 ]
+        %tmp.56 = lgetv %total.5;
+        symbol [ total %tmp.56 37 21 26 ];
+        lputv %endIdx.7 %tmp.56;
+        symbol [ endIdx %endIdx.7 37 12 18 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_36_28_38_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_36_8_38_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_36_8_38_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 40 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_40_8_99_8_if_stmt:
+        %tmp.57 = lgetv %total.5;
+        symbol [ total %tmp.57 40 12 17 ];
+        %tmp.58 = 0;
+        %tmp.59 = eq %tmp.57 %tmp.58;
+        bf %tmp.59 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_40_8_99_8_if_else_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_40_8_99_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_40_24_43_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 41 12 ]
+        %tmp.60 = lgetv %dc;
+        symbol [ dc %tmp.60 41 12 14 ];
+        symbol [ setColor %tmp.61 41 15 23 ];
+        %tmp.61 = getv function %tmp.60 :setColor;
+        symbol [ Graphics %tmp.62 41 24 32 ];
+        %tmp.62 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.63 41 33 46 ];
+        %tmp.63 = getv %tmp.62 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.64 41 48 56 ];
+        %tmp.64 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.65 41 57 68 ];
+        %tmp.65 = getv %tmp.64 :COLOR_BLACK;
+        invoke %tmp.60 %tmp.61(%tmp.63, %tmp.65);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 42 12 ]
+        %tmp.66 = lgetv %dc;
+        symbol [ dc %tmp.66 42 12 14 ];
+        symbol [ drawText %tmp.67 42 15 23 ];
+        %tmp.67 = getv function %tmp.66 :drawText;
+        %tmp.68 = lgetv %width.1;
+        symbol [ width %tmp.68 42 24 29 ];
+        %tmp.69 = 2;
+        %tmp.70 = div %tmp.68 %tmp.69;
+        %tmp.71 = lgetv %height.2;
+        symbol [ height %tmp.71 42 35 41 ];
+        %tmp.72 = 2;
+        %tmp.73 = div %tmp.71 %tmp.72;
+        symbol [ Graphics %tmp.74 42 47 55 ];
+        %tmp.74 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.75 42 56 66 ];
+        %tmp.75 = getv %tmp.74 :FONT_SMALL;
+        %tmp.76 = "No history yet";
+        symbol [ Graphics %tmp.77 42 86 94 ];
+        %tmp.77 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.78 42 95 114 ];
+        %tmp.78 = getv %tmp.77 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.66 %tmp.67(%tmp.70, %tmp.73, %tmp.75, %tmp.76, %tmp.78);
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_40_24_43_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_40_8_99_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_40_8_99_8_if_else_false:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_43_15_99_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 44 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_43_15_99_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_43_15_99_8_stop" ]
+        %y.8 = local;
+        symbol [ y %y.8 44 16 17 ];
+        %tmp.79 = 50;
+        lputv %y.8 %tmp.79;
+        symbol [ y %y.8 44 16 17 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 45 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_43_15_99_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_43_15_99_8_stop" ]
+        %itemHeight.9 = local;
+        symbol [ itemHeight %itemHeight.9 45 16 26 ];
+        %tmp.80 = 35;
+        lputv %itemHeight.9 %tmp.80;
+        symbol [ itemHeight %itemHeight.9 45 16 26 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 47 12 ]
+        for @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_12_82_12_for_test @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_12_82_12_for_incr @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_12_82_12_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_12_82_12_for_init:
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_12_82_12_for_begin" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_12_82_12_for_end" ]
+        %i.10 = local;
+        symbol [ i %i.10 47 21 22 ];
+        %tmp.81 = lgetv %startIdx.6;
+        symbol [ startIdx %tmp.81 47 25 33 ];
+        lputv %i.10 %tmp.81;
+        symbol [ i %i.10 47 21 22 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_12_82_12_for_test:
+        %tmp.82 = lgetv %i.10;
+        symbol [ i %tmp.82 47 35 36 ];
+        %tmp.83 = lgetv %endIdx.7;
+        symbol [ endIdx %tmp.83 47 39 45 ];
+        %tmp.84 = lt %tmp.82 %tmp.83;
+        bf %tmp.84 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_12_82_12_for_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_12_82_12_for_begin:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_52_82_12_start:
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 48 16 ]
-        %tmp.119 = lgetv %dc;
-        symbol [ dc %tmp.119 48 16 18 ];
-        symbol [ drawText %tmp.120 48 19 27 ];
-        %tmp.120 = getv function %tmp.119 :drawText;
-        %tmp.121 = 20;
-        %tmp.122 = lgetv %y.7;
-        symbol [ y %tmp.122 48 32 33 ];
-        symbol [ Graphics %tmp.123 48 35 43 ];
-        %tmp.123 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.124 48 44 54 ];
-        %tmp.124 = getv %tmp.123 :FONT_SMALL;
-        %tmp.125 = "Puzzle ";
-        %tmp.126 = lgetv %puzzleNum.8;
-        symbol [ puzzleNum %tmp.126 48 69 78 ];
-        %tmp.127 = 1;
-        %tmp.128 = add %tmp.126 %tmp.127;
-        %tmp.129 = add %tmp.125 %tmp.128;
-        symbol [ Graphics %tmp.130 48 85 93 ];
-        %tmp.130 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.131 48 94 111 ];
-        %tmp.131 = getv %tmp.130 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.119 %tmp.120(%tmp.121, %tmp.122, %tmp.124, %tmp.129, %tmp.131);
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_52_82_12_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_52_82_12_stop" ]
+        %puzzleNum.11 = local;
+        symbol [ puzzleNum %puzzleNum.11 48 20 29 ];
 [ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 49 16 ]
-        %tmp.132 = lgetv %dc;
-        symbol [ dc %tmp.132 49 16 18 ];
-        symbol [ drawText %tmp.133 49 19 27 ];
-        %tmp.133 = getv function %tmp.132 :drawText;
-        %tmp.134 = lgetv %dc;
-        symbol [ dc %tmp.134 49 28 30 ];
-        symbol [ getWidth %tmp.135 49 31 39 ];
-        %tmp.135 = getv function %tmp.134 :getWidth;
-        %tmp.136 = invoke %tmp.134 %tmp.135();
-        %tmp.137 = 20;
-        %tmp.138 = sub %tmp.136 %tmp.137;
-        %tmp.139 = lgetv %y.7;
-        symbol [ y %tmp.139 49 48 49 ];
-        symbol [ Graphics %tmp.140 49 51 59 ];
-        %tmp.140 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.141 49 60 70 ];
-        %tmp.141 = getv %tmp.140 :FONT_SMALL;
-        %tmp.142 = lgetv %status.9;
-        symbol [ status %tmp.142 49 72 78 ];
-        symbol [ Graphics %tmp.143 49 80 88 ];
-        %tmp.143 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_RIGHT %tmp.144 49 89 107 ];
-        %tmp.144 = getv %tmp.143 :TEXT_JUSTIFY_RIGHT;
-        invoke %tmp.132 %tmp.133(%tmp.138, %tmp.139, %tmp.141, %tmp.142, %tmp.144);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_51_50_12_stop:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_12_50_12_for_incr:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 30 ]
-        %tmp.147 = lgetv %i.5;
-        symbol [ i %tmp.147 30 46 47 ];
-        %tmp.148 = add %tmp.147 1;
-        lputv %i.5 %tmp.148;
-        symbol [ i %i.5 30 46 47 ];
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_12_50_12_for_test;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_30_12_50_12_for_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_29_15_51_8_stop:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_26_8_51_8_if_end:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 54 8 ]
-        %tmp.149 = lgetv %dc;
-        symbol [ dc %tmp.149 54 8 10 ];
-        symbol [ setColor %tmp.150 54 11 19 ];
-        %tmp.150 = getv function %tmp.149 :setColor;
-        symbol [ Graphics %tmp.151 54 20 28 ];
-        %tmp.151 = getm $.Toybox.Graphics;
-        symbol [ COLOR_DK_GRAY %tmp.152 54 29 42 ];
-        %tmp.152 = getv %tmp.151 :COLOR_DK_GRAY;
-        symbol [ Graphics %tmp.153 54 44 52 ];
-        %tmp.153 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.154 54 53 64 ];
-        %tmp.154 = getv %tmp.153 :COLOR_BLACK;
-        invoke %tmp.149 %tmp.150(%tmp.152, %tmp.154);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 55 8 ]
-        %tmp.155 = lgetv %dc;
-        symbol [ dc %tmp.155 55 8 10 ];
-        symbol [ drawText %tmp.156 55 11 19 ];
-        %tmp.156 = getv function %tmp.155 :drawText;
-        %tmp.157 = lgetv %dc;
-        symbol [ dc %tmp.157 55 20 22 ];
-        symbol [ getWidth %tmp.158 55 23 31 ];
-        %tmp.158 = getv function %tmp.157 :getWidth;
-        %tmp.159 = invoke %tmp.157 %tmp.158();
-        %tmp.160 = 2;
-        %tmp.161 = div %tmp.159 %tmp.160;
-        %tmp.162 = lgetv %dc;
-        symbol [ dc %tmp.162 55 39 41 ];
-        symbol [ getHeight %tmp.163 55 42 51 ];
-        %tmp.163 = getv function %tmp.162 :getHeight;
-        %tmp.164 = invoke %tmp.162 %tmp.163();
-        %tmp.165 = 20;
-        %tmp.166 = sub %tmp.164 %tmp.165;
-        symbol [ Graphics %tmp.167 55 60 68 ];
-        %tmp.167 = getm $.Toybox.Graphics;
-        symbol [ FONT_TINY %tmp.168 55 69 78 ];
-        %tmp.168 = getv %tmp.167 :FONT_TINY;
-        %tmp.169 = "ESC: return";
-        symbol [ Graphics %tmp.170 55 95 103 ];
-        %tmp.170 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.171 55 104 123 ];
-        %tmp.171 = getv %tmp.170 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.155 %tmp.156(%tmp.161, %tmp.166, %tmp.168, %tmp.169, %tmp.171);
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_13_40_56_4_stop:
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_52_82_12_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_52_82_12_stop" ]
+        %status.12 = local;
+        symbol [ status %status.12 49 20 26 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 50 16 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_52_82_12_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_52_82_12_stop" ]
+        %statusColor.13 = local;
+        symbol [ statusColor %statusColor.13 50 20 31 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 52 16 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_52_16_60_16_if_stmt:
+        %tmp.85 = lgetv %i.10;
+        symbol [ i %tmp.85 52 20 21 ];
+        %tmp.86 = lgetv %solved.3;
+        symbol [ solved %tmp.86 52 24 30 ];
+        symbol [ size %tmp.87 52 31 35 ];
+        %tmp.87 = getv function %tmp.86 :size;
+        %tmp.88 = invoke %tmp.86 %tmp.87();
+        %tmp.89 = lt %tmp.85 %tmp.88;
+        bf %tmp.89 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_52_16_60_16_if_else_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_52_16_60_16_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_52_39_56_16_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 53 20 ]
+        %tmp.90 = lgetv %solved.3;
+        symbol [ solved %tmp.90 53 32 38 ];
+        %tmp.91 = lgetv %i.10;
+        symbol [ i %tmp.91 53 39 40 ];
+        %tmp.92 = agetv %tmp.90 %tmp.91;
+        lputv %puzzleNum.11 %tmp.92;
+        symbol [ puzzleNum %puzzleNum.11 53 20 29 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 54 20 ]
+        %tmp.93 = "Solved";
+        lputv %status.12 %tmp.93;
+        symbol [ status %status.12 54 20 26 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 55 20 ]
+        symbol [ COLOR_GREEN %tmp.95 55 34 45 ];
+        %tmp.95 = getv ? :COLOR_GREEN;
+        lputv %statusColor.13 %tmp.95;
+        symbol [ statusColor %statusColor.13 55 20 31 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_52_39_56_16_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_52_16_60_16_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_52_16_60_16_if_else_false:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_56_23_60_16_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 57 20 ]
+        %tmp.96 = lgetv %incorrect.4;
+        symbol [ incorrect %tmp.96 57 32 41 ];
+        %tmp.97 = lgetv %i.10;
+        symbol [ i %tmp.97 57 42 43 ];
+        %tmp.98 = lgetv %solved.3;
+        symbol [ solved %tmp.98 57 46 52 ];
+        symbol [ size %tmp.99 57 53 57 ];
+        %tmp.99 = getv function %tmp.98 :size;
+        %tmp.100 = invoke %tmp.98 %tmp.99();
+        %tmp.101 = sub %tmp.97 %tmp.100;
+        %tmp.102 = agetv %tmp.96 %tmp.101;
+        lputv %puzzleNum.11 %tmp.102;
+        symbol [ puzzleNum %puzzleNum.11 57 20 29 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 58 20 ]
+        %tmp.103 = "Failed";
+        lputv %status.12 %tmp.103;
+        symbol [ status %status.12 58 20 26 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 59 20 ]
+        symbol [ Graphics %tmp.104 59 34 42 ];
+        %tmp.104 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.105 59 43 52 ];
+        %tmp.105 = getv %tmp.104 :COLOR_RED;
+        lputv %statusColor.13 %tmp.105;
+        symbol [ statusColor %statusColor.13 59 20 31 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_56_23_60_16_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_52_16_60_16_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 63 16 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_52_82_12_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_52_82_12_stop" ]
+        %puzzleName.14 = local;
+        symbol [ puzzleName %puzzleName.14 63 20 30 ];
+        symbol [ PuzzleData %tmp.107 63 33 43 ];
+        %tmp.107 = getv ? :PuzzleData;
+        symbol [ getPuzzleName %tmp.108 63 44 57 ];
+        %tmp.108 = getv function %tmp.107 :getPuzzleName;
+        %tmp.109 = lgetv %puzzleNum.11;
+        symbol [ puzzleNum %tmp.109 63 58 67 ];
+        %tmp.110 = invoke %tmp.107 %tmp.108(%tmp.109);
+        lputv %puzzleName.14 %tmp.110;
+        symbol [ puzzleName %puzzleName.14 63 20 30 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 66 16 ]
+        %tmp.111 = lgetv %dc;
+        symbol [ dc %tmp.111 66 16 18 ];
+        symbol [ setColor %tmp.112 66 19 27 ];
+        %tmp.112 = getv function %tmp.111 :setColor;
+        symbol [ Graphics %tmp.113 66 28 36 ];
+        %tmp.113 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.114 66 37 50 ];
+        %tmp.114 = getv %tmp.113 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.115 66 52 60 ];
+        %tmp.115 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.116 66 61 74 ];
+        %tmp.116 = getv %tmp.115 :COLOR_DK_GRAY;
+        invoke %tmp.111 %tmp.112(%tmp.114, %tmp.116);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 67 16 ]
+        %tmp.117 = lgetv %dc;
+        symbol [ dc %tmp.117 67 16 18 ];
+        symbol [ fillRectangle %tmp.118 67 19 32 ];
+        %tmp.118 = getv function %tmp.117 :fillRectangle;
+        %tmp.119 = 10;
+        %tmp.120 = lgetv %y.8;
+        symbol [ y %tmp.120 67 37 38 ];
+        %tmp.121 = lgetv %width.1;
+        symbol [ width %tmp.121 67 40 45 ];
+        %tmp.122 = 20;
+        %tmp.123 = sub %tmp.121 %tmp.122;
+        %tmp.124 = lgetv %itemHeight.9;
+        symbol [ itemHeight %tmp.124 67 52 62 ];
+        %tmp.125 = 2;
+        %tmp.126 = sub %tmp.124 %tmp.125;
+        invoke %tmp.117 %tmp.118(%tmp.119, %tmp.120, %tmp.123, %tmp.126);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 70 16 ]
+        %tmp.127 = lgetv %dc;
+        symbol [ dc %tmp.127 70 16 18 ];
+        symbol [ setColor %tmp.128 70 19 27 ];
+        %tmp.128 = getv function %tmp.127 :setColor;
+        symbol [ Graphics %tmp.129 70 28 36 ];
+        %tmp.129 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.130 70 37 50 ];
+        %tmp.130 = getv %tmp.129 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.131 70 52 60 ];
+        %tmp.131 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.132 70 61 78 ];
+        %tmp.132 = getv %tmp.131 :COLOR_TRANSPARENT;
+        invoke %tmp.127 %tmp.128(%tmp.130, %tmp.132);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 71 16 ]
+        %tmp.133 = lgetv %dc;
+        symbol [ dc %tmp.133 71 16 18 ];
+        symbol [ drawText %tmp.134 71 19 27 ];
+        %tmp.134 = getv function %tmp.133 :drawText;
+        %tmp.135 = 20;
+        %tmp.136 = lgetv %y.8;
+        symbol [ y %tmp.136 71 32 33 ];
+        %tmp.137 = 3;
+        %tmp.138 = add %tmp.136 %tmp.137;
+        symbol [ Graphics %tmp.139 71 39 47 ];
+        %tmp.139 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.140 71 48 58 ];
+        %tmp.140 = getv %tmp.139 :FONT_XTINY;
+        %tmp.141 = lgetv %puzzleNum.11;
+        symbol [ puzzleNum %tmp.141 71 61 70 ];
+        %tmp.142 = 1;
+        %tmp.143 = add %tmp.141 %tmp.142;
+        symbol [ toString %tmp.144 71 76 84 ];
+        %tmp.144 = getv function %tmp.143 :toString;
+        %tmp.145 = invoke %tmp.143 %tmp.144();
+        symbol [ Graphics %tmp.146 71 88 96 ];
+        %tmp.146 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.147 71 97 114 ];
+        %tmp.147 = getv %tmp.146 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.133 %tmp.134(%tmp.135, %tmp.138, %tmp.140, %tmp.145, %tmp.147);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 74 16 ]
+        %tmp.148 = lgetv %dc;
+        symbol [ dc %tmp.148 74 16 18 ];
+        symbol [ setColor %tmp.149 74 19 27 ];
+        %tmp.149 = getv function %tmp.148 :setColor;
+        symbol [ Graphics %tmp.150 74 28 36 ];
+        %tmp.150 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.151 74 37 48 ];
+        %tmp.151 = getv %tmp.150 :COLOR_WHITE;
+        symbol [ Graphics %tmp.152 74 50 58 ];
+        %tmp.152 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.153 74 59 76 ];
+        %tmp.153 = getv %tmp.152 :COLOR_TRANSPARENT;
+        invoke %tmp.148 %tmp.149(%tmp.151, %tmp.153);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 75 16 ]
+        %tmp.154 = lgetv %dc;
+        symbol [ dc %tmp.154 75 16 18 ];
+        symbol [ drawText %tmp.155 75 19 27 ];
+        %tmp.155 = getv function %tmp.154 :drawText;
+        %tmp.156 = 20;
+        %tmp.157 = lgetv %y.8;
+        symbol [ y %tmp.157 75 32 33 ];
+        %tmp.158 = 15;
+        %tmp.159 = add %tmp.157 %tmp.158;
+        symbol [ Graphics %tmp.160 75 40 48 ];
+        %tmp.160 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.161 75 49 59 ];
+        %tmp.161 = getv %tmp.160 :FONT_XTINY;
+        %tmp.162 = lgetv %puzzleName.14;
+        symbol [ puzzleName %tmp.162 75 61 71 ];
+        symbol [ Graphics %tmp.163 75 73 81 ];
+        %tmp.163 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.164 75 82 99 ];
+        %tmp.164 = getv %tmp.163 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.154 %tmp.155(%tmp.156, %tmp.159, %tmp.161, %tmp.162, %tmp.164);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 78 16 ]
+        %tmp.165 = lgetv %dc;
+        symbol [ dc %tmp.165 78 16 18 ];
+        symbol [ setColor %tmp.166 78 19 27 ];
+        %tmp.166 = getv function %tmp.165 :setColor;
+        %tmp.167 = lgetv %statusColor.13;
+        symbol [ statusColor %tmp.167 78 28 39 ];
+        symbol [ Graphics %tmp.168 78 41 49 ];
+        %tmp.168 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.169 78 50 67 ];
+        %tmp.169 = getv %tmp.168 :COLOR_TRANSPARENT;
+        invoke %tmp.165 %tmp.166(%tmp.167, %tmp.169);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 79 16 ]
+        %tmp.170 = lgetv %dc;
+        symbol [ dc %tmp.170 79 16 18 ];
+        symbol [ drawText %tmp.171 79 19 27 ];
+        %tmp.171 = getv function %tmp.170 :drawText;
+        %tmp.172 = lgetv %width.1;
+        symbol [ width %tmp.172 79 28 33 ];
+        %tmp.173 = 20;
+        %tmp.174 = sub %tmp.172 %tmp.173;
+        %tmp.175 = lgetv %y.8;
+        symbol [ y %tmp.175 79 40 41 ];
+        %tmp.176 = 9;
+        %tmp.177 = add %tmp.175 %tmp.176;
+        symbol [ Graphics %tmp.178 79 47 55 ];
+        %tmp.178 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.179 79 56 65 ];
+        %tmp.179 = getv %tmp.178 :FONT_TINY;
+        %tmp.180 = lgetv %status.12;
+        symbol [ status %tmp.180 79 67 73 ];
+        symbol [ Graphics %tmp.181 79 75 83 ];
+        %tmp.181 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.182 79 84 102 ];
+        %tmp.182 = getv %tmp.181 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.170 %tmp.171(%tmp.174, %tmp.177, %tmp.179, %tmp.180, %tmp.182);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 81 16 ]
+        %tmp.183 = lgetv %y.8;
+        symbol [ y %tmp.183 81 16 17 ];
+        %tmp.184 = lgetv %itemHeight.9;
+        symbol [ itemHeight %tmp.184 81 21 31 ];
+        %tmp.185 = add %tmp.183 %tmp.184;
+        lputv %y.8 %tmp.185;
+        symbol [ y %y.8 81 16 17 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_52_82_12_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_12_82_12_for_incr:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 47 ]
+        %tmp.188 = lgetv %i.10;
+        symbol [ i %tmp.188 47 47 48 ];
+        %tmp.189 = add %tmp.188 1;
+        lputv %i.10 %tmp.189;
+        symbol [ i %i.10 47 47 48 ];
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_12_82_12_for_test;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_47_12_82_12_for_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 85 12 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_12_98_12_if_stmt:
+        %tmp.190 = lgetv %total.5;
+        symbol [ total %tmp.190 85 16 21 ];
+        symbol [ itemsPerPage %tmp.192 85 24 36 ];
+        %tmp.192 = getv ? :itemsPerPage;
+        %tmp.193 = gt %tmp.190 %tmp.192;
+        bf %tmp.193 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_12_98_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_12_98_12_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_38_98_12_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 86 16 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_38_98_12_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_38_98_12_stop" ]
+        %scrollBarHeight.15 = local;
+        symbol [ scrollBarHeight %scrollBarHeight.15 86 20 35 ];
+        %tmp.194 = lgetv %height.2;
+        symbol [ height %tmp.194 86 38 44 ];
+        %tmp.195 = 100;
+        %tmp.196 = sub %tmp.194 %tmp.195;
+        lputv %scrollBarHeight.15 %tmp.196;
+        symbol [ scrollBarHeight %scrollBarHeight.15 86 20 35 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 87 16 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_38_98_12_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_38_98_12_stop" ]
+        %scrollBarY.16 = local;
+        symbol [ scrollBarY %scrollBarY.16 87 20 30 ];
+        %tmp.197 = 50;
+        lputv %scrollBarY.16 %tmp.197;
+        symbol [ scrollBarY %scrollBarY.16 87 20 30 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 88 16 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_38_98_12_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_38_98_12_stop" ]
+        %thumbHeight.17 = local;
+        symbol [ thumbHeight %thumbHeight.17 88 20 31 ];
+        symbol [ itemsPerPage %tmp.199 88 35 47 ];
+        %tmp.199 = getv ? :itemsPerPage;
+        %tmp.200 = lgetv %scrollBarHeight.15;
+        symbol [ scrollBarHeight %tmp.200 88 50 65 ];
+        %tmp.201 = mul %tmp.199 %tmp.200;
+        %tmp.202 = lgetv %total.5;
+        symbol [ total %tmp.202 88 69 74 ];
+        %tmp.203 = div %tmp.201 %tmp.202;
+        lputv %thumbHeight.17 %tmp.203;
+        symbol [ thumbHeight %thumbHeight.17 88 20 31 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 89 16 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_38_98_12_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_38_98_12_stop" ]
+        %thumbY.18 = local;
+        symbol [ thumbY %thumbY.18 89 20 26 ];
+        %tmp.204 = lgetv %scrollBarY.16;
+        symbol [ scrollBarY %tmp.204 89 29 39 ];
+        symbol [ scrollOffset %tmp.206 89 43 55 ];
+        %tmp.206 = getv ? :scrollOffset;
+        %tmp.207 = lgetv %scrollBarHeight.15;
+        symbol [ scrollBarHeight %tmp.207 89 58 73 ];
+        %tmp.208 = mul %tmp.206 %tmp.207;
+        %tmp.209 = lgetv %total.5;
+        symbol [ total %tmp.209 89 77 82 ];
+        %tmp.210 = div %tmp.208 %tmp.209;
+        %tmp.211 = add %tmp.204 %tmp.210;
+        lputv %thumbY.18 %tmp.211;
+        symbol [ thumbY %thumbY.18 89 20 26 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 92 16 ]
+        %tmp.212 = lgetv %dc;
+        symbol [ dc %tmp.212 92 16 18 ];
+        symbol [ setColor %tmp.213 92 19 27 ];
+        %tmp.213 = getv function %tmp.212 :setColor;
+        symbol [ Graphics %tmp.214 92 28 36 ];
+        %tmp.214 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.215 92 37 50 ];
+        %tmp.215 = getv %tmp.214 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.216 92 52 60 ];
+        %tmp.216 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.217 92 61 74 ];
+        %tmp.217 = getv %tmp.216 :COLOR_DK_GRAY;
+        invoke %tmp.212 %tmp.213(%tmp.215, %tmp.217);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 93 16 ]
+        %tmp.218 = lgetv %dc;
+        symbol [ dc %tmp.218 93 16 18 ];
+        symbol [ fillRectangle %tmp.219 93 19 32 ];
+        %tmp.219 = getv function %tmp.218 :fillRectangle;
+        %tmp.220 = lgetv %width.1;
+        symbol [ width %tmp.220 93 33 38 ];
+        %tmp.221 = 8;
+        %tmp.222 = sub %tmp.220 %tmp.221;
+        %tmp.223 = lgetv %scrollBarY.16;
+        symbol [ scrollBarY %tmp.223 93 44 54 ];
+        %tmp.224 = 4;
+        %tmp.225 = lgetv %scrollBarHeight.15;
+        symbol [ scrollBarHeight %tmp.225 93 59 74 ];
+        invoke %tmp.218 %tmp.219(%tmp.222, %tmp.223, %tmp.224, %tmp.225);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 96 16 ]
+        %tmp.226 = lgetv %dc;
+        symbol [ dc %tmp.226 96 16 18 ];
+        symbol [ setColor %tmp.227 96 19 27 ];
+        %tmp.227 = getv function %tmp.226 :setColor;
+        symbol [ COLOR_ACCENT %tmp.229 96 28 40 ];
+        %tmp.229 = getv ? :COLOR_ACCENT;
+        symbol [ COLOR_ACCENT %tmp.231 96 42 54 ];
+        %tmp.231 = getv ? :COLOR_ACCENT;
+        invoke %tmp.226 %tmp.227(%tmp.229, %tmp.231);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 97 16 ]
+        %tmp.232 = lgetv %dc;
+        symbol [ dc %tmp.232 97 16 18 ];
+        symbol [ fillRectangle %tmp.233 97 19 32 ];
+        %tmp.233 = getv function %tmp.232 :fillRectangle;
+        %tmp.234 = lgetv %width.1;
+        symbol [ width %tmp.234 97 33 38 ];
+        %tmp.235 = 8;
+        %tmp.236 = sub %tmp.234 %tmp.235;
+        %tmp.237 = lgetv %thumbY.18;
+        symbol [ thumbY %tmp.237 97 44 50 ];
+        %tmp.238 = 4;
+        %tmp.239 = lgetv %thumbHeight.17;
+        symbol [ thumbHeight %tmp.239 97 55 66 ];
+        invoke %tmp.232 %tmp.233(%tmp.236, %tmp.237, %tmp.238, %tmp.239);
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_38_98_12_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_12_98_12_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_12_98_12_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_43_15_99_8_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_40_8_99_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 102 8 ]
+        %tmp.240 = lgetv %dc;
+        symbol [ dc %tmp.240 102 8 10 ];
+        symbol [ setColor %tmp.241 102 11 19 ];
+        %tmp.241 = getv function %tmp.240 :setColor;
+        symbol [ Graphics %tmp.242 102 20 28 ];
+        %tmp.242 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.243 102 29 42 ];
+        %tmp.243 = getv %tmp.242 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.244 102 44 52 ];
+        %tmp.244 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.245 102 53 64 ];
+        %tmp.245 = getv %tmp.244 :COLOR_BLACK;
+        invoke %tmp.240 %tmp.241(%tmp.243, %tmp.245);
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 103 8 ]
+        %tmp.246 = lgetv %dc;
+        symbol [ dc %tmp.246 103 8 10 ];
+        symbol [ drawText %tmp.247 103 11 19 ];
+        %tmp.247 = getv function %tmp.246 :drawText;
+        %tmp.248 = lgetv %width.1;
+        symbol [ width %tmp.248 103 20 25 ];
+        %tmp.249 = 2;
+        %tmp.250 = div %tmp.248 %tmp.249;
+        %tmp.251 = 235;
+        symbol [ Graphics %tmp.252 103 36 44 ];
+        %tmp.252 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.253 103 45 55 ];
+        %tmp.253 = getv %tmp.252 :FONT_XTINY;
+        %tmp.254 = "UP/DN: scroll";
+        symbol [ Graphics %tmp.255 103 74 82 ];
+        %tmp.255 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.256 103 83 102 ];
+        %tmp.256 = getv %tmp.255 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.246 %tmp.247(%tmp.250, %tmp.251, %tmp.253, %tmp.254, %tmp.256);
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_17_40_104_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 58; @symbol_functiondef = [handleUp,58,13,21]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 106; @symbol_functiondef = [handleUp,106,13,21]; ]
     function handleUp() as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_58_32_63_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 59 8 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_59_8_62_8_if_stmt:
-        symbol [ currentPage %tmp.2 59 12 23 ];
-        %tmp.2 = getv ? :currentPage;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_106_32_111_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 107 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_107_8_110_8_if_stmt:
+        symbol [ scrollOffset %tmp.2 107 12 24 ];
+        %tmp.2 = getv ? :scrollOffset;
         %tmp.3 = 0;
         %tmp.4 = gt %tmp.2 %tmp.3;
-        bf %tmp.4 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_59_8_62_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_59_8_62_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_59_29_62_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 60 12 ]
-        symbol [ currentPage %tmp.7 60 12 23 ];
-        %tmp.7 = getv ? :currentPage;
+        bf %tmp.4 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_107_8_110_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_107_8_110_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_107_30_110_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 108 12 ]
+        symbol [ scrollOffset %tmp.7 108 12 24 ];
+        %tmp.7 = getv ? :scrollOffset;
         %tmp.8 = sub %tmp.7 1;
-        symbol [ currentPage ? 60 12 23 ];
-        putv self :currentPage dup %tmp.8;
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 61 12 ]
-        symbol [ WatchUi %tmp.9 61 12 19 ];
+        symbol [ scrollOffset ? 108 12 24 ];
+        putv self :scrollOffset dup %tmp.8;
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 109 12 ]
+        symbol [ WatchUi %tmp.9 109 12 19 ];
         %tmp.9 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.10 61 20 33 ];
+        symbol [ requestUpdate %tmp.10 109 20 33 ];
         %tmp.10 = getv function %tmp.9 :requestUpdate;
         invoke %tmp.9 %tmp.10();
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_59_29_62_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_59_8_62_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_59_8_62_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_58_32_63_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_107_30_110_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_107_8_110_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_107_8_110_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_106_32_111_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 65; @symbol_functiondef = [handleDown,65,13,23]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 113; @symbol_functiondef = [handleDown,113,13,23]; ]
     function handleDown() as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_65_34_68_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 66 8 ]
-        symbol [ currentPage %tmp.3 66 8 19 ];
-        %tmp.3 = getv ? :currentPage;
-        %tmp.4 = add %tmp.3 1;
-        symbol [ currentPage ? 66 8 19 ];
-        putv self :currentPage dup %tmp.4;
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 67 8 ]
-        symbol [ WatchUi %tmp.5 67 8 15 ];
-        %tmp.5 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.6 67 16 29 ];
-        %tmp.6 = getv function %tmp.5 :requestUpdate;
-        invoke %tmp.5 %tmp.6();
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_65_34_68_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_113_34_122_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 114 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_113_34_122_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_113_34_122_4_stop" ]
+        %solved.1 = local;
+        symbol [ solved %solved.1 114 12 18 ];
+        symbol [ Storage %tmp.2 114 21 28 ];
+        %tmp.2 = getv ? :Storage;
+        symbol [ getSolvedPuzzles %tmp.3 114 29 45 ];
+        %tmp.3 = getv function %tmp.2 :getSolvedPuzzles;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %solved.1 %tmp.4;
+        symbol [ solved %solved.1 114 12 18 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 115 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_113_34_122_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_113_34_122_4_stop" ]
+        %incorrect.2 = local;
+        symbol [ incorrect %incorrect.2 115 12 21 ];
+        symbol [ Storage %tmp.6 115 24 31 ];
+        %tmp.6 = getv ? :Storage;
+        symbol [ getIncorrectPuzzles %tmp.7 115 32 51 ];
+        %tmp.7 = getv function %tmp.6 :getIncorrectPuzzles;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %incorrect.2 %tmp.8;
+        symbol [ incorrect %incorrect.2 115 12 21 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 116 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_113_34_122_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_113_34_122_4_stop" ]
+        %total.3 = local;
+        symbol [ total %total.3 116 12 17 ];
+        %tmp.9 = lgetv %solved.1;
+        symbol [ solved %tmp.9 116 20 26 ];
+        symbol [ size %tmp.10 116 27 31 ];
+        %tmp.10 = getv function %tmp.9 :size;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = lgetv %incorrect.2;
+        symbol [ incorrect %tmp.12 116 36 45 ];
+        symbol [ size %tmp.13 116 46 50 ];
+        %tmp.13 = getv function %tmp.12 :size;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        %tmp.15 = add %tmp.11 %tmp.14;
+        lputv %total.3 %tmp.15;
+        symbol [ total %total.3 116 12 17 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 118 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_118_8_121_8_if_stmt:
+        symbol [ scrollOffset %tmp.17 118 12 24 ];
+        %tmp.17 = getv ? :scrollOffset;
+        symbol [ itemsPerPage %tmp.19 118 27 39 ];
+        %tmp.19 = getv ? :itemsPerPage;
+        %tmp.20 = add %tmp.17 %tmp.19;
+        %tmp.21 = lgetv %total.3;
+        symbol [ total %tmp.21 118 42 47 ];
+        %tmp.22 = lt %tmp.20 %tmp.21;
+        bf %tmp.22 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_118_8_121_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_118_8_121_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_118_49_121_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 119 12 ]
+        symbol [ scrollOffset %tmp.25 119 12 24 ];
+        %tmp.25 = getv ? :scrollOffset;
+        %tmp.26 = add %tmp.25 1;
+        symbol [ scrollOffset ? 119 12 24 ];
+        putv self :scrollOffset dup %tmp.26;
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 120 12 ]
+        symbol [ WatchUi %tmp.27 120 12 19 ];
+        %tmp.27 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.28 120 20 33 ];
+        %tmp.28 = getv function %tmp.27 :requestUpdate;
+        invoke %tmp.27 %tmp.28();
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_118_49_121_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_118_8_121_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_118_8_121_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_113_34_122_4_stop:
     }
 }
-[ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 71; @symbol_classdef = [HistoryDelegate,71,6,21]; @symbol_extends<0> = [WatchUi,71,30,37]; @symbol_extends<1> = [InputDelegate,71,38,51]; ]
+[ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 125; @symbol_classdef = [HistoryDelegate,125,6,21]; @symbol_extends<0> = [WatchUi,125,30,37]; @symbol_extends<1> = [InputDelegate,125,38,51]; ]
 class HistoryDelegate extends WatchUi.InputDelegate {
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 71; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 125; ]
     <init> {
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 71; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 125; ]
     static
     <init> {
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 72; @position = 8; @symbol_vardef = [view,72,8,12]; @symbol_type<0> = [HistoryView,72,16,27]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 126; @position = 8; @symbol_vardef = [view,126,8,12]; @symbol_type<0> = [HistoryView,126,16,27]; ]
     var view as HistoryView;
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 74; @symbol_functiondef = [initialize,74,13,23]; @symbol_param<0> = [hView,74,24,29]; @symbol_param<0>_type<0> = [HistoryView,74,33,44]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 128; @symbol_functiondef = [initialize,128,13,23]; @symbol_param<0> = [hView,128,24,29]; @symbol_param<0>_type<0> = [HistoryView,128,33,44]; ]
     function initialize(hView as HistoryView) as Void {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_74_46_77_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 75 8 ]
-        symbol [ WatchUi %tmp.1 75 8 15 ];
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_128_46_131_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 129 8 ]
+        symbol [ WatchUi %tmp.1 129 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ InputDelegate %tmp.2 75 16 29 ];
+        symbol [ InputDelegate %tmp.2 129 16 29 ];
         %tmp.2 = getv %tmp.1 :InputDelegate;
-        symbol [ initialize %tmp.3 75 30 40 ];
+        symbol [ initialize %tmp.3 129 30 40 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 76 8 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 130 8 ]
         %tmp.4 = lgetv %hView;
-        symbol [ hView %tmp.4 76 15 20 ];
-        symbol [ view ? 76 8 12 ];
+        symbol [ hView %tmp.4 130 15 20 ];
+        symbol [ view ? 130 8 12 ];
         putv self :view %tmp.4;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_74_46_77_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_128_46_131_4_stop:
     }
-    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 79; @symbol_functiondef = [onKeyPressed,79,13,25]; @symbol_param<0> = [key,79,26,29]; @symbol_param<0>_type<0> = [WatchUi,79,33,40]; @symbol_param<0>_type<1> = [KeyEvent,79,41,49]; @symbol_return<0> = [Boolean,79,54,61]; ]
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 133; @symbol_functiondef = [onKeyPressed,133,13,25]; @symbol_param<0> = [key,133,26,29]; @symbol_param<0>_type<0> = [WatchUi,133,33,40]; @symbol_param<0>_type<1> = [KeyEvent,133,41,49]; @symbol_return<0> = [Boolean,133,54,61]; ]
     function onKeyPressed(key as WatchUi.KeyEvent) as Boolean {
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_79_62_93_4_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 80 8 ]
-        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_79_62_93_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_79_62_93_4_stop" ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_133_62_147_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 134 8 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_133_62_147_4_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_133_62_147_4_stop" ]
         %keyCode.1 = local;
-        symbol [ keyCode %keyCode.1 80 12 19 ];
+        symbol [ keyCode %keyCode.1 134 12 19 ];
         %tmp.1 = lgetv %key;
-        symbol [ key %tmp.1 80 22 25 ];
-        symbol [ getKey %tmp.2 80 26 32 ];
+        symbol [ key %tmp.1 134 22 25 ];
+        symbol [ getKey %tmp.2 134 26 32 ];
         %tmp.2 = getv function %tmp.1 :getKey;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %keyCode.1 %tmp.3;
-        symbol [ keyCode %keyCode.1 80 12 19 ];
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 82 8 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_82_8_91_8_if_stmt:
+        symbol [ keyCode %keyCode.1 134 12 19 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 136 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_136_8_145_8_if_stmt:
         %tmp.4 = lgetv %keyCode.1;
-        symbol [ keyCode %tmp.4 82 12 19 ];
-        symbol [ WatchUi %tmp.5 82 23 30 ];
+        symbol [ keyCode %tmp.4 136 12 19 ];
+        symbol [ WatchUi %tmp.5 136 23 30 ];
         %tmp.5 = getm $.Toybox.WatchUi;
-        symbol [ KEY_ESC %tmp.6 82 31 38 ];
+        symbol [ KEY_ESC %tmp.6 136 31 38 ];
         %tmp.6 = getv %tmp.5 :KEY_ESC;
         %tmp.7 = eq %tmp.4 %tmp.6;
-        bf %tmp.7 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_82_8_91_8_if_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_82_8_91_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_82_40_85_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 83 12 ]
-        symbol [ WatchUi %tmp.8 83 12 19 ];
+        bf %tmp.7 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_136_8_145_8_if_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_136_8_145_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_136_40_139_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 137 12 ]
+        symbol [ WatchUi %tmp.8 137 12 19 ];
         %tmp.8 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.9 83 20 27 ];
+        symbol [ popView %tmp.9 137 20 27 ];
         %tmp.9 = getv function %tmp.8 :popView;
-        symbol [ WatchUi %tmp.10 83 28 35 ];
+        symbol [ WatchUi %tmp.10 137 28 35 ];
         %tmp.10 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_RIGHT %tmp.11 83 36 47 ];
+        symbol [ SLIDE_RIGHT %tmp.11 137 36 47 ];
         %tmp.11 = getv %tmp.10 :SLIDE_RIGHT;
         invoke %tmp.8 %tmp.9(%tmp.11);
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 84 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 138 12 ]
         %tmp.12 = true;
         ret %tmp.12;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_82_40_85_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_82_8_91_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_82_8_91_8_if_false:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 85 15 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_15_91_8_if_stmt:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_136_40_139_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_136_8_145_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_136_8_145_8_if_false:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 139 15 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_139_15_145_8_if_stmt:
         %tmp.13 = lgetv %keyCode.1;
-        symbol [ keyCode %tmp.13 85 19 26 ];
-        symbol [ WatchUi %tmp.14 85 30 37 ];
+        symbol [ keyCode %tmp.13 139 19 26 ];
+        symbol [ WatchUi %tmp.14 139 30 37 ];
         %tmp.14 = getm $.Toybox.WatchUi;
-        symbol [ KEY_UP %tmp.15 85 38 44 ];
+        symbol [ KEY_UP %tmp.15 139 38 44 ];
         %tmp.15 = getv %tmp.14 :KEY_UP;
         %tmp.16 = eq %tmp.13 %tmp.15;
-        bf %tmp.16 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_15_91_8_if_false;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_15_91_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_46_88_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 86 12 ]
-        symbol [ view %tmp.18 86 12 16 ];
+        bf %tmp.16 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_139_15_145_8_if_false;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_139_15_145_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_139_46_142_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 140 12 ]
+        symbol [ view %tmp.18 140 12 16 ];
         %tmp.18 = getv ? :view;
-        symbol [ handleUp %tmp.19 86 17 25 ];
+        symbol [ handleUp %tmp.19 140 17 25 ];
         %tmp.19 = getv function %tmp.18 :handleUp;
         invoke %tmp.18 %tmp.19();
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 87 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 141 12 ]
         %tmp.20 = true;
         ret %tmp.20;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_46_88_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_15_91_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_15_91_8_if_false:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 88 15 ]
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_88_15_91_8_if_stmt:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_139_46_142_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_139_15_145_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_139_15_145_8_if_false:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 142 15 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_142_15_145_8_if_stmt:
         %tmp.21 = lgetv %keyCode.1;
-        symbol [ keyCode %tmp.21 88 19 26 ];
-        symbol [ WatchUi %tmp.22 88 30 37 ];
+        symbol [ keyCode %tmp.21 142 19 26 ];
+        symbol [ WatchUi %tmp.22 142 30 37 ];
         %tmp.22 = getm $.Toybox.WatchUi;
-        symbol [ KEY_DOWN %tmp.23 88 38 46 ];
+        symbol [ KEY_DOWN %tmp.23 142 38 46 ];
         %tmp.23 = getv %tmp.22 :KEY_DOWN;
         %tmp.24 = eq %tmp.21 %tmp.23;
-        bf %tmp.24 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_88_15_91_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_88_15_91_8_if_true:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_88_48_91_8_start:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 89 12 ]
-        symbol [ view %tmp.26 89 12 16 ];
+        bf %tmp.24 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_142_15_145_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_142_15_145_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_142_48_145_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 143 12 ]
+        symbol [ view %tmp.26 143 12 16 ];
         %tmp.26 = getv ? :view;
-        symbol [ handleDown %tmp.27 89 17 27 ];
+        symbol [ handleDown %tmp.27 143 17 27 ];
         %tmp.27 = getv function %tmp.26 :handleDown;
         invoke %tmp.26 %tmp.27();
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 90 12 ]
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 144 12 ]
         %tmp.28 = true;
         ret %tmp.28;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_88_48_91_8_stop:
-        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_88_15_91_8_if_end;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_88_15_91_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_85_15_91_8_if_end:
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_82_8_91_8_if_end:
-[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 92 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_142_48_145_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_142_15_145_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_142_15_145_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_139_15_145_8_if_end:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_136_8_145_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" 146 8 ]
         %tmp.29 = false;
         ret %tmp.29;
-_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_79_62_93_4_stop:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_HistoryView_mc_133_62_147_4_stop:
     }
 }
 [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc"; @line = 1; ]

@@ -47,7 +47,6 @@ class MenuView extends WatchUi.View {
         // Footer starting at Y=240
         dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
         dc.drawText(centerX, 240, Graphics.FONT_XTINY, "UP/DOWN: Navigate", Graphics.TEXT_JUSTIFY_CENTER);
-        dc.drawText(centerX, 250, Graphics.FONT_XTINY, "ENTER: Select", Graphics.TEXT_JUSTIFY_CENTER);
     }
     
     function drawMenuItem(dc as Dc, centerX as Number, y as Number, index as Number, title as String, subtitle as String) as Void {

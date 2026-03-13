@@ -3,68 +3,122 @@ import Toybox.WatchUi;
 import Toybox.Graphics;
 
 class HistoryView extends WatchUi.View {
+    const COLOR_GREEN = 0x00CC00;
+    const COLOR_ACCENT = 0x00FFAA;
+    
     var currentPage = 0;
-    var itemsPerPage = 6;
+    var itemsPerPage = 5;
+    var scrollOffset = 0;
 
     function initialize() {
         WatchUi.View.initialize();
     }
 
     function onUpdate(dc as Dc) as Void {
+        var width = dc.getWidth();
+        var height = dc.getHeight();
+        
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
         
+        // Header
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        dc.drawText(dc.getWidth() / 2, 5, Graphics.FONT_SMALL, "History", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(width / 2, 10, Graphics.FONT_MEDIUM, "History", Graphics.TEXT_JUSTIFY_CENTER);
         
         var solved = Storage.getSolvedPuzzles();
         var incorrect = Storage.getIncorrectPuzzles();
         
         var total = solved.size() + incorrect.size();
-        var startIdx = currentPage * itemsPerPage;
+        
+        // Calculate visible range
+        var startIdx = scrollOffset;
+        var endIdx = startIdx + itemsPerPage;
+        if (endIdx > total) {
+            endIdx = total;
+        }
         
         if (total == 0) {
             dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
-            dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_SMALL, "No history yet", Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(width / 2, height / 2, Graphics.FONT_SMALL, "No history yet", Graphics.TEXT_JUSTIFY_CENTER);
         } else {
-            for (var i = 0; i < itemsPerPage; i++) {
-                var idx = startIdx + i;
-                if (idx >= total) { break; }
-                
-                var y = 35 + (i * 25);
+            var y = 50;
+            var itemHeight = 35;
+            
+            for (var i = startIdx; i < endIdx; i++) {
                 var puzzleNum;
                 var status;
+                var statusColor;
                 
-                if (idx < solved.size()) {
-                    puzzleNum = solved[idx];
+                if (i < solved.size()) {
+                    puzzleNum = solved[i];
                     status = "Solved";
-                    dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_BLACK);
+                    statusColor = COLOR_GREEN;
                 } else {
-                    puzzleNum = incorrect[idx - solved.size()];
+                    puzzleNum = incorrect[i - solved.size()];
                     status = "Failed";
-                    dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
+                    statusColor = Graphics.COLOR_RED;
                 }
                 
-                dc.drawText(20, y, Graphics.FONT_SMALL, "Puzzle " + (puzzleNum + 1), Graphics.TEXT_JUSTIFY_LEFT);
-                dc.drawText(dc.getWidth() - 20, y, Graphics.FONT_SMALL, status, Graphics.TEXT_JUSTIFY_RIGHT);
+                // Get puzzle name
+                var puzzleName = PuzzleData.getPuzzleName(puzzleNum);
+                
+                // Draw background for item
+                dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_DK_GRAY);
+                dc.fillRectangle(10, y, width - 20, itemHeight - 2);
+                
+                // Draw puzzle number on top line
+                dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+                dc.drawText(20, y + 3, Graphics.FONT_XTINY, (puzzleNum + 1).toString(), Graphics.TEXT_JUSTIFY_LEFT);
+                
+                // Draw puzzle name on bottom line
+                dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+                dc.drawText(20, y + 15, Graphics.FONT_XTINY, puzzleName, Graphics.TEXT_JUSTIFY_LEFT);
+                
+                // Draw status
+                dc.setColor(statusColor, Graphics.COLOR_TRANSPARENT);
+                dc.drawText(width - 20, y + 9, Graphics.FONT_TINY, status, Graphics.TEXT_JUSTIFY_RIGHT);
+                
+                y += itemHeight;
+            }
+            
+            // Draw scroll indicator if needed
+            if (total > itemsPerPage) {
+                var scrollBarHeight = height - 100;
+                var scrollBarY = 50;
+                var thumbHeight = (itemsPerPage * scrollBarHeight) / total;
+                var thumbY = scrollBarY + (scrollOffset * scrollBarHeight) / total;
+                
+                // Scroll bar background
+                dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_DK_GRAY);
+                dc.fillRectangle(width - 8, scrollBarY, 4, scrollBarHeight);
+                
+                // Scroll thumb
+                dc.setColor(COLOR_ACCENT, COLOR_ACCENT);
+                dc.fillRectangle(width - 8, thumbY, 4, thumbHeight);
             }
         }
         
-        // Navigation hint
+        // Footer
         dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
-        dc.drawText(dc.getWidth() / 2, dc.getHeight() - 20, Graphics.FONT_TINY, "ESC: return", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(width / 2, 235, Graphics.FONT_XTINY, "UP/DN: scroll", Graphics.TEXT_JUSTIFY_CENTER);
     }
     
     function handleUp() as Void {
-        if (currentPage > 0) {
-            currentPage--;
+        if (scrollOffset > 0) {
+            scrollOffset--;
             WatchUi.requestUpdate();
         }
     }
     
     function handleDown() as Void {
-        currentPage++;
-        WatchUi.requestUpdate();
+        var solved = Storage.getSolvedPuzzles();
+        var incorrect = Storage.getIncorrectPuzzles();
+        var total = solved.size() + incorrect.size();
+        
+        if (scrollOffset + itemsPerPage < total) {
+            scrollOffset++;
+            WatchUi.requestUpdate();
+        }
     }
 }
 
