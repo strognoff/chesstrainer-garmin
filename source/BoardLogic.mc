@@ -16,8 +16,8 @@ class BoardLogic {
     const BLACK_PAWN = "p";
 
     // Simple split by delimiter
-    static function splitString(str as String, delimiter as String) as Lang.Array {
-        var result = new [0] as Lang.Array;
+    static function splitString(str as String, delimiter as String) as Array<String> {
+        var result = new [0] as Array<String>;
         var current = "";
         
         for (var i = 0; i < str.length(); i++) {
@@ -34,16 +34,16 @@ class BoardLogic {
     }
 
     // Parse FEN to 8x8 board array
-    static function parseFen(fen as String) as Lang.Dictionary {
+    static function parseFen(fen as String) as Dictionary {
         var parts = splitString(fen, " ");
         var position = parts[0] as String;
         var ranks = splitString(position, "/");
         
-        var board = new [8] as Lang.Array;
+        var board = new [8] as Array<Array<String?>>;
         
         for (var i = 0; i < 8; i++) {
             var rank = ranks[i] as String;
-            var row = new [8] as Lang.Array;
+            var row = new [8] as Array<String?>;
             var colIdx = 0;
             
             for (var j = 0; j < rank.length(); j++) {
@@ -84,9 +84,9 @@ class BoardLogic {
     }
 
     // Find piece on board
-    static function findPiece(board as Lang.Array, piece as String) as Lang.Dictionary? {
+    static function findPiece(board as Array<Array<String?>>, piece as String) as Dictionary? {
         for (var r = 0; r < 8; r++) {
-            var row = board[r] as Lang.Array;
+            var row = board[r];
             for (var c = 0; c < 8; c++) {
                 var p = row[c];
                 if (p != null && p.equals(piece)) {
@@ -98,10 +98,10 @@ class BoardLogic {
     }
 
     // Get all pieces of a color
-    static function getPiecesOfColor(board as Lang.Array, color as String) as Lang.Array {
-        var pieces = new [0] as Lang.Array;
+    static function getPiecesOfColor(board as Array<Array<String?>>, color as String) as Array<Dictionary> {
+        var pieces = new [0] as Array<Dictionary>;
         for (var r = 0; r < 8; r++) {
-            var row = board[r] as Lang.Array;
+            var row = board[r];
             for (var c = 0; c < 8; c++) {
                 var piece = row[c];
                 if (piece != null) {
