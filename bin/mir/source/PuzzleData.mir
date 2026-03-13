@@ -26,7 +26,7 @@ class PuzzleData {
         %tmp.17 = "1n3NR1/2B1R3/2pK1p2/2N2p2/5kbp/1r1p4/3ppr2/4b1QB w - -";
         %tmp.18 = dup %tmp.16;
         %tmp.19 = aputv %tmp.18 5 %tmp.17;
-        %tmp.20 = "K1B5/P2r4/1p1r1n2/4k3/8/3PPP2/8/8 w - -";
+        %tmp.20 = "K1B5/P2r4/Rp1r1n2/4k3/8/3PPP2/8/8 w - -";
         %tmp.21 = dup %tmp.19;
         %tmp.22 = aputv %tmp.21 6 %tmp.20;
         %tmp.23 = "8/1P5B/8/2P5/8/6K1/NkP3p1/RN6 w - -";

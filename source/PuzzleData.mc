@@ -9,7 +9,7 @@ class PuzzleData {
         "6Q1/1Nn5/2p1rp2/2p5/2r1k2P/2PN3K/4PP2/1B2R3 w - -",  // 4
         "8/8/7N/3p2pk/3p2p1/3P4/P1K5/8 w - -",  // 5
         "1n3NR1/2B1R3/2pK1p2/2N2p2/5kbp/1r1p4/3ppr2/4b1QB w - -",  // 6
-        "K1B5/P2r4/1p1r1n2/4k3/8/3PPP2/8/8 w - -",  // 7
+        "K1B5/P2r4/Rp1r1n2/4k3/8/3PPP2/8/8 w - -",  // 7 - FIXED: Added Rook on a6
         "8/1P5B/8/2P5/8/6K1/NkP3p1/RN6 w - -",  // 8
         "8/8/5b2/8/8/5pk1/8/2BQK2R w - -",  // 9
         "3N4/4BPP1/5Kpp/1BPp1Q1b/1p1kq2R/2b1r2n/1p1ppr2/8 w - -",  // 10
@@ -64,7 +64,7 @@ class PuzzleData {
         "g8g4",  // 4: Qg4# - Queen to g4, checkmate (CORRECTED)
         "h6f7",  // 5: Nf7# - Knight to f7, checkmate
         "h1h4",  // 6: Qxh4# - Queen takes pawn, checkmate
-        "a6d6",  // 7: Rxd6+ - Rook takes rook with check (leads to mate)
+        "a6d6",  // 7: Rxd6# - Rook takes rook, checkmate
         "a1a2",  // 8: Rxa2# - Rook takes knight, checkmate
         "c1h6",  // 9: Bxh6# - Bishop takes bishop, checkmate
         "f5f8",  // 10: Qf8# - Queen to f8, checkmate

@@ -14,6 +14,9 @@ class BoardView extends WatchUi.View {
     // Move input state - sequential selection
     var cursorIndex as Number = 0;  // 0-63 for all squares (row*8+col)
     var selectedSquare as Number? = null;  // Index of selected square or null
+    
+    var showHint as Boolean = false;
+    var hintMessage as String = "";
 
     function initialize(idx as Number) {
         WatchUi.View.initialize();
@@ -140,6 +143,173 @@ class BoardView extends WatchUi.View {
             var helpText = selectedSquare == null ? "UP/DN: Move OK: Select" : "UP/DN: Move OK: Confirm";
             dc.drawText(width / 2, height - 20, Graphics.FONT_XTINY, helpText, Graphics.TEXT_JUSTIFY_CENTER);
         }
+        
+        if (showHint) {
+            drawHint(dc);
+        }
+    }
+    
+    function drawHint(dc as Dc) as Void {
+        var width = dc.getWidth();
+        var height = dc.getHeight();
+        
+        // Semi-transparent overlay
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        dc.fillRectangle(0, height / 2 - 40, width, 80);
+        
+        // Draw border
+        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
+        dc.drawRectangle(5, height / 2 - 35, width - 10, 70);
+        
+        // Draw "HINT" title
+        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(
+            width / 2,
+            height / 2 - 30,
+            Graphics.FONT_SMALL,
+            "HINT",
+            Graphics.TEXT_JUSTIFY_CENTER
+        );
+        
+        // Draw hint message
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(
+            width / 2,
+            height / 2 - 5,
+            Graphics.FONT_TINY,
+            hintMessage,
+            Graphics.TEXT_JUSTIFY_CENTER
+        );
+        
+        // Draw instruction
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(
+            width / 2,
+            height / 2 + 20,
+            Graphics.FONT_XTINY,
+            "Press ENTER to continue",
+            Graphics.TEXT_JUSTIFY_CENTER
+        );
+    }
+    
+    function generateHint() as Void {
+        var solution = PuzzleData.getSolution(puzzleIndex);
+        
+        if (solution != null && solution.length() >= 4) {
+            var from = solution.substring(0, 2);
+            var to = solution.substring(2, 4);
+            
+            // Parse coordinates properly
+            var fromFileChar = from.substring(0, 1);
+            var fromRankChar = from.substring(1, 2);
+            var toFileChar = to.substring(0, 1);
+            var toRankChar = to.substring(1, 2);
+            
+            // Convert file letter to column (a=0, b=1, ..., h=7)
+            var fromCol = fromFileChar.toCharArray()[0].toNumber() - 97;
+            var toCol = toFileChar.toCharArray()[0].toNumber() - 97;
+            
+            // Convert rank to row - FEN uses rank 8 at top (row 0), rank 1 at bottom (row 7)
+            var fromRankNum = parseRank(fromRankChar);
+            var toRankNum = parseRank(toRankChar);
+            var fromRow = 8 - fromRankNum;
+            var toRow = 8 - toRankNum;
+            
+            // Validate coordinates are in bounds
+            if (fromRow >= 0 && fromRow < 8 && fromCol >= 0 && fromCol < 8) {
+                var piece = boardData["board"][fromRow][fromCol];
+                
+                if (piece != null) {
+                    var pieceName = getPieceName(piece);
+                    hintMessage = pieceName + " " + from.toUpper() + " to " + to.toUpper();
+                } else {
+                    // No piece at source - scan nearby squares for similar pieces
+                    var alternativePiece = findNearbyPiece(fromRow, fromCol, toRow, toCol);
+                    if (alternativePiece != null) {
+                        var altPieceName = getPieceName(alternativePiece["piece"]);
+                        hintMessage = altPieceName + " " + alternativePiece["from"] + " to " + to.toUpper();
+                    } else {
+                        // Just show destination
+                        hintMessage = "Move to " + to.toUpper();
+                    }
+                }
+            } else {
+                hintMessage = "Check the board carefully";
+            }
+        } else {
+            hintMessage = "Try different moves";
+        }
+        
+        showHint = true;
+        hintShown = true;
+        WatchUi.requestUpdate();
+    }
+    
+    function hideHint() as Void {
+        showHint = false;
+        WatchUi.requestUpdate();
+    }
+    
+    // Helper to parse rank character to number
+    function parseRank(rankChar as String) as Number {
+        if (rankChar.equals("1")) { return 1; }
+        else if (rankChar.equals("2")) { return 2; }
+        else if (rankChar.equals("3")) { return 3; }
+        else if (rankChar.equals("4")) { return 4; }
+        else if (rankChar.equals("5")) { return 5; }
+        else if (rankChar.equals("6")) { return 6; }
+        else if (rankChar.equals("7")) { return 7; }
+        else if (rankChar.equals("8")) { return 8; }
+        return 0;
+    }
+    
+    // Helper to find a piece that could make the intended move
+    function findNearbyPiece(fromRow as Number, fromCol as Number, toRow as Number, toCol as Number) as Dictionary? {
+        var files = "abcdefgh";
+        
+        // Check adjacent squares (in case of notation error)
+        var offsets = [[-1,-1], [-1,0], [-1,1], [0,-1], [0,1], [1,-1], [1,0], [1,1]];
+        
+        for (var i = 0; i < offsets.size(); i++) {
+            var checkRow = fromRow + offsets[i][0];
+            var checkCol = fromCol + offsets[i][1];
+            
+            if (checkRow >= 0 && checkRow < 8 && checkCol >= 0 && checkCol < 8) {
+                var piece = boardData["board"][checkRow][checkCol];
+                if (piece != null) {
+                    // Found a piece - return it
+                    var fileChar = files.substring(checkCol, checkCol + 1);
+                    var rankNum = 8 - checkRow;
+                    return {
+                        "piece" => piece,
+                        "from" => fileChar + rankNum.toString()
+                    };
+                }
+            }
+        }
+        
+        return null;
+    }
+    
+    // Add this helper method to get piece names
+    function getPieceName(piece as String) as String {
+        var firstChar = piece.substring(0, 1);
+        
+        if (firstChar.equals("K")) {
+            return "King";
+        } else if (firstChar.equals("Q")) {
+            return "Queen";
+        } else if (firstChar.equals("R")) {
+            return "Rook";
+        } else if (firstChar.equals("B")) {
+            return "Bishop";
+        } else if (firstChar.equals("N")) {
+            return "Knight";
+        } else if (firstChar.equals("P")) {
+            return "Pawn";
+        }
+        
+        return "Piece";
     }
     
     function moveCursor(delta as Number) as Void {
@@ -221,22 +391,35 @@ class BoardDelegate extends WatchUi.InputDelegate {
     function onKeyPressed(key as WatchUi.KeyEvent) as Boolean {
         var keyCode = key.getKey();
         
-        if (keyCode == WatchUi.KEY_UP) {
-            view.moveCursor(-1);  // Move to previous square (wraps around)
+        // Handle MENU button for hint
+        if (keyCode == WatchUi.KEY_MENU) {
+            if (view.showHint) {
+                // If hint is already showing, hide it
+                view.hideHint();
+            } else {
+                // Show hint
+                view.generateHint();
+            }
             return true;
-        } else if (keyCode == WatchUi.KEY_DOWN) {
-            view.moveCursor(1);   // Move to next square (wraps around)
-            return true;
-        } else if (keyCode == WatchUi.KEY_ENTER) {
+        }
+        
+        // Handle ENTER button
+        if (keyCode == WatchUi.KEY_ENTER) {
+            if (view.showHint) {
+                // If hint is showing, close it and continue
+                view.hideHint();
+                return true;
+            }
             view.selectSquare();
             return true;
-        } else if (keyCode == WatchUi.KEY_MENU) {
-            // Show hint - in MVP just mark as correct
-            var elapsed = (System.getTimer() - view.startTime) / 1000;
-            Storage.markSolved(puzzleIndex, elapsed);
-            WatchUi.popView(WatchUi.SLIDE_RIGHT);
-            return true;
-        } else if (keyCode == WatchUi.KEY_ESC) {
+        }
+        
+        // Handle ESC button
+        if (keyCode == WatchUi.KEY_ESC) {
+            if (view.showHint) {
+                view.hideHint();
+                return true;
+            }
             if (view.selectedSquare != null) {
                 // Cancel selection
                 view.selectedSquare = null;
@@ -246,6 +429,15 @@ class BoardDelegate extends WatchUi.InputDelegate {
             WatchUi.popView(WatchUi.SLIDE_RIGHT);
             return true;
         }
+        
+        if (keyCode == WatchUi.KEY_UP) {
+            view.moveCursor(-1);  // Move to previous square (wraps around)
+            return true;
+        } else if (keyCode == WatchUi.KEY_DOWN) {
+            view.moveCursor(1);   // Move to next square (wraps around)
+            return true;
+        }
+        
         return false;
     }
 }
