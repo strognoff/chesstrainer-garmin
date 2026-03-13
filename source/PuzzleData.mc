@@ -56,6 +56,8 @@ class PuzzleData {
         "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
         "7k/8/8/8/8/8/8/R7 w - -",
         "k7/8/8/8/8/8/8/R7 w - -",
+    "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -",  // 49
+    "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -",  // 50
     ];
 
     // Solution moves in UCI format (from-to)
@@ -110,6 +112,8 @@ class PuzzleData {
         "f3e5",
         "f3h4",
         "a1a8",
+            "d1h5",  // 49
+        "f1c4",  // 50
         "a1a1",
     ];
 }
