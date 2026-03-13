@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <drawable id="LauncherIcon">
+        <rectangle x="0" y="0" width="80" height="80" color="Graphics.COLOR_BLACK"/>
+        <text x="40" y="20" text="♔" font="Graphics.FONT_LARGE" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER"/>
+        <text x="40" y="50" text="CT" font="Graphics.FONT_MEDIUM" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER"/>
+    </drawable>
+</resources>

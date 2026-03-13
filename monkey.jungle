@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<manifest xmlns="http://www.garmin.com/xml/connectiq" version="1">
+    <application id="ChessTrainer" entry="ChessTrainerApp" name="ChessTrainer" icon="Resources.LauncherIcon">
+        <products>
+            <product id="forerunner_255"/>
+            <product id="forerunner_255s"/>
+            <product id="forerunner_265"/>
+            <product id="forerunner_965"/>
+            <product id="fenix_7_pro"/>
+            <product id="fenix_7x_pro"/>
+            <product id="fenix_8"/>
+            <product id="fenix_8x"/>
+            <product id="fenix_8_pro"/>
+            <product id="venu_2"/>
+            <product id="venu_2_plus"/>
+            <product id="venu_3"/>
+            <product id="instinct_2"/>
+            <product id="instinct_3"/>
+            <product id="epix_pro"/>
+            <product id="vivoactive_5"/>
+        </products>
+        <permissions>
+            <uses-permission id="Storage"/>
+        </permissions>
+        <languages>
+            <language>en</language>
+        </languages>
+    </application>
+</manifest>
