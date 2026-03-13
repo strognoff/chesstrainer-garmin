@@ -124,4 +124,101 @@ class BoardLogic {
         }
         return false;
     }
+    
+    // Validate if a move is legal for a piece
+    static function isValidMove(piece as String, fromRow as Number, fromCol as Number, toRow as Number, toCol as Number, board as Array<Array<String?>>, sideToMove as String) as Boolean {
+        if (piece == null || piece.equals(" ")) {
+            return false;
+        }
+        
+        var isWhitePiece = isUpperCase(piece);
+        var expectedSide = sideToMove.equals("w") ? "white" : "black";
+        
+        // Check if piece belongs to current player
+        if ((expectedSide.equals("white") && !isWhitePiece) || (expectedSide.equals("black") && isWhitePiece)) {
+            return false;
+        }
+        
+        var pieceType = piece.toUpper();
+        var dr = toRow - fromRow;
+        var dc = toCol - fromCol;
+        var absDr = dr < 0 ? -dr : dr;
+        var absDc = dc < 0 ? -dc : dc;
+        
+        // Pawn moves
+        if (pieceType.equals("P")) {
+            var direction = isWhitePiece ? -1 : 1;
+            if (dc == 0 && dr == direction && board[toRow][toCol] == null) {
+                return true;
+            }
+            if (dc == 0 && dr == 2 * direction && fromRow == (isWhitePiece ? 6 : 1) && board[toRow][toCol] == null) {
+                return true;
+            }
+            if (absDc == 1 && dr == direction) {
+                var target = board[toRow][toCol];
+                if (target != null) {
+                    var targetIsWhite = isUpperCase(target);
+                    return targetIsWhite != isWhitePiece;
+                }
+            }
+            return false;
+        }
+        
+        // Knight moves (L-shape)
+        if (pieceType.equals("N")) {
+            return (absDr == 2 && absDc == 1) || (absDr == 1 && absDc == 2);
+        }
+        
+        // Bishop moves (diagonal)
+        if (pieceType.equals("B")) {
+            if (absDr != absDc) {
+                return false;
+            }
+            return isPathClear(fromRow, fromCol, toRow, toCol, board);
+        }
+        
+        // Rook moves (straight)
+        if (pieceType.equals("R")) {
+            if (dr != 0 && dc != 0) {
+                return false;
+            }
+            return isPathClear(fromRow, fromCol, toRow, toCol, board);
+        }
+        
+        // Queen moves (straight or diagonal)
+        if (pieceType.equals("Q")) {
+            if (dr != 0 && dc != 0 && absDr != absDc) {
+                return false;
+            }
+            return isPathClear(fromRow, fromCol, toRow, toCol, board);
+        }
+        
+        // King moves (one square)
+        if (pieceType.equals("K")) {
+            return absDr <= 1 && absDc <= 1;
+        }
+        
+        return false;
+    }
+    
+    // Check if path is clear for sliding pieces
+    static function isPathClear(fromRow as Number, fromCol as Number, toRow as Number, toCol as Number, board as Array<Array<String?>>) as Boolean {
+        var dr = toRow - fromRow;
+        var dc = toCol - fromCol;
+        var stepRow = (dr == 0) ? 0 : (dr > 0 ? 1 : -1);
+        var stepCol = (dc == 0) ? 0 : (dc > 0 ? 1 : -1);
+        
+        var r = fromRow + stepRow;
+        var c = fromCol + stepCol;
+        
+        while (r != toRow || c != toCol) {
+            if (board[r][c] != null) {
+                return false;
+            }
+            r += stepRow;
+            c += stepCol;
+        }
+        
+        return true;
+    }
 }
