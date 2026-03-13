@@ -54,11 +54,26 @@ class HistoryView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
         dc.drawText(dc.getWidth() / 2, dc.getHeight() - 20, Graphics.FONT_TINY, "ESC: return", Graphics.TEXT_JUSTIFY_CENTER);
     }
+    
+    function handleUp() as Void {
+        if (currentPage > 0) {
+            currentPage--;
+            WatchUi.requestUpdate();
+        }
+    }
+    
+    function handleDown() as Void {
+        currentPage++;
+        WatchUi.requestUpdate();
+    }
 }
 
 class HistoryDelegate extends WatchUi.InputDelegate {
-    function initialize() {
+    var view as HistoryView;
+
+    function initialize(hView as HistoryView) {
         WatchUi.InputDelegate.initialize();
+        view = hView;
     }
 
     function onKeyPressed(key as WatchUi.KeyEvent) as Boolean {
@@ -68,14 +83,10 @@ class HistoryDelegate extends WatchUi.InputDelegate {
             WatchUi.popView(WatchUi.SLIDE_RIGHT);
             return true;
         } else if (keyCode == WatchUi.KEY_UP) {
-            if (currentPage > 0) {
-                currentPage--;
-                WatchUi.requestUpdate();
-            }
+            view.handleUp();
             return true;
         } else if (keyCode == WatchUi.KEY_DOWN) {
-            currentPage++;
-            WatchUi.requestUpdate();
+            view.handleDown();
             return true;
         }
         return false;

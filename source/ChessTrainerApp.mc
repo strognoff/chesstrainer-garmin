@@ -8,20 +8,16 @@ class ChessTrainerApp extends Application.AppBase {
         AppBase.initialize();
     }
 
-    function onStart(state as Dictionary) as Void {
-        // App started - storage is accessed directly via Storage module
+    function onStart(state) as Void {
+        // App started
     }
 
-    function onStop(state as Dictionary) as Void {
-        // App stopped - no explicit save needed as we save on each operation
+    function onStop(state) as Void {
+        // App stopped
     }
 
     function getInitialView() {
         var menuView = new MenuView();
         return [ menuView, new MenuDelegate(menuView) ] as [WatchUi.View, WatchUi.InputDelegate];
-    }
-
-    function getServiceDelegate() {
-        return [ new ChessTrainerService() ];
     }
 }

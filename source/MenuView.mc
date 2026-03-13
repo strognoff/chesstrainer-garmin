@@ -70,7 +70,8 @@ class MenuView extends WatchUi.View {
         } else if (currentSelection == 1) {
             WatchUi.pushView(new StatsView(), new StatsDelegate(), WatchUi.SLIDE_LEFT);
         } else if (currentSelection == 2) {
-            WatchUi.pushView(new HistoryView(), new HistoryDelegate(), WatchUi.SLIDE_LEFT);
+            var historyView = new HistoryView();
+            WatchUi.pushView(historyView, new HistoryDelegate(historyView), WatchUi.SLIDE_LEFT);
         }
     }
 }

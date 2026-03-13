@@ -1,4 +1,5 @@
-// Chess board logic - FEN parsing and basic move handling
+import Toybox.Lang;
+
 class BoardLogic {
     // Unicode chess pieces
     const WHITE_KING = "K";
@@ -14,17 +15,35 @@ class BoardLogic {
     const BLACK_KNIGHT = "n";
     const BLACK_PAWN = "p";
 
-    // Parse FEN to 8x8 board array
-    static function parseFen(fen as String) as Dictionary {
-        var parts = fen.split(" ");
-        var position = parts[0];
-        var ranks = position.split("/");
+    // Simple split by delimiter
+    static function splitString(str as String, delimiter as String) as Lang.Array {
+        var result = new [0] as Lang.Array;
+        var current = "";
         
-        var board = new [8] as Array;
+        for (var i = 0; i < str.length(); i++) {
+            var c = str.substring(i, i + 1);
+            if (c.equals(delimiter)) {
+                result.add(current);
+                current = "";
+            } else {
+                current = current + c;
+            }
+        }
+        result.add(current);
+        return result;
+    }
+
+    // Parse FEN to 8x8 board array
+    static function parseFen(fen as String) as Lang.Dictionary {
+        var parts = splitString(fen, " ");
+        var position = parts[0] as String;
+        var ranks = splitString(position, "/");
+        
+        var board = new [8] as Lang.Array;
         
         for (var i = 0; i < 8; i++) {
-            var rank = ranks[i];
-            var row = new [8] as Array;
+            var rank = ranks[i] as String;
+            var row = new [8] as Lang.Array;
             var colIdx = 0;
             
             for (var j = 0; j < rank.length(); j++) {
@@ -47,7 +66,7 @@ class BoardLogic {
         
         return {
             "board" => board,
-            "sideToMove" => parts.size() > 1 ? parts[1] : "w"
+            "sideToMove" => parts.size() > 1 ? (parts[1] as String) : "w"
         };
     }
 
@@ -56,8 +75,6 @@ class BoardLogic {
         if (fenChar == null) {
             return " ";
         }
-        
-        // Return the FEN character as-is
         return fenChar;
     }
 
@@ -67,9 +84,9 @@ class BoardLogic {
     }
 
     // Find piece on board
-    static function findPiece(board as Array, piece as String) as Dictionary? {
+    static function findPiece(board as Lang.Array, piece as String) as Lang.Dictionary? {
         for (var r = 0; r < 8; r++) {
-            var row = board[r] as Array;
+            var row = board[r] as Lang.Array;
             for (var c = 0; c < 8; c++) {
                 var p = row[c];
                 if (p != null && p.equals(piece)) {
@@ -81,14 +98,13 @@ class BoardLogic {
     }
 
     // Get all pieces of a color
-    static function getPiecesOfColor(board as Array, color as String) as Array {
-        var pieces = new [0] as Array;
+    static function getPiecesOfColor(board as Lang.Array, color as String) as Lang.Array {
+        var pieces = new [0] as Lang.Array;
         for (var r = 0; r < 8; r++) {
-            var row = board[r] as Array;
+            var row = board[r] as Lang.Array;
             for (var c = 0; c < 8; c++) {
                 var piece = row[c];
                 if (piece != null) {
-                    // Check if piece is uppercase (white) or lowercase (black)
                     var isWhite = isUpperCase(piece);
                     if ((color.equals("white") && isWhite) || (color.equals("black") && !isWhite)) {
                         pieces.add({"piece" => piece, "row" => r, "col" => c});
@@ -101,11 +117,9 @@ class BoardLogic {
     
     // Helper to check if character is uppercase
     static function isUpperCase(str as String) as Boolean {
-        // Get character codes
-        var c = str.charAt(0);
+        var c = str.substring(0, 1);
         var code = c.toNumber();
         if (code != null) {
-            // A-Z is 65-90, a-z is 97-122
             return code >= 65 && code <= 90;
         }
         return false;

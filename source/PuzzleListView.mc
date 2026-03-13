@@ -2,37 +2,6 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.Graphics;
 
-// Forward declaration
-class PuzzleListView;
-
-class PuzzleListDelegate extends WatchUi.InputDelegate {
-    var view as PuzzleListView;
-
-    function initialize(pListView as PuzzleListView) {
-        WatchUi.InputDelegate.initialize();
-        view = pListView;
-    }
-
-    function onKeyPressed(key as WatchUi.KeyEvent) as Boolean {
-        var keyCode = key.getKey();
-        
-        if (keyCode == WatchUi.KEY_UP) {
-            view.handleUp();
-            return true;
-        } else if (keyCode == WatchUi.KEY_DOWN) {
-            view.handleDown();
-            return true;
-        } else if (keyCode == WatchUi.KEY_ENTER) {
-            view.handleEnter();
-            return true;
-        } else if (keyCode == WatchUi.KEY_ESC) {
-            WatchUi.popView(WatchUi.SLIDE_RIGHT);
-            return true;
-        }
-        return false;
-    }
-}
-
 class PuzzleListView extends WatchUi.View {
     var currentPage = 0;
     var itemsPerPage = 5;
@@ -79,7 +48,6 @@ class PuzzleListView extends WatchUi.View {
     }
     
     function handleUp() as Void {
-        var total = PuzzleData.getPuzzleCount();
         if (currentPage > 0) {
             currentPage--;
             WatchUi.requestUpdate();
@@ -97,9 +65,36 @@ class PuzzleListView extends WatchUi.View {
     
     function handleEnter() as Void {
         var idx = currentPage * itemsPerPage;
-        // Make sure we don't go past the end
         if (idx < PuzzleData.getPuzzleCount()) {
             WatchUi.pushView(new BoardView(idx), new BoardDelegate(idx), WatchUi.SLIDE_LEFT);
         }
+    }
+}
+
+class PuzzleListDelegate extends WatchUi.InputDelegate {
+    var view as PuzzleListView;
+
+    function initialize(pListView as PuzzleListView) {
+        WatchUi.InputDelegate.initialize();
+        view = pListView;
+    }
+
+    function onKeyPressed(key as WatchUi.KeyEvent) as Boolean {
+        var keyCode = key.getKey();
+        
+        if (keyCode == WatchUi.KEY_UP) {
+            view.handleUp();
+            return true;
+        } else if (keyCode == WatchUi.KEY_DOWN) {
+            view.handleDown();
+            return true;
+        } else if (keyCode == WatchUi.KEY_ENTER) {
+            view.handleEnter();
+            return true;
+        } else if (keyCode == WatchUi.KEY_ESC) {
+            WatchUi.popView(WatchUi.SLIDE_RIGHT);
+            return true;
+        }
+        return false;
     }
 }
