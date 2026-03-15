@@ -56,8 +56,6 @@ class PuzzleData {
         "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -",
         "7k/8/8/8/8/8/8/R7 w - -",
         "k7/8/8/8/8/8/8/R7 w - -",
-    "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -",  // 49
-    "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -",  // 50
     ];
 
     // Solution moves in UCI format (from-to)
@@ -112,8 +110,101 @@ class PuzzleData {
         "f3e5",
         "f3h4",
         "a1a8",
-            "d1h5",  // 49
-        "f1c4",  // 50
         "a1a1",
     ];
+
+    // Puzzle names
+    static const puzzleNames = [
+        "Queen Mate Corner",
+        "Queen Mate Edge",
+        "Queen Mate Center",
+        "King Safety",
+        "Queen Long",
+        "Queen Side",
+        "Queen Center",
+        "Queen File",
+        "Queen End",
+        "Queen Check",
+        "Rook Mate",
+        "Rook Check",
+        "Rook Move",
+        "Bishop Move",
+        "Bishop Attack",
+        "Knight Move",
+        "Pawn Push",
+        "Scholar's Mate",
+        "Queen Attack",
+        "Bishop Sac",
+        "Queen Sacrifice",
+        "Knight Fork",
+        "Back Rank",
+        "Rook Mate 2",
+        "Rook Mate 3",
+        "Queen Mate 2",
+        "Rook Mate 4",
+        "Open Attack",
+        "Knight Attack",
+        "Pawn Advance",
+        "Pawn Push 2",
+        "Queen Attack 2",
+        "Queen Attack 3",
+        "Queen Attack 4",
+        "Queen Attack 5",
+        "Queen Attack 6",
+        "Bishop Attack",
+        "Rook Final",
+        "Open Game",
+        "Open Game 2",
+        "Open Game 3",
+        "Italian Attack",
+        "Pawn End",
+        "Pawn End 2",
+        "Pawn End 3",
+        "Queen End",
+        "Queen End 2",
+        "Knight Tactics",
+        "Knight Tactics 2",
+        "Rook End",
+        "Rook End 2",
+    ];
+
+    // Get puzzle by index
+    static function getPuzzle(index) {
+        if (index >= 0 && index < puzzles.size()) {
+            return puzzles[index];
+        }
+        return null;
+    }
+
+    // Get total puzzle count
+    static function getPuzzleCount() {
+        return puzzles.size();
+    }
+
+    // Get solution move by index
+    static function getSolution(index) {
+        if (index >= 0 && index < solutionMoves.size()) {
+            return solutionMoves[index];
+        }
+        return null;
+    }
+
+    // Get puzzle name by index
+    static function getPuzzleName(index) {
+        if (index >= 0 && index < puzzleNames.size()) {
+            return puzzleNames[index];
+        }
+        return "Puzzle " + (index + 1);
+    }
+
+    // Get hint for puzzle (shows the move squares)
+    static function getHint(index) {
+        if (index >= 0 && index < solutionMoves.size()) {
+            var move = solutionMoves[index];
+            var from = move.substring(0, 2);
+            var to = move.substring(2, 4);
+            return "Move from " + from + " to " + to;
+        }
+        return "Study the position carefully";
+    }
 }
