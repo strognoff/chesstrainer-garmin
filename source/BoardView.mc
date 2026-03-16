@@ -17,6 +17,9 @@ class BoardView extends WatchUi.View {
     
     var showHint as Boolean = false;
     var hintMessage as String = "";
+    
+    // Add toggle for ASCII display
+    var useAsciiPieces as Boolean = false;
 
     function initialize(idx as Number) {
         WatchUi.View.initialize();
@@ -24,6 +27,9 @@ class BoardView extends WatchUi.View {
         var fen = PuzzleData.getPuzzle(puzzleIndex);
         boardData = BoardLogic.parseFen(fen);
         startTime = System.getTimer();
+        
+        // Load setting from storage
+        useAsciiPieces = Storage.getUseAsciiPieces();
         
         // Load all piece bitmaps once
         pieceBitmaps = {
@@ -55,6 +61,51 @@ class BoardView extends WatchUi.View {
     }
 
     function onTimer() as Void {
+        WatchUi.requestUpdate();
+    }
+    
+ // Helper function to get standard chess notation
+function getPieceAscii(piece as String) as String {
+    // Pieces are stored with single letter followed by color indicator
+    // e.g., "K" for King, "Q" for Queen, etc.
+    var firstChar = piece.substring(0, 1);
+    
+    // Return the appropriate symbol based on the piece type
+    if (firstChar.equals("K")) {
+        return "K";
+    } else if (firstChar.equals("Q")) {
+        return "Q";
+    } else if (firstChar.equals("R")) {
+        return "R";
+    } else if (firstChar.equals("B")) {
+        return "B";
+    } else if (firstChar.equals("N")) {
+        return "N";
+    } else if (firstChar.equals("P")) {
+        return "P";
+    }
+    
+    // If we get here, check if it's a lowercase (black) piece
+    if (firstChar.equals("k")) {
+        return "k";
+    } else if (firstChar.equals("q")) {
+        return "q";
+    } else if (firstChar.equals("r")) {
+        return "r";
+    } else if (firstChar.equals("b")) {
+        return "b";
+    } else if (firstChar.equals("n")) {
+        return "n";
+    } else if (firstChar.equals("p")) {
+        return "p";
+    }
+    
+    return "?";
+}
+
+    
+    function togglePieceDisplay() as Void {
+        useAsciiPieces = !useAsciiPieces;
         WatchUi.requestUpdate();
     }
 
@@ -112,19 +163,33 @@ class BoardView extends WatchUi.View {
                 }
                 dc.fillRectangle(x, y, squareSize, squareSize);
                 
-                // Draw piece using bitmap
+                // Draw piece
                 var piece = boardData["board"][row][col];
                 if (piece != null) {
-                    var drawableId = BoardLogic.getPieceDrawableId(piece);
-                    if (drawableId != null) {
-                        var bitmap = pieceBitmaps[drawableId];
-                        if (bitmap != null) {
-                            // Center the bitmap in the square
-                            var bitmapWidth = bitmap.getWidth();
-                            var bitmapHeight = bitmap.getHeight();
-                            var bitmapX = x + (squareSize - bitmapWidth) / 2;
-                            var bitmapY = y + (squareSize - bitmapHeight) / 2;
-                            dc.drawBitmap(bitmapX, bitmapY, bitmap);
+                    if (useAsciiPieces) {
+                        // Draw ASCII representation
+                        var asciiChar = getPieceAscii(piece);
+                        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+                        dc.drawText(
+                            x + squareSize / 2,
+                            y + squareSize / 2,
+                            Graphics.FONT_MEDIUM,
+                            asciiChar,
+                            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+                        );
+                    } else {
+                        // Draw using bitmap
+                        var drawableId = BoardLogic.getPieceDrawableId(piece);
+                        if (drawableId != null) {
+                            var bitmap = pieceBitmaps[drawableId];
+                            if (bitmap != null) {
+                                // Center the bitmap in the square
+                                var bitmapWidth = bitmap.getWidth();
+                                var bitmapHeight = bitmap.getHeight();
+                                var bitmapX = x + (squareSize - bitmapWidth) / 2;
+                                var bitmapY = y + (squareSize - bitmapHeight) / 2;
+                                dc.drawBitmap(bitmapX, bitmapY, bitmap);
+                            }
                         }
                     }
                 }
@@ -140,7 +205,8 @@ class BoardView extends WatchUi.View {
         } else {
             // Draw controls hint at bottom (only if no feedback)
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-            var helpText = selectedSquare == null ? "UP/DN: Move OK: Select" : "UP/DN: Move OK: Confirm";
+            var displayMode = useAsciiPieces ? "IMG" : "ASCII";
+            var helpText = selectedSquare == null ? "UP/DN: Move OK: Select LEFT: " + displayMode : "UP/DN: Move OK: Confirm";
             dc.drawText(width / 2, height - 20, Graphics.FONT_XTINY, helpText, Graphics.TEXT_JUSTIFY_CENTER);
         }
         

@@ -17,85 +17,46 @@ class MenuView extends WatchUi.View {
     function onUpdate(dc as Dc) as Void {
         var width = dc.getWidth();
         var height = dc.getHeight();
-        var centerX = width / 2;
         
-        // Dark background
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
         
-        // Title with accent
-        dc.setColor(COLOR_ACCENT, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(centerX, 20, Graphics.FONT_MEDIUM, "ChessTrainer", Graphics.TEXT_JUSTIFY_CENTER);
+        // Title - reduced font and moved up
+        dc.setColor(COLOR_ACCENT, Graphics.COLOR_BLACK);
+        dc.drawText(width / 2, 25, Graphics.FONT_SMALL, "CHESS TRAINER", Graphics.TEXT_JUSTIFY_CENTER);
         
-        // Subtitle at Y=57
-        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(centerX, 57, Graphics.FONT_XTINY, "Tactical Training", Graphics.TEXT_JUSTIFY_CENTER);
+        var centerX = width / 2;
+        var itemHeight = 35; // Increased spacing between items
+        var startY = 70; // Moved up to accommodate more items
         
-        // Draw menu items starting at Y=85
-        var itemHeight = 40;
-        var startY = 85;
-        
-        // START
-        drawMenuItem(dc, centerX, startY, 0, "START", "> Play Puzzles");
-        
-        // STATS
+        // Draw menu items with more spacing
+        drawMenuItem(dc, centerX, startY, 0, "PLAY", "> Start Puzzle");
         drawMenuItem(dc, centerX, startY + itemHeight, 1, "STATS", "> View Progress");
+        drawMenuItem(dc, centerX, startY + itemHeight * 2, 2, "HISTORY", "> Past Games");
+        drawMenuItem(dc, centerX, startY + itemHeight * 3, 3, "SETTINGS", "> Configure");
         
-        // HISTORY
-        drawMenuItem(dc, centerX, startY + (itemHeight * 2), 2, "HISTORY", "> Past Games");
-        
-        // Footer starting at Y=240
-        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(centerX, 240, Graphics.FONT_XTINY, "UP/DOWN: Navigate", Graphics.TEXT_JUSTIFY_CENTER);
+        // Navigation hint - moved to bottom with smaller font
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_BLACK);
+        dc.drawText(width / 2, 245, Graphics.FONT_SYSTEM_XTINY, "Have FUN!", Graphics.TEXT_JUSTIFY_CENTER);
     }
     
-    function drawMenuItem(dc as Dc, centerX as Number, y as Number, index as Number, title as String, subtitle as String) as Void {
+    function drawMenuItem(dc as Dc, x as Number, y as Number, index as Number, title as String, subtitle as String) as Void {
         var isSelected = (index == currentSelection);
         
         if (isSelected) {
-            // Selected item - bright and bold
-            dc.setColor(COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(centerX - 70, y, Graphics.FONT_SMALL, ">", Graphics.TEXT_JUSTIFY_LEFT);
-            
-            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(centerX - 50, y, Graphics.FONT_MEDIUM, title, Graphics.TEXT_JUSTIFY_LEFT);
-            
-            dc.setColor(COLOR_ACCENT, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(centerX - 50, y + 20, Graphics.FONT_XTINY, subtitle, Graphics.TEXT_JUSTIFY_LEFT);
+            dc.setColor(COLOR_BLUE, Graphics.COLOR_BLACK);
         } else {
-            // Unselected item - dimmed
-            dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(centerX - 50, y, Graphics.FONT_SMALL, title, Graphics.TEXT_JUSTIFY_LEFT);
-            
-            dc.setColor(0x333333, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(centerX - 50, y + 17, Graphics.FONT_XTINY, subtitle, Graphics.TEXT_JUSTIFY_LEFT);
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         }
-    }
+        
+            // Reduced font sizes
+            dc.drawText(x, y, Graphics.FONT_XTINY, title, Graphics.TEXT_JUSTIFY_CENTER);
+            dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_BLACK);
+            dc.drawText(x, y + 18, Graphics.FONT_XTINY, subtitle, Graphics.TEXT_JUSTIFY_CENTER);    }
     
-    function handleUp() as Void {
-        if (currentSelection > 0) {
-            currentSelection--;
-            WatchUi.requestUpdate();
-        }
-    }
-    
-    function handleDown() as Void {
-        if (currentSelection < 2) {
-            currentSelection++;
-            WatchUi.requestUpdate();
-        }
-    }
-    
-    function handleEnter() as Void {
-        if (currentSelection == 0) {
-            var puzzleListView = new PuzzleListView();
-            WatchUi.pushView(puzzleListView, new PuzzleListDelegate(puzzleListView), WatchUi.SLIDE_LEFT);
-        } else if (currentSelection == 1) {
-            WatchUi.pushView(new StatsView(), new StatsDelegate(), WatchUi.SLIDE_LEFT);
-        } else if (currentSelection == 2) {
-            var historyView = new HistoryView();
-            WatchUi.pushView(historyView, new HistoryDelegate(historyView), WatchUi.SLIDE_LEFT);
-        }
+    function moveSelection(delta as Number) as Void {
+        currentSelection = (currentSelection + delta + 4) % 4;
+        WatchUi.requestUpdate();
     }
 }
 
@@ -111,15 +72,32 @@ class MenuDelegate extends WatchUi.InputDelegate {
         var keyCode = key.getKey();
         
         if (keyCode == WatchUi.KEY_UP) {
-            view.handleUp();
+            view.moveSelection(-1);
             return true;
         } else if (keyCode == WatchUi.KEY_DOWN) {
-            view.handleDown();
+            view.moveSelection(1);
             return true;
         } else if (keyCode == WatchUi.KEY_ENTER) {
-            view.handleEnter();
+            if (view.currentSelection == 0) {
+                // Navigate to puzzle list
+                var puzzleView = new PuzzleListView();
+                WatchUi.pushView(puzzleView, new PuzzleListDelegate(puzzleView), WatchUi.SLIDE_LEFT);
+            } else if (view.currentSelection == 1) {
+                // Navigate to stats
+                var statsView = new StatsView();
+                WatchUi.pushView(statsView, new StatsDelegate(), WatchUi.SLIDE_LEFT);
+            } else if (view.currentSelection == 2) {
+                // Navigate to history
+                var historyView = new HistoryView();
+                WatchUi.pushView(historyView, new HistoryDelegate(historyView), WatchUi.SLIDE_LEFT);
+            } else if (view.currentSelection == 3) {
+                // Navigate to settings
+                var settingsView = new SettingsView();
+                WatchUi.pushView(settingsView, new SettingsDelegate(settingsView), WatchUi.SLIDE_LEFT);
+            }
             return true;
         }
+        
         return false;
     }
 }

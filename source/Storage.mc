@@ -7,6 +7,7 @@ module Storage {
     const KEY_SOLVED = "solved";
     const KEY_INCORRECT = "incorrect";
     const KEY_TIMES = "times";
+    const KEY_USE_ASCII = "useAsciiPieces";
 
     //! Get progress data
     function getProgressData() as Dictionary {
@@ -173,5 +174,19 @@ module Storage {
     //! Reset all progress
     function resetProgress() as Void {
         Toybox.Application.Storage.setValue(KEY_PROGRESS, null);
+    }
+
+    //! Get piece display setting (true = ASCII, false = Bitmap)
+    function getUseAsciiPieces() as Boolean {
+        var value = Toybox.Application.Storage.getValue(KEY_USE_ASCII);
+        if (value == null) {
+            return false; // Default to bitmap display
+        }
+        return value as Boolean;
+    }
+
+    //! Set piece display setting
+    function setUseAsciiPieces(useAscii as Boolean) as Void {
+        Toybox.Application.Storage.setValue(KEY_USE_ASCII, useAscii);
     }
 }

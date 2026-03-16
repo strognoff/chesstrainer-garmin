@@ -1,0 +1,717 @@
+[ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc"; @line = 5; @symbol_classdef = [PuzzleData,5,6,16]; ]
+class PuzzleData {
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc"; @line = 5; ]
+    static
+    <init> {
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 7 17 ]
+        %tmp.1 = newa 51;
+        %tmp.2 = "k7/8/8/8/8/8/8/2Q5 w - -";
+        %tmp.3 = dup %tmp.1;
+        %tmp.4 = aputv %tmp.3 0 %tmp.2;
+        %tmp.5 = "k7/8/8/8/8/8/8/3Q4 w - -";
+        %tmp.6 = dup %tmp.4;
+        %tmp.7 = aputv %tmp.6 1 %tmp.5;
+        %tmp.8 = "7k/8/8/8/8/8/8/4Q3 w - -";
+        %tmp.9 = dup %tmp.7;
+        %tmp.10 = aputv %tmp.9 2 %tmp.8;
+        %tmp.11 = "8/8/8/8/8/8/8/6Qk w - -";
+        %tmp.12 = dup %tmp.10;
+        %tmp.13 = aputv %tmp.12 3 %tmp.11;
+        %tmp.14 = "8/8/8/8/8/8/8/Q7 w - -";
+        %tmp.15 = dup %tmp.13;
+        %tmp.16 = aputv %tmp.15 4 %tmp.14;
+        %tmp.17 = "8/8/8/8/8/8/8/1Q6 w - -";
+        %tmp.18 = dup %tmp.16;
+        %tmp.19 = aputv %tmp.18 5 %tmp.17;
+        %tmp.20 = "8/8/8/8/8/8/8/4Q3 w - -";
+        %tmp.21 = dup %tmp.19;
+        %tmp.22 = aputv %tmp.21 6 %tmp.20;
+        %tmp.23 = "8/8/8/8/8/8/8/5Q2 w - -";
+        %tmp.24 = dup %tmp.22;
+        %tmp.25 = aputv %tmp.24 7 %tmp.23;
+        %tmp.26 = "8/8/8/8/8/8/8/7Q w - -";
+        %tmp.27 = dup %tmp.25;
+        %tmp.28 = aputv %tmp.27 8 %tmp.26;
+        %tmp.29 = "6k1/8/8/8/8/8/8/4Q3 w - -";
+        %tmp.30 = dup %tmp.28;
+        %tmp.31 = aputv %tmp.30 9 %tmp.29;
+        %tmp.32 = "7k/8/8/8/8/8/8/4R3 w - -";
+        %tmp.33 = dup %tmp.31;
+        %tmp.34 = aputv %tmp.33 10 %tmp.32;
+        %tmp.35 = "k7/8/8/8/8/8/8/1R6 w - -";
+        %tmp.36 = dup %tmp.34;
+        %tmp.37 = aputv %tmp.36 11 %tmp.35;
+        %tmp.38 = "8/8/8/8/8/8/8/5R1k w - -";
+        %tmp.39 = dup %tmp.37;
+        %tmp.40 = aputv %tmp.39 12 %tmp.38;
+        %tmp.41 = "7k/8/8/8/8/8/8/1B6 w - -";
+        %tmp.42 = dup %tmp.40;
+        %tmp.43 = aputv %tmp.42 13 %tmp.41;
+        %tmp.44 = "8/8/8/8/8/8/8/2B5 w - -";
+        %tmp.45 = dup %tmp.43;
+        %tmp.46 = aputv %tmp.45 14 %tmp.44;
+        %tmp.47 = "8/8/8/8/8/8/8/3N4 w - -";
+        %tmp.48 = dup %tmp.46;
+        %tmp.49 = aputv %tmp.48 15 %tmp.47;
+        %tmp.50 = "8/8/8/8/8/4P3/8/4K3 w - -";
+        %tmp.51 = dup %tmp.49;
+        %tmp.52 = aputv %tmp.51 16 %tmp.50;
+        %tmp.53 = "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5Q2/PPPP1PPP/RNB1K1NR w KQkq -";
+        %tmp.54 = dup %tmp.52;
+        %tmp.55 = aputv %tmp.54 17 %tmp.53;
+        %tmp.56 = "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/8/PPPP1PPP/RNBQKBNR w KQkq -";
+        %tmp.57 = dup %tmp.55;
+        %tmp.58 = aputv %tmp.57 18 %tmp.56;
+        %tmp.59 = "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/8/PPPP1PPP/RNBQKBNR w KQkq -";
+        %tmp.60 = dup %tmp.58;
+        %tmp.61 = aputv %tmp.60 19 %tmp.59;
+        %tmp.62 = "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/8/PPPP1PPP/RNBQKBNR w KQkq -";
+        %tmp.63 = dup %tmp.61;
+        %tmp.64 = aputv %tmp.63 20 %tmp.62;
+        %tmp.65 = "rnbqkbnr/pppp1ppp/8/4p3/6P1/5N2/PPPPPPBP/RNBQKB1R w KQkq -";
+        %tmp.66 = dup %tmp.64;
+        %tmp.67 = aputv %tmp.66 21 %tmp.65;
+        %tmp.68 = "6k1/5ppp/8/8/8/8/5Q2/4K3 w - -";
+        %tmp.69 = dup %tmp.67;
+        %tmp.70 = aputv %tmp.69 22 %tmp.68;
+        %tmp.71 = "5rk1/5ppp/8/8/8/8/5Q2/4K3 w - -";
+        %tmp.72 = dup %tmp.70;
+        %tmp.73 = aputv %tmp.72 23 %tmp.71;
+        %tmp.74 = "3r2k1/5ppp/8/8/8/8/5Q2/4K3 w - -";
+        %tmp.75 = dup %tmp.73;
+        %tmp.76 = aputv %tmp.75 24 %tmp.74;
+        %tmp.77 = "k7/8/8/8/8/8/8/2Q5 w - -";
+        %tmp.78 = dup %tmp.76;
+        %tmp.79 = aputv %tmp.78 25 %tmp.77;
+        %tmp.80 = "7k/8/8/8/8/8/8/4R3 w - -";
+        %tmp.81 = dup %tmp.79;
+        %tmp.82 = aputv %tmp.81 26 %tmp.80;
+        %tmp.83 = "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/8/PPPP1PPP/RNBQKBNR w KQkq -";
+        %tmp.84 = dup %tmp.82;
+        %tmp.85 = aputv %tmp.84 27 %tmp.83;
+        %tmp.86 = "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -";
+        %tmp.87 = dup %tmp.85;
+        %tmp.88 = aputv %tmp.87 28 %tmp.86;
+        %tmp.89 = "8/8/8/8/8/4P3/8/4K3 w - -";
+        %tmp.90 = dup %tmp.88;
+        %tmp.91 = aputv %tmp.90 29 %tmp.89;
+        %tmp.92 = "8/8/8/8/4P3/8/8/4K3 w - -";
+        %tmp.93 = dup %tmp.91;
+        %tmp.94 = aputv %tmp.93 30 %tmp.92;
+        %tmp.95 = "8/8/8/8/8/6K1/5Q2/7k w - -";
+        %tmp.96 = dup %tmp.94;
+        %tmp.97 = aputv %tmp.96 31 %tmp.95;
+        %tmp.98 = "8/8/8/8/8/6K1/5Q2/7k w - -";
+        %tmp.99 = dup %tmp.97;
+        %tmp.100 = aputv %tmp.99 32 %tmp.98;
+        %tmp.101 = "8/8/8/8/8/6K1/5Q2/7k w - -";
+        %tmp.102 = dup %tmp.100;
+        %tmp.103 = aputv %tmp.102 33 %tmp.101;
+        %tmp.104 = "8/8/8/8/8/6K1/5Q2/7k w - -";
+        %tmp.105 = dup %tmp.103;
+        %tmp.106 = aputv %tmp.105 34 %tmp.104;
+        %tmp.107 = "8/8/8/8/8/6K1/5Q2/7k w - -";
+        %tmp.108 = dup %tmp.106;
+        %tmp.109 = aputv %tmp.108 35 %tmp.107;
+        %tmp.110 = "r1bqk2r/pppp1ppp/2n1pn2/8/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq -";
+        %tmp.111 = dup %tmp.109;
+        %tmp.112 = aputv %tmp.111 36 %tmp.110;
+        %tmp.113 = "r4rk1/5ppp/8/8/8/8/5Q2/4K3 w - -";
+        %tmp.114 = dup %tmp.112;
+        %tmp.115 = aputv %tmp.114 37 %tmp.113;
+        %tmp.116 = "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -";
+        %tmp.117 = dup %tmp.115;
+        %tmp.118 = aputv %tmp.117 38 %tmp.116;
+        %tmp.119 = "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -";
+        %tmp.120 = dup %tmp.118;
+        %tmp.121 = aputv %tmp.120 39 %tmp.119;
+        %tmp.122 = "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq -";
+        %tmp.123 = dup %tmp.121;
+        %tmp.124 = aputv %tmp.123 40 %tmp.122;
+        %tmp.125 = "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq -";
+        %tmp.126 = dup %tmp.124;
+        %tmp.127 = aputv %tmp.126 41 %tmp.125;
+        %tmp.128 = "8/8/8/8/8/8/4P3/4K3 w - -";
+        %tmp.129 = dup %tmp.127;
+        %tmp.130 = aputv %tmp.129 42 %tmp.128;
+        %tmp.131 = "8/8/8/8/8/4P3/8/4K3 w - -";
+        %tmp.132 = dup %tmp.130;
+        %tmp.133 = aputv %tmp.132 43 %tmp.131;
+        %tmp.134 = "8/8/8/8/4P3/8/8/4K3 w - -";
+        %tmp.135 = dup %tmp.133;
+        %tmp.136 = aputv %tmp.135 44 %tmp.134;
+        %tmp.137 = "8/8/8/8/8/8/5Q2/4K3 w - -";
+        %tmp.138 = dup %tmp.136;
+        %tmp.139 = aputv %tmp.138 45 %tmp.137;
+        %tmp.140 = "8/8/8/8/8/8/5Q2/4K3 w - -";
+        %tmp.141 = dup %tmp.139;
+        %tmp.142 = aputv %tmp.141 46 %tmp.140;
+        %tmp.143 = "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -";
+        %tmp.144 = dup %tmp.142;
+        %tmp.145 = aputv %tmp.144 47 %tmp.143;
+        %tmp.146 = "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq -";
+        %tmp.147 = dup %tmp.145;
+        %tmp.148 = aputv %tmp.147 48 %tmp.146;
+        %tmp.149 = "7k/8/8/8/8/8/8/R7 w - -";
+        %tmp.150 = dup %tmp.148;
+        %tmp.151 = aputv %tmp.150 49 %tmp.149;
+        %tmp.152 = "k7/8/8/8/8/8/8/R7 w - -";
+        %tmp.153 = dup %tmp.151;
+        %tmp.154 = aputv %tmp.153 50 %tmp.152;
+        putv self :puzzles %tmp.154;
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 62 17 ]
+        %tmp.155 = newa 51;
+        %tmp.156 = "c1c8";
+        %tmp.157 = dup %tmp.155;
+        %tmp.158 = aputv %tmp.157 0 %tmp.156;
+        %tmp.159 = "d1d8";
+        %tmp.160 = dup %tmp.158;
+        %tmp.161 = aputv %tmp.160 1 %tmp.159;
+        %tmp.162 = "e1e8";
+        %tmp.163 = dup %tmp.161;
+        %tmp.164 = aputv %tmp.163 2 %tmp.162;
+        %tmp.165 = "g1f1";
+        %tmp.166 = dup %tmp.164;
+        %tmp.167 = aputv %tmp.166 3 %tmp.165;
+        %tmp.168 = "a1a8";
+        %tmp.169 = dup %tmp.167;
+        %tmp.170 = aputv %tmp.169 4 %tmp.168;
+        %tmp.171 = "b1b8";
+        %tmp.172 = dup %tmp.170;
+        %tmp.173 = aputv %tmp.172 5 %tmp.171;
+        %tmp.174 = "e1e8";
+        %tmp.175 = dup %tmp.173;
+        %tmp.176 = aputv %tmp.175 6 %tmp.174;
+        %tmp.177 = "f1f8";
+        %tmp.178 = dup %tmp.176;
+        %tmp.179 = aputv %tmp.178 7 %tmp.177;
+        %tmp.180 = "h1h8";
+        %tmp.181 = dup %tmp.179;
+        %tmp.182 = aputv %tmp.181 8 %tmp.180;
+        %tmp.183 = "e1e8";
+        %tmp.184 = dup %tmp.182;
+        %tmp.185 = aputv %tmp.184 9 %tmp.183;
+        %tmp.186 = "e1e8";
+        %tmp.187 = dup %tmp.185;
+        %tmp.188 = aputv %tmp.187 10 %tmp.186;
+        %tmp.189 = "b1b8";
+        %tmp.190 = dup %tmp.188;
+        %tmp.191 = aputv %tmp.190 11 %tmp.189;
+        %tmp.192 = "f1g1";
+        %tmp.193 = dup %tmp.191;
+        %tmp.194 = aputv %tmp.193 12 %tmp.192;
+        %tmp.195 = "b1a2";
+        %tmp.196 = dup %tmp.194;
+        %tmp.197 = aputv %tmp.196 13 %tmp.195;
+        %tmp.198 = "c1f4";
+        %tmp.199 = dup %tmp.197;
+        %tmp.200 = aputv %tmp.199 14 %tmp.198;
+        %tmp.201 = "d1f2";
+        %tmp.202 = dup %tmp.200;
+        %tmp.203 = aputv %tmp.202 15 %tmp.201;
+        %tmp.204 = "e3e4";
+        %tmp.205 = dup %tmp.203;
+        %tmp.206 = aputv %tmp.205 16 %tmp.204;
+        %tmp.207 = "f3f7";
+        %tmp.208 = dup %tmp.206;
+        %tmp.209 = aputv %tmp.208 17 %tmp.207;
+        %tmp.210 = "d1h5";
+        %tmp.211 = dup %tmp.209;
+        %tmp.212 = aputv %tmp.211 18 %tmp.210;
+        %tmp.213 = "c4f7";
+        %tmp.214 = dup %tmp.212;
+        %tmp.215 = aputv %tmp.214 19 %tmp.213;
+        %tmp.216 = "d1g4";
+        %tmp.217 = dup %tmp.215;
+        %tmp.218 = aputv %tmp.217 20 %tmp.216;
+        %tmp.219 = "f3g5";
+        %tmp.220 = dup %tmp.218;
+        %tmp.221 = aputv %tmp.220 21 %tmp.219;
+        %tmp.222 = "f2f7";
+        %tmp.223 = dup %tmp.221;
+        %tmp.224 = aputv %tmp.223 22 %tmp.222;
+        %tmp.225 = "f2f7";
+        %tmp.226 = dup %tmp.224;
+        %tmp.227 = aputv %tmp.226 23 %tmp.225;
+        %tmp.228 = "f2f7";
+        %tmp.229 = dup %tmp.227;
+        %tmp.230 = aputv %tmp.229 24 %tmp.228;
+        %tmp.231 = "c1c7";
+        %tmp.232 = dup %tmp.230;
+        %tmp.233 = aputv %tmp.232 25 %tmp.231;
+        %tmp.234 = "e1e7";
+        %tmp.235 = dup %tmp.233;
+        %tmp.236 = aputv %tmp.235 26 %tmp.234;
+        %tmp.237 = "d1f3";
+        %tmp.238 = dup %tmp.236;
+        %tmp.239 = aputv %tmp.238 27 %tmp.237;
+        %tmp.240 = "f3g5";
+        %tmp.241 = dup %tmp.239;
+        %tmp.242 = aputv %tmp.241 28 %tmp.240;
+        %tmp.243 = "e3e4";
+        %tmp.244 = dup %tmp.242;
+        %tmp.245 = aputv %tmp.244 29 %tmp.243;
+        %tmp.246 = "e4e5";
+        %tmp.247 = dup %tmp.245;
+        %tmp.248 = aputv %tmp.247 30 %tmp.246;
+        %tmp.249 = "f2f3";
+        %tmp.250 = dup %tmp.248;
+        %tmp.251 = aputv %tmp.250 31 %tmp.249;
+        %tmp.252 = "f2f4";
+        %tmp.253 = dup %tmp.251;
+        %tmp.254 = aputv %tmp.253 32 %tmp.252;
+        %tmp.255 = "f2e2";
+        %tmp.256 = dup %tmp.254;
+        %tmp.257 = aputv %tmp.256 33 %tmp.255;
+        %tmp.258 = "f2g2";
+        %tmp.259 = dup %tmp.257;
+        %tmp.260 = aputv %tmp.259 34 %tmp.258;
+        %tmp.261 = "f2h2";
+        %tmp.262 = dup %tmp.260;
+        %tmp.263 = aputv %tmp.262 35 %tmp.261;
+        %tmp.264 = "f3g5";
+        %tmp.265 = dup %tmp.263;
+        %tmp.266 = aputv %tmp.265 36 %tmp.264;
+        %tmp.267 = "f2f7";
+        %tmp.268 = dup %tmp.266;
+        %tmp.269 = aputv %tmp.268 37 %tmp.267;
+        %tmp.270 = "d1h5";
+        %tmp.271 = dup %tmp.269;
+        %tmp.272 = aputv %tmp.271 38 %tmp.270;
+        %tmp.273 = "d1h5";
+        %tmp.274 = dup %tmp.272;
+        %tmp.275 = aputv %tmp.274 39 %tmp.273;
+        %tmp.276 = "f1c4";
+        %tmp.277 = dup %tmp.275;
+        %tmp.278 = aputv %tmp.277 40 %tmp.276;
+        %tmp.279 = "f3g5";
+        %tmp.280 = dup %tmp.278;
+        %tmp.281 = aputv %tmp.280 41 %tmp.279;
+        %tmp.282 = "e2e3";
+        %tmp.283 = dup %tmp.281;
+        %tmp.284 = aputv %tmp.283 42 %tmp.282;
+        %tmp.285 = "e3e4";
+        %tmp.286 = dup %tmp.284;
+        %tmp.287 = aputv %tmp.286 43 %tmp.285;
+        %tmp.288 = "e4e5";
+        %tmp.289 = dup %tmp.287;
+        %tmp.290 = aputv %tmp.289 44 %tmp.288;
+        %tmp.291 = "f2f5";
+        %tmp.292 = dup %tmp.290;
+        %tmp.293 = aputv %tmp.292 45 %tmp.291;
+        %tmp.294 = "f2f6";
+        %tmp.295 = dup %tmp.293;
+        %tmp.296 = aputv %tmp.295 46 %tmp.294;
+        %tmp.297 = "f3e5";
+        %tmp.298 = dup %tmp.296;
+        %tmp.299 = aputv %tmp.298 47 %tmp.297;
+        %tmp.300 = "f3h4";
+        %tmp.301 = dup %tmp.299;
+        %tmp.302 = aputv %tmp.301 48 %tmp.300;
+        %tmp.303 = "a1a8";
+        %tmp.304 = dup %tmp.302;
+        %tmp.305 = aputv %tmp.304 49 %tmp.303;
+        %tmp.306 = "a1a8";
+        %tmp.307 = dup %tmp.305;
+        %tmp.308 = aputv %tmp.307 50 %tmp.306;
+        putv self :solutionMoves %tmp.308;
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 117 17 ]
+        %tmp.309 = newa 51;
+        %tmp.310 = "Queen Mate Corner";
+        %tmp.311 = dup %tmp.309;
+        %tmp.312 = aputv %tmp.311 0 %tmp.310;
+        %tmp.313 = "Queen Mate Edge";
+        %tmp.314 = dup %tmp.312;
+        %tmp.315 = aputv %tmp.314 1 %tmp.313;
+        %tmp.316 = "Queen Mate Center";
+        %tmp.317 = dup %tmp.315;
+        %tmp.318 = aputv %tmp.317 2 %tmp.316;
+        %tmp.319 = "King Safety";
+        %tmp.320 = dup %tmp.318;
+        %tmp.321 = aputv %tmp.320 3 %tmp.319;
+        %tmp.322 = "Queen Long";
+        %tmp.323 = dup %tmp.321;
+        %tmp.324 = aputv %tmp.323 4 %tmp.322;
+        %tmp.325 = "Queen Side";
+        %tmp.326 = dup %tmp.324;
+        %tmp.327 = aputv %tmp.326 5 %tmp.325;
+        %tmp.328 = "Queen Center";
+        %tmp.329 = dup %tmp.327;
+        %tmp.330 = aputv %tmp.329 6 %tmp.328;
+        %tmp.331 = "Queen File";
+        %tmp.332 = dup %tmp.330;
+        %tmp.333 = aputv %tmp.332 7 %tmp.331;
+        %tmp.334 = "Queen End";
+        %tmp.335 = dup %tmp.333;
+        %tmp.336 = aputv %tmp.335 8 %tmp.334;
+        %tmp.337 = "Queen Check";
+        %tmp.338 = dup %tmp.336;
+        %tmp.339 = aputv %tmp.338 9 %tmp.337;
+        %tmp.340 = "Rook Mate";
+        %tmp.341 = dup %tmp.339;
+        %tmp.342 = aputv %tmp.341 10 %tmp.340;
+        %tmp.343 = "Rook Check";
+        %tmp.344 = dup %tmp.342;
+        %tmp.345 = aputv %tmp.344 11 %tmp.343;
+        %tmp.346 = "Rook Move";
+        %tmp.347 = dup %tmp.345;
+        %tmp.348 = aputv %tmp.347 12 %tmp.346;
+        %tmp.349 = "Bishop Move";
+        %tmp.350 = dup %tmp.348;
+        %tmp.351 = aputv %tmp.350 13 %tmp.349;
+        %tmp.352 = "Bishop Attack";
+        %tmp.353 = dup %tmp.351;
+        %tmp.354 = aputv %tmp.353 14 %tmp.352;
+        %tmp.355 = "Knight Move";
+        %tmp.356 = dup %tmp.354;
+        %tmp.357 = aputv %tmp.356 15 %tmp.355;
+        %tmp.358 = "Pawn Push";
+        %tmp.359 = dup %tmp.357;
+        %tmp.360 = aputv %tmp.359 16 %tmp.358;
+        %tmp.361 = "Scholar's Mate";
+        %tmp.362 = dup %tmp.360;
+        %tmp.363 = aputv %tmp.362 17 %tmp.361;
+        %tmp.364 = "Queen Attack";
+        %tmp.365 = dup %tmp.363;
+        %tmp.366 = aputv %tmp.365 18 %tmp.364;
+        %tmp.367 = "Bishop Sac";
+        %tmp.368 = dup %tmp.366;
+        %tmp.369 = aputv %tmp.368 19 %tmp.367;
+        %tmp.370 = "Queen Sacrifice";
+        %tmp.371 = dup %tmp.369;
+        %tmp.372 = aputv %tmp.371 20 %tmp.370;
+        %tmp.373 = "Knight Fork";
+        %tmp.374 = dup %tmp.372;
+        %tmp.375 = aputv %tmp.374 21 %tmp.373;
+        %tmp.376 = "Back Rank";
+        %tmp.377 = dup %tmp.375;
+        %tmp.378 = aputv %tmp.377 22 %tmp.376;
+        %tmp.379 = "Rook Mate 2";
+        %tmp.380 = dup %tmp.378;
+        %tmp.381 = aputv %tmp.380 23 %tmp.379;
+        %tmp.382 = "Rook Mate 3";
+        %tmp.383 = dup %tmp.381;
+        %tmp.384 = aputv %tmp.383 24 %tmp.382;
+        %tmp.385 = "Queen Mate 2";
+        %tmp.386 = dup %tmp.384;
+        %tmp.387 = aputv %tmp.386 25 %tmp.385;
+        %tmp.388 = "Rook Mate 4";
+        %tmp.389 = dup %tmp.387;
+        %tmp.390 = aputv %tmp.389 26 %tmp.388;
+        %tmp.391 = "Open Attack";
+        %tmp.392 = dup %tmp.390;
+        %tmp.393 = aputv %tmp.392 27 %tmp.391;
+        %tmp.394 = "Knight Attack";
+        %tmp.395 = dup %tmp.393;
+        %tmp.396 = aputv %tmp.395 28 %tmp.394;
+        %tmp.397 = "Pawn Advance";
+        %tmp.398 = dup %tmp.396;
+        %tmp.399 = aputv %tmp.398 29 %tmp.397;
+        %tmp.400 = "Pawn Push 2";
+        %tmp.401 = dup %tmp.399;
+        %tmp.402 = aputv %tmp.401 30 %tmp.400;
+        %tmp.403 = "Queen Attack 2";
+        %tmp.404 = dup %tmp.402;
+        %tmp.405 = aputv %tmp.404 31 %tmp.403;
+        %tmp.406 = "Queen Attack 3";
+        %tmp.407 = dup %tmp.405;
+        %tmp.408 = aputv %tmp.407 32 %tmp.406;
+        %tmp.409 = "Queen Attack 4";
+        %tmp.410 = dup %tmp.408;
+        %tmp.411 = aputv %tmp.410 33 %tmp.409;
+        %tmp.412 = "Queen Attack 5";
+        %tmp.413 = dup %tmp.411;
+        %tmp.414 = aputv %tmp.413 34 %tmp.412;
+        %tmp.415 = "Queen Attack 6";
+        %tmp.416 = dup %tmp.414;
+        %tmp.417 = aputv %tmp.416 35 %tmp.415;
+        %tmp.418 = "Bishop Attack";
+        %tmp.419 = dup %tmp.417;
+        %tmp.420 = aputv %tmp.419 36 %tmp.418;
+        %tmp.421 = "Rook Final";
+        %tmp.422 = dup %tmp.420;
+        %tmp.423 = aputv %tmp.422 37 %tmp.421;
+        %tmp.424 = "Open Game";
+        %tmp.425 = dup %tmp.423;
+        %tmp.426 = aputv %tmp.425 38 %tmp.424;
+        %tmp.427 = "Open Game 2";
+        %tmp.428 = dup %tmp.426;
+        %tmp.429 = aputv %tmp.428 39 %tmp.427;
+        %tmp.430 = "Open Game 3";
+        %tmp.431 = dup %tmp.429;
+        %tmp.432 = aputv %tmp.431 40 %tmp.430;
+        %tmp.433 = "Italian Attack";
+        %tmp.434 = dup %tmp.432;
+        %tmp.435 = aputv %tmp.434 41 %tmp.433;
+        %tmp.436 = "Pawn End";
+        %tmp.437 = dup %tmp.435;
+        %tmp.438 = aputv %tmp.437 42 %tmp.436;
+        %tmp.439 = "Pawn End 2";
+        %tmp.440 = dup %tmp.438;
+        %tmp.441 = aputv %tmp.440 43 %tmp.439;
+        %tmp.442 = "Pawn End 3";
+        %tmp.443 = dup %tmp.441;
+        %tmp.444 = aputv %tmp.443 44 %tmp.442;
+        %tmp.445 = "Queen End";
+        %tmp.446 = dup %tmp.444;
+        %tmp.447 = aputv %tmp.446 45 %tmp.445;
+        %tmp.448 = "Queen End 2";
+        %tmp.449 = dup %tmp.447;
+        %tmp.450 = aputv %tmp.449 46 %tmp.448;
+        %tmp.451 = "Knight Tactics";
+        %tmp.452 = dup %tmp.450;
+        %tmp.453 = aputv %tmp.452 47 %tmp.451;
+        %tmp.454 = "Knight Tactics 2";
+        %tmp.455 = dup %tmp.453;
+        %tmp.456 = aputv %tmp.455 48 %tmp.454;
+        %tmp.457 = "Rook End";
+        %tmp.458 = dup %tmp.456;
+        %tmp.459 = aputv %tmp.458 49 %tmp.457;
+        %tmp.460 = "Rook End 2";
+        %tmp.461 = dup %tmp.459;
+        %tmp.462 = aputv %tmp.461 50 %tmp.460;
+        putv self :puzzleNames %tmp.462;
+    }
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc"; @line = 7; @position = 17; @symbol_constdef = [puzzles,7,17,24]; ]
+    static
+    const puzzles;
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc"; @line = 62; @position = 17; @symbol_constdef = [solutionMoves,62,17,30]; ]
+    static
+    const solutionMoves;
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc"; @line = 117; @position = 17; @symbol_constdef = [puzzleNames,117,17,28]; ]
+    static
+    const puzzleNames;
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc"; @line = 172; @symbol_functiondef = [getPuzzle,172,20,29]; @symbol_param<0> = [index,172,30,35]; ]
+    static
+    function getPuzzle(index) {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_172_37_177_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 173 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_173_8_175_8_if_stmt:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_173_12_173_47_begin:
+        %tmp.1 = lgetv %index;
+        symbol [ index %tmp.1 173 12 17 ];
+        %tmp.2 = 0;
+        %tmp.3 = gte %tmp.1 %tmp.2;
+        bf %tmp.3 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_173_8_175_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_173_26_173_47_true:
+        %tmp.4 = lgetv %index;
+        symbol [ index %tmp.4 173 26 31 ];
+        symbol [ puzzles %tmp.6 173 34 41 ];
+        %tmp.6 = getv ? :puzzles;
+        symbol [ size %tmp.7 173 42 46 ];
+        %tmp.7 = getv function %tmp.6 :size;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = lt %tmp.4 %tmp.8;
+        push %tmp.9;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_173_26_173_47_end:
+        %tmp.10 = phi [%tmp.3 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_173_12_173_47_begin] [%tmp.9 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_173_26_173_47_true] [%tmp.10 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_173_26_173_47_end];
+        bf %tmp.10 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_173_8_175_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_173_8_175_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_173_50_175_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 174 12 ]
+        symbol [ puzzles %tmp.12 174 19 26 ];
+        %tmp.12 = getv ? :puzzles;
+        %tmp.13 = lgetv %index;
+        symbol [ index %tmp.13 174 27 32 ];
+        %tmp.14 = agetv %tmp.12 %tmp.13;
+        ret %tmp.14;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_173_50_175_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_173_8_175_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_173_8_175_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 176 8 ]
+        %tmp.15 = null;
+        ret %tmp.15;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_172_37_177_4_stop:
+    }
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc"; @line = 180; @symbol_functiondef = [getPuzzleCount,180,20,34]; ]
+    static
+    function getPuzzleCount() {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_180_37_182_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 181 8 ]
+        symbol [ puzzles %tmp.2 181 15 22 ];
+        %tmp.2 = getv ? :puzzles;
+        symbol [ size %tmp.3 181 23 27 ];
+        %tmp.3 = getv function %tmp.2 :size;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        ret %tmp.4;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_180_37_182_4_stop:
+    }
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc"; @line = 185; @symbol_functiondef = [getSolution,185,20,31]; @symbol_param<0> = [index,185,32,37]; ]
+    static
+    function getSolution(index) {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_185_39_190_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 186 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_186_8_188_8_if_stmt:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_186_12_186_53_begin:
+        %tmp.1 = lgetv %index;
+        symbol [ index %tmp.1 186 12 17 ];
+        %tmp.2 = 0;
+        %tmp.3 = gte %tmp.1 %tmp.2;
+        bf %tmp.3 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_186_8_188_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_186_26_186_53_true:
+        %tmp.4 = lgetv %index;
+        symbol [ index %tmp.4 186 26 31 ];
+        symbol [ solutionMoves %tmp.6 186 34 47 ];
+        %tmp.6 = getv ? :solutionMoves;
+        symbol [ size %tmp.7 186 48 52 ];
+        %tmp.7 = getv function %tmp.6 :size;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = lt %tmp.4 %tmp.8;
+        push %tmp.9;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_186_26_186_53_end:
+        %tmp.10 = phi [%tmp.3 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_186_12_186_53_begin] [%tmp.9 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_186_26_186_53_true] [%tmp.10 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_186_26_186_53_end];
+        bf %tmp.10 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_186_8_188_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_186_8_188_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_186_56_188_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 187 12 ]
+        symbol [ solutionMoves %tmp.12 187 19 32 ];
+        %tmp.12 = getv ? :solutionMoves;
+        %tmp.13 = lgetv %index;
+        symbol [ index %tmp.13 187 33 38 ];
+        %tmp.14 = agetv %tmp.12 %tmp.13;
+        ret %tmp.14;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_186_56_188_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_186_8_188_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_186_8_188_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 189 8 ]
+        %tmp.15 = null;
+        ret %tmp.15;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_185_39_190_4_stop:
+    }
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc"; @line = 193; @symbol_functiondef = [getPuzzleName,193,20,33]; @symbol_param<0> = [index,193,34,39]; ]
+    static
+    function getPuzzleName(index) {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_193_41_198_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 194 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_194_8_196_8_if_stmt:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_194_12_194_51_begin:
+        %tmp.1 = lgetv %index;
+        symbol [ index %tmp.1 194 12 17 ];
+        %tmp.2 = 0;
+        %tmp.3 = gte %tmp.1 %tmp.2;
+        bf %tmp.3 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_194_8_196_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_194_26_194_51_true:
+        %tmp.4 = lgetv %index;
+        symbol [ index %tmp.4 194 26 31 ];
+        symbol [ puzzleNames %tmp.6 194 34 45 ];
+        %tmp.6 = getv ? :puzzleNames;
+        symbol [ size %tmp.7 194 46 50 ];
+        %tmp.7 = getv function %tmp.6 :size;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = lt %tmp.4 %tmp.8;
+        push %tmp.9;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_194_26_194_51_end:
+        %tmp.10 = phi [%tmp.3 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_194_12_194_51_begin] [%tmp.9 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_194_26_194_51_true] [%tmp.10 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_194_26_194_51_end];
+        bf %tmp.10 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_194_8_196_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_194_8_196_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_194_54_196_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 195 12 ]
+        symbol [ puzzleNames %tmp.12 195 19 30 ];
+        %tmp.12 = getv ? :puzzleNames;
+        %tmp.13 = lgetv %index;
+        symbol [ index %tmp.13 195 31 36 ];
+        %tmp.14 = agetv %tmp.12 %tmp.13;
+        ret %tmp.14;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_194_54_196_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_194_8_196_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_194_8_196_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 197 8 ]
+        %tmp.15 = "Puzzle ";
+        %tmp.16 = lgetv %index;
+        symbol [ index %tmp.16 197 28 33 ];
+        %tmp.17 = 1;
+        %tmp.18 = add %tmp.16 %tmp.17;
+        %tmp.19 = add %tmp.15 %tmp.18;
+        ret %tmp.19;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_193_41_198_4_stop:
+    }
+    [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc"; @line = 201; @symbol_functiondef = [getHint,201,20,27]; @symbol_param<0> = [index,201,28,33]; ]
+    static
+    function getHint(index) {
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_201_35_209_4_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 202 8 ]
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_8_207_8_if_stmt:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_12_202_53_begin:
+        %tmp.1 = lgetv %index;
+        symbol [ index %tmp.1 202 12 17 ];
+        %tmp.2 = 0;
+        %tmp.3 = gte %tmp.1 %tmp.2;
+        bf %tmp.3 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_8_207_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_26_202_53_true:
+        %tmp.4 = lgetv %index;
+        symbol [ index %tmp.4 202 26 31 ];
+        symbol [ solutionMoves %tmp.6 202 34 47 ];
+        %tmp.6 = getv ? :solutionMoves;
+        symbol [ size %tmp.7 202 48 52 ];
+        %tmp.7 = getv function %tmp.6 :size;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = lt %tmp.4 %tmp.8;
+        push %tmp.9;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_26_202_53_end:
+        %tmp.10 = phi [%tmp.3 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_12_202_53_begin] [%tmp.9 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_26_202_53_true] [%tmp.10 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_26_202_53_end];
+        bf %tmp.10 @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_8_207_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_8_207_8_if_true:
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_56_207_8_start:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 203 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_56_207_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_56_207_8_stop" ]
+        %move.1 = local;
+        symbol [ move %move.1 203 16 20 ];
+        symbol [ solutionMoves %tmp.12 203 23 36 ];
+        %tmp.12 = getv ? :solutionMoves;
+        %tmp.13 = lgetv %index;
+        symbol [ index %tmp.13 203 37 42 ];
+        %tmp.14 = agetv %tmp.12 %tmp.13;
+        lputv %move.1 %tmp.14;
+        symbol [ move %move.1 203 16 20 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 204 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_56_207_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_56_207_8_stop" ]
+        %from.2 = local;
+        symbol [ from %from.2 204 16 20 ];
+        %tmp.15 = lgetv %move.1;
+        symbol [ move %tmp.15 204 23 27 ];
+        symbol [ substring %tmp.16 204 28 37 ];
+        %tmp.16 = getv function %tmp.15 :substring;
+        %tmp.17 = 0;
+        %tmp.18 = 2;
+        %tmp.19 = invoke %tmp.15 %tmp.16(%tmp.17, %tmp.18);
+        lputv %from.2 %tmp.19;
+        symbol [ from %from.2 204 16 20 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 205 12 ]
+        [ "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_56_207_8_start" "_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_56_207_8_stop" ]
+        %to.3 = local;
+        symbol [ to %to.3 205 16 18 ];
+        %tmp.20 = lgetv %move.1;
+        symbol [ move %tmp.20 205 21 25 ];
+        symbol [ substring %tmp.21 205 26 35 ];
+        %tmp.21 = getv function %tmp.20 :substring;
+        %tmp.22 = 2;
+        %tmp.23 = 4;
+        %tmp.24 = invoke %tmp.20 %tmp.21(%tmp.22, %tmp.23);
+        lputv %to.3 %tmp.24;
+        symbol [ to %to.3 205 16 18 ];
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 206 12 ]
+        %tmp.25 = "Move from ";
+        %tmp.26 = lgetv %from.2;
+        symbol [ from %tmp.26 206 34 38 ];
+        %tmp.27 = add %tmp.25 %tmp.26;
+        %tmp.28 = " to ";
+        %tmp.29 = add %tmp.27 %tmp.28;
+        %tmp.30 = lgetv %to.3;
+        symbol [ to %tmp.30 206 50 52 ];
+        %tmp.31 = add %tmp.29 %tmp.30;
+        ret %tmp.31;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_56_207_8_stop:
+        goto @_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_8_207_8_if_end;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_202_8_207_8_if_end:
+[ "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" 208 8 ]
+        %tmp.32 = "Study the position carefully";
+        ret %tmp.32;
+_Users_jeffcechinel_Github_chesstrainer_garmin_source_PuzzleData_mc_201_35_209_4_stop:
+    }
+}
+[ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc"; @line = 5; ]
+<init> {
+}
