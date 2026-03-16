@@ -409,387 +409,393 @@
         <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" id="52" lineNum="48" parent="globals/Storage" pc="268440705" symbol="getPuzzleTimes"/>
         <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" id="52" lineNum="49" parent="globals/Storage" pc="268440711" symbol="getPuzzleTimes"/>
         <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/Storage.mc" id="52" lineNum="51" parent="globals/Storage" pc="268440717" symbol="getPuzzleTimes"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="124" parent="globals/PuzzleData" pc="268440720" symbol="getSolution"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="125" parent="globals/PuzzleData" pc="268440722" symbol="getSolution"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="126" parent="globals/PuzzleData" pc="268440746" symbol="getSolution"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="128" parent="globals/PuzzleData" pc="268440758" symbol="getSolution"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="113" parent="globals/PuzzleData" pc="268440760" symbol="getPuzzle"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="114" parent="globals/PuzzleData" pc="268440762" symbol="getPuzzle"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="115" parent="globals/PuzzleData" pc="268440786" symbol="getPuzzle"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="117" parent="globals/PuzzleData" pc="268440798" symbol="getPuzzle"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="56" lineNum="120" parent="globals/PuzzleData" pc="268440800" symbol="getPuzzleCount"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="56" lineNum="121" parent="globals/PuzzleData" pc="268440802" symbol="getPuzzleCount"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="131" parent="globals/PuzzleData" pc="268440814" symbol="getPuzzleName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="132" parent="globals/PuzzleData" pc="268440817" symbol="getPuzzleName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="185" parent="globals/PuzzleData" pc="268440824" symbol="getPuzzleName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="186" parent="globals/PuzzleData" pc="268440844" symbol="getPuzzleName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="188" parent="globals/PuzzleData" pc="268440853" symbol="getPuzzleName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="58" lineNum="128" parent="globals/HistoryDelegate" pc="268440865" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="58" lineNum="129" parent="globals/HistoryDelegate" pc="268440867" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="58" lineNum="130" parent="globals/HistoryDelegate" pc="268440883" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="133" parent="globals/HistoryDelegate" pc="268440893" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="134" parent="globals/HistoryDelegate" pc="268440896" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="136" parent="globals/HistoryDelegate" pc="268440905" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="137" parent="globals/HistoryDelegate" pc="268440913" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="138" parent="globals/HistoryDelegate" pc="268440928" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="139" parent="globals/HistoryDelegate" pc="268440933" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="140" parent="globals/HistoryDelegate" pc="268440941" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="141" parent="globals/HistoryDelegate" pc="268440953" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="142" parent="globals/HistoryDelegate" pc="268440958" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="143" parent="globals/HistoryDelegate" pc="268440966" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="144" parent="globals/HistoryDelegate" pc="268440978" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="146" parent="globals/HistoryDelegate" pc="268440983" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="60" lineNum="89" parent="globals/MenuView" pc="268440985" symbol="handleEnter"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="60" lineNum="90" parent="globals/MenuView" pc="268440988" symbol="handleEnter"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="60" lineNum="91" parent="globals/MenuView" pc="268440998" symbol="handleEnter"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="60" lineNum="92" parent="globals/MenuView" pc="268441018" symbol="handleEnter"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="60" lineNum="93" parent="globals/MenuView" pc="268441058" symbol="handleEnter"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="60" lineNum="94" parent="globals/MenuView" pc="268441069" symbol="handleEnter"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="60" lineNum="95" parent="globals/MenuView" pc="268441123" symbol="handleEnter"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="60" lineNum="96" parent="globals/MenuView" pc="268441134" symbol="handleEnter"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="60" lineNum="97" parent="globals/MenuView" pc="268441154" symbol="handleEnter"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="61" lineNum="82" parent="globals/MenuView" pc="268441195" symbol="handleDown"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="61" lineNum="83" parent="globals/MenuView" pc="268441197" symbol="handleDown"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="61" lineNum="84" parent="globals/MenuView" pc="268441208" symbol="handleDown"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="61" lineNum="85" parent="globals/MenuView" pc="268441223" symbol="handleDown"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="62" lineNum="13" parent="globals/MenuView" pc="268441238" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="62" lineNum="14" parent="globals/MenuView" pc="268441240" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="63" lineNum="75" parent="globals/MenuView" pc="268441257" symbol="handleUp"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="63" lineNum="76" parent="globals/MenuView" pc="268441259" symbol="handleUp"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="63" lineNum="77" parent="globals/MenuView" pc="268441269" symbol="handleUp"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="63" lineNum="78" parent="globals/MenuView" pc="268441284" symbol="handleUp"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="17" parent="globals/MenuView" pc="268441299" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="18" parent="globals/MenuView" pc="268441302" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="19" parent="globals/MenuView" pc="268441311" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="20" parent="globals/MenuView" pc="268441320" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="23" parent="globals/MenuView" pc="268441327" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="24" parent="globals/MenuView" pc="268441339" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="27" parent="globals/MenuView" pc="268441347" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="28" parent="globals/MenuView" pc="268441363" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="31" parent="globals/MenuView" pc="268441386" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="32" parent="globals/MenuView" pc="268441402" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="35" parent="globals/MenuView" pc="268441424" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="36" parent="globals/MenuView" pc="268441428" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="39" parent="globals/MenuView" pc="268441432" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="42" parent="globals/MenuView" pc="268441458" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="45" parent="globals/MenuView" pc="268441488" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="48" parent="globals/MenuView" pc="268441521" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="49" parent="globals/MenuView" pc="268441537" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="52" parent="globals/MenuView" pc="268441561" symbol="drawMenuItem"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="53" parent="globals/MenuView" pc="268441564" symbol="drawMenuItem"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="55" parent="globals/MenuView" pc="268441574" symbol="drawMenuItem"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="57" parent="globals/MenuView" pc="268441579" symbol="drawMenuItem"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="58" parent="globals/MenuView" pc="268441595" symbol="drawMenuItem"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="60" parent="globals/MenuView" pc="268441621" symbol="drawMenuItem"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="61" parent="globals/MenuView" pc="268441638" symbol="drawMenuItem"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="63" parent="globals/MenuView" pc="268441661" symbol="drawMenuItem"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="64" parent="globals/MenuView" pc="268441677" symbol="drawMenuItem"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="67" parent="globals/MenuView" pc="268441705" symbol="drawMenuItem"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="68" parent="globals/MenuView" pc="268441721" symbol="drawMenuItem"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="70" parent="globals/MenuView" pc="268441744" symbol="drawMenuItem"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="71" parent="globals/MenuView" pc="268441760" symbol="drawMenuItem"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="66" lineNum="113" parent="globals/HistoryView" pc="268441786" symbol="handleDown"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="66" lineNum="114" parent="globals/HistoryView" pc="268441789" symbol="handleDown"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="66" lineNum="115" parent="globals/HistoryView" pc="268441801" symbol="handleDown"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="66" lineNum="116" parent="globals/HistoryView" pc="268441813" symbol="handleDown"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="66" lineNum="118" parent="globals/HistoryView" pc="268441830" symbol="handleDown"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="66" lineNum="119" parent="globals/HistoryView" pc="268441847" symbol="handleDown"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="66" lineNum="120" parent="globals/HistoryView" pc="268441862" symbol="handleDown"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="67" lineNum="13" parent="globals/HistoryView" pc="268441877" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="67" lineNum="14" parent="globals/HistoryView" pc="268441879" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="68" lineNum="106" parent="globals/HistoryView" pc="268441896" symbol="handleUp"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="68" lineNum="107" parent="globals/HistoryView" pc="268441898" symbol="handleUp"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="68" lineNum="108" parent="globals/HistoryView" pc="268441908" symbol="handleUp"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="68" lineNum="109" parent="globals/HistoryView" pc="268441923" symbol="handleUp"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="17" parent="globals/HistoryView" pc="268441938" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="18" parent="globals/HistoryView" pc="268441941" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="19" parent="globals/HistoryView" pc="268441950" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="21" parent="globals/HistoryView" pc="268441959" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="22" parent="globals/HistoryView" pc="268441971" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="25" parent="globals/HistoryView" pc="268441979" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="26" parent="globals/HistoryView" pc="268441995" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="28" parent="globals/HistoryView" pc="268442021" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="29" parent="globals/HistoryView" pc="268442033" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="31" parent="globals/HistoryView" pc="268442045" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="34" parent="globals/HistoryView" pc="268442062" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="35" parent="globals/HistoryView" pc="268442069" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="36" parent="globals/HistoryView" pc="268442079" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="37" parent="globals/HistoryView" pc="268442087" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="40" parent="globals/HistoryView" pc="268442094" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="41" parent="globals/HistoryView" pc="268442101" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="42" parent="globals/HistoryView" pc="268442116" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="44" parent="globals/HistoryView" pc="268442148" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="45" parent="globals/HistoryView" pc="268442152" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="47" parent="globals/HistoryView" pc="268442156" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="52" parent="globals/HistoryView" pc="268442168" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="53" parent="globals/HistoryView" pc="268442181" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="54" parent="globals/HistoryView" pc="268442188" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="55" parent="globals/HistoryView" pc="268442195" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="57" parent="globals/HistoryView" pc="268442204" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="58" parent="globals/HistoryView" pc="268442219" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="59" parent="globals/HistoryView" pc="268442226" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="63" parent="globals/HistoryView" pc="268442233" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="66" parent="globals/HistoryView" pc="268442250" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="67" parent="globals/HistoryView" pc="268442268" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="70" parent="globals/HistoryView" pc="268442292" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="71" parent="globals/HistoryView" pc="268442309" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="74" parent="globals/HistoryView" pc="268442340" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="75" parent="globals/HistoryView" pc="268442357" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="78" parent="globals/HistoryView" pc="268442379" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="79" parent="globals/HistoryView" pc="268442393" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="81" parent="globals/HistoryView" pc="268442418" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="85" parent="globals/HistoryView" pc="268442435" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="86" parent="globals/HistoryView" pc="268442446" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="87" parent="globals/HistoryView" pc="268442453" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="88" parent="globals/HistoryView" pc="268442457" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="89" parent="globals/HistoryView" pc="268442470" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="92" parent="globals/HistoryView" pc="268442486" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="93" parent="globals/HistoryView" pc="268442504" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="96" parent="globals/HistoryView" pc="268442525" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="97" parent="globals/HistoryView" pc="268442543" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="102" parent="globals/HistoryView" pc="268442567" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="103" parent="globals/HistoryView" pc="268442582" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="70" lineNum="385" parent="globals/BoardDelegate" pc="268442609" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="70" lineNum="386" parent="globals/BoardDelegate" pc="268442611" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="70" lineNum="387" parent="globals/BoardDelegate" pc="268442627" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="70" lineNum="388" parent="globals/BoardDelegate" pc="268442636" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="391" parent="globals/BoardDelegate" pc="268442646" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="392" parent="globals/BoardDelegate" pc="268442649" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="395" parent="globals/BoardDelegate" pc="268442658" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="396" parent="globals/BoardDelegate" pc="268442666" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="398" parent="globals/BoardDelegate" pc="268442679" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="401" parent="globals/BoardDelegate" pc="268442694" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="403" parent="globals/BoardDelegate" pc="268442706" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="407" parent="globals/BoardDelegate" pc="268442711" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="408" parent="globals/BoardDelegate" pc="268442719" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="410" parent="globals/BoardDelegate" pc="268442732" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="411" parent="globals/BoardDelegate" pc="268442744" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="413" parent="globals/BoardDelegate" pc="268442749" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="414" parent="globals/BoardDelegate" pc="268442761" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="418" parent="globals/BoardDelegate" pc="268442766" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="419" parent="globals/BoardDelegate" pc="268442774" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="420" parent="globals/BoardDelegate" pc="268442787" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="421" parent="globals/BoardDelegate" pc="268442799" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="423" parent="globals/BoardDelegate" pc="268442804" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="425" parent="globals/BoardDelegate" pc="268442818" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="426" parent="globals/BoardDelegate" pc="268442830" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="427" parent="globals/BoardDelegate" pc="268442841" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="429" parent="globals/BoardDelegate" pc="268442846" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="430" parent="globals/BoardDelegate" pc="268442861" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="433" parent="globals/BoardDelegate" pc="268442866" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="434" parent="globals/BoardDelegate" pc="268442874" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="435" parent="globals/BoardDelegate" pc="268442890" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="436" parent="globals/BoardDelegate" pc="268442895" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="437" parent="globals/BoardDelegate" pc="268442903" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="438" parent="globals/BoardDelegate" pc="268442919" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="441" parent="globals/BoardDelegate" pc="268442924" symbol="onKeyPressed"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="320" parent="globals/BoardView" pc="268442926" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="321" parent="globals/BoardView" pc="268442929" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="323" parent="globals/BoardView" pc="268442938" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="324" parent="globals/BoardView" pc="268442948" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="325" parent="globals/BoardView" pc="268442958" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="326" parent="globals/BoardView" pc="268442977" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="327" parent="globals/BoardView" pc="268442983" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="328" parent="globals/BoardView" pc="268442995" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="332" parent="globals/BoardView" pc="268443012" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="333" parent="globals/BoardView" pc="268443022" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="334" parent="globals/BoardView" pc="268443032" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="335" parent="globals/BoardView" pc="268443042" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="338" parent="globals/BoardView" pc="268443052" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="339" parent="globals/BoardView" pc="268443059" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="340" parent="globals/BoardView" pc="268443077" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="341" parent="globals/BoardView" pc="268443090" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="342" parent="globals/BoardView" pc="268443108" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="343" parent="globals/BoardView" pc="268443121" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="346" parent="globals/BoardView" pc="268443134" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="348" parent="globals/BoardView" pc="268443154" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="350" parent="globals/BoardView" pc="268443176" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="352" parent="globals/BoardView" pc="268443190" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="353" parent="globals/BoardView" pc="268443210" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="356" parent="globals/BoardView" pc="268443231" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="357" parent="globals/BoardView" pc="268443249" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="361" parent="globals/BoardView" pc="268443268" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="362" parent="globals/BoardView" pc="268443292" symbol="selectSquare"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="254" parent="globals/BoardView" pc="268443320" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="255" parent="globals/BoardView" pc="268443322" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="255" parent="globals/BoardView" pc="268443339" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="256" parent="globals/BoardView" pc="268443345" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="256" parent="globals/BoardView" pc="268443362" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="257" parent="globals/BoardView" pc="268443368" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="257" parent="globals/BoardView" pc="268443385" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="258" parent="globals/BoardView" pc="268443391" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="258" parent="globals/BoardView" pc="268443408" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="259" parent="globals/BoardView" pc="268443414" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="259" parent="globals/BoardView" pc="268443431" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="260" parent="globals/BoardView" pc="268443437" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="260" parent="globals/BoardView" pc="268443454" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="261" parent="globals/BoardView" pc="268443460" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="261" parent="globals/BoardView" pc="268443477" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="262" parent="globals/BoardView" pc="268443483" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="262" parent="globals/BoardView" pc="268443500" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="263" parent="globals/BoardView" pc="268443506" symbol="parseRank"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="315" parent="globals/BoardView" pc="268443508" symbol="moveCursor"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="316" parent="globals/BoardView" pc="268443510" symbol="moveCursor"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="317" parent="globals/BoardView" pc="268443531" symbol="moveCursor"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="267" parent="globals/BoardView" pc="268443543" symbol="findNearbyPiece"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="268" parent="globals/BoardView" pc="268443546" symbol="findNearbyPiece"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="271" parent="globals/BoardView" pc="268443553" symbol="findNearbyPiece"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="273" parent="globals/BoardView" pc="268443623" symbol="findNearbyPiece"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="274" parent="globals/BoardView" pc="268443639" symbol="findNearbyPiece"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="275" parent="globals/BoardView" pc="268443651" symbol="findNearbyPiece"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="277" parent="globals/BoardView" pc="268443664" symbol="findNearbyPiece"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="278" parent="globals/BoardView" pc="268443694" symbol="findNearbyPiece"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="279" parent="globals/BoardView" pc="268443713" symbol="findNearbyPiece"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="281" parent="globals/BoardView" pc="268443719" symbol="findNearbyPiece"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="282" parent="globals/BoardView" pc="268443737" symbol="findNearbyPiece"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="283" parent="globals/BoardView" pc="268443744" symbol="findNearbyPiece"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="291" parent="globals/BoardView" pc="268443790" symbol="findNearbyPiece"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="295" parent="globals/BoardView" pc="268443792" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="296" parent="globals/BoardView" pc="268443795" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="298" parent="globals/BoardView" pc="268443809" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="299" parent="globals/BoardView" pc="268443826" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="300" parent="globals/BoardView" pc="268443835" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="301" parent="globals/BoardView" pc="268443852" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="302" parent="globals/BoardView" pc="268443861" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="303" parent="globals/BoardView" pc="268443878" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="304" parent="globals/BoardView" pc="268443887" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="305" parent="globals/BoardView" pc="268443904" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="306" parent="globals/BoardView" pc="268443913" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="307" parent="globals/BoardView" pc="268443930" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="308" parent="globals/BoardView" pc="268443939" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="309" parent="globals/BoardView" pc="268443956" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="312" parent="globals/BoardView" pc="268443965" symbol="getPieceName"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="376" parent="globals/BoardView" pc="268443971" symbol="exitPuzzle"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="377" parent="globals/BoardView" pc="268443973" symbol="exitPuzzle"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="78" lineNum="248" parent="globals/BoardView" pc="268443989" symbol="hideHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="78" lineNum="249" parent="globals/BoardView" pc="268443991" symbol="hideHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="78" lineNum="250" parent="globals/BoardView" pc="268443999" symbol="hideHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="152" parent="globals/BoardView" pc="268444011" symbol="drawHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="153" parent="globals/BoardView" pc="268444014" symbol="drawHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="154" parent="globals/BoardView" pc="268444023" symbol="drawHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="157" parent="globals/BoardView" pc="268444032" symbol="drawHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="158" parent="globals/BoardView" pc="268444044" symbol="drawHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="161" parent="globals/BoardView" pc="268444067" symbol="drawHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="162" parent="globals/BoardView" pc="268444083" symbol="drawHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="165" parent="globals/BoardView" pc="268444110" symbol="drawHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="166" parent="globals/BoardView" pc="268444126" symbol="drawHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="175" parent="globals/BoardView" pc="268444158" symbol="drawHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="176" parent="globals/BoardView" pc="268444175" symbol="drawHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="185" parent="globals/BoardView" pc="268444207" symbol="drawHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="186" parent="globals/BoardView" pc="268444224" symbol="drawHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="50" parent="globals/BoardView" pc="268444256" symbol="onHide"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="51" parent="globals/BoardView" pc="268444258" symbol="onHide"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="52" parent="globals/BoardView" pc="268444267" symbol="onHide"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="53" parent="globals/BoardView" pc="268444279" symbol="onHide"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="81" lineNum="45" parent="globals/BoardView" pc="268444291" symbol="onShow"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="81" lineNum="46" parent="globals/BoardView" pc="268444293" symbol="onShow"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="81" lineNum="47" parent="globals/BoardView" pc="268444322" symbol="onShow"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="82" lineNum="369" parent="globals/BoardView" pc="268444354" symbol="showFeedback"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="82" lineNum="370" parent="globals/BoardView" pc="268444356" symbol="showFeedback"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="82" lineNum="371" parent="globals/BoardView" pc="268444365" symbol="showFeedback"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="82" lineNum="372" parent="globals/BoardView" pc="268444374" symbol="showFeedback"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="82" lineNum="373" parent="globals/BoardView" pc="268444382" symbol="showFeedback"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="195" parent="globals/BoardView" pc="268444394" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="196" parent="globals/BoardView" pc="268444397" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="198" parent="globals/BoardView" pc="268444417" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="199" parent="globals/BoardView" pc="268444437" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="200" parent="globals/BoardView" pc="268444452" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="203" parent="globals/BoardView" pc="268444468" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="204" parent="globals/BoardView" pc="268444482" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="205" parent="globals/BoardView" pc="268444497" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="206" parent="globals/BoardView" pc="268444511" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="209" parent="globals/BoardView" pc="268444526" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="210" parent="globals/BoardView" pc="268444546" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="213" parent="globals/BoardView" pc="268444566" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="214" parent="globals/BoardView" pc="268444578" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="215" parent="globals/BoardView" pc="268444590" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="216" parent="globals/BoardView" pc="268444597" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="219" parent="globals/BoardView" pc="268444604" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="220" parent="globals/BoardView" pc="268444634" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="222" parent="globals/BoardView" pc="268444653" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="223" parent="globals/BoardView" pc="268444659" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="224" parent="globals/BoardView" pc="268444671" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="227" parent="globals/BoardView" pc="268444711" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="228" parent="globals/BoardView" pc="268444729" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="229" parent="globals/BoardView" pc="268444735" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="230" parent="globals/BoardView" pc="268444753" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="233" parent="globals/BoardView" pc="268444794" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="237" parent="globals/BoardView" pc="268444817" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="240" parent="globals/BoardView" pc="268444832" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="243" parent="globals/BoardView" pc="268444844" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="244" parent="globals/BoardView" pc="268444852" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="245" parent="globals/BoardView" pc="268444860" symbol="generateHint"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="21" parent="globals/BoardView" pc="268444872" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="22" parent="globals/BoardView" pc="268444875" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="23" parent="globals/BoardView" pc="268444891" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="24" parent="globals/BoardView" pc="268444900" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="25" parent="globals/BoardView" pc="268444920" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="26" parent="globals/BoardView" pc="268444942" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="29" parent="globals/BoardView" pc="268444959" symbol="initialize"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="61" parent="globals/BoardView" pc="268445416" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="62" parent="globals/BoardView" pc="268445419" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="63" parent="globals/BoardView" pc="268445428" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="66" parent="globals/BoardView" pc="268445437" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="67" parent="globals/BoardView" pc="268445449" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="70" parent="globals/BoardView" pc="268445457" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="71" parent="globals/BoardView" pc="268445473" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="72" parent="globals/BoardView" pc="268445495" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="73" parent="globals/BoardView" pc="268445502" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="74" parent="globals/BoardView" pc="268445509" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="75" parent="globals/BoardView" pc="268445567" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="78" parent="globals/BoardView" pc="268445589" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="79" parent="globals/BoardView" pc="268445596" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="80" parent="globals/BoardView" pc="268445607" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="83" parent="globals/BoardView" pc="268445617" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="84" parent="globals/BoardView" pc="268445627" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="85" parent="globals/BoardView" pc="268445640" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="87" parent="globals/BoardView" pc="268445647" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="88" parent="globals/BoardView" pc="268445657" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="91" parent="globals/BoardView" pc="268445667" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="92" parent="globals/BoardView" pc="268445678" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="93" parent="globals/BoardView" pc="268445689" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="94" parent="globals/BoardView" pc="268445699" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="95" parent="globals/BoardView" pc="268445709" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="98" parent="globals/BoardView" pc="268445719" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="99" parent="globals/BoardView" pc="268445738" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="100" parent="globals/BoardView" pc="268445748" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="102" parent="globals/BoardView" pc="268445770" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="104" parent="globals/BoardView" pc="268445775" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="105" parent="globals/BoardView" pc="268445798" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="107" parent="globals/BoardView" pc="268445803" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="108" parent="globals/BoardView" pc="268445824" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="109" parent="globals/BoardView" pc="268445829" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="111" parent="globals/BoardView" pc="268445852" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="113" parent="globals/BoardView" pc="268445870" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="116" parent="globals/BoardView" pc="268445888" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="117" parent="globals/BoardView" pc="268445907" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="118" parent="globals/BoardView" pc="268445913" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="119" parent="globals/BoardView" pc="268445930" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="120" parent="globals/BoardView" pc="268445936" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="121" parent="globals/BoardView" pc="268445946" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="123" parent="globals/BoardView" pc="268445952" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="124" parent="globals/BoardView" pc="268445962" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="125" parent="globals/BoardView" pc="268445972" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="126" parent="globals/BoardView" pc="268445985" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="127" parent="globals/BoardView" pc="268445998" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="135" parent="globals/BoardView" pc="268446043" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="136" parent="globals/BoardView" pc="268446061" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="137" parent="globals/BoardView" pc="268446077" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="138" parent="globals/BoardView" pc="268446107" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="139" parent="globals/BoardView" pc="268446124" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="142" parent="globals/BoardView" pc="268446156" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="143" parent="globals/BoardView" pc="268446172" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="144" parent="globals/BoardView" pc="268446196" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="147" parent="globals/BoardView" pc="268446221" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="148" parent="globals/BoardView" pc="268446229" symbol="onUpdate"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="57" parent="globals/BoardView" pc="268446244" symbol="onTimer"/>
-        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="58" parent="globals/BoardView" pc="268446246" symbol="onTimer"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="185" parent="globals/PuzzleData" pc="268440720" symbol="getSolution"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="186" parent="globals/PuzzleData" pc="268440722" symbol="getSolution"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="187" parent="globals/PuzzleData" pc="268440746" symbol="getSolution"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="53" lineNum="189" parent="globals/PuzzleData" pc="268440758" symbol="getSolution"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="172" parent="globals/PuzzleData" pc="268440760" symbol="getPuzzle"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="173" parent="globals/PuzzleData" pc="268440762" symbol="getPuzzle"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="174" parent="globals/PuzzleData" pc="268440786" symbol="getPuzzle"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="55" lineNum="176" parent="globals/PuzzleData" pc="268440798" symbol="getPuzzle"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="56" lineNum="180" parent="globals/PuzzleData" pc="268440800" symbol="getPuzzleCount"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="56" lineNum="181" parent="globals/PuzzleData" pc="268440802" symbol="getPuzzleCount"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="201" parent="globals/PuzzleData" pc="268440814" symbol="getHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="202" parent="globals/PuzzleData" pc="268440817" symbol="getHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="203" parent="globals/PuzzleData" pc="268440841" symbol="getHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="204" parent="globals/PuzzleData" pc="268440851" symbol="getHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="205" parent="globals/PuzzleData" pc="268440865" symbol="getHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="206" parent="globals/PuzzleData" pc="268440880" symbol="getHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="57" lineNum="208" parent="globals/PuzzleData" pc="268440901" symbol="getHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="58" lineNum="193" parent="globals/PuzzleData" pc="268440907" symbol="getPuzzleName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="58" lineNum="194" parent="globals/PuzzleData" pc="268440909" symbol="getPuzzleName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="58" lineNum="195" parent="globals/PuzzleData" pc="268440933" symbol="getPuzzleName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/PuzzleData.mc" id="58" lineNum="197" parent="globals/PuzzleData" pc="268440945" symbol="getPuzzleName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="128" parent="globals/HistoryDelegate" pc="268440957" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="129" parent="globals/HistoryDelegate" pc="268440959" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="59" lineNum="130" parent="globals/HistoryDelegate" pc="268440975" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="60" lineNum="133" parent="globals/HistoryDelegate" pc="268440985" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="60" lineNum="134" parent="globals/HistoryDelegate" pc="268440988" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="60" lineNum="136" parent="globals/HistoryDelegate" pc="268440997" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="60" lineNum="137" parent="globals/HistoryDelegate" pc="268441005" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="60" lineNum="138" parent="globals/HistoryDelegate" pc="268441020" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="60" lineNum="139" parent="globals/HistoryDelegate" pc="268441025" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="60" lineNum="140" parent="globals/HistoryDelegate" pc="268441033" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="60" lineNum="141" parent="globals/HistoryDelegate" pc="268441045" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="60" lineNum="142" parent="globals/HistoryDelegate" pc="268441050" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="60" lineNum="143" parent="globals/HistoryDelegate" pc="268441058" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="60" lineNum="144" parent="globals/HistoryDelegate" pc="268441070" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="60" lineNum="146" parent="globals/HistoryDelegate" pc="268441075" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="61" lineNum="89" parent="globals/MenuView" pc="268441077" symbol="handleEnter"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="61" lineNum="90" parent="globals/MenuView" pc="268441080" symbol="handleEnter"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="61" lineNum="91" parent="globals/MenuView" pc="268441090" symbol="handleEnter"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="61" lineNum="92" parent="globals/MenuView" pc="268441110" symbol="handleEnter"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="61" lineNum="93" parent="globals/MenuView" pc="268441150" symbol="handleEnter"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="61" lineNum="94" parent="globals/MenuView" pc="268441161" symbol="handleEnter"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="61" lineNum="95" parent="globals/MenuView" pc="268441215" symbol="handleEnter"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="61" lineNum="96" parent="globals/MenuView" pc="268441226" symbol="handleEnter"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="61" lineNum="97" parent="globals/MenuView" pc="268441246" symbol="handleEnter"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="62" lineNum="82" parent="globals/MenuView" pc="268441287" symbol="handleDown"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="62" lineNum="83" parent="globals/MenuView" pc="268441289" symbol="handleDown"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="62" lineNum="84" parent="globals/MenuView" pc="268441300" symbol="handleDown"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="62" lineNum="85" parent="globals/MenuView" pc="268441315" symbol="handleDown"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="63" lineNum="13" parent="globals/MenuView" pc="268441330" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="63" lineNum="14" parent="globals/MenuView" pc="268441332" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="75" parent="globals/MenuView" pc="268441349" symbol="handleUp"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="76" parent="globals/MenuView" pc="268441351" symbol="handleUp"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="77" parent="globals/MenuView" pc="268441361" symbol="handleUp"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="64" lineNum="78" parent="globals/MenuView" pc="268441376" symbol="handleUp"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="17" parent="globals/MenuView" pc="268441391" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="18" parent="globals/MenuView" pc="268441394" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="19" parent="globals/MenuView" pc="268441403" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="20" parent="globals/MenuView" pc="268441412" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="23" parent="globals/MenuView" pc="268441419" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="24" parent="globals/MenuView" pc="268441431" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="27" parent="globals/MenuView" pc="268441439" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="28" parent="globals/MenuView" pc="268441455" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="31" parent="globals/MenuView" pc="268441478" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="32" parent="globals/MenuView" pc="268441494" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="35" parent="globals/MenuView" pc="268441516" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="36" parent="globals/MenuView" pc="268441520" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="39" parent="globals/MenuView" pc="268441524" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="42" parent="globals/MenuView" pc="268441550" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="45" parent="globals/MenuView" pc="268441580" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="48" parent="globals/MenuView" pc="268441613" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="65" lineNum="49" parent="globals/MenuView" pc="268441629" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="66" lineNum="52" parent="globals/MenuView" pc="268441653" symbol="drawMenuItem"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="66" lineNum="53" parent="globals/MenuView" pc="268441656" symbol="drawMenuItem"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="66" lineNum="55" parent="globals/MenuView" pc="268441666" symbol="drawMenuItem"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="66" lineNum="57" parent="globals/MenuView" pc="268441671" symbol="drawMenuItem"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="66" lineNum="58" parent="globals/MenuView" pc="268441687" symbol="drawMenuItem"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="66" lineNum="60" parent="globals/MenuView" pc="268441713" symbol="drawMenuItem"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="66" lineNum="61" parent="globals/MenuView" pc="268441730" symbol="drawMenuItem"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="66" lineNum="63" parent="globals/MenuView" pc="268441753" symbol="drawMenuItem"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="66" lineNum="64" parent="globals/MenuView" pc="268441769" symbol="drawMenuItem"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="66" lineNum="67" parent="globals/MenuView" pc="268441797" symbol="drawMenuItem"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="66" lineNum="68" parent="globals/MenuView" pc="268441813" symbol="drawMenuItem"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="66" lineNum="70" parent="globals/MenuView" pc="268441836" symbol="drawMenuItem"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/MenuView.mc" id="66" lineNum="71" parent="globals/MenuView" pc="268441852" symbol="drawMenuItem"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="67" lineNum="113" parent="globals/HistoryView" pc="268441878" symbol="handleDown"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="67" lineNum="114" parent="globals/HistoryView" pc="268441881" symbol="handleDown"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="67" lineNum="115" parent="globals/HistoryView" pc="268441893" symbol="handleDown"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="67" lineNum="116" parent="globals/HistoryView" pc="268441905" symbol="handleDown"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="67" lineNum="118" parent="globals/HistoryView" pc="268441922" symbol="handleDown"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="67" lineNum="119" parent="globals/HistoryView" pc="268441939" symbol="handleDown"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="67" lineNum="120" parent="globals/HistoryView" pc="268441954" symbol="handleDown"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="68" lineNum="13" parent="globals/HistoryView" pc="268441969" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="68" lineNum="14" parent="globals/HistoryView" pc="268441971" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="106" parent="globals/HistoryView" pc="268441988" symbol="handleUp"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="107" parent="globals/HistoryView" pc="268441990" symbol="handleUp"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="108" parent="globals/HistoryView" pc="268442000" symbol="handleUp"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="69" lineNum="109" parent="globals/HistoryView" pc="268442015" symbol="handleUp"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="17" parent="globals/HistoryView" pc="268442030" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="18" parent="globals/HistoryView" pc="268442033" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="19" parent="globals/HistoryView" pc="268442042" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="21" parent="globals/HistoryView" pc="268442051" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="22" parent="globals/HistoryView" pc="268442063" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="25" parent="globals/HistoryView" pc="268442071" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="26" parent="globals/HistoryView" pc="268442087" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="28" parent="globals/HistoryView" pc="268442113" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="29" parent="globals/HistoryView" pc="268442125" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="31" parent="globals/HistoryView" pc="268442137" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="34" parent="globals/HistoryView" pc="268442154" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="35" parent="globals/HistoryView" pc="268442161" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="36" parent="globals/HistoryView" pc="268442171" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="37" parent="globals/HistoryView" pc="268442179" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="40" parent="globals/HistoryView" pc="268442186" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="41" parent="globals/HistoryView" pc="268442193" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="42" parent="globals/HistoryView" pc="268442208" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="44" parent="globals/HistoryView" pc="268442240" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="45" parent="globals/HistoryView" pc="268442244" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="47" parent="globals/HistoryView" pc="268442248" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="52" parent="globals/HistoryView" pc="268442260" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="53" parent="globals/HistoryView" pc="268442273" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="54" parent="globals/HistoryView" pc="268442280" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="55" parent="globals/HistoryView" pc="268442287" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="57" parent="globals/HistoryView" pc="268442296" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="58" parent="globals/HistoryView" pc="268442311" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="59" parent="globals/HistoryView" pc="268442318" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="63" parent="globals/HistoryView" pc="268442325" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="66" parent="globals/HistoryView" pc="268442342" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="67" parent="globals/HistoryView" pc="268442360" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="70" parent="globals/HistoryView" pc="268442384" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="71" parent="globals/HistoryView" pc="268442401" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="74" parent="globals/HistoryView" pc="268442432" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="75" parent="globals/HistoryView" pc="268442449" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="78" parent="globals/HistoryView" pc="268442471" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="79" parent="globals/HistoryView" pc="268442485" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="81" parent="globals/HistoryView" pc="268442510" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="85" parent="globals/HistoryView" pc="268442527" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="86" parent="globals/HistoryView" pc="268442538" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="87" parent="globals/HistoryView" pc="268442545" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="88" parent="globals/HistoryView" pc="268442549" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="89" parent="globals/HistoryView" pc="268442562" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="92" parent="globals/HistoryView" pc="268442578" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="93" parent="globals/HistoryView" pc="268442596" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="96" parent="globals/HistoryView" pc="268442617" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="97" parent="globals/HistoryView" pc="268442635" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="102" parent="globals/HistoryView" pc="268442659" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/HistoryView.mc" id="70" lineNum="103" parent="globals/HistoryView" pc="268442674" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="385" parent="globals/BoardDelegate" pc="268442701" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="386" parent="globals/BoardDelegate" pc="268442703" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="387" parent="globals/BoardDelegate" pc="268442719" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="71" lineNum="388" parent="globals/BoardDelegate" pc="268442728" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="391" parent="globals/BoardDelegate" pc="268442738" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="392" parent="globals/BoardDelegate" pc="268442741" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="395" parent="globals/BoardDelegate" pc="268442750" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="396" parent="globals/BoardDelegate" pc="268442758" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="398" parent="globals/BoardDelegate" pc="268442771" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="401" parent="globals/BoardDelegate" pc="268442786" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="403" parent="globals/BoardDelegate" pc="268442798" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="407" parent="globals/BoardDelegate" pc="268442803" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="408" parent="globals/BoardDelegate" pc="268442811" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="410" parent="globals/BoardDelegate" pc="268442824" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="411" parent="globals/BoardDelegate" pc="268442836" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="413" parent="globals/BoardDelegate" pc="268442841" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="414" parent="globals/BoardDelegate" pc="268442853" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="418" parent="globals/BoardDelegate" pc="268442858" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="419" parent="globals/BoardDelegate" pc="268442866" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="420" parent="globals/BoardDelegate" pc="268442879" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="421" parent="globals/BoardDelegate" pc="268442891" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="423" parent="globals/BoardDelegate" pc="268442896" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="425" parent="globals/BoardDelegate" pc="268442910" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="426" parent="globals/BoardDelegate" pc="268442922" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="427" parent="globals/BoardDelegate" pc="268442933" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="429" parent="globals/BoardDelegate" pc="268442938" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="430" parent="globals/BoardDelegate" pc="268442953" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="433" parent="globals/BoardDelegate" pc="268442958" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="434" parent="globals/BoardDelegate" pc="268442966" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="435" parent="globals/BoardDelegate" pc="268442982" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="436" parent="globals/BoardDelegate" pc="268442987" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="437" parent="globals/BoardDelegate" pc="268442995" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="438" parent="globals/BoardDelegate" pc="268443011" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="72" lineNum="441" parent="globals/BoardDelegate" pc="268443016" symbol="onKeyPressed"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="320" parent="globals/BoardView" pc="268443018" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="321" parent="globals/BoardView" pc="268443021" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="323" parent="globals/BoardView" pc="268443030" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="324" parent="globals/BoardView" pc="268443040" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="325" parent="globals/BoardView" pc="268443050" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="326" parent="globals/BoardView" pc="268443069" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="327" parent="globals/BoardView" pc="268443075" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="328" parent="globals/BoardView" pc="268443087" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="332" parent="globals/BoardView" pc="268443104" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="333" parent="globals/BoardView" pc="268443114" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="334" parent="globals/BoardView" pc="268443124" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="335" parent="globals/BoardView" pc="268443134" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="338" parent="globals/BoardView" pc="268443144" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="339" parent="globals/BoardView" pc="268443151" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="340" parent="globals/BoardView" pc="268443169" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="341" parent="globals/BoardView" pc="268443182" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="342" parent="globals/BoardView" pc="268443200" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="343" parent="globals/BoardView" pc="268443213" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="346" parent="globals/BoardView" pc="268443226" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="348" parent="globals/BoardView" pc="268443246" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="350" parent="globals/BoardView" pc="268443268" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="352" parent="globals/BoardView" pc="268443282" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="353" parent="globals/BoardView" pc="268443302" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="356" parent="globals/BoardView" pc="268443323" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="357" parent="globals/BoardView" pc="268443341" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="361" parent="globals/BoardView" pc="268443360" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="73" lineNum="362" parent="globals/BoardView" pc="268443384" symbol="selectSquare"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="254" parent="globals/BoardView" pc="268443412" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="255" parent="globals/BoardView" pc="268443414" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="255" parent="globals/BoardView" pc="268443431" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="256" parent="globals/BoardView" pc="268443437" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="256" parent="globals/BoardView" pc="268443454" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="257" parent="globals/BoardView" pc="268443460" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="257" parent="globals/BoardView" pc="268443477" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="258" parent="globals/BoardView" pc="268443483" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="258" parent="globals/BoardView" pc="268443500" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="259" parent="globals/BoardView" pc="268443506" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="259" parent="globals/BoardView" pc="268443523" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="260" parent="globals/BoardView" pc="268443529" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="260" parent="globals/BoardView" pc="268443546" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="261" parent="globals/BoardView" pc="268443552" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="261" parent="globals/BoardView" pc="268443569" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="262" parent="globals/BoardView" pc="268443575" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="262" parent="globals/BoardView" pc="268443592" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="74" lineNum="263" parent="globals/BoardView" pc="268443598" symbol="parseRank"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="315" parent="globals/BoardView" pc="268443600" symbol="moveCursor"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="316" parent="globals/BoardView" pc="268443602" symbol="moveCursor"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="75" lineNum="317" parent="globals/BoardView" pc="268443623" symbol="moveCursor"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="267" parent="globals/BoardView" pc="268443635" symbol="findNearbyPiece"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="268" parent="globals/BoardView" pc="268443638" symbol="findNearbyPiece"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="271" parent="globals/BoardView" pc="268443645" symbol="findNearbyPiece"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="273" parent="globals/BoardView" pc="268443715" symbol="findNearbyPiece"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="274" parent="globals/BoardView" pc="268443731" symbol="findNearbyPiece"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="275" parent="globals/BoardView" pc="268443743" symbol="findNearbyPiece"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="277" parent="globals/BoardView" pc="268443756" symbol="findNearbyPiece"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="278" parent="globals/BoardView" pc="268443786" symbol="findNearbyPiece"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="279" parent="globals/BoardView" pc="268443805" symbol="findNearbyPiece"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="281" parent="globals/BoardView" pc="268443811" symbol="findNearbyPiece"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="282" parent="globals/BoardView" pc="268443829" symbol="findNearbyPiece"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="283" parent="globals/BoardView" pc="268443836" symbol="findNearbyPiece"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="76" lineNum="291" parent="globals/BoardView" pc="268443882" symbol="findNearbyPiece"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="295" parent="globals/BoardView" pc="268443884" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="296" parent="globals/BoardView" pc="268443887" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="298" parent="globals/BoardView" pc="268443901" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="299" parent="globals/BoardView" pc="268443918" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="300" parent="globals/BoardView" pc="268443927" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="301" parent="globals/BoardView" pc="268443944" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="302" parent="globals/BoardView" pc="268443953" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="303" parent="globals/BoardView" pc="268443970" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="304" parent="globals/BoardView" pc="268443979" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="305" parent="globals/BoardView" pc="268443996" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="306" parent="globals/BoardView" pc="268444005" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="307" parent="globals/BoardView" pc="268444022" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="308" parent="globals/BoardView" pc="268444031" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="309" parent="globals/BoardView" pc="268444048" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="77" lineNum="312" parent="globals/BoardView" pc="268444057" symbol="getPieceName"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="78" lineNum="376" parent="globals/BoardView" pc="268444063" symbol="exitPuzzle"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="78" lineNum="377" parent="globals/BoardView" pc="268444065" symbol="exitPuzzle"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="248" parent="globals/BoardView" pc="268444081" symbol="hideHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="249" parent="globals/BoardView" pc="268444083" symbol="hideHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="79" lineNum="250" parent="globals/BoardView" pc="268444091" symbol="hideHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="152" parent="globals/BoardView" pc="268444103" symbol="drawHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="153" parent="globals/BoardView" pc="268444106" symbol="drawHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="154" parent="globals/BoardView" pc="268444115" symbol="drawHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="157" parent="globals/BoardView" pc="268444124" symbol="drawHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="158" parent="globals/BoardView" pc="268444136" symbol="drawHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="161" parent="globals/BoardView" pc="268444159" symbol="drawHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="162" parent="globals/BoardView" pc="268444175" symbol="drawHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="165" parent="globals/BoardView" pc="268444202" symbol="drawHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="166" parent="globals/BoardView" pc="268444218" symbol="drawHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="175" parent="globals/BoardView" pc="268444250" symbol="drawHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="176" parent="globals/BoardView" pc="268444267" symbol="drawHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="185" parent="globals/BoardView" pc="268444299" symbol="drawHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="80" lineNum="186" parent="globals/BoardView" pc="268444316" symbol="drawHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="81" lineNum="50" parent="globals/BoardView" pc="268444348" symbol="onHide"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="81" lineNum="51" parent="globals/BoardView" pc="268444350" symbol="onHide"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="81" lineNum="52" parent="globals/BoardView" pc="268444359" symbol="onHide"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="81" lineNum="53" parent="globals/BoardView" pc="268444371" symbol="onHide"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="82" lineNum="45" parent="globals/BoardView" pc="268444383" symbol="onShow"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="82" lineNum="46" parent="globals/BoardView" pc="268444385" symbol="onShow"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="82" lineNum="47" parent="globals/BoardView" pc="268444414" symbol="onShow"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="369" parent="globals/BoardView" pc="268444446" symbol="showFeedback"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="370" parent="globals/BoardView" pc="268444448" symbol="showFeedback"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="371" parent="globals/BoardView" pc="268444457" symbol="showFeedback"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="372" parent="globals/BoardView" pc="268444466" symbol="showFeedback"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="83" lineNum="373" parent="globals/BoardView" pc="268444474" symbol="showFeedback"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="195" parent="globals/BoardView" pc="268444486" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="196" parent="globals/BoardView" pc="268444489" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="198" parent="globals/BoardView" pc="268444509" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="199" parent="globals/BoardView" pc="268444529" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="200" parent="globals/BoardView" pc="268444544" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="203" parent="globals/BoardView" pc="268444560" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="204" parent="globals/BoardView" pc="268444574" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="205" parent="globals/BoardView" pc="268444589" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="206" parent="globals/BoardView" pc="268444603" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="209" parent="globals/BoardView" pc="268444618" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="210" parent="globals/BoardView" pc="268444638" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="213" parent="globals/BoardView" pc="268444658" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="214" parent="globals/BoardView" pc="268444670" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="215" parent="globals/BoardView" pc="268444682" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="216" parent="globals/BoardView" pc="268444689" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="219" parent="globals/BoardView" pc="268444696" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="220" parent="globals/BoardView" pc="268444726" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="222" parent="globals/BoardView" pc="268444745" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="223" parent="globals/BoardView" pc="268444751" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="224" parent="globals/BoardView" pc="268444763" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="227" parent="globals/BoardView" pc="268444803" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="228" parent="globals/BoardView" pc="268444821" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="229" parent="globals/BoardView" pc="268444827" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="230" parent="globals/BoardView" pc="268444845" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="233" parent="globals/BoardView" pc="268444886" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="237" parent="globals/BoardView" pc="268444909" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="240" parent="globals/BoardView" pc="268444924" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="243" parent="globals/BoardView" pc="268444936" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="244" parent="globals/BoardView" pc="268444944" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="84" lineNum="245" parent="globals/BoardView" pc="268444952" symbol="generateHint"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="21" parent="globals/BoardView" pc="268444964" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="22" parent="globals/BoardView" pc="268444967" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="23" parent="globals/BoardView" pc="268444983" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="24" parent="globals/BoardView" pc="268444992" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="25" parent="globals/BoardView" pc="268445012" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="26" parent="globals/BoardView" pc="268445034" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="85" lineNum="29" parent="globals/BoardView" pc="268445051" symbol="initialize"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="61" parent="globals/BoardView" pc="268445508" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="62" parent="globals/BoardView" pc="268445511" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="63" parent="globals/BoardView" pc="268445520" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="66" parent="globals/BoardView" pc="268445529" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="67" parent="globals/BoardView" pc="268445541" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="70" parent="globals/BoardView" pc="268445549" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="71" parent="globals/BoardView" pc="268445565" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="72" parent="globals/BoardView" pc="268445587" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="73" parent="globals/BoardView" pc="268445594" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="74" parent="globals/BoardView" pc="268445601" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="75" parent="globals/BoardView" pc="268445659" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="78" parent="globals/BoardView" pc="268445681" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="79" parent="globals/BoardView" pc="268445688" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="80" parent="globals/BoardView" pc="268445699" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="83" parent="globals/BoardView" pc="268445709" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="84" parent="globals/BoardView" pc="268445719" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="85" parent="globals/BoardView" pc="268445732" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="87" parent="globals/BoardView" pc="268445739" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="88" parent="globals/BoardView" pc="268445749" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="91" parent="globals/BoardView" pc="268445759" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="92" parent="globals/BoardView" pc="268445770" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="93" parent="globals/BoardView" pc="268445781" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="94" parent="globals/BoardView" pc="268445791" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="95" parent="globals/BoardView" pc="268445801" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="98" parent="globals/BoardView" pc="268445811" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="99" parent="globals/BoardView" pc="268445830" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="100" parent="globals/BoardView" pc="268445840" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="102" parent="globals/BoardView" pc="268445862" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="104" parent="globals/BoardView" pc="268445867" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="105" parent="globals/BoardView" pc="268445890" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="107" parent="globals/BoardView" pc="268445895" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="108" parent="globals/BoardView" pc="268445916" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="109" parent="globals/BoardView" pc="268445921" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="111" parent="globals/BoardView" pc="268445944" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="113" parent="globals/BoardView" pc="268445962" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="116" parent="globals/BoardView" pc="268445980" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="117" parent="globals/BoardView" pc="268445999" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="118" parent="globals/BoardView" pc="268446005" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="119" parent="globals/BoardView" pc="268446022" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="120" parent="globals/BoardView" pc="268446028" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="121" parent="globals/BoardView" pc="268446038" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="123" parent="globals/BoardView" pc="268446044" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="124" parent="globals/BoardView" pc="268446054" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="125" parent="globals/BoardView" pc="268446064" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="126" parent="globals/BoardView" pc="268446077" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="127" parent="globals/BoardView" pc="268446090" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="135" parent="globals/BoardView" pc="268446135" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="136" parent="globals/BoardView" pc="268446153" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="137" parent="globals/BoardView" pc="268446169" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="138" parent="globals/BoardView" pc="268446199" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="139" parent="globals/BoardView" pc="268446216" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="142" parent="globals/BoardView" pc="268446248" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="143" parent="globals/BoardView" pc="268446264" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="144" parent="globals/BoardView" pc="268446288" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="147" parent="globals/BoardView" pc="268446313" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="86" lineNum="148" parent="globals/BoardView" pc="268446321" symbol="onUpdate"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="87" lineNum="57" parent="globals/BoardView" pc="268446336" symbol="onTimer"/>
+        <entry filename="/Users/jeffcechinel/Github/chesstrainer-garmin/source/BoardView.mc" id="87" lineNum="58" parent="globals/BoardView" pc="268446338" symbol="onTimer"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
         <entry id="26" method="true" symbol="isPathClear"/>
         <entry id="15" object="true" symbol="MenuView"/>
-        <entry id="49" method="true" symbol="getPuzzleName"/>
+        <entry id="50" method="true" symbol="getPuzzleName"/>
         <entry id="12" object="true" symbol="HistoryDelegate"/>
         <entry field="true" id="8389163" symbol="COLOR_ORANGE"/>
         <entry id="39" method="true" symbol="getProgressData"/>
@@ -800,117 +806,119 @@
         <entry id="11" object="true" symbol="ChessTrainerApp"/>
         <entry field="true" id="8388731" symbol="startTime"/>
         <entry id="20" object="true" symbol="StatsView"/>
-        <entry field="true" id="77" symbol="timer"/>
-        <entry field="true" id="76" symbol="showHint"/>
-        <entry field="true" id="94" symbol="Correct"/>
-        <entry id="47" method="true" symbol="getPuzzle"/>
+        <entry field="true" id="79" symbol="timer"/>
+        <entry field="true" id="78" symbol="showHint"/>
+        <entry field="true" id="96" symbol="Correct"/>
+        <entry id="48" method="true" symbol="getPuzzle"/>
         <entry id="18" object="true" symbol="PuzzleListView"/>
         <entry id="8390424" module="true" symbol="Storage"/>
-        <entry id="66" method="true" symbol="hideHint"/>
+        <entry id="68" method="true" symbol="hideHint"/>
         <entry id="9" object="true" symbol="BoardLogic"/>
-        <entry field="true" id="61" symbol="feedbackColor"/>
+        <entry field="true" id="63" symbol="feedbackColor"/>
         <entry id="27" method="true" symbol="isUpperCase"/>
-        <entry field="true" id="87" symbol="WhiteKnight"/>
+        <entry field="true" id="89" symbol="WhiteKnight"/>
         <entry id="16" object="true" symbol="PuzzleData"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="89" symbol="WhiteQueen"/>
+        <entry field="true" id="91" symbol="WhiteQueen"/>
         <entry id="31" method="true" symbol="handleDown"/>
-        <entry field="true" id="85" symbol="WhiteBishop"/>
-        <entry id="54" method="true" symbol="drawMenuItem"/>
-        <entry id="64" method="true" symbol="generateHint"/>
+        <entry field="true" id="87" symbol="WhiteBishop"/>
+        <entry id="56" method="true" symbol="drawMenuItem"/>
+        <entry id="66" method="true" symbol="generateHint"/>
         <entry id="43" method="true" symbol="isSolved"/>
-        <entry field="true" id="92" symbol="AppName"/>
-        <entry id="71" method="true" symbol="parseRank"/>
+        <entry field="true" id="94" symbol="AppName"/>
+        <entry id="73" method="true" symbol="parseRank"/>
         <entry id="6" module="true" symbol="globals/Rez/Strings"/>
         <entry id="3" module="true" symbol="globals/PuzzleData/&lt;statics&gt;"/>
-        <entry field="true" id="68" symbol="hintShown"/>
+        <entry field="true" id="70" symbol="hintShown"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="33" method="true" symbol="handleUp"/>
         <entry id="4" module="true" symbol="globals/Rez"/>
-        <entry field="true" id="57" symbol="boardData"/>
+        <entry field="true" id="59" symbol="boardData"/>
         <entry id="10" object="true" symbol="BoardView"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry id="8389553" method="true" symbol="onKeyPressed"/>
         <entry id="40" method="true" symbol="getPuzzleTimes"/>
         <entry id="2" module="true" symbol="globals/BoardLogic/&lt;statics&gt;"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
-        <entry field="true" id="98" symbol="Puzzle"/>
-        <entry field="true" id="88" symbol="WhitePawn"/>
+        <entry field="true" id="100" symbol="Puzzle"/>
+        <entry field="true" id="90" symbol="WhitePawn"/>
         <entry id="8" object="true" symbol="BoardDelegate"/>
-        <entry field="true" id="93" symbol="ChessTrainer"/>
-        <entry field="true" id="55" symbol="currentPage"/>
+        <entry field="true" id="95" symbol="ChessTrainer"/>
+        <entry field="true" id="57" symbol="currentPage"/>
         <entry id="46" method="true" symbol="resetProgress"/>
         <entry id="13" object="true" symbol="HistoryView"/>
-        <entry id="59" method="true" symbol="drawHint"/>
-        <entry field="true" id="86" symbol="WhiteKing"/>
-        <entry field="true" id="81" symbol="BlackPawn"/>
-        <entry field="true" id="79" symbol="BlackKing"/>
-        <entry id="75" method="true" symbol="showFeedback"/>
+        <entry id="61" method="true" symbol="drawHint"/>
+        <entry field="true" id="88" symbol="WhiteKing"/>
+        <entry field="true" id="83" symbol="BlackPawn"/>
+        <entry field="true" id="81" symbol="BlackKing"/>
+        <entry id="77" method="true" symbol="showFeedback"/>
         <entry id="23" method="true" symbol="getPieceDrawableId"/>
         <entry id="5" module="true" symbol="globals/Rez/Drawables"/>
         <entry id="19" object="true" symbol="StatsDelegate"/>
-        <entry field="true" id="90" symbol="WhiteRook"/>
-        <entry field="true" id="53" symbol="currentSelection"/>
+        <entry field="true" id="92" symbol="WhiteRook"/>
+        <entry field="true" id="55" symbol="currentSelection"/>
         <entry id="24" method="true" symbol="getPiecesOfColor"/>
-        <entry field="true" id="67" symbol="hintMessage"/>
-        <entry field="true" id="83" symbol="BlackRook"/>
-        <entry field="true" id="80" symbol="BlackKnight"/>
-        <entry field="true" id="99" symbol="Solved"/>
+        <entry field="true" id="69" symbol="hintMessage"/>
+        <entry field="true" id="85" symbol="BlackRook"/>
+        <entry field="true" id="82" symbol="BlackKnight"/>
+        <entry field="true" id="101" symbol="Solved"/>
         <entry id="25" method="true" symbol="isLightSquare"/>
         <entry field="true" id="8388645" module="true" symbol="Time"/>
-        <entry field="true" id="95" symbol="FindTheBestMove"/>
+        <entry field="true" id="97" symbol="FindTheBestMove"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
         <entry id="17" object="true" symbol="PuzzleListDelegate"/>
-        <entry field="true" id="91" symbol="Accuracy"/>
+        <entry field="true" id="93" symbol="Accuracy"/>
         <entry id="30" method="true" symbol="splitString"/>
         <entry field="true" id="36" symbol="selectedIndex"/>
         <entry id="32" method="true" symbol="handleEnter"/>
-        <entry field="true" id="78" symbol="BlackBishop"/>
+        <entry field="true" id="80" symbol="BlackBishop"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry field="true" id="8388710" object="true" symbol="Stats"/>
         <entry id="28" method="true" symbol="isValidMove"/>
-        <entry field="true" id="97" symbol="Incorrect"/>
-        <entry field="true" id="84" symbol="LauncherIcon"/>
-        <entry field="true" id="72" symbol="pieceBitmaps"/>
+        <entry field="true" id="99" symbol="Incorrect"/>
+        <entry field="true" id="86" symbol="LauncherIcon"/>
+        <entry field="true" id="74" symbol="pieceBitmaps"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
         <entry field="true" id="8388908" object="true" symbol="History"/>
         <entry field="true" id="8389167" symbol="COLOR_BLUE"/>
         <entry id="7" module="true" symbol="globals/Storage"/>
-        <entry id="48" method="true" symbol="getPuzzleCount"/>
-        <entry id="51" symbol="puzzles"/>
+        <entry id="49" method="true" symbol="getPuzzleCount"/>
+        <entry id="53" symbol="puzzles"/>
         <entry id="8389350" module="true" symbol="globals"/>
-        <entry field="true" id="62" symbol="feedbackMessage"/>
-        <entry id="65" method="true" symbol="getPieceName"/>
+        <entry field="true" id="64" symbol="feedbackMessage"/>
+        <entry id="67" method="true" symbol="getPieceName"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="41" method="true" symbol="getSolvedPuzzles"/>
-        <entry field="true" id="58" symbol="cursorIndex"/>
-        <entry id="73" method="true" symbol="selectSquare"/>
-        <entry id="52" symbol="solutionMoves"/>
+        <entry field="true" id="60" symbol="cursorIndex"/>
+        <entry id="75" method="true" symbol="selectSquare"/>
+        <entry id="54" symbol="solutionMoves"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry field="true" id="74" symbol="selectedSquare"/>
+        <entry field="true" id="76" symbol="selectedSquare"/>
         <entry field="true" id="37" symbol="view"/>
         <entry id="8390181" method="true" symbol="getStats"/>
-        <entry field="true" id="82" symbol="BlackQueen"/>
+        <entry id="47" method="true" symbol="getHint"/>
+        <entry field="true" id="84" symbol="BlackQueen"/>
         <entry id="38" method="true" symbol="getIncorrectPuzzles"/>
-        <entry field="true" id="96" symbol="Hint"/>
+        <entry field="true" id="98" symbol="Hint"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
-        <entry id="50" method="true" symbol="getSolution"/>
+        <entry id="51" method="true" symbol="getSolution"/>
         <entry id="29" method="true" symbol="parseFen"/>
+        <entry id="52" symbol="puzzleNames"/>
         <entry field="true" id="8389165" symbol="COLOR_GREEN"/>
         <entry id="8388646" module="true" object="true" symbol="Timer"/>
-        <entry field="true" id="56" symbol="puzzleIndex"/>
+        <entry field="true" id="58" symbol="puzzleIndex"/>
         <entry id="42" method="true" symbol="isIncorrect"/>
         <entry id="45" method="true" symbol="markSolved"/>
         <entry id="21" method="true" symbol="findPiece"/>
         <entry id="8389125" method="true" symbol="onHide"/>
-        <entry id="60" method="true" symbol="exitPuzzle"/>
-        <entry id="63" method="true" symbol="findNearbyPiece"/>
+        <entry id="62" method="true" symbol="exitPuzzle"/>
+        <entry id="65" method="true" symbol="findNearbyPiece"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry id="70" method="true" symbol="onTimer"/>
-        <entry id="69" method="true" symbol="moveCursor"/>
+        <entry id="72" method="true" symbol="onTimer"/>
+        <entry id="71" method="true" symbol="moveCursor"/>
         <entry field="true" id="35" symbol="scrollOffset"/>
         <entry id="44" method="true" symbol="markIncorrect"/>
     </symbolTable>
@@ -1052,137 +1060,140 @@
         <entry endPc="268440719" name="times" stackId="2" startPc="268440681"/>
         <entry arg="true" endPc="268440759" name="index" stackId="1" startPc="268440720"/>
         <entry arg="true" endPc="268440799" name="index" stackId="1" startPc="268440760"/>
-        <entry arg="true" endPc="268440864" name="index" stackId="1" startPc="268440814"/>
-        <entry endPc="268440864" name="names" stackId="2" startPc="268440817"/>
-        <entry arg="true" endPc="268440892" name="hView" stackId="1" startPc="268440865"/>
-        <entry arg="true" endPc="268440984" name="key" stackId="1" startPc="268440893"/>
-        <entry endPc="268440984" name="keyCode" stackId="2" startPc="268440896"/>
-        <entry endPc="268441054" name="puzzleListView" stackId="1" startPc="268440998"/>
-        <entry endPc="268441190" name="historyView" stackId="2" startPc="268441134"/>
-        <entry arg="true" endPc="268441560" name="dc" stackId="1" startPc="268441299"/>
-        <entry endPc="268441559" name="width" stackId="2" startPc="268441302"/>
-        <entry endPc="268441559" name="height" stackId="3" startPc="268441302"/>
-        <entry endPc="268441559" name="centerX" stackId="4" startPc="268441302"/>
-        <entry endPc="268441559" name="itemHeight" stackId="5" startPc="268441302"/>
-        <entry endPc="268441559" name="startY" stackId="6" startPc="268441302"/>
-        <entry arg="true" endPc="268441785" name="dc" stackId="1" startPc="268441561"/>
-        <entry arg="true" endPc="268441785" name="centerX" stackId="2" startPc="268441561"/>
-        <entry arg="true" endPc="268441785" name="y" stackId="3" startPc="268441561"/>
-        <entry arg="true" endPc="268441785" name="index" stackId="4" startPc="268441561"/>
-        <entry arg="true" endPc="268441785" name="title" stackId="5" startPc="268441561"/>
-        <entry arg="true" endPc="268441785" name="subtitle" stackId="6" startPc="268441561"/>
-        <entry endPc="268441784" name="isSelected" stackId="7" startPc="268441564"/>
-        <entry endPc="268441875" name="solved" stackId="1" startPc="268441789"/>
-        <entry endPc="268441875" name="incorrect" stackId="2" startPc="268441789"/>
-        <entry endPc="268441875" name="total" stackId="3" startPc="268441789"/>
-        <entry arg="true" endPc="268442608" name="dc" stackId="1" startPc="268441938"/>
-        <entry endPc="268442607" name="width" stackId="2" startPc="268441941"/>
-        <entry endPc="268442607" name="height" stackId="3" startPc="268441941"/>
-        <entry endPc="268442607" name="solved" stackId="4" startPc="268441941"/>
-        <entry endPc="268442607" name="incorrect" stackId="5" startPc="268441941"/>
-        <entry endPc="268442607" name="total" stackId="6" startPc="268441941"/>
-        <entry endPc="268442607" name="startIdx" stackId="7" startPc="268441941"/>
-        <entry endPc="268442607" name="endIdx" stackId="8" startPc="268441941"/>
-        <entry endPc="268442566" name="y" stackId="9" startPc="268442148"/>
-        <entry endPc="268442566" name="itemHeight" stackId="10" startPc="268442148"/>
-        <entry endPc="268442434" name="i" stackId="11" startPc="268442168"/>
-        <entry endPc="268442424" name="puzzleNum" stackId="12" startPc="268442168"/>
-        <entry endPc="268442424" name="status" stackId="13" startPc="268442168"/>
-        <entry endPc="268442424" name="statusColor" stackId="14" startPc="268442168"/>
-        <entry endPc="268442424" name="puzzleName" stackId="15" startPc="268442168"/>
-        <entry endPc="268442563" name="scrollBarHeight" stackId="16" startPc="268442446"/>
-        <entry endPc="268442563" name="scrollBarY" stackId="17" startPc="268442446"/>
-        <entry endPc="268442563" name="thumbHeight" stackId="18" startPc="268442446"/>
-        <entry endPc="268442563" name="thumbY" stackId="19" startPc="268442446"/>
-        <entry arg="true" endPc="268442645" name="idx" stackId="1" startPc="268442609"/>
-        <entry arg="true" endPc="268442645" name="boardView" stackId="2" startPc="268442609"/>
-        <entry arg="true" endPc="268442925" name="key" stackId="1" startPc="268442646"/>
-        <entry endPc="268442925" name="keyCode" stackId="2" startPc="268442649"/>
-        <entry endPc="268443008" name="row" stackId="1" startPc="268442938"/>
-        <entry endPc="268443008" name="col" stackId="2" startPc="268442938"/>
-        <entry endPc="268443008" name="piece" stackId="3" startPc="268442938"/>
-        <entry endPc="268443318" name="fromRow" stackId="4" startPc="268443012"/>
-        <entry endPc="268443318" name="fromCol" stackId="5" startPc="268443012"/>
-        <entry endPc="268443318" name="toRow" stackId="6" startPc="268443012"/>
-        <entry endPc="268443318" name="toCol" stackId="7" startPc="268443012"/>
-        <entry endPc="268443318" name="files" stackId="8" startPc="268443012"/>
-        <entry endPc="268443318" name="fromFile" stackId="9" startPc="268443012"/>
-        <entry endPc="268443318" name="fromRank" stackId="10" startPc="268443012"/>
-        <entry endPc="268443318" name="toFile" stackId="11" startPc="268443012"/>
-        <entry endPc="268443318" name="toRank" stackId="12" startPc="268443012"/>
-        <entry endPc="268443318" name="move" stackId="13" startPc="268443012"/>
-        <entry endPc="268443318" name="solution" stackId="14" startPc="268443012"/>
-        <entry endPc="268443318" name="elapsed" stackId="15" startPc="268443012"/>
-        <entry endPc="268443318" name="feedbackTimer" stackId="16" startPc="268443012"/>
-        <entry arg="true" endPc="268443507" name="rankChar" stackId="1" startPc="268443320"/>
-        <entry arg="true" endPc="268443542" name="delta" stackId="1" startPc="268443508"/>
-        <entry arg="true" endPc="268443791" name="fromRow" stackId="1" startPc="268443543"/>
-        <entry arg="true" endPc="268443791" name="fromCol" stackId="2" startPc="268443543"/>
-        <entry arg="true" endPc="268443791" name="toRow" stackId="3" startPc="268443543"/>
-        <entry arg="true" endPc="268443791" name="toCol" stackId="4" startPc="268443543"/>
-        <entry endPc="268443791" name="files" stackId="5" startPc="268443546"/>
-        <entry endPc="268443791" name="offsets" stackId="6" startPc="268443546"/>
-        <entry endPc="268443789" name="i" stackId="7" startPc="268443639"/>
-        <entry endPc="268443779" name="checkRow" stackId="8" startPc="268443639"/>
-        <entry endPc="268443779" name="checkCol" stackId="9" startPc="268443639"/>
-        <entry endPc="268443776" name="piece" stackId="10" startPc="268443694"/>
-        <entry endPc="268443773" name="fileChar" stackId="11" startPc="268443719"/>
-        <entry endPc="268443773" name="rankNum" stackId="12" startPc="268443719"/>
-        <entry arg="true" endPc="268443970" name="piece" stackId="1" startPc="268443792"/>
-        <entry endPc="268443970" name="firstChar" stackId="2" startPc="268443795"/>
-        <entry arg="true" endPc="268444255" name="dc" stackId="1" startPc="268444011"/>
-        <entry endPc="268444254" name="width" stackId="2" startPc="268444014"/>
-        <entry endPc="268444254" name="height" stackId="3" startPc="268444014"/>
-        <entry arg="true" endPc="268444393" name="message" stackId="1" startPc="268444354"/>
-        <entry arg="true" endPc="268444393" name="color" stackId="2" startPc="268444354"/>
-        <entry endPc="268444870" name="solution" stackId="1" startPc="268444397"/>
-        <entry endPc="268444828" name="from" stackId="2" startPc="268444437"/>
-        <entry endPc="268444828" name="to" stackId="3" startPc="268444437"/>
-        <entry endPc="268444828" name="fromFileChar" stackId="4" startPc="268444437"/>
-        <entry endPc="268444828" name="fromRankChar" stackId="5" startPc="268444437"/>
-        <entry endPc="268444828" name="toFileChar" stackId="6" startPc="268444437"/>
-        <entry endPc="268444828" name="toRankChar" stackId="7" startPc="268444437"/>
-        <entry endPc="268444828" name="fromCol" stackId="8" startPc="268444437"/>
-        <entry endPc="268444828" name="toCol" stackId="9" startPc="268444437"/>
-        <entry endPc="268444828" name="fromRankNum" stackId="10" startPc="268444437"/>
-        <entry endPc="268444828" name="toRankNum" stackId="11" startPc="268444437"/>
-        <entry endPc="268444828" name="fromRow" stackId="12" startPc="268444437"/>
-        <entry endPc="268444828" name="toRow" stackId="13" startPc="268444437"/>
-        <entry endPc="268444813" name="piece" stackId="14" startPc="268444634"/>
-        <entry endPc="268444707" name="pieceName" stackId="15" startPc="268444659"/>
-        <entry endPc="268444813" name="alternativePiece" stackId="16" startPc="268444711"/>
-        <entry endPc="268444790" name="altPieceName" stackId="17" startPc="268444735"/>
-        <entry arg="true" endPc="268445415" name="idx" stackId="1" startPc="268444872"/>
-        <entry endPc="268445414" name="fen" stackId="2" startPc="268444875"/>
-        <entry arg="true" endPc="268446243" name="dc" stackId="1" startPc="268445416"/>
-        <entry endPc="268446242" name="width" stackId="2" startPc="268445419"/>
-        <entry endPc="268446242" name="height" stackId="3" startPc="268445419"/>
-        <entry endPc="268446242" name="elapsed" stackId="4" startPc="268445419"/>
-        <entry endPc="268446242" name="mins" stackId="5" startPc="268445419"/>
-        <entry endPc="268446242" name="secs" stackId="6" startPc="268445419"/>
-        <entry endPc="268446242" name="headerText" stackId="7" startPc="268445419"/>
-        <entry endPc="268446242" name="boardSize" stackId="8" startPc="268445419"/>
-        <entry endPc="268446242" name="marginX" stackId="9" startPc="268445419"/>
-        <entry endPc="268446242" name="marginY" stackId="10" startPc="268445419"/>
-        <entry endPc="268446242" name="squareSize" stackId="11" startPc="268445419"/>
-        <entry endPc="268446242" name="cursorRow" stackId="12" startPc="268445419"/>
-        <entry endPc="268446242" name="cursorCol" stackId="13" startPc="268445419"/>
-        <entry endPc="268446042" name="row" stackId="14" startPc="268445678"/>
-        <entry endPc="268446032" name="col" stackId="15" startPc="268445689"/>
-        <entry endPc="268446022" name="x" stackId="16" startPc="268445689"/>
-        <entry endPc="268446022" name="y" stackId="17" startPc="268445689"/>
-        <entry endPc="268446022" name="squareIndex" stackId="18" startPc="268445689"/>
-        <entry endPc="268446022" name="isLight" stackId="19" startPc="268445689"/>
-        <entry endPc="268446022" name="isCursor" stackId="20" startPc="268445689"/>
-        <entry endPc="268446022" name="isSelected" stackId="21" startPc="268445689"/>
-        <entry endPc="268446022" name="piece" stackId="22" startPc="268445689"/>
-        <entry endPc="268446019" name="drawableId" stackId="23" startPc="268445913"/>
-        <entry endPc="268446016" name="bitmap" stackId="24" startPc="268445936"/>
-        <entry endPc="268446013" name="bitmapWidth" stackId="25" startPc="268445952"/>
-        <entry endPc="268446013" name="bitmapHeight" stackId="26" startPc="268445952"/>
-        <entry endPc="268446013" name="bitmapX" stackId="27" startPc="268445952"/>
-        <entry endPc="268446013" name="bitmapY" stackId="28" startPc="268445952"/>
-        <entry endPc="268446220" name="helpText" stackId="29" startPc="268446156"/>
+        <entry arg="true" endPc="268440906" name="index" stackId="1" startPc="268440814"/>
+        <entry endPc="268440897" name="move" stackId="2" startPc="268440841"/>
+        <entry endPc="268440897" name="from" stackId="3" startPc="268440841"/>
+        <entry endPc="268440897" name="to" stackId="4" startPc="268440841"/>
+        <entry arg="true" endPc="268440956" name="index" stackId="1" startPc="268440907"/>
+        <entry arg="true" endPc="268440984" name="hView" stackId="1" startPc="268440957"/>
+        <entry arg="true" endPc="268441076" name="key" stackId="1" startPc="268440985"/>
+        <entry endPc="268441076" name="keyCode" stackId="2" startPc="268440988"/>
+        <entry endPc="268441146" name="puzzleListView" stackId="1" startPc="268441090"/>
+        <entry endPc="268441282" name="historyView" stackId="2" startPc="268441226"/>
+        <entry arg="true" endPc="268441652" name="dc" stackId="1" startPc="268441391"/>
+        <entry endPc="268441651" name="width" stackId="2" startPc="268441394"/>
+        <entry endPc="268441651" name="height" stackId="3" startPc="268441394"/>
+        <entry endPc="268441651" name="centerX" stackId="4" startPc="268441394"/>
+        <entry endPc="268441651" name="itemHeight" stackId="5" startPc="268441394"/>
+        <entry endPc="268441651" name="startY" stackId="6" startPc="268441394"/>
+        <entry arg="true" endPc="268441877" name="dc" stackId="1" startPc="268441653"/>
+        <entry arg="true" endPc="268441877" name="centerX" stackId="2" startPc="268441653"/>
+        <entry arg="true" endPc="268441877" name="y" stackId="3" startPc="268441653"/>
+        <entry arg="true" endPc="268441877" name="index" stackId="4" startPc="268441653"/>
+        <entry arg="true" endPc="268441877" name="title" stackId="5" startPc="268441653"/>
+        <entry arg="true" endPc="268441877" name="subtitle" stackId="6" startPc="268441653"/>
+        <entry endPc="268441876" name="isSelected" stackId="7" startPc="268441656"/>
+        <entry endPc="268441967" name="solved" stackId="1" startPc="268441881"/>
+        <entry endPc="268441967" name="incorrect" stackId="2" startPc="268441881"/>
+        <entry endPc="268441967" name="total" stackId="3" startPc="268441881"/>
+        <entry arg="true" endPc="268442700" name="dc" stackId="1" startPc="268442030"/>
+        <entry endPc="268442699" name="width" stackId="2" startPc="268442033"/>
+        <entry endPc="268442699" name="height" stackId="3" startPc="268442033"/>
+        <entry endPc="268442699" name="solved" stackId="4" startPc="268442033"/>
+        <entry endPc="268442699" name="incorrect" stackId="5" startPc="268442033"/>
+        <entry endPc="268442699" name="total" stackId="6" startPc="268442033"/>
+        <entry endPc="268442699" name="startIdx" stackId="7" startPc="268442033"/>
+        <entry endPc="268442699" name="endIdx" stackId="8" startPc="268442033"/>
+        <entry endPc="268442658" name="y" stackId="9" startPc="268442240"/>
+        <entry endPc="268442658" name="itemHeight" stackId="10" startPc="268442240"/>
+        <entry endPc="268442526" name="i" stackId="11" startPc="268442260"/>
+        <entry endPc="268442516" name="puzzleNum" stackId="12" startPc="268442260"/>
+        <entry endPc="268442516" name="status" stackId="13" startPc="268442260"/>
+        <entry endPc="268442516" name="statusColor" stackId="14" startPc="268442260"/>
+        <entry endPc="268442516" name="puzzleName" stackId="15" startPc="268442260"/>
+        <entry endPc="268442655" name="scrollBarHeight" stackId="16" startPc="268442538"/>
+        <entry endPc="268442655" name="scrollBarY" stackId="17" startPc="268442538"/>
+        <entry endPc="268442655" name="thumbHeight" stackId="18" startPc="268442538"/>
+        <entry endPc="268442655" name="thumbY" stackId="19" startPc="268442538"/>
+        <entry arg="true" endPc="268442737" name="idx" stackId="1" startPc="268442701"/>
+        <entry arg="true" endPc="268442737" name="boardView" stackId="2" startPc="268442701"/>
+        <entry arg="true" endPc="268443017" name="key" stackId="1" startPc="268442738"/>
+        <entry endPc="268443017" name="keyCode" stackId="2" startPc="268442741"/>
+        <entry endPc="268443100" name="row" stackId="1" startPc="268443030"/>
+        <entry endPc="268443100" name="col" stackId="2" startPc="268443030"/>
+        <entry endPc="268443100" name="piece" stackId="3" startPc="268443030"/>
+        <entry endPc="268443410" name="fromRow" stackId="4" startPc="268443104"/>
+        <entry endPc="268443410" name="fromCol" stackId="5" startPc="268443104"/>
+        <entry endPc="268443410" name="toRow" stackId="6" startPc="268443104"/>
+        <entry endPc="268443410" name="toCol" stackId="7" startPc="268443104"/>
+        <entry endPc="268443410" name="files" stackId="8" startPc="268443104"/>
+        <entry endPc="268443410" name="fromFile" stackId="9" startPc="268443104"/>
+        <entry endPc="268443410" name="fromRank" stackId="10" startPc="268443104"/>
+        <entry endPc="268443410" name="toFile" stackId="11" startPc="268443104"/>
+        <entry endPc="268443410" name="toRank" stackId="12" startPc="268443104"/>
+        <entry endPc="268443410" name="move" stackId="13" startPc="268443104"/>
+        <entry endPc="268443410" name="solution" stackId="14" startPc="268443104"/>
+        <entry endPc="268443410" name="elapsed" stackId="15" startPc="268443104"/>
+        <entry endPc="268443410" name="feedbackTimer" stackId="16" startPc="268443104"/>
+        <entry arg="true" endPc="268443599" name="rankChar" stackId="1" startPc="268443412"/>
+        <entry arg="true" endPc="268443634" name="delta" stackId="1" startPc="268443600"/>
+        <entry arg="true" endPc="268443883" name="fromRow" stackId="1" startPc="268443635"/>
+        <entry arg="true" endPc="268443883" name="fromCol" stackId="2" startPc="268443635"/>
+        <entry arg="true" endPc="268443883" name="toRow" stackId="3" startPc="268443635"/>
+        <entry arg="true" endPc="268443883" name="toCol" stackId="4" startPc="268443635"/>
+        <entry endPc="268443883" name="files" stackId="5" startPc="268443638"/>
+        <entry endPc="268443883" name="offsets" stackId="6" startPc="268443638"/>
+        <entry endPc="268443881" name="i" stackId="7" startPc="268443731"/>
+        <entry endPc="268443871" name="checkRow" stackId="8" startPc="268443731"/>
+        <entry endPc="268443871" name="checkCol" stackId="9" startPc="268443731"/>
+        <entry endPc="268443868" name="piece" stackId="10" startPc="268443786"/>
+        <entry endPc="268443865" name="fileChar" stackId="11" startPc="268443811"/>
+        <entry endPc="268443865" name="rankNum" stackId="12" startPc="268443811"/>
+        <entry arg="true" endPc="268444062" name="piece" stackId="1" startPc="268443884"/>
+        <entry endPc="268444062" name="firstChar" stackId="2" startPc="268443887"/>
+        <entry arg="true" endPc="268444347" name="dc" stackId="1" startPc="268444103"/>
+        <entry endPc="268444346" name="width" stackId="2" startPc="268444106"/>
+        <entry endPc="268444346" name="height" stackId="3" startPc="268444106"/>
+        <entry arg="true" endPc="268444485" name="message" stackId="1" startPc="268444446"/>
+        <entry arg="true" endPc="268444485" name="color" stackId="2" startPc="268444446"/>
+        <entry endPc="268444962" name="solution" stackId="1" startPc="268444489"/>
+        <entry endPc="268444920" name="from" stackId="2" startPc="268444529"/>
+        <entry endPc="268444920" name="to" stackId="3" startPc="268444529"/>
+        <entry endPc="268444920" name="fromFileChar" stackId="4" startPc="268444529"/>
+        <entry endPc="268444920" name="fromRankChar" stackId="5" startPc="268444529"/>
+        <entry endPc="268444920" name="toFileChar" stackId="6" startPc="268444529"/>
+        <entry endPc="268444920" name="toRankChar" stackId="7" startPc="268444529"/>
+        <entry endPc="268444920" name="fromCol" stackId="8" startPc="268444529"/>
+        <entry endPc="268444920" name="toCol" stackId="9" startPc="268444529"/>
+        <entry endPc="268444920" name="fromRankNum" stackId="10" startPc="268444529"/>
+        <entry endPc="268444920" name="toRankNum" stackId="11" startPc="268444529"/>
+        <entry endPc="268444920" name="fromRow" stackId="12" startPc="268444529"/>
+        <entry endPc="268444920" name="toRow" stackId="13" startPc="268444529"/>
+        <entry endPc="268444905" name="piece" stackId="14" startPc="268444726"/>
+        <entry endPc="268444799" name="pieceName" stackId="15" startPc="268444751"/>
+        <entry endPc="268444905" name="alternativePiece" stackId="16" startPc="268444803"/>
+        <entry endPc="268444882" name="altPieceName" stackId="17" startPc="268444827"/>
+        <entry arg="true" endPc="268445507" name="idx" stackId="1" startPc="268444964"/>
+        <entry endPc="268445506" name="fen" stackId="2" startPc="268444967"/>
+        <entry arg="true" endPc="268446335" name="dc" stackId="1" startPc="268445508"/>
+        <entry endPc="268446334" name="width" stackId="2" startPc="268445511"/>
+        <entry endPc="268446334" name="height" stackId="3" startPc="268445511"/>
+        <entry endPc="268446334" name="elapsed" stackId="4" startPc="268445511"/>
+        <entry endPc="268446334" name="mins" stackId="5" startPc="268445511"/>
+        <entry endPc="268446334" name="secs" stackId="6" startPc="268445511"/>
+        <entry endPc="268446334" name="headerText" stackId="7" startPc="268445511"/>
+        <entry endPc="268446334" name="boardSize" stackId="8" startPc="268445511"/>
+        <entry endPc="268446334" name="marginX" stackId="9" startPc="268445511"/>
+        <entry endPc="268446334" name="marginY" stackId="10" startPc="268445511"/>
+        <entry endPc="268446334" name="squareSize" stackId="11" startPc="268445511"/>
+        <entry endPc="268446334" name="cursorRow" stackId="12" startPc="268445511"/>
+        <entry endPc="268446334" name="cursorCol" stackId="13" startPc="268445511"/>
+        <entry endPc="268446134" name="row" stackId="14" startPc="268445770"/>
+        <entry endPc="268446124" name="col" stackId="15" startPc="268445781"/>
+        <entry endPc="268446114" name="x" stackId="16" startPc="268445781"/>
+        <entry endPc="268446114" name="y" stackId="17" startPc="268445781"/>
+        <entry endPc="268446114" name="squareIndex" stackId="18" startPc="268445781"/>
+        <entry endPc="268446114" name="isLight" stackId="19" startPc="268445781"/>
+        <entry endPc="268446114" name="isCursor" stackId="20" startPc="268445781"/>
+        <entry endPc="268446114" name="isSelected" stackId="21" startPc="268445781"/>
+        <entry endPc="268446114" name="piece" stackId="22" startPc="268445781"/>
+        <entry endPc="268446111" name="drawableId" stackId="23" startPc="268446005"/>
+        <entry endPc="268446108" name="bitmap" stackId="24" startPc="268446028"/>
+        <entry endPc="268446105" name="bitmapWidth" stackId="25" startPc="268446044"/>
+        <entry endPc="268446105" name="bitmapHeight" stackId="26" startPc="268446044"/>
+        <entry endPc="268446105" name="bitmapX" stackId="27" startPc="268446044"/>
+        <entry endPc="268446105" name="bitmapY" stackId="28" startPc="268446044"/>
+        <entry endPc="268446312" name="helpText" stackId="29" startPc="268446248"/>
     </localVars>
     <deviceInfo deviceVersion="5c7ae9cf907f88c116a91dc4ffd75be9b5b7d2e9" partNumber="006-B4533-00"/>
     <annotations>
@@ -1226,13 +1237,13 @@
         <dataEntry label="globals/Storage" offset="872" parentId="globals" symbolId="Storage" type="module"/>
         <dataEntry label="globals/PuzzleData" offset="988" parentId="globals" symbolId="PuzzleData" type="class"/>
         <dataEntry label="globals/PuzzleData/&lt;statics&gt;" offset="1036" parentId="PuzzleData" symbolId="&lt;statics&gt;" type="module"/>
-        <dataEntry label="globals/HistoryDelegate" offset="1112" parentId="globals" symbolId="HistoryDelegate" type="class"/>
-        <dataEntry label="globals/MenuView" offset="1174" parentId="globals" symbolId="MenuView" type="class"/>
-        <dataEntry label="globals/HistoryView" offset="1272" parentId="globals" symbolId="HistoryView" type="class"/>
-        <dataEntry label="globals/BoardDelegate" offset="1370" parentId="globals" symbolId="BoardDelegate" type="class"/>
-        <dataEntry label="globals/BoardView" offset="1441" parentId="globals" symbolId="BoardView" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="1719" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="1862" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/HistoryDelegate" offset="1130" parentId="globals" symbolId="HistoryDelegate" type="class"/>
+        <dataEntry label="globals/MenuView" offset="1192" parentId="globals" symbolId="MenuView" type="class"/>
+        <dataEntry label="globals/HistoryView" offset="1290" parentId="globals" symbolId="HistoryView" type="class"/>
+        <dataEntry label="globals/BoardDelegate" offset="1388" parentId="globals" symbolId="BoardDelegate" type="class"/>
+        <dataEntry label="globals/BoardView" offset="1459" parentId="globals" symbolId="BoardView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1737" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1880" parentId="Rez" symbolId="Strings" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="StatsView" startPc="268435460">
@@ -1464,35 +1475,39 @@
         <functionEntry accessMode="public" endPc="268440813" name="getPuzzleCount" parent="PuzzleData" startPc="268440800">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440864" name="getPuzzleName" parent="PuzzleData" startPc="268440814">
+        <functionEntry accessMode="public" endPc="268440906" name="getHint" parent="PuzzleData" startPc="268440814">
             <param id="index"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440892" name="initialize" parent="HistoryDelegate" startPc="268440865">
+        <functionEntry accessMode="public" endPc="268440956" name="getPuzzleName" parent="PuzzleData" startPc="268440907">
+            <param id="index"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440984" name="initialize" parent="HistoryDelegate" startPc="268440957">
             <param id="hView"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440984" name="onKeyPressed" parent="HistoryDelegate" startPc="268440893">
+        <functionEntry accessMode="public" endPc="268441076" name="onKeyPressed" parent="HistoryDelegate" startPc="268440985">
             <param id="key"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441194" name="handleEnter" parent="MenuView" startPc="268440985">
+        <functionEntry accessMode="public" endPc="268441286" name="handleEnter" parent="MenuView" startPc="268441077">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441237" name="handleDown" parent="MenuView" startPc="268441195">
+        <functionEntry accessMode="public" endPc="268441329" name="handleDown" parent="MenuView" startPc="268441287">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441256" name="initialize" parent="MenuView" startPc="268441238">
+        <functionEntry accessMode="public" endPc="268441348" name="initialize" parent="MenuView" startPc="268441330">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441298" name="handleUp" parent="MenuView" startPc="268441257">
+        <functionEntry accessMode="public" endPc="268441390" name="handleUp" parent="MenuView" startPc="268441349">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441560" name="onUpdate" parent="MenuView" startPc="268441299">
+        <functionEntry accessMode="public" endPc="268441652" name="onUpdate" parent="MenuView" startPc="268441391">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441785" name="drawMenuItem" parent="MenuView" startPc="268441561">
+        <functionEntry accessMode="public" endPc="268441877" name="drawMenuItem" parent="MenuView" startPc="268441653">
             <param id="dc"/>
             <param id="centerX"/>
             <param id="y"/>
@@ -1501,83 +1516,83 @@
             <param id="subtitle"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441876" name="handleDown" parent="HistoryView" startPc="268441786">
+        <functionEntry accessMode="public" endPc="268441968" name="handleDown" parent="HistoryView" startPc="268441878">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441895" name="initialize" parent="HistoryView" startPc="268441877">
+        <functionEntry accessMode="public" endPc="268441987" name="initialize" parent="HistoryView" startPc="268441969">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441937" name="handleUp" parent="HistoryView" startPc="268441896">
+        <functionEntry accessMode="public" endPc="268442029" name="handleUp" parent="HistoryView" startPc="268441988">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442608" name="onUpdate" parent="HistoryView" startPc="268441938">
+        <functionEntry accessMode="public" endPc="268442700" name="onUpdate" parent="HistoryView" startPc="268442030">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442645" name="initialize" parent="BoardDelegate" startPc="268442609">
+        <functionEntry accessMode="public" endPc="268442737" name="initialize" parent="BoardDelegate" startPc="268442701">
             <param id="idx"/>
             <param id="boardView"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442925" name="onKeyPressed" parent="BoardDelegate" startPc="268442646">
+        <functionEntry accessMode="public" endPc="268443017" name="onKeyPressed" parent="BoardDelegate" startPc="268442738">
             <param id="key"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268443319" name="selectSquare" parent="BoardView" startPc="268442926">
+        <functionEntry accessMode="public" endPc="268443411" name="selectSquare" parent="BoardView" startPc="268443018">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268443507" name="parseRank" parent="BoardView" startPc="268443320">
+        <functionEntry accessMode="public" endPc="268443599" name="parseRank" parent="BoardView" startPc="268443412">
             <param id="rankChar"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268443542" name="moveCursor" parent="BoardView" startPc="268443508">
+        <functionEntry accessMode="public" endPc="268443634" name="moveCursor" parent="BoardView" startPc="268443600">
             <param id="delta"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268443791" name="findNearbyPiece" parent="BoardView" startPc="268443543">
+        <functionEntry accessMode="public" endPc="268443883" name="findNearbyPiece" parent="BoardView" startPc="268443635">
             <param id="fromRow"/>
             <param id="fromCol"/>
             <param id="toRow"/>
             <param id="toCol"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268443970" name="getPieceName" parent="BoardView" startPc="268443792">
+        <functionEntry accessMode="public" endPc="268444062" name="getPieceName" parent="BoardView" startPc="268443884">
             <param id="piece"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268443988" name="exitPuzzle" parent="BoardView" startPc="268443971">
+        <functionEntry accessMode="public" endPc="268444080" name="exitPuzzle" parent="BoardView" startPc="268444063">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444010" name="hideHint" parent="BoardView" startPc="268443989">
+        <functionEntry accessMode="public" endPc="268444102" name="hideHint" parent="BoardView" startPc="268444081">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444255" name="drawHint" parent="BoardView" startPc="268444011">
+        <functionEntry accessMode="public" endPc="268444347" name="drawHint" parent="BoardView" startPc="268444103">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444290" name="onHide" parent="BoardView" startPc="268444256">
+        <functionEntry accessMode="public" endPc="268444382" name="onHide" parent="BoardView" startPc="268444348">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444353" name="onShow" parent="BoardView" startPc="268444291">
+        <functionEntry accessMode="public" endPc="268444445" name="onShow" parent="BoardView" startPc="268444383">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444393" name="showFeedback" parent="BoardView" startPc="268444354">
+        <functionEntry accessMode="public" endPc="268444485" name="showFeedback" parent="BoardView" startPc="268444446">
             <param id="message"/>
             <param id="color"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444871" name="generateHint" parent="BoardView" startPc="268444394">
+        <functionEntry accessMode="public" endPc="268444963" name="generateHint" parent="BoardView" startPc="268444486">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268445415" name="initialize" parent="BoardView" startPc="268444872">
+        <functionEntry accessMode="public" endPc="268445507" name="initialize" parent="BoardView" startPc="268444964">
             <param id="idx"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268446243" name="onUpdate" parent="BoardView" startPc="268445416">
+        <functionEntry accessMode="public" endPc="268446335" name="onUpdate" parent="BoardView" startPc="268445508">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268446257" name="onTimer" parent="BoardView" startPc="268446244">
+        <functionEntry accessMode="public" endPc="268446349" name="onTimer" parent="BoardView" startPc="268446336">
             <documentation/>
         </functionEntry>
     </functions>

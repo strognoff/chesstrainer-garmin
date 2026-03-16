@@ -20,9 +20,55 @@ A chess tactics trainer app for Garmin watches built with Connect IQ (Monkey C).
 - Epix Pro
 - Vivoactive 5
 
-## Puzzle Data
+## Puzzle Collection
 
-50 tactical puzzles in FEN format from [432k Chess Puzzles](https://github.com/rebeccaloran/432k-chess-puzzles).
+ChessTrainer includes **51 carefully curated and validated chess puzzles** designed to teach fundamental chess tactics and patterns. All puzzles have been programmatically verified for correctness using the python-chess library.
+
+### What You'll Learn
+
+The puzzle collection covers essential chess concepts:
+
+- **Checkmate Patterns** (3 puzzles) - Learn to deliver decisive checkmate moves
+  - Queen checkmate patterns in various board positions
+  - Recognizing unstoppable mating attacks
+
+- **Endgame Technique** (22 puzzles) - Master king and queen/rook endgames
+  - King restriction with checks
+  - Queen vs lone king positioning
+  - Pawn advancement and promotion
+  - Rook activity in endgames
+
+- **Tactical Attacks** (9 puzzles) - Develop attacking skills
+  - Scholar's Mate pattern (f7/f2 weakness)
+  - Queen attack and positioning
+  - Back rank weaknesses
+  - Forcing checks to gain advantage
+
+- **Piece Tactics** (9 puzzles) - Learn piece-specific moves
+  - Knight forks (double attacks)
+  - Bishop development and diagonal control
+  - Knight repositioning and tactics
+
+- **Fundamental Skills** (8 puzzles) - Build chess foundations
+  - Pawn structure and advancement
+  - Piece captures and exchanges
+  - Opening principles
+
+### Puzzle Difficulty
+
+Puzzles are arranged progressively:
+- **Beginner** (Puzzles 1-20): Basic endgame patterns, simple checkmates
+- **Intermediate** (Puzzles 21-40): Tactical captures, opening traps, checks
+- **Advanced** (Puzzles 41-51): Complex tactics, endgame technique
+
+### Validation
+
+All 51 puzzles have been validated with automated testing:
+- ✓ All FEN positions are legal and valid
+- ✓ All solution moves are legal in their positions
+- ✓ Solutions lead to checkmate, check, or tactical advantage
+
+For detailed information about each puzzle including the tactical concept it teaches, see [PUZZLES.md](PUZZLES.md).
 
 ## Building
 
@@ -33,6 +79,48 @@ This project uses the Garmin Connect IQ SDK. To build:
    ```
    monkeyc -o ChessTrainer.prg -f monkey.jungle -y your-garmin-developer-key.der
    ```
+
+## Development Tools
+
+### Puzzle Validation (`validate_puzzles.py`)
+
+Validates all chess puzzles for correctness:
+
+```bash
+pip3 install chess
+python3 validate_puzzles.py
+```
+
+**What it checks:**
+- FEN position validity
+- Solution move legality
+- Array length consistency
+- Position analysis (check/checkmate/tactical)
+
+**Example output:**
+```
+✓ ALL PUZZLES ARE VALID AND LEGAL!
+Total puzzles: 51
+Checkmate puzzles: 3
+Check puzzles: 15
+Tactical puzzles: 33
+```
+
+### Puzzle Analysis (`analyze_puzzles.py`)
+
+Generates detailed educational documentation about each puzzle:
+
+```bash
+python3 analyze_puzzles.py
+```
+
+**What it generates:**
+- Tactical concepts for each puzzle
+- Educational descriptions
+- Grouping by concept type
+- Complete puzzle documentation in `PUZZLES.md`
+
+These tools ensure puzzle quality and help maintain the educational value of the collection.
 
 ## Project Structure
 
