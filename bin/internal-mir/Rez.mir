@@ -18,32 +18,32 @@ module Rez {
         [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 8; ]
         <init> {
         }
-        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [WhiteKing,9,27,36]; @symbol_type<0> = [ResourceId,9,40,50]; ]
+        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 10; @position = 27; initialized = true; @symbol_vardef = [WhiteKing,10,27,36]; @symbol_type<0> = [ResourceId,10,40,50]; ]
         var WhiteKing as ResourceId;
-        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 10; @position = 27; initialized = true; @symbol_vardef = [WhiteQueen,10,27,37]; @symbol_type<0> = [ResourceId,10,41,51]; ]
+        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 11; @position = 27; initialized = true; @symbol_vardef = [WhiteQueen,11,27,37]; @symbol_type<0> = [ResourceId,11,41,51]; ]
         var WhiteQueen as ResourceId;
-        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 11; @position = 27; initialized = true; @symbol_vardef = [WhiteRook,11,27,36]; @symbol_type<0> = [ResourceId,11,40,50]; ]
+        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 12; @position = 27; initialized = true; @symbol_vardef = [WhiteRook,12,27,36]; @symbol_type<0> = [ResourceId,12,40,50]; ]
         var WhiteRook as ResourceId;
-        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 12; @position = 27; initialized = true; @symbol_vardef = [WhiteBishop,12,27,38]; @symbol_type<0> = [ResourceId,12,42,52]; ]
+        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 13; @position = 27; initialized = true; @symbol_vardef = [WhiteBishop,13,27,38]; @symbol_type<0> = [ResourceId,13,42,52]; ]
         var WhiteBishop as ResourceId;
-        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 13; @position = 27; initialized = true; @symbol_vardef = [WhiteKnight,13,27,38]; @symbol_type<0> = [ResourceId,13,42,52]; ]
+        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 14; @position = 27; initialized = true; @symbol_vardef = [WhiteKnight,14,27,38]; @symbol_type<0> = [ResourceId,14,42,52]; ]
         var WhiteKnight as ResourceId;
-        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 14; @position = 27; initialized = true; @symbol_vardef = [WhitePawn,14,27,36]; @symbol_type<0> = [ResourceId,14,40,50]; ]
+        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 15; @position = 27; initialized = true; @symbol_vardef = [WhitePawn,15,27,36]; @symbol_type<0> = [ResourceId,15,40,50]; ]
         var WhitePawn as ResourceId;
-        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 15; @position = 27; initialized = true; @symbol_vardef = [BlackKing,15,27,36]; @symbol_type<0> = [ResourceId,15,40,50]; ]
+        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 16; @position = 27; initialized = true; @symbol_vardef = [BlackKing,16,27,36]; @symbol_type<0> = [ResourceId,16,40,50]; ]
         var BlackKing as ResourceId;
-        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 16; @position = 27; initialized = true; @symbol_vardef = [BlackQueen,16,27,37]; @symbol_type<0> = [ResourceId,16,41,51]; ]
+        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 17; @position = 27; initialized = true; @symbol_vardef = [BlackQueen,17,27,37]; @symbol_type<0> = [ResourceId,17,41,51]; ]
         var BlackQueen as ResourceId;
-        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 17; @position = 27; initialized = true; @symbol_vardef = [BlackRook,17,27,36]; @symbol_type<0> = [ResourceId,17,40,50]; ]
+        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 18; @position = 27; initialized = true; @symbol_vardef = [BlackRook,18,27,36]; @symbol_type<0> = [ResourceId,18,40,50]; ]
         var BlackRook as ResourceId;
-        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 18; @position = 27; initialized = true; @symbol_vardef = [BlackBishop,18,27,38]; @symbol_type<0> = [ResourceId,18,42,52]; ]
+        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 19; @position = 27; initialized = true; @symbol_vardef = [BlackBishop,19,27,38]; @symbol_type<0> = [ResourceId,19,42,52]; ]
         var BlackBishop as ResourceId;
-        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 19; @position = 27; initialized = true; @symbol_vardef = [BlackKnight,19,27,38]; @symbol_type<0> = [ResourceId,19,42,52]; ]
-        var BlackKnight as ResourceId;
         [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 20; @position = 27; initialized = true; @symbol_vardef = [BlackPawn,20,27,36]; @symbol_type<0> = [ResourceId,20,40,50]; ]
         var BlackPawn as ResourceId;
-        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 21; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,21,27,39]; @symbol_type<0> = [ResourceId,21,43,53]; ]
-        var LauncherIcon as ResourceId;
+        [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 21; @position = 27; initialized = true; @symbol_vardef = [BlackKnight,21,27,38]; @symbol_type<0> = [ResourceId,21,42,52]; ]
+        var BlackKnight as ResourceId;
     }
     [ @file = "/Users/jeffcechinel/Github/chesstrainer-garmin/bin/gen/006-B4533-00/source/Rez.mcgen"; @line = 24; @symbol_moduledef = [Strings,24,11,18]; ]
     module Strings {
